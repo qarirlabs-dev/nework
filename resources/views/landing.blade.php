@@ -1,10 +1,10 @@
 <x-landing-layout>
-    <section class="hero w-11/12 mx-auto" style="
+    <section class="hero w-10/12 mx-auto" style="
         margin-top: -620px;
     ">
         <div class="flex flex-row justify-between items-center">
             <div class="flex-auto w-2/3">
-                <div class="text-5xl font-black mb-6">You bring the expertise, <br>
+                <div class="text-5xl font-black mb-6 mt-24">You bring the expertise, <br>
                     we'll make it unforgettable.</div>
                 <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9">Learn directly from
                     experts in the field of digital
@@ -13,7 +13,7 @@
                 <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11">Upgrade Skills
                     Now</button>
                 <div class="flex flex-row">
-                    <div class="mx-2">
+                    <div class="mr-12">
                         <div class="mb-6">Talents</div>
                         <div class="flex items-center">
                             <svg width="36" height="18" viewBox="0 0 36 18" fill="none"
@@ -62,10 +62,10 @@
             </div>
         </div>
     </section>
-    <section class="programs hero w-11/12 mx-auto mt-16">
+    <section class="programs hero w-10/12 mx-auto mt-16">
         <div class="flex flex-wrap">
             <div class="w-1/3 px-3">
-                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[28rem]">
+                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Beginer</span>
                     </div>
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="w-1/3 px-3">
-                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[28rem]">
+                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
                     </div>
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div class="w-1/3 px-3">
-                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[28rem]">
+                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
                     </div>
@@ -129,22 +129,20 @@
             </div>
         </div>
     </section>
-    <section class="benerif hero w-11/12 mx-auto mt-16">
+    <section class="benerif hero w-10/12 mx-auto mt-16">
         <div class="flex flex-col justify-center items-center">
             <div class="static mb-5">
-                <p class="font-black text-4xl z-1">Why choose QarirLabs?</p>
-                {{-- Perbiki section ini --}}
-                {{-- <div class="relative -z-10">
-                    <div class="absolute bottom-0 right-5 w-44 h-3 bg-[#FF9500]">asdlfasjd;flasjd</div>
-                </div> --}}
+                <div class="font-black text-4xl z-1">Why choose <div class="inline-block relative"><div class="relative z-10">QarirLabs</div><div class="-z-10">
+                    <div class="absolute bottom-0 right-0 w-44 h-3 bg-[#FF9500]"></div>
+                </div></div>?</div>
             </div>
             <p class="font-medium text-lg text-[#262626] opacity-50 w-1/2 text-center">QarirLabs has been proven to
                 produce competent graduates in the industry through the bootcamp program.</p>
             <div class="flex flex-wrap mt-24">
                 <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2">
+                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
                         <div
-                            class="flex justify-center items-center w-20 h-20 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_5_4598" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -159,15 +157,15 @@
                             </svg>
                         </div>
                         <p class="font-bold text-2xl text-center mt-6">Job Connecting</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center pb-20">Guaranteed to
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Guaranteed to
                             get a job by
                             chaneling to hiring partners.</p>
                     </div>
                 </div>
                 <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2">
+                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
                         <div
-                            class="flex justify-center items-center w-20 h-20 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_5_4605" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -183,15 +181,15 @@
 
                         </div>
                         <p class="font-bold text-2xl text-center mt-6">High Quality Trainers</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center pb-20">Trainers
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Trainers
                             specially selected with senior or director level backgrounds as reliable expert
                             practitioners.</p>
                     </div>
                 </div>
                 <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2">
+                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
                         <div
-                            class="flex justify-center items-center w-20 h-20 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_5_4612" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -206,15 +204,15 @@
                             </svg>
                         </div>
                         <p class="font-bold text-2xl text-center mt-6">Exclusive Bootcamp</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center pb-20">Limited to
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Limited to
                             15-30 students to maintain the conduciveness of the class and the intimacy between students
                             with trainers</p>
                     </div>
                 </div>
                 <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2">
+                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
                         <div
-                            class="flex justify-center items-center w-20 h-20 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_5_4619" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -230,13 +228,40 @@
 
                         </div>
                         <p class="font-bold text-2xl text-center mt-6">Reasonable Price</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center pb-20">We are
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">We are
                             committed to upholding our social mission by providing affordable world class quality
                             training.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="worked-with mt-20 w-9/12 mx-auto">
+        <div class="flex justify-center items-end">
+            <div class="flex font-bold text-4xl">
+                <img src="{{Vite::asset('resources/image/icon/logo_horizontal.png')}}" alt="logo" class="h-9">
+                &nbsp;has worked with <div class="inline-block relative"><div class="relative z-10">120+</div><div class="-z-10">
+                    <div class="absolute bottom-0 right-0 w-20 h-3 bg-[#FF9500]"></div>
+                </div></div>
+            </div>
+        </div>
+        <div class="font-bold text-4xl text-center">hiring partners in Indonesia</div>
+        <p class="font-medium text-lg text-[#262626] opacity-60 text-center mt-5">Our alumni have worked in</p>
+        <div class="mt-8 flex flex-wrap justify-center items-center">
+            <img src="{{Vite::asset('resources/image/icon/detsu_grey.png')}}" alt="dentsu" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/tokopedia.png')}}" alt="tokopedia" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/danone.png')}}" alt="danone" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/kaskus.png')}}" alt="kaskus" class="h-10 object-cover px- pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/stick_earn.png')}}" alt="stick_earn" class="h-14 object-cover px-3 pt-5 mt-3 ml-5">
+            <img src="{{Vite::asset('resources/image/icon/telkom_indonesia.png')}}" alt="telkom_indonesia" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/kumpul.png')}}" alt="kumpul" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/shopee_1.png')}}" alt="shopee" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/tiktok_2.png')}}" alt="tiktok" class="h-20 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/rumah_zakat.png')}}" alt="rumah_zakat" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/majo.png')}}" alt="majoo" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{Vite::asset('resources/image/icon/kao.png')}}" alt="kao" class="h-14 object-cover px-3 pt-5 mt-3">
+        </div>
+        <p class="font-bold text-2xl text-center text-[#00263D] mt-11">and <span class="text-[#FF9500]">100+</span> Other Hiring Partners</p>
     </section>
     <section class="benefit mt-20">
         <div class="bg-[#00263D] w-full h-[40rem]">
@@ -284,7 +309,7 @@
             </div>
         </div>
     </section>
-    <section class="alumni -mt-48 w-11/12 mx-auto">
+    <section class="alumni -mt-48 w-10/12 mx-auto">
         <p class="font-black text-4xl text-white text-center pb-12">Alumni Success Story</p>
         <div class="flex flex-wrap">
             <div class="w-1/3 px-3">
@@ -292,14 +317,15 @@
                     <img src="{{ Vite::asset('resources/image/avatar/person_1.png') }}" alt="person 1"
                         class="rounded-lg w-full">
                     <div class="flex justify-center -mt-7">
-                        <a href="" class="bg-[#FF9500] px-4 py-3 rounded-lg flex w-32 justify-center items-center">
+                        <a href=""
+                            class="bg-[#FF9500] px-4 py-3 rounded-lg flex w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM8.72123 17.2193V6.7807L17.7613 12L8.72123 17.2193Z"
                                     fill="white" />
                             </svg>
-    
+
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
@@ -332,14 +358,15 @@
                     <img src="{{ Vite::asset('resources/image/avatar/person_2.png') }}" alt="person 1"
                         class="rounded-lg w-full">
                     <div class="flex justify-center -mt-7">
-                        <a href="" class="bg-[#FF9500] px-4 py-3 rounded-lg flex w-32 justify-center items-center">
+                        <a href=""
+                            class="bg-[#FF9500] px-4 py-3 rounded-lg flex w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM8.72123 17.2193V6.7807L17.7613 12L8.72123 17.2193Z"
                                     fill="white" />
                             </svg>
-    
+
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
@@ -372,14 +399,15 @@
                     <img src="{{ Vite::asset('resources/image/avatar/person_3.png') }}" alt="person 1"
                         class="rounded-lg w-full">
                     <div class="flex justify-center -mt-7">
-                        <a href="" class="bg-[#FF9500] px-4 py-3 rounded-lg flex w-32 justify-center items-center">
+                        <a href=""
+                            class="bg-[#FF9500] px-4 py-3 rounded-lg flex w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM8.72123 17.2193V6.7807L17.7613 12L8.72123 17.2193Z"
                                     fill="white" />
                             </svg>
-    
+
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
@@ -409,11 +437,199 @@
             </div>
         </div>
         <div class="flex justify-center mt-8">
-            <button class="text-[#FF9500] font-bold text-lg px-10 py-5 rounded-lg li outline outline-1 outline-[#FF9500]">See More</button>
+            <button
+                class="text-[#FF9500] font-bold text-lg px-10 py-5 rounded-lg li outline outline-1 outline-[#FF9500]">See
+                More</button>
         </div>
     </section>
-    <section class="alumni-say mt-28">
-        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto">What alumni say about<br/>QarirLabs</p>
-        <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-1/3 mx-auto mt-5">Our main focus is to provide the best learning experience for students, here are some testimonials from our alumni</p>
+    <section class="alumni-say mt-28 w-10/12 mx-auto">
+        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto">What alumni say about<br />QarirLabs</p>
+        <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-2/4 mx-auto mt-5">Our main focus is to
+            provide the best learning experience for students, here are some testimonials from our alumni</p>
+        <div class="flex flex-wrap mt-8">
+            <div class="w-1/3 p-3">
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="flex ">
+                        <img src="{{ Vite::asset('resources/image/avatar/avatar_1.png') }}" alt="avatar 1"
+                            class="w-12 h-12">
+                        <div class="ml-5">
+                            <p class="font-medium text-base text-black">Guy Hawkins</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Data Science at GOTO</p>
+                        </div>
+                    </div>
+                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
+                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="flex ">
+                        <img src="{{ Vite::asset('resources/image/avatar/avatar_2.png') }}" alt="avatar 1"
+                            class="w-12 h-12">
+                        <div class="ml-5">
+                            <p class="font-medium text-base text-black">Dianne Russell</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Digital Marketing at Tik Tok</p>
+                        </div>
+                    </div>
+                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
+                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="flex ">
+                        <img src="{{ Vite::asset('resources/image/avatar/avatar_3.png') }}" alt="avatar 1"
+                            class="w-12 h-12">
+                        <div class="ml-5">
+                            <p class="font-medium text-base text-black">Kristin Watson</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Digital Marketing at Shopee</p>
+                        </div>
+                    </div>
+                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
+                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="flex ">
+                        <img src="{{ Vite::asset('resources/image/avatar/avatar_4.png') }}" alt="avatar 1"
+                            class="w-12 h-12">
+                        <div class="ml-5">
+                            <p class="font-medium text-base text-black">Arlene McCoy</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Data Science at Tokopedia</p>
+                        </div>
+                    </div>
+                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
+                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="flex ">
+                        <img src="{{ Vite::asset('resources/image/avatar/avatar_5.png') }}" alt="avatar 1"
+                            class="w-12 h-12">
+                        <div class="ml-5">
+                            <p class="font-medium text-base text-black">Jacob Jones</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Software Engineer at Tik Tok</p>
+                        </div>
+                    </div>
+                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
+                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                </div>
+            </div>
+            <div class="w-1/3 p-3">
+                <div class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="flex ">
+                        <img src="{{ Vite::asset('resources/image/avatar/avatar_6.png') }}" alt="avatar 1"
+                            class="w-12 h-12">
+                        <div class="ml-5">
+                            <p class="font-medium text-base text-black">Albert Flores</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Software Engineer at GOTO</p>
+                        </div>
+                    </div>
+                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
+                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-8">
+            <button class="text-white font-bold text-lg px-10 py-5 rounded-lg bg-[#FF9500]">Upgrade Skill Now</button>
+        </div>
+    </section>
+    <section class="ready mt-20">
+        <div class="relative flex justify-end">
+            <img src="{{ Vite::asset('resources/image/ilustration/ilustration_2.png') }}" alt="ilustration 2"
+                class="h-80">
+            <div class="absolute top-0 left-0 h-80 w-full"
+                style="background: linear-gradient(90.49deg, #00263D 36.68%, rgba(255, 255, 255, 0) 98.95%);"></div>
+            <div class="absolute top-0 left-0 h-80 w-full flex justify-start items-center ">
+                <div class="flex flex-col ml-28">
+                    <p class="font-black text-4xl text-white">Ready to be the next <br />digital talent?</p>
+                    <div>
+                        <button
+                            class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11 mt-6">Contact
+                            Us
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faq mt-20">
+        <div class="font-black text-4xl text-center mb-11">Frequently <div class="inline-block relative"><div class="relative z-10">Asked</div><div class="-z-10">
+            <div class="absolute bottom-0 right-0 w-28 h-3 bg-[#FF9500]"></div>
+        </div></div> Questions</div>
+        <div class="w-1/2 mx-auto">
+            <ul>
+                <li>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-xl pt-3">What's the difference between the part-time and full-time options?
+                        </p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <hr class="border-dashed border-1 my-2 pb-2">
+                </li>
+                <li>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-xl pt-3">How does the learning process work?</p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <hr class="border-dashed border-1 my-2 pb-2">
+                </li>
+                <li>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-xl pt-3">Will I get a new job after graduation?</p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <hr class="border-dashed border-1 my-2 pb-2">
+                </li>
+                <li>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-xl pt-3">What if I don’t get a new job?</p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <hr class="border-dashed border-1 my-2 pb-2">
+                </li>
+                <li><div class="flex justify-between items-center">
+                    <p class="font-bold text-xl pt-3">What career services do you offer?</p>
+                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <hr class="border-dashed border-1 my-2 pb-2"></li>
+            </ul>
+        </div>
+    </section>
+    <section class="media mt-20 mb-24">
+        <p class="font-black text-4xl text-center">The media that has covered us</p>
+        <div class="flex w-1/2 mx-auto justify-center items-end mt-8">
+            <img src="{{Vite::asset('resources/image/icon/net.png')}}" alt="net" class="h-8 mx-8">
+            <img src="{{Vite::asset('resources/image/icon/techinasia.png')}}" alt="net" class="h-8 mx-8">
+            <img src="{{Vite::asset('resources/image/icon/compas.png')}}" alt="net" class="h-8 mx-8">
+        </div>
     </section>
 </x-landing-layout>
