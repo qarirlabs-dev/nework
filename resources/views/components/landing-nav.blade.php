@@ -59,7 +59,7 @@
                     </button>
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex flex-shrink-0 items-center">
+                    <a href="{{route('landing')}}" class="flex flex-shrink-0 items-center">
                         <svg class="block h-8 w-auto lg:hidden" width="200" height="34" viewBox="0 0 200 34"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_43_3841)">
@@ -140,7 +140,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                    </div>
+                    </a>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->

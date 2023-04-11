@@ -81,10 +81,10 @@
                             stroke="#00263D" />
                     </svg>
                     <img class="absolute bottom-0 right-0 w-80 h-48"
-                        src="{{ Vite::asset('resources/image/ilustration/data_science.png') }}" alt="">
+                        src="{{ Vite::asset('resources/image/ilustration/data_science.png') }}" alt="ilustration 1" class="rounded-r-lg">
                 </div>
             </a>
-            <div class="w-1/3 px-3">
+            <a href="{{route('detail')}}" class="w-1/3 px-3">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
@@ -104,8 +104,8 @@
                     <img class="absolute bottom-0 right-0 w-80 h-48"
                         src="{{ Vite::asset('resources/image/ilustration/software_enginering.png') }}" alt="">
                 </div>
-            </div>
-            <div class="w-1/3 px-3">
+            </a>
+            <a href="{{route('detail')}}" class="w-1/3 px-3">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
@@ -125,7 +125,7 @@
                     <img class="absolute bottom-0 right-0 w-80 h-48"
                         src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="">
                 </div>
-            </div>
+            </a>
         </div>
     </section>
     <section class="benerif hero w-10/12 mx-auto mt-16">
