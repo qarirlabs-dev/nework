@@ -12,7 +12,8 @@
             </filter>
         </defs>
     </svg>
-    <svg class="absolute left-0 top-40 h-96 w-96"  viewBox="0 0 572 624" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
         <g opacity="0.3" filter="url(#filter0_f_33_300)">
             <circle cx="144.5" cy="348.5" r="193.5" fill="#FFD770" />
         </g>
@@ -158,21 +159,190 @@
                                         document.getElementById('program-menu').classList.toggle("hidden");
                                     }
                                 </script>
-                                <div id="program-menu"
-                                    class="hidden absolute right-0 z-10 -mt-1 w-56 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                                    role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
-                                    tabindex="-1">
-                                    <!-- Active: "bg-gray-100", Not Active: "" -->
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-0">Software Engineering Bootcamp</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-1">Data Science Master Class Bootcamp</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="user-menu-item-2">Istanbul Program Bootcamp</a>
+                                <div id="program-menu" class="relative hidden">
+                                    <div class="absolute w-full overflow-hidden inline-block -mt-3 pl-6">
+                                        <div
+                                            class=" h-8 w-8 bg-white rotate-45 transform origin-bottom-left ring-1 ring-black ring-opacity-5">
+                                        </div>
+                                    </div>
+                                    <div class="absolute right-0 z-10 mt-5 w-96 origin-top-right rounded-md bg-gray-50 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                        tabindex="-1">
+                                        <!-- Active: "bg-gray-100", Not Active: "" -->
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                            role="menuitem" tabindex="-1" id="user-menu-item-0">
+                                            <div class="inline-flex items-center">
+                                                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_6.png') }}"
+                                                    alt="ilustration 6" class="w-10 h-10">
+                                                <p class="font-bold text-sm text-[#222222] ml-3">Data Science Bootcamp
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                            role="menuitem" tabindex="-1" id="user-menu-item-1">
+                                            <div class="inline-flex items-center">
+                                                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_7.png') }}"
+                                                    alt="ilustration 7" class="w-10 h-10">
+
+                                                <p class="font-bold text-sm text-[#222222] ml-3">Software Engineering
+                                                    Bootcamp</p>
+                                            </div>
+                                        </a>
+                                        <a href="#"
+                                            class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                            role="menuitem" tabindex="-1" id="user-menu-item-1">
+                                            <div class="inline-flex items-center">
+                                                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_8.png') }}"
+                                                    alt="ilustration 8" class="w-10 h-10">
+
+                                                <p class="font-bold text-sm text-[#222222] ml-3">Digital Marketing
+                                                    Bootcamp</p>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
-                            <a href="#" class="text-black  px-3 py-2 font-medium">About</a>
+                            <div class="relative">
+                                <div class="flex flex-row items-center cursor-pointer"
+                                    onclick="toggleProgramMenuInternational()">
+                                    <button class="text-black  px-3 py-2 font-medium">International Programs</button>
+                                    <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M3.30001 4.3L0.700012 1.7C0.383345 1.38333 0.312679 1.021 0.488012 0.613C0.663345 0.205 0.975679 0.000666667 1.42501 0H6.57501C7.02501 0 7.33768 0.204333 7.51301 0.613C7.68835 1.02167 7.61735 1.384 7.30001 1.7L4.70001 4.3C4.60001 4.4 4.49168 4.475 4.37501 4.525C4.25835 4.575 4.13335 4.6 4.00001 4.6C3.86668 4.6 3.74168 4.575 3.62501 4.525C3.50835 4.475 3.40001 4.4 3.30001 4.3Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                                <script>
+                                    function toggleProgramMenuInternational() {
+                                        document.getElementById('program-international').classList.toggle("hidden");
+                                    }
+                                </script>
+                                <div id="program-international" class="relative hidden">
+                                    <div class="absolute w-full overflow-hidden inline-block -mt-3 pl-16">
+                                        <div
+                                            class=" h-8 w-8 bg-white rotate-45 transform origin-bottom-left ring-1 ring-black ring-opacity-5">
+                                        </div>
+                                    </div>
+                                    <div class="absolute right-0 z-10 mt-5 w-[35rem] origin-top-right rounded-md bg-gray-50 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                        role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                        tabindex="-1">
+                                        <div class="flex flow-row">
+                                            <div>
+                                                <div class="inline-flex px-6 pt-6">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="28" height="28" rx="4"
+                                                            fill="url(#paint0_linear_152_272)" />
+                                                        <g clip-path="url(#clip0_152_272)">
+                                                            <path
+                                                                d="M23.609 9.01386L14.195 5.69233C14.0688 5.6478 13.9312 5.6478 13.8051 5.69233L4.39102 9.01386C4.15695 9.09644 4.00031 9.31753 4 9.56573C3.99969 9.81394 4.15582 10.0354 4.38969 10.1185L13.8038 13.4653C13.8672 13.4878 13.9336 13.4991 14 13.4991C14.0664 13.4991 14.1328 13.4878 14.1962 13.4653L23.6103 10.1185C23.8442 10.0354 24.0003 9.81394 24 9.56573C23.9997 9.31753 23.843 9.09644 23.609 9.01386Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M22.5927 16.8348V11.7239L21.4208 12.1405V16.8348C21.0678 17.038 20.83 17.4186 20.83 17.8552C20.83 18.2917 21.0678 18.6724 21.4208 18.8755V21.7551C21.4208 22.0786 21.6831 22.341 22.0067 22.341C22.3303 22.341 22.5927 22.0786 22.5927 21.7551V18.8756C22.9456 18.6724 23.1835 18.2917 23.1835 17.8552C23.1835 17.4187 22.9457 17.038 22.5927 16.8348Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M14 14.671C13.7989 14.671 13.6008 14.6368 13.4112 14.5694L8.1189 12.688V15.2664C8.1189 15.8972 8.77698 16.4307 10.0749 16.852C11.2062 17.2192 12.6001 17.4214 14 17.4214C15.3998 17.4214 16.7938 17.2192 17.9251 16.852C19.223 16.4307 19.8811 15.8972 19.8811 15.2664V12.688L14.5888 14.5694C14.3992 14.6368 14.2011 14.671 14 14.671Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_152_272" x1="0"
+                                                                y1="0" x2="28" y2="28"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop stop-color="#FFB72B" />
+                                                                <stop offset="1" stop-color="#FFA01B" />
+                                                            </linearGradient>
+                                                            <clipPath id="clip0_152_272">
+                                                                <rect width="20" height="20" fill="white"
+                                                                    transform="translate(4 4)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <p class="font-black text-base ml-4">Istanbul</p>
+                                                </div>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                                    role="menuitem" tabindex="-1" id="user-menu-item-0">
+                                                    <div class="inline-flex items-center">
+                                                        <img src="{{ Vite::asset('resources/image/ilustration/ilustration_6.png') }}"
+                                                            alt="ilustration 6" class="w-10 h-10">
+                                                        <p class="font-bold text-sm text-[#222222] ml-3">Data Science
+                                                            Bootcamp</p>
+                                                    </div>
+                                                </a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                                    role="menuitem" tabindex="-1" id="user-menu-item-1">
+                                                    <div class="inline-flex items-center">
+                                                        <img src="{{ Vite::asset('resources/image/ilustration/ilustration_8.png') }}"
+                                                            alt="ilustration 8" class="w-10 h-10">
+
+                                                        <p class="font-bold text-sm text-[#222222] ml-3">Digital
+                                                            Marketing Bootcamp</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <div class="inline-flex px-6 pt-6">
+                                                    <svg width="28" height="28" viewBox="0 0 28 28"
+                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="28" height="28" rx="4"
+                                                            fill="url(#paint0_linear_152_272)" />
+                                                        <g clip-path="url(#clip0_152_272)">
+                                                            <path
+                                                                d="M23.609 9.01386L14.195 5.69233C14.0688 5.6478 13.9312 5.6478 13.8051 5.69233L4.39102 9.01386C4.15695 9.09644 4.00031 9.31753 4 9.56573C3.99969 9.81394 4.15582 10.0354 4.38969 10.1185L13.8038 13.4653C13.8672 13.4878 13.9336 13.4991 14 13.4991C14.0664 13.4991 14.1328 13.4878 14.1962 13.4653L23.6103 10.1185C23.8442 10.0354 24.0003 9.81394 24 9.56573C23.9997 9.31753 23.843 9.09644 23.609 9.01386Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M22.5927 16.8348V11.7239L21.4208 12.1405V16.8348C21.0678 17.038 20.83 17.4186 20.83 17.8552C20.83 18.2917 21.0678 18.6724 21.4208 18.8755V21.7551C21.4208 22.0786 21.6831 22.341 22.0067 22.341C22.3303 22.341 22.5927 22.0786 22.5927 21.7551V18.8756C22.9456 18.6724 23.1835 18.2917 23.1835 17.8552C23.1835 17.4187 22.9457 17.038 22.5927 16.8348Z"
+                                                                fill="white" />
+                                                            <path
+                                                                d="M14 14.671C13.7989 14.671 13.6008 14.6368 13.4112 14.5694L8.1189 12.688V15.2664C8.1189 15.8972 8.77698 16.4307 10.0749 16.852C11.2062 17.2192 12.6001 17.4214 14 17.4214C15.3998 17.4214 16.7938 17.2192 17.9251 16.852C19.223 16.4307 19.8811 15.8972 19.8811 15.2664V12.688L14.5888 14.5694C14.3992 14.6368 14.2011 14.671 14 14.671Z"
+                                                                fill="white" />
+                                                        </g>
+                                                        <defs>
+                                                            <linearGradient id="paint0_linear_152_272" x1="0"
+                                                                y1="0" x2="28" y2="28"
+                                                                gradientUnits="userSpaceOnUse">
+                                                                <stop stop-color="#FFB72B" />
+                                                                <stop offset="1" stop-color="#FFA01B" />
+                                                            </linearGradient>
+                                                            <clipPath id="clip0_152_272">
+                                                                <rect width="20" height="20" fill="white"
+                                                                    transform="translate(4 4)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    <p class="font-black text-base ml-4">South Korea</p>
+                                                </div>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                                    role="menuitem" tabindex="-1" id="user-menu-item-0">
+                                                    <div class="inline-flex items-center">
+                                                        <img src="{{ Vite::asset('resources/image/ilustration/ilustration_6.png') }}"
+                                                            alt="ilustration 6" class="w-10 h-10">
+                                                        <p class="font-bold text-sm text-[#222222] ml-3">Data Science
+                                                            Bootcamp</p>
+                                                    </div>
+                                                </a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                                    role="menuitem" tabindex="-1" id="user-menu-item-1">
+                                                    <div class="inline-flex items-center">
+                                                        <img src="{{ Vite::asset('resources/image/ilustration/ilustration_8.png') }}"
+                                                            alt="ilustration 8" class="w-10 h-10">
+
+                                                        <p class="font-bold text-sm text-[#222222] ml-3">Digital
+                                                            Marketing Bootcamp</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -211,16 +381,105 @@
                                 document.getElementById('language-menu').classList.toggle("hidden");
                             }
                         </script>
-                        <div id="language-menu"
-                            class="hidden absolute right-0 z-10 -mt-1 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
-                            tabindex="-1">
-                            <!-- Active: "bg-gray-100", Not Active: "" -->
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                tabindex="-1" id="user-menu-item-0">English</a>
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                tabindex="-1" id="user-menu-item-1">Indonesia</a>
+                        {{-- <div
+                            class="absolute right-1 shadow-sm w-0 h-0 -mt-3 border-l-[20px] border-l-transparent border-b-[20px] border-b-white border-r-[20px] border-r-transparent ">
+                        </div> --}}
+                        <div id="language-menu" class="relative hidden">
+                            <div class="absolute w-full overflow-hidden inline-block -mt-3 pl-10">
+                                <div
+                                    class=" h-8 w-8 bg-white rotate-45 transform origin-bottom-left ring-1 ring-black ring-opacity-5">
+                                </div>
+                            </div>
+                            <div class="absolute right-0 z-10 mt-5 w-48 origin-top-right rounded-md bg-gray-50 py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                                role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
+                                tabindex="-1">
+                                <!-- Active: "bg-gray-100", Not Active: "" -->
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-0">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_160_470)">
+                                                <path
+                                                    d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z"
+                                                    fill="#F0F0F0" />
+                                                <path
+                                                    d="M2.48063 4.69409C1.53802 5.92048 0.827251 7.334 0.413391 8.86958H6.65611L2.48063 4.69409Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M23.5866 8.86953C23.1728 7.334 22.4619 5.92048 21.5194 4.69409L17.344 8.86953H23.5866Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M0.413391 15.1304C0.827297 16.6659 1.53806 18.0794 2.48063 19.3058L6.65597 15.1304H0.413391Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M19.3059 2.48061C18.0795 1.538 16.666 0.827236 15.1304 0.41333V6.656L19.3059 2.48061Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M4.69415 21.5193C5.92054 22.4619 7.33406 23.1727 8.86959 23.5866V17.344L4.69415 21.5193Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M8.86954 0.41333C7.33401 0.827236 5.9205 1.538 4.69415 2.48056L8.86954 6.65596V0.41333Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M15.1304 23.5866C16.666 23.1727 18.0795 22.4619 19.3058 21.5194L15.1304 17.344V23.5866Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M17.344 15.1304L21.5194 19.3058C22.4619 18.0795 23.1728 16.6659 23.5866 15.1304H17.344Z"
+                                                    fill="#0052B4" />
+                                                <path
+                                                    d="M23.8984 10.4348H13.5653H13.5653V0.101578C13.0529 0.034875 12.5305 0 12 0C11.4694 0 10.9471 0.034875 10.4348 0.101578V10.4347V10.4347H0.101578C0.034875 10.9471 0 11.4695 0 12C0 12.5306 0.034875 13.0529 0.101578 13.5652H10.4347H10.4347V23.8984C10.9471 23.9651 11.4694 24 12 24C12.5305 24 13.0529 23.9652 13.5652 23.8984V13.5653V13.5653H23.8984C23.9651 13.0529 24 12.5306 24 12C24 11.4695 23.9651 10.9471 23.8984 10.4348Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M15.1304 15.1304L20.4852 20.4852C20.7315 20.239 20.9665 19.9817 21.1906 19.7148L16.6062 15.1304H15.1304V15.1304Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M8.86957 15.1306H8.86947L3.51471 20.4854C3.7609 20.7317 4.01829 20.9666 4.2851 21.1908L8.86957 16.6062V15.1306Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M8.86957 8.8696V8.86951L3.51476 3.51465C3.26848 3.76084 3.03354 4.01823 2.80939 4.28504L7.3939 8.86955L8.86957 8.8696Z"
+                                                    fill="#D80027" />
+                                                <path
+                                                    d="M15.1304 8.86956L20.4853 3.51465C20.2391 3.26837 19.9817 3.03344 19.7149 2.80933L15.1304 7.39384V8.86956Z"
+                                                    fill="#D80027" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_160_470">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        <p class="font-bold text-sm text-[#222222] ml-3">English</p>
+                                    </div>
+                                </a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
+                                    role="menuitem" tabindex="-1" id="user-menu-item-1">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_160_434)">
+                                                <path
+                                                    d="M23.9062 12H0.09375C0.09375 5.4247 5.42381 0.09375 12 0.09375C18.5753 0.09375 23.9062 5.4247 23.9062 12Z"
+                                                    fill="#ED1C24" />
+                                                <path
+                                                    d="M23.9062 12C23.9062 18.5753 18.5753 23.9062 12 23.9062C5.42381 23.9062 0.09375 18.5753 0.09375 12H23.9062Z"
+                                                    fill="#F5F5F5" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_160_434">
+                                                    <rect width="24" height="24" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                        <p class="font-bold text-sm text-[#222222] ml-3">Bahasa Indonesia</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
