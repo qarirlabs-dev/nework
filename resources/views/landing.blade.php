@@ -1,74 +1,184 @@
 <x-landing-layout>
-    <section class="hero w-10/12 mx-auto" style="
-        margin-top: -620px;
-    ">
-        <div class="flex flex-row justify-between items-center">
-            <div class="flex-auto w-2/3">
-                <div class="text-5xl font-black mb-6 mt-24 w-5/6">You bring the expertise,<br/>we'll make it unforgettable.</div>
-                <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-2/3">Learn directly from
-                    experts in the field of digital
-                    marketing with a comprehensive yet affordable
-                    curriculum.</div>
-                <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11">Upgrade Skills
-                    Now</button>
-                <div class="flex flex-row">
-                    <div class="mr-12">
-                        <div class="mb-6">Talents</div>
-                        <div class="flex items-center">
-                            <svg width="36" height="18" viewBox="0 0 36 18" fill="none"
+    @push('scripts')
+        <script>
+            var selectedProgram = null;
+
+            function toggleModal() {
+                console.log('clicked');
+                document.getElementById('modal-program').classList.toggle("hidden");
+            }
+
+            function showModal(program) {
+                selectedProgram = program
+                toggleModal()
+            }
+
+            function redirectToPage(selectedLocation) {
+                if (selectedLocation == 'online') {
+                    location.href = '{{ route('detail') }}'
+                } else if (selectedLocation == 'indonesia') {
+                    location.href = '{{ route('detail') }}'
+                } else if (selectedLocation == 'istanbul') {
+                    location.href = '{{ route('detail') }}'
+                } else if (selectedLocation == 'south korea') {
+                    location.href = '{{ route('detail') }}'
+                }
+            }
+        </script>
+    @endpush
+    <div class="relative z-50 hidden" id="modal-program" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-50 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div class="flex flex-grow flex-row justify-between items-start">
+                            <p class="font-black text-xl">Where would you like to learn Data Sciences Bootcamp?</p>
+                            <button class="cursor-pointer m-3 mt-1.5" onclick="toggleModal()">
+                                <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M0 18V15.6375C0 14.5375 0.5565 13.656 1.6695 12.993C2.7815 12.331 4.225 12 6 12C6.325 12 6.6375 12.006 6.9375 12.018C7.2375 12.031 7.525 12.0625 7.8 12.1125C7.45 12.6125 7.1875 13.15 7.0125 13.725C6.8375 14.3 6.75 14.9125 6.75 15.5625V18H0ZM9 18V15.5625C9 13.9375 9.8315 12.625 11.4945 11.625C13.1565 10.625 15.325 10.125 18 10.125C20.7 10.125 22.875 10.625 24.525 11.625C26.175 12.625 27 13.9375 27 15.5625V18H9ZM29.25 18V15.5625C29.25 14.9125 29.1685 14.3 29.0055 13.725C28.8435 13.15 28.6 12.6125 28.275 12.1125C28.55 12.0625 28.8315 12.031 29.1195 12.018C29.4065 12.006 29.7 12 30 12C31.8 12 33.25 12.331 34.35 12.993C35.45 13.656 36 14.5375 36 15.6375V18H29.25ZM6 10.5C5.175 10.5 4.469 10.206 3.882 9.618C3.294 9.031 3 8.325 3 7.5C3 6.65 3.294 5.9375 3.882 5.3625C4.469 4.7875 5.175 4.5 6 4.5C6.85 4.5 7.5625 4.7875 8.1375 5.3625C8.7125 5.9375 9 6.65 9 7.5C9 8.325 8.7125 9.031 8.1375 9.618C7.5625 10.206 6.85 10.5 6 10.5ZM30 10.5C29.175 10.5 28.4685 10.206 27.8805 9.618C27.2935 9.031 27 8.325 27 7.5C27 6.65 27.2935 5.9375 27.8805 5.3625C28.4685 4.7875 29.175 4.5 30 4.5C30.85 4.5 31.5625 4.7875 32.1375 5.3625C32.7125 5.9375 33 6.65 33 7.5C33 8.325 32.7125 9.031 32.1375 9.618C31.5625 10.206 30.85 10.5 30 10.5ZM18 9C16.75 9 15.6875 8.5625 14.8125 7.6875C13.9375 6.8125 13.5 5.75 13.5 4.5C13.5 3.225 13.9375 2.156 14.8125 1.293C15.6875 0.431 16.75 0 18 0C19.275 0 20.3435 0.431 21.2055 1.293C22.0685 2.156 22.5 3.225 22.5 4.5C22.5 5.75 22.0685 6.8125 21.2055 7.6875C20.3435 8.5625 19.275 9 18 9Z"
-                                    fill="#262626" />
+                                    d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
+                                    fill="#838383" />
+                                <path
+                                    d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
+                                    fill="#838383" />
                             </svg>
-                            <div class="font-bold text-3xl mx-2">1K+</div>
+                            </button>
                         </div>
-                    </div>
-                    <div class="mx-2">
-                        <div class="mb-6">Our grads get hired by</div>
-                        <div class="flex items-end pt-1">
-                            <img src="{{ Vite::asset('resources/image/icon/shopee.png') }}" alt="shopee"
-                                width="87" height="28" class="mx-2">
-                            <img src="{{ Vite::asset('resources/image/icon/stackearn.png') }}" alt="stackearn"
-                                width="125.21" height="28" class="mx-2">
-                            <img src="{{ Vite::asset('resources/image/icon/dentsu.png') }}" alt="dentsu"
-                                width="127" height="28" class="mx-2">
-                            <div class="flex mx-2 text-xl items-center font-medium">
-                                <span class="mr-2">View More</span>
-                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="0.20755" width="24" height="24" rx="12" fill="white" />
-                                    <g clip-path="url(#clip0_5_2582)">
-                                        <path
-                                            d="M18.0157 11.5339L13.6821 7.20015C13.5584 7.07645 13.3935 7.00854 13.2177 7.00854C13.0417 7.00854 12.877 7.07654 12.7533 7.20015L12.3598 7.59371C12.2362 7.71722 12.1681 7.8822 12.1681 8.0581C12.1681 8.2339 12.2362 8.40444 12.3598 8.52795L14.888 11.0617H6.85584C6.49369 11.0617 6.20755 11.3452 6.20755 11.7074V12.2638C6.20755 12.6261 6.49369 12.9382 6.85584 12.9382H14.9166L12.3599 15.486C12.2363 15.6097 12.1682 15.7702 12.1682 15.9461C12.1682 16.1218 12.2363 16.2847 12.3599 16.4083L12.7534 16.8006C12.8771 16.9243 13.0418 16.9917 13.2178 16.9917C13.3936 16.9917 13.5585 16.9234 13.6822 16.7997L18.0158 12.4661C18.1398 12.342 18.208 12.1763 18.2076 12.0002C18.2079 11.8235 18.1398 11.6578 18.0157 11.5339Z"
-                                            fill="#FF9500" />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_5_2582">
-                                            <rect width="12" height="12" fill="white"
-                                                transform="translate(6.20755 6)" />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-
+                        <p class="font-medium text-sm text-[#646464] mt-2">You can choose to learn Data Sciences in over
+                            3 country ready or online. Find now your learning destination!</p>
+                        <hr class="my-5">
+                        <div class="flex flex-wrap">
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('online')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/online.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Online</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('indonesia')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/indonesia.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Indonesia</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('istanbul')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/istanbul.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Istanbul</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('south korea')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
+                                    alt="online" class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">South Korea</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="flex-auto w-1/3 -mr-6">
-                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
+        </div>
+    </div>
+
+    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[46rem] -mt-20">
+        <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.3" filter="url(#filter0_f_33_300)">
+                <circle cx="144.5" cy="348.5" r="193.5" fill="#FFD770" />
+            </g>
+            <defs>
+                <filter id="filter0_f_33_300" x="-283" y="-79" width="855" height="855"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="117" result="effect1_foregroundBlur_33_300" />
+                </filter>
+            </defs>
+        </svg>
+        <div class="absolute top-16">
+            <div class="flex flex-row justify-between items-center w-10/12 mx-auto">
+                <div class="flex-auto w-2/3">
+                    <div class="text-5xl font-black mb-6 mt-24 w-5/6">Create New Success Shortcuts. Land Your New Dream
+                        Job.
+                    </div>
+                    <div class="text-[#262626] font-normal text-xl mb-6 text-opacity-75 leading-9 w-10/12">Accelerate
+                        your
+                        career with our top-tier trainers, personal coaches, and proven methods. Get guaranteed results
+                        through our intensive online and offline classes.</div>
+                    <a href="#classes"
+                        class="bg-[#FF9500] z-30 px-10 py-2 rounded-md text-white text-lg font-bold">Browse
+                        Classess</a>
+                </div>
+                <div class="flex-auto w-1/3 -mr-6">
+                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
+                </div>
+            </div>
+            <div class="flex flex-row mt-8 w-10/12 mx-auto">
+                <div class="mr-12">
+                    <div class="mb-6 font-medium text-xl">Talents</div>
+                    <div class="flex items-center">
+                        <svg width="36" height="18" viewBox="0 0 36 18" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 18V15.6375C0 14.5375 0.5565 13.656 1.6695 12.993C2.7815 12.331 4.225 12 6 12C6.325 12 6.6375 12.006 6.9375 12.018C7.2375 12.031 7.525 12.0625 7.8 12.1125C7.45 12.6125 7.1875 13.15 7.0125 13.725C6.8375 14.3 6.75 14.9125 6.75 15.5625V18H0ZM9 18V15.5625C9 13.9375 9.8315 12.625 11.4945 11.625C13.1565 10.625 15.325 10.125 18 10.125C20.7 10.125 22.875 10.625 24.525 11.625C26.175 12.625 27 13.9375 27 15.5625V18H9ZM29.25 18V15.5625C29.25 14.9125 29.1685 14.3 29.0055 13.725C28.8435 13.15 28.6 12.6125 28.275 12.1125C28.55 12.0625 28.8315 12.031 29.1195 12.018C29.4065 12.006 29.7 12 30 12C31.8 12 33.25 12.331 34.35 12.993C35.45 13.656 36 14.5375 36 15.6375V18H29.25ZM6 10.5C5.175 10.5 4.469 10.206 3.882 9.618C3.294 9.031 3 8.325 3 7.5C3 6.65 3.294 5.9375 3.882 5.3625C4.469 4.7875 5.175 4.5 6 4.5C6.85 4.5 7.5625 4.7875 8.1375 5.3625C8.7125 5.9375 9 6.65 9 7.5C9 8.325 8.7125 9.031 8.1375 9.618C7.5625 10.206 6.85 10.5 6 10.5ZM30 10.5C29.175 10.5 28.4685 10.206 27.8805 9.618C27.2935 9.031 27 8.325 27 7.5C27 6.65 27.2935 5.9375 27.8805 5.3625C28.4685 4.7875 29.175 4.5 30 4.5C30.85 4.5 31.5625 4.7875 32.1375 5.3625C32.7125 5.9375 33 6.65 33 7.5C33 8.325 32.7125 9.031 32.1375 9.618C31.5625 10.206 30.85 10.5 30 10.5ZM18 9C16.75 9 15.6875 8.5625 14.8125 7.6875C13.9375 6.8125 13.5 5.75 13.5 4.5C13.5 3.225 13.9375 2.156 14.8125 1.293C15.6875 0.431 16.75 0 18 0C19.275 0 20.3435 0.431 21.2055 1.293C22.0685 2.156 22.5 3.225 22.5 4.5C22.5 5.75 22.0685 6.8125 21.2055 7.6875C20.3435 8.5625 19.275 9 18 9Z"
+                                fill="#262626" />
+                        </svg>
+                        <div class="font-bold text-3xl mx-2">3K+</div>
+                    </div>
+                </div>
+                <div class="mx-2">
+                    <div class="mb-6 font-medium text-xl">Our grads get hired by</div>
+                    <div class="flex items-end">
+                        <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
+                            alt="shopee"class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/stickearn_color.png') }}" alt="stackearn"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/dentsu_color.png') }}" alt="dentsu"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/glint_color.png') }}" alt="glint"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/kitabisa_color.png') }}" alt="ek"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/mekari_color.png') }}" alt="ek"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/bri_color.png') }}" alt="ek"
+                            class="mx-2 h-6">
+                        <div class="flex mx-2 text-xl items-center font-medium">
+                            <span class="mr-2">View More</span>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.20755" width="24" height="24" rx="12" fill="white" />
+                                <g clip-path="url(#clip0_5_2582)">
+                                    <path
+                                        d="M18.0157 11.5339L13.6821 7.20015C13.5584 7.07645 13.3935 7.00854 13.2177 7.00854C13.0417 7.00854 12.877 7.07654 12.7533 7.20015L12.3598 7.59371C12.2362 7.71722 12.1681 7.8822 12.1681 8.0581C12.1681 8.2339 12.2362 8.40444 12.3598 8.52795L14.888 11.0617H6.85584C6.49369 11.0617 6.20755 11.3452 6.20755 11.7074V12.2638C6.20755 12.6261 6.49369 12.9382 6.85584 12.9382H14.9166L12.3599 15.486C12.2363 15.6097 12.1682 15.7702 12.1682 15.9461C12.1682 16.1218 12.2363 16.2847 12.3599 16.4083L12.7534 16.8006C12.8771 16.9243 13.0418 16.9917 13.2178 16.9917C13.3936 16.9917 13.5585 16.9234 13.6822 16.7997L18.0158 12.4661C18.1398 12.342 18.208 12.1763 18.2076 12.0002C18.2079 11.8235 18.1398 11.6578 18.0157 11.5339Z"
+                                        fill="#FF9500" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5_2582">
+                                        <rect width="12" height="12" fill="white"
+                                            transform="translate(6.20755 6)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="programs hero w-10/12 mx-auto mt-16">
+    <section class="programs hero w-10/12 mx-auto -mt-16" id="classes">
         <div class="flex flex-wrap">
-            <a href="{{route('detail')}}" class="w-1/3 px-3">
+            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('data science')">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
-                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Beginer</span>
+                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
+                            May 10, 2023</span>
                     </div>
-                    <p class="font-bold text-4xl mb-4">Data Science <br>Bootcamp</p>
+                    <p class="font-bold text-4xl mb-4">Data Science Bootcamp</p>
                     <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Data Scientist and build your
                         on AI products from scratch</p>
                     <svg class="absolute bottom-0 right-0 w-80 h-52" viewBox="0 0 297 195" fill="none"
@@ -81,34 +191,15 @@
                             stroke="#00263D" />
                     </svg>
                     <img class="absolute bottom-0 right-0 w-80 h-48"
-                        src="{{ Vite::asset('resources/image/ilustration/data_science.png') }}" alt="ilustration 1" class="rounded-r-lg">
+                        src="{{ Vite::asset('resources/image/ilustration/data_science_2.png') }}" alt="ilustration 1"
+                        class="rounded-r-lg">
                 </div>
-            </a>
-            <a href="{{route('detail')}}" class="w-1/3 px-3">
+            </div>
+            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('digital marketing')">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
-                            class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
-                    </div>
-                    <p class="font-bold text-4xl mb-4">Software Engineering Bootcamp</p>
-                    <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Software Engineering and build
-                        your product impactfull</p>
-                    <svg class="absolute bottom-0 right-0 w-80 h-52" viewBox="0 0 297 195" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M342.5 179.5C342.5 191.323 341.684 200.282 340.082 206.921C338.48 213.562 336.106 217.824 333.035 220.321C329.978 222.807 326.155 223.605 321.51 223.157C316.854 222.708 311.42 221.01 305.203 218.554C300.284 216.611 294.891 214.199 289.036 211.581C265.342 200.984 234.075 187 196 187C172.25 187 148.107 192.435 125.276 199.09C114.983 202.09 104.948 205.34 95.3358 208.454C94.2877 208.794 93.2447 209.131 92.2069 209.467C81.6462 212.884 71.6284 216.08 62.3532 218.535C53.0766 220.992 44.563 222.702 37.0115 223.156C29.4586 223.609 22.903 222.802 17.5192 220.257C6.81208 215.194 0.5 203.117 0.5 179.5C0.5 85.0593 77.0593 8.5 171.5 8.5C265.941 8.5 342.5 85.0593 342.5 179.5Z"
-                            stroke="#FF7A00" />
-                        <path
-                            d="M342.5 171.5C342.5 183.323 341.684 192.282 340.082 198.921C338.48 205.562 336.106 209.824 333.035 212.321C329.978 214.807 326.155 215.605 321.51 215.157C316.854 214.708 311.42 213.01 305.203 210.554C300.284 208.611 294.891 206.199 289.036 203.581C265.342 192.984 234.075 179 196 179C172.25 179 148.107 184.435 125.276 191.09C114.983 194.09 104.948 197.34 95.3358 200.454C94.2877 200.794 93.2447 201.131 92.2069 201.467C81.6462 204.884 71.6284 208.08 62.3532 210.535C53.0766 212.992 44.563 214.702 37.0115 215.156C29.4586 215.609 22.903 214.802 17.5192 212.257C6.81208 207.194 0.5 195.117 0.5 171.5C0.5 77.0593 77.0593 0.5 171.5 0.5C265.941 0.5 342.5 77.0593 342.5 171.5Z"
-                            stroke="#00263D" />
-                    </svg>
-                    <img class="absolute bottom-0 right-0 w-80 h-48"
-                        src="{{ Vite::asset('resources/image/ilustration/software_enginering.png') }}" alt="">
-                </div>
-            </a>
-            <a href="{{route('detail')}}" class="w-1/3 px-3">
-                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
-                    <div class="mb-5"><span
-                            class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
+                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
+                            May 10, 2023</span>
                     </div>
                     <p class="font-bold text-4xl mb-4">Digital Marketing Bootcamp</p>
                     <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Digital Marketing and build
@@ -125,21 +216,46 @@
                     <img class="absolute bottom-0 right-0 w-80 h-48"
                         src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="">
                 </div>
-            </a>
+            </div>
+            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('web development')">
+                <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
+                    <div class="mb-5"><span
+                            class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
+                    </div>
+                    <p class="font-bold text-4xl mb-4">Web Development Bootcamp</p>
+                    <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Software Engineering and
+                        build your product impactfull</p>
+                    <svg class="absolute bottom-0 right-0 w-80 h-52" viewBox="0 0 297 195" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M342.5 179.5C342.5 191.323 341.684 200.282 340.082 206.921C338.48 213.562 336.106 217.824 333.035 220.321C329.978 222.807 326.155 223.605 321.51 223.157C316.854 222.708 311.42 221.01 305.203 218.554C300.284 216.611 294.891 214.199 289.036 211.581C265.342 200.984 234.075 187 196 187C172.25 187 148.107 192.435 125.276 199.09C114.983 202.09 104.948 205.34 95.3358 208.454C94.2877 208.794 93.2447 209.131 92.2069 209.467C81.6462 212.884 71.6284 216.08 62.3532 218.535C53.0766 220.992 44.563 222.702 37.0115 223.156C29.4586 223.609 22.903 222.802 17.5192 220.257C6.81208 215.194 0.5 203.117 0.5 179.5C0.5 85.0593 77.0593 8.5 171.5 8.5C265.941 8.5 342.5 85.0593 342.5 179.5Z"
+                            stroke="#FF7A00" />
+                        <path
+                            d="M342.5 171.5C342.5 183.323 341.684 192.282 340.082 198.921C338.48 205.562 336.106 209.824 333.035 212.321C329.978 214.807 326.155 215.605 321.51 215.157C316.854 214.708 311.42 213.01 305.203 210.554C300.284 208.611 294.891 206.199 289.036 203.581C265.342 192.984 234.075 179 196 179C172.25 179 148.107 184.435 125.276 191.09C114.983 194.09 104.948 197.34 95.3358 200.454C94.2877 200.794 93.2447 201.131 92.2069 201.467C81.6462 204.884 71.6284 208.08 62.3532 210.535C53.0766 212.992 44.563 214.702 37.0115 215.156C29.4586 215.609 22.903 214.802 17.5192 212.257C6.81208 207.194 0.5 195.117 0.5 171.5C0.5 77.0593 77.0593 0.5 171.5 0.5C265.941 0.5 342.5 77.0593 342.5 171.5Z"
+                            stroke="#00263D" />
+                    </svg>
+                    <img class="absolute bottom-0 right-0 w-80 h-48"
+                        src="{{ Vite::asset('resources/image/ilustration/software_enginering.png') }}"
+                        alt="">
+                </div>
+            </div>
         </div>
     </section>
     <section class="benerif hero w-10/12 mx-auto mt-16">
         <div class="flex flex-col justify-center items-center">
             <div class="static mb-5">
-                <div class="font-black text-4xl z-1">Why choose <div class="inline-block relative"><div class="relative z-10">QarirLabs</div><div class="-z-10">
-                    <div class="absolute bottom-0 right-0 w-44 h-3 bg-[#FF9500]"></div>
-                </div></div>?</div>
+                <div class="font-black text-4xl z-1">Why choose <div class="inline-block relative">
+                        <div class="relative z-10">QarirLabs</div>
+                        <div class="-z-10">
+                            <div class="absolute bottom-0 right-0 w-44 h-3 bg-[#FF9500]"></div>
+                        </div>
+                    </div>?</div>
             </div>
             <p class="font-medium text-lg text-[#262626] opacity-50 w-1/2 text-center">QarirLabs has been proven to
                 produce competent graduates in the industry through the bootcamp program.</p>
             <div class="flex flex-wrap mt-24">
-                <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
+                <div class="w-1/3 mb-20">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -155,113 +271,153 @@
                                 </g>
                             </svg>
                         </div>
-                        <p class="font-bold text-2xl text-center mt-6">Job Connecting</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Guaranteed to
-                            get a job by
-                            chaneling to hiring partners.</p>
+                        <p class="font-bold text-2xl text-center mt-6">Passionate Trainers</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">All our trainers
+                            are well experienced experts with senior-director level practitioners.</p>
                     </div>
                 </div>
-                <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
+                <div class="w-1/3 mb-20">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
-                            class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_5_4605" style="mask-type:alpha" maskUnits="userSpaceOnUse"
-                                    x="0" y="0" width="40" height="40">
-                                    <rect width="40" height="40" fill="#D9D9D9" />
-                                </mask>
-                                <g mask="url(#mask0_5_4605)">
-                                    <path
-                                        d="M27.8333 25.8333L34.1666 20.4167L39.1666 20.8333L31.8333 27.2083L34 36.6667L29.75 34.0833L27.8333 25.8333ZM23.9166 13.6667L22.1666 9.58333L24.0833 5L27.9166 14.0417L23.9166 13.6667ZM7.20831 36.6667L9.91665 24.9583L0.833313 17.0833L12.8333 16.0417L17.5 5L22.1666 16.0417L34.1666 17.0833L25.0833 24.9583L27.7916 36.6667L17.5 30.4583L7.20831 36.6667Z"
-                                        fill="white" />
-                                </g>
+                                <path
+                                    d="M19.4221 0V6.34743H21.5781V0H19.4219H19.4221ZM10.6184 1.9075L8.85203 3.14427L12.4921 8.34247L14.2576 7.10567L10.6184 1.9075ZM30.3813 1.9075L26.7423 7.1057L28.508 8.3425L32.148 3.14427L30.3816 1.9075H30.3813ZM20.4996 8.08413C15.2254 8.08413 10.9499 11.2869 10.9499 15.2383L16.3756 31.6699H24.6246L30.0499 15.2383C30.0499 11.287 25.7746 8.08413 20.5001 8.08413H20.4996ZM3.34883 9.9891L2.6122 12.0162L8.57383 14.1867L9.3132 12.1605L3.3487 9.9891H3.34883ZM37.6509 9.9891L31.6864 12.1607L32.4232 14.1871L38.3878 12.0163L37.6509 9.9891ZM9.0252 19.256L2.8952 20.9002L3.4514 22.9813L9.5814 21.3394L9.0253 19.256H9.0252ZM31.9745 19.256L31.4187 21.3394L37.5487 22.981L38.1045 20.8999L31.9745 19.256V19.256ZM16.2553 32.8677V35.7239H24.7449V32.8682H16.2554L16.2553 32.8677ZM16.2553 37.1438V40H24.7449V37.1443H16.2554L16.2553 37.1438Z"
+                                    fill="white" />
                             </svg>
 
                         </div>
-                        <p class="font-bold text-2xl text-center mt-6">High Quality Trainers</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Trainers
-                            specially selected with senior or director level backgrounds as reliable expert
-                            practitioners.</p>
+                        <p class="font-bold text-2xl text-center mt-6">Equipped by Enrichment Program</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Join our enrichment
+                            program in form of internship (part-time) for several projects at corporates/leading
+                            startups</p>
                     </div>
                 </div>
-                <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
+                <div class="w-1/3 mb-20">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                        <div
+                            class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32.1667 3.33337L23.8333 10.8334V29.1667L32.1667 21.6667V3.33337ZM11.3333 8.33337C8.08332 8.33337 4.58332 9.00004 2.16666 10.8334V35.2667C2.16666 35.6834 2.58332 36.1 2.99999 36.1C3.16666 36.1 3.24999 35.9834 3.41666 35.9834C5.66666 34.9 8.91666 34.1667 11.3333 34.1667C14.5833 34.1667 18.0833 34.8334 20.5 36.6667C22.75 35.25 26.8333 34.1667 29.6667 34.1667C32.4167 34.1667 35.25 34.6834 37.5833 35.9334C37.75 36.0167 37.8333 35.9834 38 35.9834C38.4167 35.9834 38.8333 35.5667 38.8333 35.15V10.8334C37.8333 10.0834 36.75 9.58337 35.5 9.16671V31.6667C33.6667 31.0834 31.6667 30.8334 29.6667 30.8334C26.8333 30.8334 22.75 31.9167 20.5 33.3334V10.8334C18.0833 9.00004 14.5833 8.33337 11.3333 8.33337Z"
+                                    fill="white" />
+                            </svg>
+
+
+                        </div>
+                        <p class="font-bold text-2xl text-center mt-6">Personalized Curriculum</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Personalized
+                            Curriculum</p>
+                    </div>
+                </div>
+                <div class="w-1/3 mb-20">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_5_4612" style="mask-type:alpha" maskUnits="userSpaceOnUse"
-                                    x="0" y="0" width="40" height="40">
-                                    <rect width="40" height="40" fill="#D9D9D9" />
-                                </mask>
-                                <g mask="url(#mask0_5_4612)">
-                                    <path
-                                        d="M3.33331 28.3333V4.99992C3.33331 4.5277 3.49304 4.13186 3.81248 3.81242C4.13192 3.49297 4.52776 3.33325 4.99998 3.33325H26.6666C27.1389 3.33325 27.5347 3.49297 27.8541 3.81242C28.1736 4.13186 28.3333 4.5277 28.3333 4.99992V19.9999C28.3333 20.4721 28.1736 20.868 27.8541 21.1874C27.5347 21.5069 27.1389 21.6666 26.6666 21.6666H9.99998L3.33331 28.3333ZM11.6666 29.9999C11.1944 29.9999 10.7986 29.8402 10.4791 29.5208C10.1597 29.2013 9.99998 28.8055 9.99998 28.3333V24.9999H31.6666V9.99992H35C35.4722 9.99992 35.868 10.1596 36.1875 10.4791C36.5069 10.7985 36.6666 11.1944 36.6666 11.6666V36.6666L30 29.9999H11.6666Z"
-                                        fill="white" />
-                                </g>
+                                <path
+                                    d="M18.8333 10H23.8333L29.3167 4.50002C29.4716 4.3438 29.6559 4.21981 29.859 4.1352C30.0621 4.05058 30.28 4.00702 30.5 4.00702C30.72 4.00702 30.9379 4.05058 31.141 4.1352C31.3441 4.21981 31.5284 4.3438 31.6833 4.50002L35.9833 8.81668C36.2938 9.12895 36.468 9.55137 36.468 9.99168C36.468 10.432 36.2938 10.8544 35.9833 11.1667L32.1667 15H18.8333V18.3334C18.8333 18.7754 18.6577 19.1993 18.3452 19.5119C18.0326 19.8244 17.6087 20 17.1667 20C16.7246 20 16.3007 19.8244 15.9882 19.5119C15.6756 19.1993 15.5 18.7754 15.5 18.3334V13.3334C15.5 12.4493 15.8512 11.6014 16.4763 10.9763C17.1014 10.3512 17.9493 10 18.8333 10ZM8.83333 18.3334V25L5.01667 28.8167C4.70625 29.129 4.53201 29.5514 4.53201 29.9917C4.53201 30.432 4.70625 30.8544 5.01667 31.1667L9.31667 35.4834C9.47161 35.6396 9.65594 35.7636 9.85904 35.8482C10.0621 35.9328 10.28 35.9763 10.5 35.9763C10.72 35.9763 10.9379 35.9328 11.141 35.8482C11.3441 35.7636 11.5284 35.6396 11.6833 35.4834L18.8333 28.3334H25.5C25.942 28.3334 26.3659 28.1578 26.6785 27.8452C26.9911 27.5326 27.1667 27.1087 27.1667 26.6667V25H28.8333C29.2754 25 29.6993 24.8244 30.0118 24.5119C30.3244 24.1993 30.5 23.7754 30.5 23.3334V21.6667H32.1667C32.6087 21.6667 33.0326 21.4911 33.3452 21.1785C33.6577 20.866 33.8333 20.442 33.8333 20V18.3334H22.1667V20C22.1667 20.8841 21.8155 21.7319 21.1904 22.357C20.5652 22.9822 19.7174 23.3334 18.8333 23.3334H15.5C14.6159 23.3334 13.7681 22.9822 13.143 22.357C12.5179 21.7319 12.1667 20.8841 12.1667 20V15L8.83333 18.3334Z"
+                                    fill="white" />
                             </svg>
                         </div>
-                        <p class="font-bold text-2xl text-center mt-6">Exclusive Bootcamp</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Limited to
-                            15-30 students to maintain the conduciveness of the class and the intimacy between students
-                            with trainers</p>
+                        <p class="font-bold text-2xl text-center mt-6">Hiring Partners Mentorship</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Get Mentoring
+                            session with our hiring partners to learn more about company culture, industry update, and
+                            soft skill class</p>
                     </div>
                 </div>
-                <div class="w-1/4">
-                    <div class="flex flex-col justify-center items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-60">
+                <div class="w-1/3 mb-20">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
-                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <mask id="mask0_5_4619" style="mask-type:alpha" maskUnits="userSpaceOnUse"
-                                    x="0" y="0" width="40" height="40">
-                                    <rect width="40" height="40" fill="#D9D9D9" />
-                                </mask>
-                                <g mask="url(#mask0_5_4619)">
-                                    <path
-                                        d="M18.75 19.1667C19.3333 19.1667 19.8264 18.9654 20.2291 18.5626C20.6319 18.1598 20.8333 17.6667 20.8333 17.0834C20.8333 16.5001 20.6319 16.007 20.2291 15.6042C19.8264 15.2015 19.3333 15.0001 18.75 15.0001C18.1666 15.0001 17.6736 15.2015 17.2708 15.6042C16.868 16.007 16.6666 16.5001 16.6666 17.0834C16.6666 17.6667 16.868 18.1598 17.2708 18.5626C17.6736 18.9654 18.1666 19.1667 18.75 19.1667ZM19.0416 26.6667L28.3333 17.3751L25.9583 15.0001L16.6666 24.2917L19.0416 26.6667ZM26.25 26.6667C26.8333 26.6667 27.3264 26.4654 27.7291 26.0626C28.1319 25.6598 28.3333 25.1667 28.3333 24.5834C28.3333 24.0001 28.1319 23.507 27.7291 23.1042C27.3264 22.7015 26.8333 22.5001 26.25 22.5001C25.6666 22.5001 25.1736 22.7015 24.7708 23.1042C24.368 23.507 24.1666 24.0001 24.1666 24.5834C24.1666 25.1667 24.368 25.6598 24.7708 26.0626C25.1736 26.4654 25.6666 26.6667 26.25 26.6667ZM31.6666 31.6667H13.3333C12.4166 31.6667 11.6319 31.3404 10.9791 30.6876C10.3264 30.0348 9.99998 29.2501 9.99998 28.3334V5.00008C9.99998 4.08341 10.3264 3.29869 10.9791 2.64591C11.6319 1.99314 12.4166 1.66675 13.3333 1.66675H25L35 11.6667V28.3334C35 29.2501 34.6736 30.0348 34.0208 30.6876C33.368 31.3404 32.5833 31.6667 31.6666 31.6667ZM23.3333 13.3334H31.6666L23.3333 5.00008V13.3334ZM6.66665 38.3334C5.74998 38.3334 4.96526 38.007 4.31248 37.3543C3.6597 36.7015 3.33331 35.9167 3.33331 35.0001V11.6667H6.66665V35.0001H25V38.3334H6.66665Z"
-                                        fill="white" />
-                                </g>
+                                <path
+                                    d="M33.61 10.824C31.8568 8.32235 29.4264 6.37272 26.604 5.20402C28.1859 7.98732 29.309 11.0074 29.93 14.148C31.3117 13.2248 32.5514 12.105 33.61 10.824ZM27.152 15.65C26.4748 11.4751 24.8213 7.51904 22.326 4.10402C21.1126 3.96614 19.8874 3.96614 18.674 4.10402C16.1787 7.51904 14.5252 11.4751 13.848 15.65C15.9516 16.544 18.2143 17.0032 20.5 17C22.86 17 25.108 16.52 27.152 15.65ZM13.528 18.752C15.759 19.5803 18.1202 20.003 20.5 20C22.952 20 25.3 19.56 27.472 18.752C27.5902 21.2785 27.3539 23.8091 26.77 26.27C24.7156 26.7569 22.6113 27.0019 20.5 27C18.342 27 16.244 26.746 14.232 26.268C13.6475 23.8078 13.4106 21.2779 13.528 18.752ZM11.07 14.148C11.6912 11.0081 12.8143 7.98872 14.396 5.20602C11.5736 6.37472 9.14315 8.32435 7.39 10.826C8.44948 12.105 9.68908 13.2253 11.07 14.148ZM35.168 13.596C36.2985 16.1823 36.7223 19.0223 36.396 21.826C34.4415 23.253 32.3036 24.41 30.04 25.266C30.5 22.6665 30.617 20.0179 30.388 17.388C32.1651 16.3748 33.7771 15.0961 35.168 13.596ZM5.832 13.596C7.22291 15.0961 8.83485 16.3748 10.612 17.388C10.3852 20.0186 10.5022 22.6676 10.96 25.268C8.69646 24.412 6.55857 23.2549 4.604 21.828C4.27835 19.0242 4.70281 16.1841 5.834 13.598L5.832 13.596ZM20.5 30C22.296 30 24.056 29.842 25.766 29.54C24.91 31.8035 23.7529 33.9414 22.326 35.896C21.1126 36.0337 19.8874 36.0337 18.674 35.896C17.2471 33.9415 16.09 31.8036 15.234 29.54C16.944 29.842 18.704 30 20.5 30ZM29.214 28.714C28.5722 30.8312 27.6968 32.8704 26.604 34.794C28.5522 33.9872 30.3224 32.8045 31.8134 31.3135C33.3045 29.8224 34.4872 28.0522 35.294 26.104C33.388 27.188 31.352 28.066 29.214 28.714ZM14.396 34.794C12.4478 33.9872 10.6776 32.8045 9.18655 31.3135C7.6955 29.8224 6.5128 28.0522 5.706 26.104C7.612 27.188 9.648 28.066 11.786 28.714C12.4278 30.8312 13.3032 32.8704 14.396 34.794Z"
+                                    fill="white" />
                             </svg>
 
                         </div>
-                        <p class="font-bold text-2xl text-center mt-6">Reasonable Price</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">We are
-                            committed to upholding our social mission by providing affordable world class quality
-                            training.</p>
+                        <p class="font-bold text-2xl text-center mt-6">International Destination</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">You only need to
+                            bring your laptop & bag from your home country to find new opportunity, get networking
+                            access, learn new culture, and go further with our international bootcamp across the world
+                        </p>
+                    </div>
+                </div>
+                <div class="w-1/3 mb-20">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                        <div
+                            class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_190_505" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                    x="0" y="0" width="41" height="40">
+                                    <rect x="0.5" width="40" height="40" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_190_505)">
+                                    <path
+                                        d="M28.3333 25.8333L34.6666 20.4167L39.6666 20.8333L32.3333 27.2083L34.5 36.6667L30.25 34.0833L28.3333 25.8333ZM24.4166 13.6667L22.6666 9.58333L24.5833 5L28.4166 14.0417L24.4166 13.6667ZM7.70831 36.6667L10.4166 24.9583L1.33331 17.0833L13.3333 16.0417L18 5L22.6666 16.0417L34.6666 17.0833L25.5833 24.9583L28.2916 36.6667L18 30.4583L7.70831 36.6667Z"
+                                        fill="white" />
+                                </g>
+                            </svg>
+                        </div>
+                        <p class="font-bold text-2xl text-center mt-6">5 Star Services</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">This is where
+                            Education meets hospitality. 24/7 services from our global team representative will respond
+                            to your needs.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="worked-with mt-20 w-9/12 mx-auto">
+    {{-- <section class="worked-with mt-20 w-9/12 mx-auto">
         <div class="flex justify-center items-end">
             <div class="flex font-bold text-4xl">
-                <img src="{{Vite::asset('resources/image/icon/logo_horizontal.png')}}" alt="logo" class="h-9">
-                &nbsp;has worked with <div class="inline-block relative"><div class="relative z-10">120+</div><div class="-z-10">
-                    <div class="absolute bottom-0 right-0 w-20 h-3 bg-[#FF9500]"></div>
-                </div></div>
+                <img src="{{ Vite::asset('resources/image/icon/logo_horizontal.png') }}" alt="logo"
+                    class="h-9">
+                &nbsp;has worked with <div class="inline-block relative">
+                    <div class="relative z-10">120+</div>
+                    <div class="-z-10">
+                        <div class="absolute bottom-0 right-0 w-20 h-3 bg-[#FF9500]"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="font-bold text-4xl text-center">hiring partners in Indonesia</div>
         <p class="font-medium text-lg text-[#262626] opacity-60 text-center mt-5">Our alumni have worked in</p>
         <div class="mt-8 flex flex-wrap justify-center items-center">
-            <img src="{{Vite::asset('resources/image/icon/detsu_grey.png')}}" alt="dentsu" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/tokopedia.png')}}" alt="tokopedia" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/danone.png')}}" alt="danone" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/kaskus.png')}}" alt="kaskus" class="h-10 object-cover px- pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/stick_earn.png')}}" alt="stick_earn" class="h-14 object-cover px-3 pt-5 mt-3 ml-5">
-            <img src="{{Vite::asset('resources/image/icon/telkom_indonesia.png')}}" alt="telkom_indonesia" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/kumpul.png')}}" alt="kumpul" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/shopee_1.png')}}" alt="shopee" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/tiktok_2.png')}}" alt="tiktok" class="h-20 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/rumah_zakat.png')}}" alt="rumah_zakat" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/majo.png')}}" alt="majoo" class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{Vite::asset('resources/image/icon/kao.png')}}" alt="kao" class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/detsu_grey.png') }}" alt="dentsu"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="tokopedia"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/danone.png') }}" alt="danone"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/kaskus.png') }}" alt="kaskus"
+                class="h-10 object-cover px- pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
+                class="h-14 object-cover px-3 pt-5 mt-3 ml-5">
+            <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="telkom_indonesia"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/kumpul.png') }}" alt="kumpul"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/shopee_1.png') }}" alt="shopee"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/tiktok_2.png') }}" alt="tiktok"
+                class="h-20 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/rumah_zakat.png') }}" alt="rumah_zakat"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/majo.png') }}" alt="majoo"
+                class="h-14 object-cover px-3 pt-5 mt-3">
+            <img src="{{ Vite::asset('resources/image/icon/kao.png') }}" alt="kao"
+                class="h-14 object-cover px-3 pt-5 mt-3">
         </div>
-        <p class="font-bold text-2xl text-center text-[#00263D] mt-11">and <span class="text-[#FF9500]">100+</span> Other Hiring Partners</p>
-    </section>
+        <p class="font-bold text-2xl text-center text-[#00263D] mt-11">and <span class="text-[#FF9500]">100+</span>
+            Other Hiring Partners</p>
+    </section> --}}
     <section class="benefit mt-20">
         <div class="bg-[#00263D] w-full h-[40rem]">
             <div class="absolute w-full h-[40rem]">
@@ -285,11 +441,11 @@
                 </svg>
             </div>
             <p class="font-black text-white text-center text-4xl pt-20 pb-6 w-1/2 mx-auto">More than a bootcamp.
-                <br />Join a digital talent network for life.
+                Get hired at top tech companies.
             </p>
-            <p class="font-medium text-white opacity-60 text-center w-1/2 mx-auto pb-10">By joining Le Wagon, you are
-                joining a supportive community of alumni, teachers & tech recruiters.Benefit
-                from life-long access to the course material, and to our network job offers.</p>
+            <p class="font-medium text-white opacity-60 text-center w-1/2 mx-auto pb-10">QarirLabs helps you land your
+                dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
+                Education Field)</p>
             <div class="flex justify-center items-center w-1/2 mx-auto">
                 <div class="w-1/5 pb-7">
                     <p class="text-center font-black text-4xl text-[#FF9500]">1K+</p>
@@ -297,19 +453,18 @@
                 </div>
                 <div class="w-1/3 flex flex-col justify-center">
                     <p class="text-center font-black text-4xl text-[#FF9500]">90%</p>
-                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">of students complete our
-                        programs*</p>
+                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni Get a job less
+                        than 12 months</p>
                 </div>
                 <div class="w-1/3">
                     <p class="text-center font-black text-4xl text-[#FF9500]">85%</p>
-                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">find a tech job after
-                        six months*</p>
+                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Completed rate</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="alumni -mt-48 w-10/12 mx-auto">
-        <p class="font-black text-4xl text-white text-center pb-12">Alumni Success Story</p>
+        <p class="font-black text-4xl text-white text-center pb-12">Hear How Our Student Enjoying The Class</p>
         <div class="flex flex-wrap">
             <div class="w-1/3 px-3">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
@@ -552,7 +707,7 @@
                     <p class="font-black text-4xl text-white">Ready to be the next <br />digital talent?</p>
                     <div>
                         <button
-                            class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11 mt-6">Contact
+                            class="bg-[#FF9500] px-10 py-2 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact
                             Us
                             Now</button>
                     </div>
@@ -560,15 +715,19 @@
             </div>
         </div>
     </section>
-    <section class="faq mt-20">
-        <div class="font-black text-4xl text-center mb-11">Frequently <div class="inline-block relative"><div class="relative z-10">Asked</div><div class="-z-10">
-            <div class="absolute bottom-0 right-0 w-28 h-3 bg-[#FF9500]"></div>
-        </div></div> Questions</div>
+    {{-- <section class="faq mt-20">
+        <div class="font-black text-4xl text-center mb-11">Frequently <div class="inline-block relative">
+                <div class="relative z-10">Asked</div>
+                <div class="-z-10">
+                    <div class="absolute bottom-0 right-0 w-28 h-3 bg-[#FF9500]"></div>
+                </div>
+            </div> Questions</div>
         <div class="w-1/2 mx-auto">
             <ul>
                 <li>
                     <div class="flex justify-between items-center">
-                        <p class="font-bold text-xl pt-3">What's the difference between the part-time and full-time options?
+                        <p class="font-bold text-xl pt-3">What's the difference between the part-time and full-time
+                            options?
                         </p>
                         <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -611,24 +770,44 @@
                     </div>
                     <hr class="border-dashed border-1 my-2 pb-2">
                 </li>
-                <li><div class="flex justify-between items-center">
-                    <p class="font-bold text-xl pt-3">What career services do you offer?</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-                <hr class="border-dashed border-1 my-2 pb-2"></li>
+                <li>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-xl pt-3">What career services do you offer?</p>
+                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <hr class="border-dashed border-1 my-2 pb-2">
+                </li>
             </ul>
         </div>
+    </section> --}}
+
+    <section class="faq mt-20 w-10/12 mx-auto">
+        <div class="flex flex-row justify-center items-center">
+            <div class="mx-10">
+                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_9.png') }}" alt="ilustration 9"
+                    class="object-contain rounded-xl">
+            </div>
+            <div class="mx-10">
+                <p class="font-bold text-4xl text-black">Are you an Enterprise looking for Tech Training or Talent ?
+                </p>
+                <p class="font-medium text-lg text-[#262626] opacity-60">Transform your teams with QarirLabs corporate
+                    training or hire our tech-alumni now.</p>
+                <button class="bg-[#FF9500] px-10 py-4 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact
+                    Our Partnership Team</button>
+            </div>
+        </div>
     </section>
+
     <section class="media mt-20 mb-24">
         <p class="font-black text-4xl text-center">The media that has covered us</p>
         <div class="flex w-1/2 mx-auto justify-center items-end mt-8">
-            <img src="{{Vite::asset('resources/image/icon/net.png')}}" alt="net" class="h-8 mx-8">
-            <img src="{{Vite::asset('resources/image/icon/techinasia.png')}}" alt="net" class="h-8 mx-8">
-            <img src="{{Vite::asset('resources/image/icon/compas.png')}}" alt="net" class="h-8 mx-8">
+            <img src="{{ Vite::asset('resources/image/icon/net.png') }}" alt="net" class="h-8 mx-8">
+            <img src="{{ Vite::asset('resources/image/icon/techinasia.png') }}" alt="net" class="h-8 mx-8">
+            <img src="{{ Vite::asset('resources/image/icon/compas.png') }}" alt="net" class="h-8 mx-8">
         </div>
     </section>
 </x-landing-layout>

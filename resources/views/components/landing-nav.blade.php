@@ -1,33 +1,19 @@
-<div class="static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[42rem] -z-10">
-    <svg class="absolute right-0 h-96 w-96" viewBox="0 0 603 556" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g opacity="0.3" filter="url(#filter0_f_33_301)">
-            <circle cx="427.5" cy="128.5" r="193.5" fill="#FFD770" />
-        </g>
-        <defs>
-            <filter id="filter0_f_33_301" x="0" y="-299" width="855" height="855"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="117" result="effect1_foregroundBlur_33_301" />
-            </filter>
-        </defs>
-    </svg>
-    <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <g opacity="0.3" filter="url(#filter0_f_33_300)">
-            <circle cx="144.5" cy="348.5" r="193.5" fill="#FFD770" />
-        </g>
-        <defs>
-            <filter id="filter0_f_33_300" x="-283" y="-79" width="855" height="855"
-                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                <feGaussianBlur stdDeviation="117" result="effect1_foregroundBlur_33_300" />
-            </filter>
-        </defs>
-    </svg>
-
-
+<div class="static w-full">
+    <div class="relative">
+        <svg class="absolute right-0 h-96 w-96" viewBox="0 0 603 556" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.3" filter="url(#filter0_f_33_301)">
+                <circle cx="427.5" cy="128.5" r="193.5" fill="#FFD770" />
+            </g>
+            <defs>
+                <filter id="filter0_f_33_301" x="0" y="-299" width="855" height="855"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="117" result="effect1_foregroundBlur_33_301" />
+                </filter>
+            </defs>
+        </svg>
+    </div>
     <nav class="bg-transparent w-10/12 mx-auto">
         <div class="mx-auto">
             <div class="relative flex h-16 items-center justify-between">
@@ -59,7 +45,7 @@
                     </button>
                 </div>
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <a href="{{route('landing')}}" class="flex flex-shrink-0 items-center">
+                    <a href="{{ route('landing') }}" class="flex flex-shrink-0 items-center">
                         <svg class="block h-8 w-auto lg:hidden" width="200" height="34" viewBox="0 0 200 34"
                             fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_43_3841)">
@@ -145,7 +131,8 @@
                         <div class="flex space-x-4">
                             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                             <div class="relative">
-                                <div class="flex flex-row items-center cursor-pointer" onclick="toggleProgramMenu()">
+                                <div class="flex flex-row items-center cursor-pointer dropdown-menu"
+                                    onclick="toggleProgramMenu()">
                                     <button class="text-black  px-3 py-2 font-medium">Programs</button>
                                     <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -156,10 +143,11 @@
                                 </div>
                                 <script>
                                     function toggleProgramMenu() {
+                                        closeAll()
                                         document.getElementById('program-menu').classList.toggle("hidden");
                                     }
                                 </script>
-                                <div id="program-menu" class="relative hidden">
+                                <div id="program-menu" class="relative hidden dropdown-menu-child">
                                     <div class="absolute w-full overflow-hidden inline-block -mt-3 pl-6">
                                         <div
                                             class=" h-8 w-8 bg-white rotate-45 transform origin-bottom-left ring-1 ring-black ring-opacity-5">
@@ -206,7 +194,7 @@
                             </div>
 
                             <div class="relative">
-                                <div class="flex flex-row items-center cursor-pointer"
+                                <div class="flex flex-row items-center cursor-pointer dropdown-menu"
                                     onclick="toggleProgramMenuInternational()">
                                     <button class="text-black  px-3 py-2 font-medium">International Programs</button>
                                     <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
@@ -218,10 +206,11 @@
                                 </div>
                                 <script>
                                     function toggleProgramMenuInternational() {
+                                        closeAll()
                                         document.getElementById('program-international').classList.toggle("hidden");
                                     }
                                 </script>
-                                <div id="program-international" class="relative hidden">
+                                <div id="program-international" class="relative hidden dropdown-menu-child">
                                     <div class="absolute w-full overflow-hidden inline-block -mt-3 pl-16">
                                         <div
                                             class=" h-8 w-8 bg-white rotate-45 transform origin-bottom-left ring-1 ring-black ring-opacity-5">
@@ -350,10 +339,11 @@
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <a href="#" class="text-black  px-3 py-2 font-bold mx-2">Login</a>
 
-                    <a href="#" class="text-white px-5 py-2 font-bold rounded-md bg-[#FF9500] mx-2">Join Now</a>
+                    <a href="#" class="text-[#FF9500] px-5 py-2 font-bold rounded-md bg-[#262626] mx-2">Join
+                        Now</a>
                     <div class="text-[#DEDEDE] mx-2 text-xl">|</div>
                     <div class="relative mx-2">
-                        <div class="flex flex-row items-center" onclick="toggleLanguageMenu()">
+                        <div class="flex flex-row items-center dropdown-menu" onclick="toggleLanguageMenu()">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_5_2617)">
@@ -378,13 +368,14 @@
                         </div>
                         <script>
                             function toggleLanguageMenu() {
+                                closeAll();
                                 document.getElementById('language-menu').classList.toggle("hidden");
                             }
                         </script>
                         {{-- <div
                             class="absolute right-1 shadow-sm w-0 h-0 -mt-3 border-l-[20px] border-l-transparent border-b-[20px] border-b-white border-r-[20px] border-r-transparent ">
                         </div> --}}
-                        <div id="language-menu" class="relative hidden">
+                        <div id="language-menu" class="relative hidden dropdown-menu-child">
                             <div class="absolute w-full overflow-hidden inline-block -mt-3 pl-10">
                                 <div
                                     class=" h-8 w-8 bg-white rotate-45 transform origin-bottom-left ring-1 ring-black ring-opacity-5">
@@ -504,3 +495,27 @@
         </div>
     </nav>
 </div>
+
+<script>
+    window.addEventListener('click', function(e) {
+        const target = event.target;
+        const parent = target.parentNode;
+        if (!parent.classList.contains('dropdown-menu')) {
+            closeAll();
+        }
+    })
+    function closeAll() {
+        const child = document.querySelectorAll('.dropdown-menu-child')
+        child.forEach(element => {
+            if (!element.classList.contains('hidden')) {
+                element.classList.toggle("hidden");
+            }
+        });
+        // Array.from(document.getElementsByClassName('dropdown-menu-child')).forEach((button) => {
+        //     button.addEventListener('click', (e) => {
+        //         e.preventDefault();
+        //         console.log(e.target);
+        //     });
+        // });
+    }
+</script>
