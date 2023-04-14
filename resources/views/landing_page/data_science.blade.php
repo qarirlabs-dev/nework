@@ -1,4 +1,59 @@
 <x-landing-layout>
+    @push('scripts')
+        <script>
+            const sideNavMenu = document.querySelectorAll('.side-nav-menu')
+            sideNavMenu.forEach(element => {
+                element.addEventListener('click', function(e) {
+                    const target = event.target;
+                    const parent = target.parentNode;
+                    removeAllSelected();
+                    setTimeout(() => {
+                        const previousElement = target.previousElementSibling;
+                        if (parent.getAttribute('href') == window.location.hash) {
+                            if (target.classList.contains('text-[#A5A5A5]')) {
+                                target.classList.replace("text-[#A5A5A5]", "text-[#FF9500]");
+                            }
+                            if (target.classList.contains('font-medium')) {
+                                target.classList.replace("font-medium","font-bold");
+                            }
+                            if (previousElement.classList.contains('bg-[#A5A5A5]')) {
+                                previousElement.classList.replace("bg-[#A5A5A5]", "bg-[#FF9500]");
+                            }
+                            if (previousElement.classList.contains('w-0.5')) {
+                                previousElement.classList.replace("w-0.5","w-1");
+                            }
+                        }
+                    }, 100);
+
+                })
+            });
+
+            function removeAllSelected() {
+                sideNavMenu.forEach(element => {
+                    Array.from(element.children).forEach(item => {
+                        console.log(item.classList)
+                        if (item.classList.contains('text-[#FF9500]')) {
+                            item.classList.replace("text-[#FF9500]", "text-[#A5A5A5]");
+                        }
+
+                        if (item.classList.contains('font-bold')) {
+                            item.classList.replace("font-bold","font-medium");
+                        }
+                        
+                        
+                        if (item.classList.contains('bg-[#FF9500]')) {
+                            item.classList.replace("bg-[#FF9500]", "bg-[#A5A5A5]");
+                        }
+
+                        if (item.classList.contains('w-1')) {
+                            item.classList.replace("w-1","w-0.5");
+                        }
+                    })
+                })
+                
+            }
+        </script>
+    @endpush
     <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[46rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -14,76 +69,86 @@
                 </filter>
             </defs>
         </svg>
-        <div class="absolute top-28">
+        <div class="absolute w-full top-28">
             <div class="w-10/12 mx-auto mb-20">
                 <div class="flex flex-row justify-between items-center">
-                    <div class="flex-auto w-2/3">
-                        <div class="text-5xl font-black mb-6 mt-16">Data Science Bootcamp <div class="text-[#FF9500]">In
-                                Online</div>
+                    <div class="flex-auto w-6/12">
+                        <div class="text-5xl font-black mb-6 mt-16" data-aos="fade-right" data-aos-duration="3000"
+                            data-aos-delay="300">{{ ucwords($course) }} Bootcamp <div class="text-[#FF9500]">
+                                {{ $detail }}</div>
                         </div>
-                        <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-5/7">Learn and
+                        <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-5/7"
+                            data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">Learn and
                             experience real projects of Data Science and
                             land your dream job within 9 months.</div>
                         <div class="flex flex-wrap">
                             <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]">Online
+                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"
+                                data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Online
                                 - Hybrid </button>
                             <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]">Beginner
+                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
+                                data-aos-duration="3000" data-aos-delay="1200">Beginner
                                 Friendly</button>
                             <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]">120
+                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
+                                data-aos-duration="3000" data-aos-delay="1500">120
                                 limited quota</button>
                         </div>
-                        <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200">
+                        <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="flip-left"
+                            data-aos-duration="3000" data-aos-delay="300">
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
                                 style="width: 67%; background: linear-gradient(151.77deg, #FFB855 18.11%, #FFA220 39.42%, #FFB855 60.73%, #FFB855 82.05%, #FFA220 103.36%, #FFB855 124.67%, #FFA220 145.98%, #FFB855 167.29%);">
-                                <span class="ml-6 font-bold text-xs text-white">67% Class Slot Has Been Filled%</span>
+                                <span class="ml-6 font-bold text-xs text-white">85% Class Slot Has Been Filled%</span>
                             </div>
                         </div>
-                        {{-- <div class="flex flex-row mt-8">
-                            <div class="mx-2">
-                                <div class="mb-6">Our grads get hired by</div>
-                                <div class="flex items-end pt-1">
-                                    <img src="{{ Vite::asset('resources/image/icon/shopee.png') }}" alt="shopee"
-                                        width="87" height="28" class="mx-2">
-                                    <img src="{{ Vite::asset('resources/image/icon/stackearn.png') }}" alt="stackearn"
-                                        width="125.21" height="28" class="mx-2">
-                                    <img src="{{ Vite::asset('resources/image/icon/dentsu.png') }}" alt="dentsu"
-                                        width="127" height="28" class="mx-2">
-                                    <div class="flex mx-2 text-xl items-center font-medium">
-                                        <span class="mr-2">View More</span>
-                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <rect x="0.20755" width="24" height="24" rx="12" fill="white" />
-                                            <g clip-path="url(#clip0_5_2582)">
-                                                <path
-                                                    d="M18.0157 11.5339L13.6821 7.20015C13.5584 7.07645 13.3935 7.00854 13.2177 7.00854C13.0417 7.00854 12.877 7.07654 12.7533 7.20015L12.3598 7.59371C12.2362 7.71722 12.1681 7.8822 12.1681 8.0581C12.1681 8.2339 12.2362 8.40444 12.3598 8.52795L14.888 11.0617H6.85584C6.49369 11.0617 6.20755 11.3452 6.20755 11.7074V12.2638C6.20755 12.6261 6.49369 12.9382 6.85584 12.9382H14.9166L12.3599 15.486C12.2363 15.6097 12.1682 15.7702 12.1682 15.9461C12.1682 16.1218 12.2363 16.2847 12.3599 16.4083L12.7534 16.8006C12.8771 16.9243 13.0418 16.9917 13.2178 16.9917C13.3936 16.9917 13.5585 16.9234 13.6822 16.7997L18.0158 12.4661C18.1398 12.342 18.208 12.1763 18.2076 12.0002C18.2079 11.8235 18.1398 11.6578 18.0157 11.5339Z"
-                                                    fill="#FF9500" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_5_2582">
-                                                    <rect width="12" height="12" fill="white"
-                                                        transform="translate(6.20755 6)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-        
-                                    </div>
-                                </div>
-                            </div>
-                        </div> --}}
                         <div class="flex flex-row mt-8">
-                            <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11">Choose
+                            <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
+                                data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Choose
                                 Destination</button>
                             <button
-                                class="ml-4 text-[#FF9500] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#FF9500]">Download
+                                class="ml-4 text-[#FF9500] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#FF9500]"
+                                data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">Download
                                 Syllabus</button>
                         </div>
                     </div>
-                    <div class="flex-auto w-3/5 -mr-6">
-                        <img src="{{ Vite::asset('resources/image/ilustration/ilustration_3.png') }}"
-                            alt="ilustration 1">
+                    <div class="flex-auto w-4/12">
+                        @if (count($heroImages) == 1 && $slug == 'online')
+                            @foreach ($heroImages as $item)
+                                <img src="{{ Vite::asset($item) }}" alt="ilustration 1" data-aos="zoom-in"
+                                    data-aos-duration="3000" data-aos-delay="300">
+                            @endforeach
+                        @else
+                            <div class="ml-36">
+                                <div class="grid grid-rows-2 grid-flow-col gap-4">
+                                    <div class="row-span-2 relative" data-aos="zoom-in" data-aos-duration="3000"
+                                        data-aos-delay="300">
+                                        <div class="absolute flex w-full h-full justify-center items-center">
+                                            <svg class="" width="44" height="44" viewBox="0 0 44 44"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="22" cy="22" r="22" fill="white" />
+                                                <path
+                                                    d="M17 15.8685C17 15.0698 17.8901 14.5934 18.5547 15.0365L27.5662 21.0442C28.2051 21.4701 28.1455 22.4272 27.4587 22.7706L18.4472 27.2764C17.7823 27.6088 17 27.1253 17 26.382V15.8685Z"
+                                                    fill="#FF9500" />
+                                            </svg>
+                                            <div
+                                                class="absolute flex w-full h-full rounded-xl bg-gradient-to-b from-indigo-800 opacity-50">
+                                            </div>
+                                        </div>
+
+                                        <img src="{{ Vite::asset($heroImages[0]) }}" alt="ilustration 1"
+                                            class=" h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="col-span-1"><img src="{{ Vite::asset($heroImages[1]) }}"
+                                            alt="ilustration 2" class=" object-cover rounded-lg" data-aos="fade-down"
+                                            data-aos-duration="3000" data-aos-delay="300"></div>
+                                    <div class="row-span-1 col-span-1"><img src="{{ Vite::asset($heroImages[2]) }}"
+                                            alt="ilustration 3" class=" object-cover rounded-lg" data-aos="fade-left"
+                                            data-aos-duration="3000" data-aos-delay="300"></div>
+                                </div>
+                            </div>
+                        @endif
+
                     </div>
                 </div>
             </div>
@@ -97,35 +162,35 @@
                     <p class="font-black text-2xl">Course Details Data Science</p>
                 </div>
                 <div class="flex flex-col w-3/6 mx-auto mt-6">
-                    <a href="#overview" class="inline-flex items-center  ml-4">
+                    <a href="#overview" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-1 bg-[#FF9500] mr-4"></div>
                         <span class="text-[#FF9500] font-bold text-lg">Overview</span>
                     </a>
-                    <a href="#learcnphase" class="inline-flex items-center  ml-4">
+                    <a href="#learcnphase" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Learn Phase</span>
                     </a>
-                    <a href="#destination" class="inline-flex items-center  ml-4">
+                    <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Destination</span>
                     </a>
-                    <a href="#alumni" class="inline-flex items-center  ml-4">
+                    <a href="#alumni" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">All Alumni Story</span>
                     </a>
-                    <a href="#partnerships" class="inline-flex items-center  ml-4">
+                    <a href="#partnerships" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Meet Trainers</span>
                     </a>
-                    <a href="#portofolio" class="inline-flex items-center  ml-4">
+                    <a href="#portofolio" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Portofolio Alumni</span>
                     </a>
-                    <a href="#gethired" class="inline-flex items-center  ml-4">
+                    <a href="#gethired" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Get Hired</span>
                     </a>
-                    <a href="#admissions" class="inline-flex items-center  ml-4">
+                    <a href="#admissions" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Admission Process</span>
                     </a>
@@ -136,12 +201,15 @@
         </div>
         <div class="w-8/12">
             <section class="overview w-11/12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="overview">OVERVIEW</p>
-                <p class="font-black text-4xl mb-2">Our Experience</p>
-                <p class="font-normal text-base text-[#262626]">Master Data Science and see the benefits after
+                <p class="font-bold text-base text-[#262626] mb-6" id="overview" data-aos="fade-left"
+                    data-aos-duration="3000" data-aos-delay="300">OVERVIEW</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="600">Our Experience</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="600">Master Data Science and see the benefits after
                     graduation</p>
                 <div class="flex flex-wrap mt-8 justify-between">
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="400">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -182,7 +250,7 @@
                                 curriculum designed by experts</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="600">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +293,7 @@
                                 curriculum (in-person learning experience)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="800">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -244,7 +312,7 @@
                                 Hiring Partners</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -285,7 +353,7 @@
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1200">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -326,7 +394,7 @@
                                 passionate trainers</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1400">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -368,8 +436,10 @@
                         </div>
                     </div>
                 </div>
-                <p class="font-bold text-2xl mt-4 mb-5">Ideal Criteria for Bootcamp Program Participants</p>
-                <div class="bg-white rounded-lg p-4 shadow-sm mb-6 ">
+                <p class="font-bold text-2xl mt-4 mb-5" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="400">Ideal Criteria for Bootcamp Program Participants</p>
+                <div class="bg-white rounded-lg p-4 shadow-sm mb-6 " data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="800">
                     <p class="text-[##262626] opacity-75">Through the Data Science Bootcamp program, we want to open
                         opportunities for anyone to start a career in the digital industry. Therefore, program
                         participants will be more likely to get a job if they have the following ideal criteria:</p>
@@ -382,11 +452,12 @@
                     </ol>
                 </div>
                 <div class="flex flex-row justify-between">
-                    <div class="font-bold text-[#262626] text-2xl w-4/12">Professions that can be obtained after
+                    <div class="font-bold text-[#262626] text-2xl w-4/12" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="400">Professions that can be obtained after
                         graduation</div>
                     <div class="w-7/12">
                         <div class="flex flex-wrap">
-                            <div class="w-1/2">
+                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="400">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -448,7 +519,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2">
+                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="700">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -521,7 +592,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2">
+                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -571,7 +642,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2">
+                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1300">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -627,13 +698,17 @@
             </section>
 
             <section class="curriculum w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="learcnphase">LEARN PHASE</p>
-                <p class="font-black text-4xl mb-2">What You Will Learn in Practice</p>
-                <p class="font-normal text-base text-[#262626]">Each subject will require you to apply what you learn
+                <p class="font-bold text-base text-[#262626] mb-6" id="learcnphase" data-aos="fade-down"
+                    data-aos-duration="3000" data-aos-delay="100">LEARN PHASE</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-right" data-aos-duration="3000"
+                    data-aos-delay="100">What You Will Learn in Practice</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="100">Each subject will require you to apply what you learn
                     by hands-on experience through practical assignments and direct feedback from your instructor. In
                     detail, you will learn:</p>
                 <div class="grid grid-cols-2 mt-11">
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="100">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -672,7 +747,8 @@
                             necessary foundations in Python before the bootcamp starts.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="300">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -712,7 +788,8 @@
                             efficient data analysis. .* (2023 Newest Module)
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="500">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -752,7 +829,8 @@
 
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="700">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -774,7 +852,7 @@
                                     </defs>
                                 </svg>
                                 <div class="font-bold text-xl ml-3">Machine Learning <span
-                                        class="font-normal text-xl">(Module 2)</span></div>
+                                        class="font-normal text-xl">(Module 3)</span></div>
                             </div>
                             <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -791,7 +869,8 @@
 
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="800">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -830,7 +909,8 @@
                             training.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="1000">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -868,7 +948,8 @@
                             data, and share predictions through APIs or websites.* (2023 Newest Module)
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="1200">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -906,7 +987,8 @@
                             your aspirations.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up"
+                        data-aos-duration="3000" data-aos-delay="1400">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -947,15 +1029,19 @@
             </section>
 
             <section class="w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="destination">DESTINATION</p>
-                <p class="font-black text-4xl mb-2">Study Change To Learn</p>
-                <p class="font-normal text-base text-[#262626]">You can choose to learn Data Science according to your
+                <p class="font-bold text-base text-[#262626] mb-6" id="destination" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-delay="100">DESTINATION</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">Study Change To Learn</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">You can choose to learn Data Science according to your
                     choice location</p>
-                <div class="overflow-x-auto flex mt-10">
+                <div class="overflow-x-auto flex mt-10" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="100">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/indonesia_2.png') }}" alt="person 1"
-                                class="rounded-lg w-full h-64">
+                            <img src="{{ Vite::asset('resources/image/ilustration/indonesia_2.png') }}"
+                                alt="person 1" class="rounded-lg w-full h-64">
                             <p class="font-bold text-2xl p-6 text-center mt-6">Online (Bahasa Indonesia)</p>
                         </div>
                     </div>
@@ -968,14 +1054,14 @@
                     </div>
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}" alt="person 1"
-                                class="rounded-lg w-full h-64">
+                            <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
+                                alt="person 1" class="rounded-lg w-full h-64">
                             <p class="font-bold text-2xl p-6 text-center mt-6">South Korea</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-3">
-                    <a href="#">
+                <div class="flex gap-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
+                    <a href="#" data-aos="fade-right">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20"
@@ -993,7 +1079,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="#">
+                    <a href="#" data-aos="fade-left">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#FF9500" />
@@ -1015,11 +1101,15 @@
             </section>
 
             <section class="alumni w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="alumni">All Alumni Story</p>
-                <p class="font-black text-4xl mb-2">What alumni say about QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]">Listen to the stories of alumni of the Data Science
+                <p class="font-bold text-base text-[#262626] mb-6" id="alumni" data-aos="fade-left"
+                    data-aos-duration="3000" data-aos-delay="100">All Alumni Story</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="200">What alumni say about QarirLabs</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="300">Listen to the stories of alumni of the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex">
+                <div class="overflow-x-auto flex" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="400">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
@@ -1154,7 +1244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-3">
+                <div class="flex gap-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
                     <a href="#">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -1195,30 +1285,42 @@
             </section>
 
             <section class="w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="partnerships">PARTNERSHIPS</p>
-                <p class="font-black text-4xl mb-2">Graduates have Worked in</p>
+                <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-right"
+                    data-aos-duration="3000" data-aos-delay="100">PARTNERSHIPS</p>
+                <p class="font-black text-4xl mb-2"data-aos="fade-right" data-aos-duration="3000"
+                    data-aos-delay="300">Graduates have Worked in</p>
                 <div class="mt-8 flex flex-wrap justify-start items-center">
                     <img src="{{ Vite::asset('resources/image/icon/detsu_grey.png') }}" alt="dentsu"
-                        class="h-14 object-cover px-3 pt-5 mt-3">
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="100">
                     <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="tokopedia"
-                        class="h-14 object-cover px-3 pt-5 mt-3">
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="300">
                     <img src="{{ Vite::asset('resources/image/icon/danone.png') }}" alt="danone"
-                        class="h-14 object-cover px-3 pt-5 mt-3">
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="500">
                     <img src="{{ Vite::asset('resources/image/icon/kaskus.png') }}" alt="kaskus"
-                        class="h-9 object-cover px- pt-5 mt-3">
+                        class="h-9 object-cover px- pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="700">
                     <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
-                        class="h-12 object-cover px-3 pt-5 mt-3 ml-5">
-                    <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="telkom_indonesia"
-                        class="h-14 object-cover px-3 pt-5 mt-3">
+                        class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="900">
+                    <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}"
+                        alt="telkom_indonesia" class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up"
+                        data-aos-duration="3000" data-aos-delay="1100">
                 </div>
             </section>
 
             <section class="portofolio w-11/12 mt-12" id="portofolio">
-                <p class="font-bold text-base text-[#262626] mb-6">PORTOFOLIO ALUMNI</p>
-                <p class="font-black text-4xl mb-2">Portfolio Student at Bootcamp QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]">Listen to the stories of alumni of the Data Science
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">PORTOFOLIO ALUMNI</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">Portfolio Student at Bootcamp QarirLabs</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">Listen to the stories of alumni of the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex no-scrollbar">
+                <div class="overflow-x-auto flex" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="300">
                     <div class="flex-none">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
@@ -1239,7 +1341,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex-none">
+                    <div class="flex-none" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="10500">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
@@ -1361,10 +1463,12 @@
             </section>
 
             <section class="overview w-11/12 mt-14">
-                <p class="font-bold text-base text-[#262626] mb-6" id="gethired">GET HIRED</p>
-                <p class="font-black text-4xl mb-2">3-Stage Work Plan</p>
+                <p class="font-bold text-base text-[#262626] mb-6" id="gethired" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-delay="300">GET HIRED</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="300">3-Stage Work Plan</p>
                 <div class="flex flex-wrap mt-8 justify-between">
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
                         <div
                             class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
@@ -1381,7 +1485,7 @@
                                 doing so, you will shine in the job market.</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1300">
                         <div
                             class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
@@ -1399,7 +1503,7 @@
                                 practice interviewing with professional recruiters.</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1600">
                         <div
                             class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
@@ -1452,24 +1556,28 @@
 
             <section class="w-11/12 mt-12">
                 <div class="flex flex-row justify-center items-center" id="admissions">
-                    <div class="w-1/2 mr-16">
+                    <div class="w-1/2 mr-16" data-aos="fade-right" data-aos-duration="3000"
+                        data-aos-delay="500">
                         <p class="font-bold text-base text-[#262626] mb-5">ADMISSIONS</p>
                         <p class="font-bold text-4xl text-black mb-5">Explore About Yourself</p>
-                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-5">Take the free assessment and uncover things you didn’t know about yourself.
+                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-5">Take the free assessment and
+                            uncover things you didn’t know about yourself.
                         </p>
                         <button
-                            class="bg-[#FF9500] px-10 py-4 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Take Assessment Test</button>
+                            class="bg-[#FF9500] px-10 py-4 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Take
+                            Assessment Test</button>
                     </div>
-                    <div class="w-1/2">
+                    <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="700">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
                             alt="ilustration 9" class="object-contain rounded-xl">
                     </div>
-                    
+
                 </div>
             </section>
 
 
-            <section class="ready_join w-11/12 mt-12 mb-10" id="ready_join">
+            <section class="ready_join w-11/12 mt-12 mb-10" id="ready_join" data-aos="fade-up"
+                data-aos-duration="3000" data-aos-delay="500">
                 <div class="relative flex justify-end rounded-xl">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_5.png') }}"
                         alt="ilustration 2" class="h-80 rounded-xl">

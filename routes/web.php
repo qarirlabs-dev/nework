@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,13 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
-})->name('landing');
-
-Route::get('/detail', function () {
-    return view('detail');
-})->name('detail');
+Route::get('/', [LandingPageController::class, 'index'])->name('landing');
+Route::get('/detail/{slug}/{course}', [LandingPageController::class, 'detail'])->name('detail');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

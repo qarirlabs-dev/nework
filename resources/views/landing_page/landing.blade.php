@@ -2,9 +2,9 @@
     @push('scripts')
         <script>
             var selectedProgram = null;
+            const route = "{{ route('detail', ['slug' => ':any1', 'course' => ':any2']) }}";
 
             function toggleModal() {
-                console.log('clicked');
                 document.getElementById('modal-program').classList.toggle("hidden");
             }
 
@@ -14,15 +14,7 @@
             }
 
             function redirectToPage(selectedLocation) {
-                if (selectedLocation == 'online') {
-                    location.href = '{{ route('detail') }}'
-                } else if (selectedLocation == 'indonesia') {
-                    location.href = '{{ route('detail') }}'
-                } else if (selectedLocation == 'istanbul') {
-                    location.href = '{{ route('detail') }}'
-                } else if (selectedLocation == 'south korea') {
-                    location.href = '{{ route('detail') }}'
-                }
+                location.href = route.replaceAll(':any1', selectedLocation).replaceAll(':any2', selectedProgram)
             }
         </script>
     @endpush
@@ -38,14 +30,14 @@
                             <p class="font-black text-xl">Where would you like to learn Data Sciences Bootcamp?</p>
                             <button class="cursor-pointer m-3 mt-1.5" onclick="toggleModal()">
                                 <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
-                                    fill="#838383" />
-                                <path
-                                    d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
-                                    fill="#838383" />
-                            </svg>
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
+                                        fill="#838383" />
+                                    <path
+                                        d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
+                                        fill="#838383" />
+                                </svg>
                             </button>
                         </div>
                         <p class="font-medium text-sm text-[#646464] mt-2">You can choose to learn Data Sciences in over
@@ -100,7 +92,7 @@
         </svg>
         <div class="absolute top-16">
             <div class="flex flex-row justify-between items-center w-10/12 mx-auto">
-                <div class="flex-auto w-2/3">
+                <div class="flex-auto w-2/3" data-aos="fade-right" data-aos-duration="3000">
                     <div class="text-5xl font-black mb-6 mt-24 w-5/6">Create New Success Shortcuts. Land Your New Dream
                         Job.
                     </div>
@@ -112,11 +104,11 @@
                         class="bg-[#FF9500] z-30 px-10 py-2 rounded-md text-white text-lg font-bold">Browse
                         Classess</a>
                 </div>
-                <div class="flex-auto w-1/3 -mr-6">
+                <div class="flex-auto w-1/3 -mr-6" data-aos="fade-up" data-aos-duration="3000">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="flex flex-row mt-8 w-10/12 mx-auto">
+            <div class="flex flex-row w-10/12 mx-auto" data-aos="fade-right" data-aos-duration="3000">
                 <div class="mr-12">
                     <div class="mb-6 font-medium text-xl">Talents</div>
                     <div class="flex items-center">
@@ -172,7 +164,7 @@
     </section>
     <section class="programs hero w-10/12 mx-auto -mt-16" id="classes">
         <div class="flex flex-wrap">
-            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('data science')">
+            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('data science')" data-aos="fade-right" data-aos-duration="3000">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
@@ -195,7 +187,7 @@
                         class="rounded-r-lg">
                 </div>
             </div>
-            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('digital marketing')">
+            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('digital marketing')" data-aos="fade-up" data-aos-duration="3000">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
@@ -217,7 +209,7 @@
                         src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="">
                 </div>
             </div>
-            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('web development')">
+            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('web development')" data-aos="fade-left" data-aos-duration="3000">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
@@ -242,8 +234,8 @@
         </div>
     </section>
     <section class="benerif hero w-10/12 mx-auto mt-16">
-        <div class="flex flex-col justify-center items-center">
-            <div class="static mb-5">
+        <div class="flex flex-col justify-center items-center" data-aos="fade-zoom-in" data-aos-duration="1000">
+            <div class="static mb-5" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="300">
                 <div class="font-black text-4xl z-1">Why choose <div class="inline-block relative">
                         <div class="relative z-10">QarirLabs</div>
                         <div class="-z-10">
@@ -254,7 +246,7 @@
             <p class="font-medium text-lg text-[#262626] opacity-50 w-1/2 text-center">QarirLabs has been proven to
                 produce competent graduates in the industry through the bootcamp program.</p>
             <div class="flex flex-wrap mt-24">
-                <div class="w-1/3 mb-20">
+                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -276,7 +268,7 @@
                             are well experienced experts with senior-director level practitioners.</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20">
+                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -294,7 +286,7 @@
                             startups</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20">
+                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -312,7 +304,7 @@
                             Curriculum</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20">
+                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -329,7 +321,7 @@
                             soft skill class</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20">
+                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -348,7 +340,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20">
+                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -374,50 +366,7 @@
             </div>
         </div>
     </section>
-    {{-- <section class="worked-with mt-20 w-9/12 mx-auto">
-        <div class="flex justify-center items-end">
-            <div class="flex font-bold text-4xl">
-                <img src="{{ Vite::asset('resources/image/icon/logo_horizontal.png') }}" alt="logo"
-                    class="h-9">
-                &nbsp;has worked with <div class="inline-block relative">
-                    <div class="relative z-10">120+</div>
-                    <div class="-z-10">
-                        <div class="absolute bottom-0 right-0 w-20 h-3 bg-[#FF9500]"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="font-bold text-4xl text-center">hiring partners in Indonesia</div>
-        <p class="font-medium text-lg text-[#262626] opacity-60 text-center mt-5">Our alumni have worked in</p>
-        <div class="mt-8 flex flex-wrap justify-center items-center">
-            <img src="{{ Vite::asset('resources/image/icon/detsu_grey.png') }}" alt="dentsu"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="tokopedia"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/danone.png') }}" alt="danone"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/kaskus.png') }}" alt="kaskus"
-                class="h-10 object-cover px- pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
-                class="h-14 object-cover px-3 pt-5 mt-3 ml-5">
-            <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="telkom_indonesia"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/kumpul.png') }}" alt="kumpul"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/shopee_1.png') }}" alt="shopee"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/tiktok_2.png') }}" alt="tiktok"
-                class="h-20 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/rumah_zakat.png') }}" alt="rumah_zakat"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/majo.png') }}" alt="majoo"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-            <img src="{{ Vite::asset('resources/image/icon/kao.png') }}" alt="kao"
-                class="h-14 object-cover px-3 pt-5 mt-3">
-        </div>
-        <p class="font-bold text-2xl text-center text-[#00263D] mt-11">and <span class="text-[#FF9500]">100+</span>
-            Other Hiring Partners</p>
-    </section> --}}
+
     <section class="benefit mt-20">
         <div class="bg-[#00263D] w-full h-[40rem]">
             <div class="absolute w-full h-[40rem]">
@@ -440,23 +389,23 @@
                         fill="#FF9500" />
                 </svg>
             </div>
-            <p class="font-black text-white text-center text-4xl pt-20 pb-6 w-1/2 mx-auto">More than a bootcamp.
+            <p class="font-black text-white text-center text-4xl pt-20 pb-6 w-1/2 mx-auto" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">More than a bootcamp.
                 Get hired at top tech companies.
             </p>
-            <p class="font-medium text-white opacity-60 text-center w-1/2 mx-auto pb-10">QarirLabs helps you land your
+            <p class="font-medium text-white opacity-60 text-center w-1/2 mx-auto pb-10" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500">QarirLabs helps you land your
                 dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
                 Education Field)</p>
-            <div class="flex justify-center items-center w-1/2 mx-auto">
-                <div class="w-1/5 pb-7">
+            <div class="flex justify-center items-start w-1/2 mx-auto">
+                <div class="w-1/5 pb-7" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
                     <p class="text-center font-black text-4xl text-[#FF9500]">1K+</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni</p>
                 </div>
-                <div class="w-1/3 flex flex-col justify-center">
+                <div class="w-1/3 flex flex-col justify-center" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
                     <p class="text-center font-black text-4xl text-[#FF9500]">90%</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni Get a job less
                         than 12 months</p>
                 </div>
-                <div class="w-1/3">
+                <div class="w-1/3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
                     <p class="text-center font-black text-4xl text-[#FF9500]">85%</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Completed rate</p>
                 </div>
@@ -466,7 +415,7 @@
     <section class="alumni -mt-48 w-10/12 mx-auto">
         <p class="font-black text-4xl text-white text-center pb-12">Hear How Our Student Enjoying The Class</p>
         <div class="flex flex-wrap">
-            <div class="w-1/3 px-3">
+            <div class="w-1/3 px-3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
                     <img src="{{ Vite::asset('resources/image/avatar/person_1.png') }}" alt="person 1"
                         class="rounded-lg w-full">
@@ -507,7 +456,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/3 px-3">
+            <div class="w-1/3 px-3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
                     <img src="{{ Vite::asset('resources/image/avatar/person_2.png') }}" alt="person 1"
                         class="rounded-lg w-full">
@@ -548,7 +497,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/3 px-3">
+            <div class="w-1/3 px-3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
                     <img src="{{ Vite::asset('resources/image/avatar/person_3.png') }}" alt="person 1"
                         class="rounded-lg w-full">
@@ -590,18 +539,18 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8">
+        <div class="flex justify-center mt-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
             <button
                 class="text-[#FF9500] font-bold text-lg px-10 py-5 rounded-lg li outline outline-1 outline-[#FF9500]">See
                 More</button>
         </div>
     </section>
     <section class="alumni-say mt-28 w-10/12 mx-auto">
-        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto">What alumni say about<br />QarirLabs</p>
-        <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-2/4 mx-auto mt-5">Our main focus is to
+        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">What alumni say about<br />QarirLabs</p>
+        <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-2/4 mx-auto mt-5" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">Our main focus is to
             provide the best learning experience for students, here are some testimonials from our alumni</p>
         <div class="flex flex-wrap mt-8">
-            <div class="w-1/3 p-3">
+            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
                 <div class="bg-white rounded-lg p-8 shadow-sm">
                     <div class="flex ">
                         <img src="{{ Vite::asset('resources/image/avatar/avatar_1.png') }}" alt="avatar 1"
@@ -616,7 +565,7 @@
                         lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3">
+            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">
                 <div class="bg-white rounded-lg p-8 shadow-sm">
                     <div class="flex ">
                         <img src="{{ Vite::asset('resources/image/avatar/avatar_2.png') }}" alt="avatar 1"
@@ -631,7 +580,7 @@
                         lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3">
+            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">
                 <div class="bg-white rounded-lg p-8 shadow-sm">
                     <div class="flex ">
                         <img src="{{ Vite::asset('resources/image/avatar/avatar_3.png') }}" alt="avatar 1"
@@ -646,7 +595,7 @@
                         lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3">
+            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1200">
                 <div class="bg-white rounded-lg p-8 shadow-sm">
                     <div class="flex ">
                         <img src="{{ Vite::asset('resources/image/avatar/avatar_4.png') }}" alt="avatar 1"
@@ -661,7 +610,7 @@
                         lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3">
+            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1500">
                 <div class="bg-white rounded-lg p-8 shadow-sm">
                     <div class="flex ">
                         <img src="{{ Vite::asset('resources/image/avatar/avatar_5.png') }}" alt="avatar 1"
@@ -676,7 +625,7 @@
                         lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3">
+            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1800">
                 <div class="bg-white rounded-lg p-8 shadow-sm">
                     <div class="flex ">
                         <img src="{{ Vite::asset('resources/image/avatar/avatar_6.png') }}" alt="avatar 1"
@@ -692,7 +641,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8">
+        <div class="flex justify-center mt-8" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
             <button class="text-white font-bold text-lg px-10 py-5 rounded-lg bg-[#FF9500]">Upgrade Skill Now</button>
         </div>
     </section>
@@ -704,8 +653,8 @@
                 style="background: linear-gradient(90.49deg, #00263D 36.68%, rgba(255, 255, 255, 0) 98.95%);"></div>
             <div class="absolute top-0 left-0 h-80 w-full flex justify-start items-center ">
                 <div class="flex flex-col ml-28">
-                    <p class="font-black text-4xl text-white">Ready to be the next <br />digital talent?</p>
-                    <div>
+                    <p class="font-black text-4xl text-white" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Ready to be the next <br />digital talent?</p>
+                    <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">
                         <button
                             class="bg-[#FF9500] px-10 py-2 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact
                             Us
@@ -715,83 +664,14 @@
             </div>
         </div>
     </section>
-    {{-- <section class="faq mt-20">
-        <div class="font-black text-4xl text-center mb-11">Frequently <div class="inline-block relative">
-                <div class="relative z-10">Asked</div>
-                <div class="-z-10">
-                    <div class="absolute bottom-0 right-0 w-28 h-3 bg-[#FF9500]"></div>
-                </div>
-            </div> Questions</div>
-        <div class="w-1/2 mx-auto">
-            <ul>
-                <li>
-                    <div class="flex justify-between items-center">
-                        <p class="font-bold text-xl pt-3">What's the difference between the part-time and full-time
-                            options?
-                        </p>
-                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <hr class="border-dashed border-1 my-2 pb-2">
-                </li>
-                <li>
-                    <div class="flex justify-between items-center">
-                        <p class="font-bold text-xl pt-3">How does the learning process work?</p>
-                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <hr class="border-dashed border-1 my-2 pb-2">
-                </li>
-                <li>
-                    <div class="flex justify-between items-center">
-                        <p class="font-bold text-xl pt-3">Will I get a new job after graduation?</p>
-                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <hr class="border-dashed border-1 my-2 pb-2">
-                </li>
-                <li>
-                    <div class="flex justify-between items-center">
-                        <p class="font-bold text-xl pt-3">What if I don’t get a new job?</p>
-                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <hr class="border-dashed border-1 my-2 pb-2">
-                </li>
-                <li>
-                    <div class="flex justify-between items-center">
-                        <p class="font-bold text-xl pt-3">What career services do you offer?</p>
-                        <svg width="18" height="10" viewBox="0 0 18 10" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 1L9 9L17 1" stroke="#262626" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <hr class="border-dashed border-1 my-2 pb-2">
-                </li>
-            </ul>
-        </div>
-    </section> --}}
 
     <section class="faq mt-20 w-10/12 mx-auto">
         <div class="flex flex-row justify-center items-center">
-            <div class="mx-10">
+            <div class="mx-10" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
                 <img src="{{ Vite::asset('resources/image/ilustration/ilustration_9.png') }}" alt="ilustration 9"
                     class="object-contain rounded-xl">
             </div>
-            <div class="mx-10">
+            <div class="mx-10" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="600">
                 <p class="font-bold text-4xl text-black">Are you an Enterprise looking for Tech Training or Talent ?
                 </p>
                 <p class="font-medium text-lg text-[#262626] opacity-60">Transform your teams with QarirLabs corporate
@@ -802,7 +682,7 @@
         </div>
     </section>
 
-    <section class="media mt-20 mb-24">
+    <section class="media mt-20 mb-24"data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
         <p class="font-black text-4xl text-center">The media that has covered us</p>
         <div class="flex w-1/2 mx-auto justify-center items-end mt-8">
             <img src="{{ Vite::asset('resources/image/icon/net.png') }}" alt="net" class="h-8 mx-8">

@@ -511,11 +511,5 @@
                 element.classList.toggle("hidden");
             }
         });
-        // Array.from(document.getElementsByClassName('dropdown-menu-child')).forEach((button) => {
-        //     button.addEventListener('click', (e) => {
-        //         e.preventDefault();
-        //         console.log(e.target);
-        //     });
-        // });
     }
 </script>
