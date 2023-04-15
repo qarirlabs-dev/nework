@@ -166,9 +166,15 @@
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Learn Phase</span>
                     </a>
+                    @if (count($destinations) > 0)
                     <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Destination</span>
+                    </a>
+                    @endif
+                    <a href="#studylocation" class="inline-flex items-center ml-4 side-nav-menu">
+                        <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
+                        <span class="text-[#A5A5A5] font-medium text-lg">Study Location</span>
                     </a>
                     <a href="#alumni" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
@@ -716,9 +722,72 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="destination" data-aos="fade-up"
+            @if (count($destinations) > 0)
+            <section class="w-11/12 mt-12" id="destination">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-delay="100">DESTINATION</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">Various Choices of Wonderful Destinations</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
+                    data-aos-delay="100">More than 1000+ choices of amazing tourist destinations</p>
+                <div class="overflow-x-auto flex mt-10" data-aos="fade-left" data-aos-duration="3000"
+                    data-aos-delay="100">
+                    @foreach ($destinations as $item)
+                    <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
+                        <div class="relative bg-white rounded-lg shadow-sm w-96">
+                            <img src="{{ Vite::asset($item['image']) }}"
+                                alt="person 1" class="rounded-lg w-full h-64">
+                            <p class="font-bold text-2xl px-6 pt-6 pb-3 text-center">{{$item['title']}}</p>
+                            <p class="font-normal text-sm px-6 text-center line-clamp-2">{{$item['subtitle']}}</p>
+                            <br>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <div class="flex gap-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
+                    <a href="#" data-aos="fade-right">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="40" y="40" width="40" height="40" rx="20"
+                                transform="rotate(180 40 40)" fill="#A7A7A7" />
+                            <g clip-path="url(#clip0_98_514)">
+                                <path
+                                    d="M9.73164 20.3963L17.0974 27.7622C17.3077 27.9725 17.5879 28.0879 17.8868 28.0879C18.1859 28.0879 18.466 27.9723 18.6762 27.7622L19.345 27.0933C19.5551 26.8834 19.6708 26.603 19.6708 26.304C19.6708 26.0052 19.5551 25.7153 19.345 25.5054L15.0479 21.1988L28.7 21.1988C29.3155 21.1988 29.8019 20.7169 29.8019 20.1013L29.8019 19.1556C29.8019 18.5399 29.3155 18.0094 28.7 18.0094L14.9991 18.0094L19.3448 13.6788C19.5549 13.4686 19.6707 13.1958 19.6707 12.8968C19.6707 12.5982 19.5549 12.3214 19.3448 12.1113L18.6761 11.4445C18.4658 11.2343 18.1857 11.1197 17.8866 11.1197C17.5878 11.1197 17.3075 11.2358 17.0973 11.446L9.73148 18.8118C9.52072 19.0228 9.40481 19.3043 9.40564 19.6036C9.40498 19.9039 9.52072 20.1857 9.73164 20.3963Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_98_514">
+                                    <rect width="20.3962" height="20.3962" fill="white"
+                                        transform="translate(29.8019 29.8018) rotate(180)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" data-aos="fade-left">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="20" fill="#0F5B89" />
+                            <g clip-path="url(#clip0_98_519)">
+                                <path
+                                    d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_98_519">
+                                    <rect width="20.3962" height="20.3962" fill="white"
+                                        transform="translate(10.1981 10.1982)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                </div>
+            </section>
+            @endif
+
+            <section class="w-11/12 mt-12">
+                <p class="font-bold text-base text-[#262626] mb-6" id="studylocation" data-aos="fade-up"
+                    data-aos-duration="3000" data-aos-delay="100">STUDY LOCATION</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="100">Study Change To Learn</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
