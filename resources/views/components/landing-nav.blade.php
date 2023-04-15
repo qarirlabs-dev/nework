@@ -1,9 +1,88 @@
 <div class="static w-full">
+    @push('scripts')
+        <script>
+            var selectedProgram = null;
+            const route = "{{ route('detail', ['slug' => ':any1', 'course' => ':any2']) }}";
+
+            function toggleModal() {
+                document.getElementById('modal-program').classList.toggle("hidden");
+            }
+
+            function showModal(program) {
+                selectedProgram = program
+                document.getElementById('course_title').innerHTML = program
+                document.getElementById('course_subtitle').innerHTML = program
+                toggleModal()
+            }
+
+            function redirectToPage(selectedLocation) {
+                location.href = route.replaceAll(':any1', selectedLocation).replaceAll(':any2', selectedProgram)
+            }
+        </script>
+    @endpush
+    <div class="relative z-50 hidden" id="modal-program" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-50 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div class="flex flex-grow flex-row justify-between items-start">
+                            <p class="font-black text-xl">Where would you like to learn <span id="course_title"
+                                    class="capitalize"></span> Bootcamp?</p>
+                            <button class="cursor-pointer m-3 mt-1.5" onclick="toggleModal()">
+                                <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
+                                        fill="#838383" />
+                                    <path
+                                        d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
+                                        fill="#838383" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="font-medium text-sm text-[#646464] mt-2">You can choose to learn <span
+                                id="course_subtitle" class=""></span> in over
+                            3 country ready or online. Find now your learning destination!</p>
+                        <hr class="my-5">
+                        <div class="flex flex-wrap">
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('online')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/online.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Online</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('indonesia')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/indonesia.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Indonesia</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('istanbul')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/istanbul.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Istanbul</p>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('Tokyo')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Tokyo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="relative">
         @php
             $url = request()->url();
             $current = explode('/', $url);
-            $current = $current[count($current)-1];
+            $current = $current[count($current) - 1];
             $current = urldecode($current);
             $color = '#FFD770';
             if ($current == 'data science') {
@@ -167,7 +246,7 @@
                                         role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
                                         tabindex="-1">
                                         <!-- Active: "bg-gray-100", Not Active: "" -->
-                                        <a href="#"
+                                        <a href="#" onclick="showModal('data science')"
                                             class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                             role="menuitem" tabindex="-1" id="user-menu-item-0">
                                             <div class="inline-flex items-center">
@@ -177,18 +256,18 @@
                                                 </p>
                                             </div>
                                         </a>
-                                        <a href="#"
+                                        <a href="#" onclick="showModal('web development')"
                                             class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                             role="menuitem" tabindex="-1" id="user-menu-item-1">
                                             <div class="inline-flex items-center">
                                                 <img src="{{ Vite::asset('resources/image/ilustration/ilustration_7.png') }}"
                                                     alt="ilustration 7" class="w-10 h-10">
 
-                                                <p class="font-bold text-sm text-[#222222] ml-3">Software Engineering
+                                                <p class="font-bold text-sm text-[#222222] ml-3">Web Development
                                                     Bootcamp</p>
                                             </div>
                                         </a>
-                                        <a href="#"
+                                        <a href="#" onclick="showModal('digital marketing')"
                                             class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                             role="menuitem" tabindex="-1" id="user-menu-item-1">
                                             <div class="inline-flex items-center">
@@ -266,7 +345,7 @@
                                                     </svg>
                                                     <p class="font-black text-base ml-4">Istanbul</p>
                                                 </div>
-                                                <a href="#"
+                                                <a href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'data science']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-0">
                                                     <div class="inline-flex items-center">
@@ -276,7 +355,7 @@
                                                             Bootcamp</p>
                                                     </div>
                                                 </a>
-                                                <a href="#"
+                                                <a href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'digital marketing']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-1">
                                                     <div class="inline-flex items-center">
@@ -320,7 +399,7 @@
                                                     </svg>
                                                     <p class="font-black text-base ml-4">Tokyo</p>
                                                 </div>
-                                                <a href="#"
+                                                <a href="{{ route('detail', ['slug' => 'Tokyo', 'course' => 'data science']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-0">
                                                     <div class="inline-flex items-center">
@@ -330,7 +409,7 @@
                                                             Bootcamp</p>
                                                     </div>
                                                 </a>
-                                                <a href="#"
+                                                <a href="{{ route('detail', ['slug' => 'Tokyo', 'course' => 'digital marketing']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-1">
                                                     <div class="inline-flex items-center">
@@ -354,11 +433,13 @@
                     <a href="#" class="text-black  px-3 py-2 font-bold mx-2">Login</a>
 
                     @if ($current == 'data science')
-                    <a href="#" class="text-white px-5 py-2 font-bold rounded-md bg-[#0F5B89] mx-2">JoinNow</a>    
+                        <a href="#"
+                            class="text-white px-5 py-2 font-bold rounded-md bg-[#0F5B89] mx-2">JoinNow</a>
                     @else
-                    <a href="#" class="text-[#FF9500] px-5 py-2 font-bold rounded-md bg-[#262626] mx-2">JoinNow</a>    
+                        <a href="#"
+                            class="text-[#FF9500] px-5 py-2 font-bold rounded-md bg-[#262626] mx-2">JoinNow</a>
                     @endif
-                    
+
                     <div class="text-[#DEDEDE] mx-2 text-xl">|</div>
                     <div class="relative mx-2">
                         <div class="flex flex-row items-center dropdown-menu" onclick="toggleLanguageMenu()">
@@ -522,6 +603,7 @@
             closeAll();
         }
     })
+
     function closeAll() {
         const child = document.querySelectorAll('.dropdown-menu-child')
         child.forEach(element => {

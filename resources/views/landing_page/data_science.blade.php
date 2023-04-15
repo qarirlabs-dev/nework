@@ -14,18 +14,39 @@
                                 target.classList.replace("text-[#A5A5A5]", "text-[#0F5B89]");
                             }
                             if (target.classList.contains('font-medium')) {
-                                target.classList.replace("font-medium","font-bold");
+                                target.classList.replace("font-medium", "font-bold");
                             }
                             if (previousElement.classList.contains('bg-[#A5A5A5]')) {
                                 previousElement.classList.replace("bg-[#A5A5A5]", "bg-[#0F5B89]");
                             }
                             if (previousElement.classList.contains('w-0.5')) {
-                                previousElement.classList.replace("w-0.5","w-1");
+                                previousElement.classList.replace("w-0.5", "w-1");
                             }
                         }
                     }, 100);
 
                 })
+            });
+
+            const collapseMenus = document.querySelectorAll('.collapse-menu')
+            // loop through the selected elements and add a click event listener
+            collapseMenus.forEach(menu => {
+                menu.addEventListener('click', () => {
+                    const content = menu.querySelector('.collapse-menu-detail');
+                    content.classList.toggle('hidden');
+
+                    const rotate = menu.querySelector('.rotate-0');
+                    if (rotate) {
+                        rotate.classList.replace('rotate-0', 'rotate-180')
+                    } else {
+                        const rotateup = menu.querySelector('.rotate-180');
+                        if (rotateup) {
+                            rotateup.classList.replace('rotate-180', 'rotate-0')
+                        }
+                    }
+
+
+                });
             });
 
             function removeAllSelected() {
@@ -37,20 +58,20 @@
                         }
 
                         if (item.classList.contains('font-bold')) {
-                            item.classList.replace("font-bold","font-medium");
+                            item.classList.replace("font-bold", "font-medium");
                         }
-                        
-                        
+
+
                         if (item.classList.contains('bg-[#0F5B89]')) {
                             item.classList.replace("bg-[#0F5B89]", "bg-[#A5A5A5]");
                         }
 
                         if (item.classList.contains('w-1')) {
-                            item.classList.replace("w-1","w-0.5");
+                            item.classList.replace("w-1", "w-0.5");
                         }
                     })
                 })
-                
+
             }
         </script>
     @endpush
@@ -73,56 +94,56 @@
             <div class="w-10/12 mx-auto mb-20">
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex-auto w-6/12">
-                        <div class="text-5xl font-black mb-6 mt-16" data-aos="fade-right" data-aos-duration="3000"
-                            data-aos-delay="300">{{ ucwords($course) }} Bootcamp <div class="text-[#0F5B89]">
+                        <div class="text-5xl font-black mb-6 mt-16" data-aos="fade-up"
+                            >{{ ucwords($course) }} Bootcamp <div class="text-[#0F5B89]">
                                 {{ $detail }}</div>
                         </div>
                         <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-5/7"
-                            data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">Learn and
+                            data-aos="fade-up">Learn and
                             experience real projects of Data Science and
                             land your dream job within 9 months.</div>
                         <div class="flex flex-wrap">
                             <button
                                 class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"
-                                data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Online
+                                data-aos="fade-up">Online
                                 - Hybrid </button>
                             <button
-                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"data-aos="fade-right"
-                                data-aos-duration="3000" data-aos-delay="1200">Beginner
+                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"data-aos="fade-up"
+                                >Beginner
                                 Friendly</button>
                             <button
-                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"data-aos="fade-right"
-                                data-aos-duration="3000" data-aos-delay="1500">120
+                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"data-aos="fade-up"
+                                >120
                                 limited quota</button>
                         </div>
-                        <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="flip-left"
-                            data-aos-duration="3000" data-aos-delay="300">
+                        <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up"
+                            >
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center bg-[#0F5B89]"
                                 style="width: 87%;">
-                                <span class="ml-6 font-bold text-xs text-white">87% seat has been filled                                </span>
+                                <span class="ml-6 font-bold text-xs text-white">87% seat has been filled </span>
                             </div>
                         </div>
                         <div class="flex flex-row mt-8">
                             <button class="bg-[#0F5B89] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
-                                data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Choose
+                                data-aos="fade-up" >Choose
                                 Destination</button>
                             <button
                                 class="ml-4 text-[#0F5B89] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#0F5B89]"
-                                data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">Download
+                                data-aos="fade-up" >Download
                                 Syllabus</button>
                         </div>
                     </div>
                     <div class="flex-auto w-4/12">
                         @if (count($heroImages) == 1 && $slug == 'online')
                             @foreach ($heroImages as $item)
-                                <img src="{{ Vite::asset($item) }}" alt="ilustration 1" data-aos="zoom-in"
-                                    data-aos-duration="3000" data-aos-delay="300">
+                                <img src="{{ Vite::asset($item) }}" alt="ilustration 1" data-aos="fade-up"
+                                    >
                             @endforeach
                         @else
                             <div class="ml-36">
                                 <div class="grid grid-rows-2 grid-flow-col gap-4">
-                                    <div class="row-span-2 relative" data-aos="zoom-in" data-aos-duration="3000"
-                                        data-aos-delay="300">
+                                    <div class="row-span-2 relative" data-aos="fade-up"
+                                        >
                                         <div class="absolute flex w-full h-full justify-center items-center">
                                             <svg class="" width="44" height="44" viewBox="0 0 44 44"
                                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -140,11 +161,11 @@
                                             class=" h-full object-cover rounded-lg">
                                     </div>
                                     <div class="col-span-1"><img src="{{ Vite::asset($heroImages[1]) }}"
-                                            alt="ilustration 2" class=" object-cover rounded-lg" data-aos="fade-down"
-                                            data-aos-duration="3000" data-aos-delay="300"></div>
+                                            alt="ilustration 2" class=" object-cover rounded-lg" data-aos="fade-up"
+                                            ></div>
                                     <div class="row-span-1 col-span-1"><img src="{{ Vite::asset($heroImages[2]) }}"
-                                            alt="ilustration 3" class=" object-cover rounded-lg" data-aos="fade-left"
-                                            data-aos-duration="3000" data-aos-delay="300"></div>
+                                            alt="ilustration 3" class=" object-cover rounded-lg" data-aos="fade-up"
+                                            ></div>
                                 </div>
                             </div>
                         @endif
@@ -155,7 +176,7 @@
         </div>
     </section>
 
-    <div class="flex flex-row my-10">
+    <div class="flex flex-row my-10" data-aos="fade-up">
         <div class="w-4/12 relative">
             <div class="sticky top-10">
                 <div class="w-52 mx-auto">
@@ -171,10 +192,10 @@
                         <span class="text-[#A5A5A5] font-medium text-lg">Learn Phase</span>
                     </a>
                     @if (count($destinations) > 0)
-                    <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
-                        <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Destination</span>
-                    </a>
+                        <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
+                            <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
+                            <span class="text-[#A5A5A5] font-medium text-lg">Destination</span>
+                        </a>
                     @endif
                     <a href="#studylocation" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
@@ -199,15 +220,136 @@
         </div>
         <div class="w-8/12">
             <section class="overview w-11/12" id="overview">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-left"
-                    data-aos-duration="3000" data-aos-delay="300">OVERVIEW</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="600">WHY JOIN US?</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="600">Master Data Science and see the benefits after
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
+                    >OVERVIEW</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                   >Why you should study in Istanbul?</p>
+                <div class="flex flex-col mt-8">
+                    <div class="bg-white rounded-xl p-6 shadow-sm my-3"  data-aos="fade-up">
+                        <div class="flex flex-row">
+                            <div class="w-12 h-12 ">
+                                <svg class="w-12 h-12" width="48" height="48" viewBox="0 0 48 48"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M41.7564 40.042H6.00049V43H41.7564V40.042Z"
+                                        fill="url(#paint0_linear_268_866)" />
+                                    <path d="M39.809 34.8574H7.94727V37.8155H39.809V34.8574Z"
+                                        fill="url(#paint1_linear_268_866)" />
+                                    <path d="M23.878 5L6 13.6159V15.8997H41.756V13.6159L23.878 5Z"
+                                        fill="url(#paint2_linear_268_866)" />
+                                    <path
+                                        d="M7.50439 18.1265V20.8736H10.3366V32.631H16.0538V20.8736H21.0193V32.631H26.7364V20.8736H31.7019V32.631H37.4191V20.8736H40.2513V18.1265H7.50439Z"
+                                        fill="url(#paint3_linear_268_866)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_268_866" x1="6.00049" y1="40.042"
+                                            x2="6.48659" y2="45.9179" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_268_866" x1="7.94727" y1="34.8574"
+                                            x2="8.49182" y2="40.723" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_268_866" x1="6" y1="5"
+                                            x2="12.0802" y2="24.9459" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint3_linear_268_866" x1="7.50439" y1="18.1265"
+                                            x2="18.2459" y2="42.3777" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <p class="ml-6 font-medium text-xl text-[#262626] opacity-80">Our Bootcamp Istanbul Class
+                                is near to beautiful historic building with an outdoor courtyard for relaxing between
+                                classes</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm my-3"  data-aos="fade-up">
+                        <div class="flex flex-row">
+                            <div class="w-12 h-12 ">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.9999 2.25C19.7962 2.27657 15.7753 3.97196 12.8216 6.96321C9.86787 9.95446 8.22341 13.9965 8.24995 18.2003C8.24995 31.9747 23.9999 45.75 23.9999 45.75C23.9999 45.75 39.75 31.9747 39.75 18.2003C39.7765 13.9965 38.132 9.95446 35.1783 6.96321C32.2246 3.97196 28.2037 2.27657 23.9999 2.25ZM23.9999 31.5C21.3299 31.5 18.7198 30.7082 16.4998 29.2248C14.2797 27.7414 12.5494 25.633 11.5276 23.1662C10.5058 20.6994 10.2384 17.985 10.7593 15.3663C11.2802 12.7475 12.566 10.3421 14.454 8.45406C16.342 6.56605 18.7475 5.2803 21.3662 4.7594C23.985 4.2385 26.6994 4.50584 29.1662 5.52763C31.633 6.54941 33.7414 8.27974 35.2248 10.4998C36.7082 12.7199 37.5 15.33 37.5 18C37.4958 21.5791 36.0721 25.0105 33.5413 27.5413C31.0105 30.0722 27.5791 31.4958 23.9999 31.5Z"
+                                        fill="url(#paint0_linear_268_881)" />
+                                    <path d="M27 15.75H30V22.5H27V15.75Z" fill="url(#paint1_linear_268_881)" />
+                                    <path d="M22.5 15.75H25.5V22.5H22.5V15.75Z" fill="url(#paint2_linear_268_881)" />
+                                    <path
+                                        d="M24 6C21.6266 6 19.3066 6.70379 17.3332 8.02236C15.3598 9.34094 13.8217 11.2151 12.9135 13.4078C12.0052 15.6005 11.7676 18.0133 12.2306 20.3411C12.6936 22.6689 13.8365 24.8071 15.5147 26.4853C17.193 28.1635 19.3311 29.3064 21.6589 29.7694C23.9867 30.2324 26.3995 29.9948 28.5922 29.0866C30.7849 28.1783 32.6591 26.6402 33.9776 24.6668C35.2962 22.6935 36 20.3734 36 18C35.9962 14.8186 34.7307 11.7685 32.4811 9.51888C30.2315 7.26926 27.1814 6.00377 24 6ZM33 24H15V22.5H16.5V15.75H14.25L24 9L33.75 15.75H31.5V22.5H33V24Z"
+                                        fill="url(#paint3_linear_268_881)" />
+                                    <path d="M18 15.75H21V22.5H18V15.75Z" fill="url(#paint4_linear_268_881)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_268_881" x1="8.24963" y1="2.25"
+                                            x2="49.5783" y2="32.1782" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_268_881" x1="27" y1="15.75"
+                                            x2="32.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint2_linear_268_881" x1="22.5" y1="15.75"
+                                            x2="27.5103" y2="17.9768" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint3_linear_268_881" x1="12" y1="6"
+                                            x2="36" y2="30" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                        <linearGradient id="paint4_linear_268_881" x1="18" y1="15.75"
+                                            x2="23.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+
+                            <p class="ml-6 font-medium text-xl text-[#262626] opacity-80">Istanbul truly lives up to
+                                its nickname: City of the World's Desire. Enjoy the wonders of Turkiye which include
+                                more than 300+ fascinating museums with great story, 100+ great destination for
+                                experiencing the miracle of Eurasian nature and stunning view , and an endless variety
+                                of world-class food</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-sm my-3"  data-aos="fade-up">
+                        <div class="flex flex-row">
+                            <div class="w-12 h-12 ">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 2C19.6488 2 15.3953 3.29028 11.7775 5.70767C8.15958 8.12506 5.33979 11.561 3.67466 15.581C2.00953 19.6009 1.57386 24.0244 2.42273 28.292C3.27161 32.5596 5.36691 36.4796 8.44366 39.5564C11.5204 42.6331 15.4404 44.7284 19.708 45.5773C23.9756 46.4261 28.3991 45.9905 32.419 44.3253C36.439 42.6602 39.875 39.8404 42.2923 36.2225C44.7097 32.6047 46 28.3512 46 24C46 18.1652 43.6822 12.5695 39.5564 8.44365C35.4306 4.31785 29.8348 2 24 2ZM15.057 6.13L16.25 6.958C16.5139 7.14184 16.7277 7.38863 16.872 7.676L17.172 8.276C17.3311 8.59488 17.576 8.86309 17.8791 9.0505C18.1823 9.23792 18.5316 9.33714 18.888 9.337H21.021C21.53 9.337 22.0181 9.53918 22.3779 9.89906C22.7378 10.2589 22.94 10.747 22.94 11.256V11.294C22.9403 11.6504 22.8411 11.9998 22.6537 12.303C22.4662 12.6061 22.198 12.851 21.879 13.01L16.762 15.57C16.6904 15.6049 16.6212 15.6447 16.555 15.689L13.936 17.435C13.658 17.6207 13.433 17.8753 13.283 18.174L12.894 18.956C12.7596 19.2218 12.6895 19.5156 12.6895 19.8135C12.6895 20.1114 12.7596 20.4052 12.894 20.671C13.0738 21.0316 13.1357 21.4395 13.071 21.8372C13.0062 22.2349 12.818 22.6021 12.533 22.887L12.476 22.945C12.1734 23.2476 11.7783 23.4404 11.3536 23.4925C10.9288 23.5447 10.4988 23.4534 10.132 23.233L6.78501 21.223C6.3924 20.987 6.09699 20.6185 5.95201 20.184L5.12901 17.714C5.09101 17.714 5.06401 17.702 5.02901 17.701C6.70747 12.6682 10.3139 8.50683 15.057 6.13ZM26.081 31.123C26.0812 31.262 26.0589 31.4001 26.015 31.532L25.13 34.186C25.0669 34.3767 24.96 34.5499 24.818 34.692L23.218 36.292C23.0369 36.4727 22.9137 36.7031 22.864 36.954L22.017 41.186C21.9778 41.3787 21.8952 41.5599 21.7755 41.7158C21.6558 41.8718 21.502 41.9984 21.326 42.086L20.632 42.434C20.3887 42.5548 20.1136 42.5963 19.8455 42.5527C19.5773 42.5091 19.3296 42.3826 19.137 42.191L17.851 40.905C17.7527 40.8062 17.6707 40.6924 17.608 40.568L16.791 38.934C16.7018 38.754 16.6552 38.5559 16.655 38.355V34.229C16.6546 33.9885 16.5874 33.7528 16.461 33.5482C16.3346 33.3436 16.1539 33.178 15.939 33.07L14.867 32.535C14.6647 32.4346 14.4923 32.2829 14.367 32.095L12.68 29.564C12.538 29.3515 12.4621 29.1016 12.462 28.846V27.946C12.4626 27.7057 12.5299 27.4702 12.6563 27.2658C12.7827 27.0613 12.9633 26.896 13.178 26.788L14.171 26.288C14.4219 26.1631 14.6251 25.9598 14.75 25.709L15.25 24.716C15.3577 24.5017 15.5227 24.3214 15.7265 24.1951C15.9303 24.0687 16.1652 24.0012 16.405 24H18.211C18.3811 23.9999 18.5496 24.0333 18.7067 24.0983C18.8639 24.1633 19.0067 24.2587 19.127 24.379L19.416 24.668C19.6591 24.9107 19.9885 25.0473 20.332 25.048H20.6C20.9439 25.0493 21.2733 25.1869 21.516 25.4305C21.7587 25.6742 21.895 26.0041 21.895 26.348C21.8956 26.5882 21.9627 26.8236 22.0889 27.028C22.2151 27.2325 22.3955 27.3979 22.61 27.506L25.37 28.885C25.5847 28.9932 25.7652 29.1588 25.8914 29.3634C26.0176 29.568 26.0847 29.8036 26.085 30.044L26.081 31.123ZM31.351 12.114C31.4402 11.898 31.5711 11.7016 31.736 11.536L33.527 9.746C33.662 9.61116 33.8176 9.49874 33.988 9.413L35.868 8.473C36.0322 8.39466 36.2077 8.34236 36.388 8.318C38.5475 10.0205 40.3338 12.1489 41.636 14.571H40.752C40.2807 14.571 39.8286 14.384 39.495 14.051L39.279 13.835C38.9455 13.5017 38.4935 13.3143 38.022 13.314H36.664C36.3863 13.3132 36.1123 13.3776 35.864 13.502L34.102 14.384C33.8536 14.508 33.5796 14.572 33.302 14.571H32.985C32.6929 14.5708 32.4052 14.4986 32.1476 14.3608C31.89 14.223 31.6703 14.0238 31.508 13.7809C31.3456 13.538 31.2457 13.2588 31.2169 12.9681C31.1881 12.6774 31.2314 12.384 31.343 12.114H31.351ZM38.89 37.319L38.76 37C38.6891 36.7861 38.653 36.5623 38.653 36.337V34.028C38.6529 33.7028 38.5772 33.382 38.432 33.091L36.778 29.785C36.6328 29.494 36.5571 29.1732 36.557 28.848V28.542C36.557 28.185 36.4657 27.8339 36.2919 27.5221C36.118 27.2103 35.8674 26.9481 35.5637 26.7604C35.2601 26.5726 34.9135 26.4656 34.5569 26.4494C34.2002 26.4333 33.8454 26.5085 33.526 26.668L32.809 27.027C32.5183 27.1721 32.1979 27.2477 31.873 27.248H31.782C31.3422 27.2472 30.9138 27.1084 30.5571 26.8512C30.2004 26.5939 29.9335 26.2311 29.794 25.814L29.332 24.427C29.2607 24.2132 29.2242 23.9894 29.224 23.764V22.083C29.224 21.7381 29.3091 21.3985 29.4719 21.0945C29.6346 20.7904 29.87 20.5312 30.157 20.34L32.065 19.068C32.2647 18.9347 32.486 18.837 32.719 18.779L35.965 17.967C36.352 17.8704 36.7585 17.886 37.137 18.012L39.377 18.759C39.5911 18.8303 39.8153 18.8668 40.041 18.867H43.31C44.1779 22.0667 44.228 25.4332 43.4557 28.6573C42.6834 31.8814 41.1134 34.8598 38.89 37.319Z"
+                                        fill="url(#paint0_linear_268_890)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_268_890" x1="2" y1="2"
+                                            x2="46" y2="46" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+
+                            <p class="ml-6 font-medium text-xl text-[#262626] opacity-80">Offers a rich social program,
+                                including organized daily trips around Istanbul European Side & Asian Side</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="font-black text-4xl mb-2 mt-6" data-aos="fade-up"
+                   >WHY JOIN US?</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up"
+                   >Master Data Science and see the benefits after
                     graduation</p>
                 <div class="flex flex-wrap mt-8 justify-between">
-                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="400">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -248,7 +390,7 @@
                                 curriculum designed by experts</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="600">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -291,7 +433,7 @@
                                 curriculum (in-person learning experience)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="800">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -310,7 +452,7 @@
                                 Hiring Partners</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -351,7 +493,7 @@
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1200">
+                    <div class="w-1/3 mb-8" data-aos="fade-up" >
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -392,7 +534,7 @@
                                 passionate trainers</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1400">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -434,10 +576,10 @@
                         </div>
                     </div>
                 </div>
-                <p class="font-bold text-2xl mt-4 mb-5" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="400">Ideal Criteria for Bootcamp Program Participants</p>
-                <div class="bg-white rounded-lg p-4 shadow-sm mb-6 " data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="800">
+                <p class="font-bold text-2xl mt-4 mb-5" data-aos="fade-up"
+                   >Ideal Criteria for Bootcamp Program Participants</p>
+                <div class="bg-white rounded-lg p-4 shadow-sm mb-6 " data-aos="fade-up"
+                   >
                     <p class="text-[##262626] opacity-75">Through the Data Science Bootcamp program, we want to open
                         opportunities for anyone to start a career in the digital industry. Therefore, program
                         participants will be more likely to get a job if they have the following ideal criteria:</p>
@@ -450,12 +592,12 @@
                     </ol>
                 </div>
                 <div class="flex flex-row justify-between">
-                    <div class="font-bold text-[#262626] text-2xl w-4/12" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="400">Professions that can be obtained after
+                    <div class="font-bold text-[#262626] text-2xl w-4/12" data-aos="fade-up"
+                       >Professions that can be obtained after
                         graduation</div>
                     <div class="w-7/12">
                         <div class="flex flex-wrap">
-                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="400">
+                            <div class="w-1/2" data-aos="fade-up">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -517,7 +659,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="700">
+                            <div class="w-1/2" data-aos="fade-up">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -590,7 +732,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1000">
+                            <div class="w-1/2" data-aos="fade-up">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -640,7 +782,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1300">
+                            <div class="w-1/2" data-aos="fade-up">
                                 <div class="bg-white rounded-lg p-4 shadow-sm m-2">
                                     <div class="flex flex-row items-center justify-start">
                                         <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
@@ -696,18 +838,18 @@
             </section>
 
             <section class="curriculum w-11/12 mt-12" id="learcnphase">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-down"
-                    data-aos-duration="3000" data-aos-delay="100">LEARN PHASE</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-right" data-aos-duration="3000"
-                    data-aos-delay="100">What You Will Learn in Practice</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="100">Each subject will require you to apply what you learn
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
+                    >LEARN PHASE</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                    >What You Will Learn in Practice</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up"
+                    >Each subject will require you to apply what you learn
                     by hands-on experience through practical assignments and direct feedback from your instructor. In
                     detail, you will learn:</p>
                 <div class="grid grid-cols-2 mt-11">
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="100">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                        >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -729,15 +871,15 @@
                                 </svg>
                                 <span class="font-bold text-xl ml-3">Preparation</span>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
                                     fill="black" />
                             </svg>
                         </div>
-
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Qarirlabs provides career preparation, Once you’ve been accepted, you'll get the fixed
                             schedule of career mapping & soft skill class with our passionate trainers. You also will
                             receive about 10-20 hours of online learning resources, carefully curated by QarirLabs
@@ -745,9 +887,9 @@
                             necessary foundations in Python before the bootcamp starts.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="300">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                        >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -770,7 +912,7 @@
                                 <div class="font-bold text-xl ml-3">Data Analysis <span
                                         class="font-normal text-xl">(Module 1)</span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -778,7 +920,8 @@
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Master the use of Python programming language, particularly for data science applications,
                             which entails proficiency in extracting data from relational databases, handling extensive
                             data sets, and generating data visualizations. Furthermore, attain a thorough comprehension
@@ -786,9 +929,9 @@
                             efficient data analysis. .* (2023 Newest Module)
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="500">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                        >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -811,7 +954,7 @@
                                 <div class="font-bold text-xl ml-3">Decision Science <span
                                         class="font-normal text-xl">(Module 2)</span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -819,7 +962,8 @@
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Imagine being a data consultant and mastering the art of navigating through the data
                             preparation phase of a massive dataset. Utilize your skills in interpreting statistical
                             results derived from various tools such as multivariate regression models, hypothesis
@@ -827,9 +971,9 @@
 
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="700">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class=" mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                       >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -852,24 +996,25 @@
                                 <div class="font-bold text-xl ml-3">Machine Learning <span
                                         class="font-normal text-xl">(Module 3)</span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
                                     fill="black" />
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Execute the Machine Learning, which involves performing data preparation, feature
                             engineering, model selection, evaluation, and fine-tuning. Develop a comprehension of the
                             mathematical principles and numerical implementations of Machine Learning models.
 
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="800">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class=" mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                       >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -892,24 +1037,25 @@
                                 <div class="font-bold text-xl ml-3">Deep Learning <span
                                         class="font-normal text-xl">(Module 4)</span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
                                     fill="black" />
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Uncover the secrets of Deep Learning! Learn about neural network structure and components,
                             create your own networks for processing images, sequences, and text, apply pre-trained
                             models through transfer learning, and practice with auto-encoders, batch processing, and GPU
                             training.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="1000">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class=" mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                       >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -932,23 +1078,24 @@
                                 <div class="font-bold text-xl ml-3">Machine Learning Engineering <span
                                         class="font-normal text-xl">(Module 5)</span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
                                     fill="black" />
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Convert your superior handmade models into a Python package for cloud-based replication and
                             training with virtual machines and online databases. Monitor and update performance with new
                             data, and share predictions through APIs or websites.* (2023 Newest Module)
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="1200">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class=" mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                        >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -971,23 +1118,24 @@
                                 <div class="font-bold text-xl ml-3">Project Weeks <span
                                         class="font-normal text-xl">(Module 6)</span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
                                     fill="black" />
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Join or propose a genuine data science project with 3-4 team members. Use public data
                             sources or your own private dataset. Get full-time mentoring from expert teachers to achieve
                             your aspirations.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up"
-                        data-aos-duration="3000" data-aos-delay="1400">
-                        <div class="flex flex-row justify-between items-center p-5">
+                    <div class=" mr-4 mb-4 collapse-menu" data-aos="fade-up"
+                       >
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1010,15 +1158,16 @@
                                 <div class="font-bold text-xl ml-3">Career Weeks <span
                                         class="font-normal text-xl"></span></div>
                             </div>
-                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
                                     fill="black" />
                             </svg>
                         </div>
 
-                        <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                        <div
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Enhance your job search skills by meeting data science professionals employed in startups or
                             leading tech companies, practicing mock interviews, and refining your CV.
                         </div>
@@ -1027,77 +1176,78 @@
             </section>
 
             @if (count($destinations) > 0)
-            <section class="w-11/12 mt-12" id="destination">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
-                    data-aos-duration="3000" data-aos-delay="100">DESTINATION</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">Various Choices of Wonderful Destinations</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">More than 1000+ choices of amazing tourist destinations</p>
-                <div class="overflow-x-auto flex mt-10" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="100">
-                    @foreach ($destinations as $item)
-                    <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
-                        <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset($item['image']) }}"
-                                alt="person 1" class="rounded-lg w-full h-64">
-                            <p class="font-bold text-2xl px-6 pt-6 pb-3 text-center">{{$item['title']}}</p>
-                            <p class="font-normal text-sm px-6 text-center line-clamp-2">{{$item['subtitle']}}</p>
-                            <br>
-                        </div>
+                <section class="w-11/12 mt-12" id="destination">
+                    <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
+                        >DESTINATION</p>
+                    <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                        >Various Choices of Wonderful Destinations</p>
+                    <p class="font-normal text-base text-[#262626]" data-aos="fade-up"
+                        >More than 1000+ choices of amazing tourist destinations</p>
+                    <div class="overflow-x-auto flex mt-10" data-aos="fade-up"
+                        >
+                        @foreach ($destinations as $item)
+                            <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
+                                <div class="relative bg-white rounded-lg shadow-sm w-96">
+                                    <img src="{{ Vite::asset($item['image']) }}" alt="person 1"
+                                        class="rounded-lg w-full h-64">
+                                    <p class="font-bold text-2xl px-6 pt-6 pb-3 text-center">{{ $item['title'] }}</p>
+                                    <p class="font-normal text-sm px-6 text-center line-clamp-2">
+                                        {{ $item['subtitle'] }}</p>
+                                    <br>
+                                </div>
+                            </div>
+                        @endforeach
                     </div>
-                    @endforeach
-                </div>
-                <div class="flex gap-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
-                    <a href="#" data-aos="fade-right">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="40" y="40" width="40" height="40" rx="20"
-                                transform="rotate(180 40 40)" fill="#A7A7A7" />
-                            <g clip-path="url(#clip0_98_514)">
-                                <path
-                                    d="M9.73164 20.3963L17.0974 27.7622C17.3077 27.9725 17.5879 28.0879 17.8868 28.0879C18.1859 28.0879 18.466 27.9723 18.6762 27.7622L19.345 27.0933C19.5551 26.8834 19.6708 26.603 19.6708 26.304C19.6708 26.0052 19.5551 25.7153 19.345 25.5054L15.0479 21.1988L28.7 21.1988C29.3155 21.1988 29.8019 20.7169 29.8019 20.1013L29.8019 19.1556C29.8019 18.5399 29.3155 18.0094 28.7 18.0094L14.9991 18.0094L19.3448 13.6788C19.5549 13.4686 19.6707 13.1958 19.6707 12.8968C19.6707 12.5982 19.5549 12.3214 19.3448 12.1113L18.6761 11.4445C18.4658 11.2343 18.1857 11.1197 17.8866 11.1197C17.5878 11.1197 17.3075 11.2358 17.0973 11.446L9.73148 18.8118C9.52072 19.0228 9.40481 19.3043 9.40564 19.6036C9.40498 19.9039 9.52072 20.1857 9.73164 20.3963Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_98_514">
-                                    <rect width="20.3962" height="20.3962" fill="white"
-                                        transform="translate(29.8019 29.8018) rotate(180)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a href="#" data-aos="fade-left">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#0F5B89" />
-                            <g clip-path="url(#clip0_98_519)">
-                                <path
-                                    d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_98_519">
-                                    <rect width="20.3962" height="20.3962" fill="white"
-                                        transform="translate(10.1981 10.1982)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                    <div class="flex gap-3" data-aos="fade-up" >
+                        <a href="#" data-aos="fade-up">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="40" y="40" width="40" height="40"
+                                    rx="20" transform="rotate(180 40 40)" fill="#A7A7A7" />
+                                <g clip-path="url(#clip0_98_514)">
+                                    <path
+                                        d="M9.73164 20.3963L17.0974 27.7622C17.3077 27.9725 17.5879 28.0879 17.8868 28.0879C18.1859 28.0879 18.466 27.9723 18.6762 27.7622L19.345 27.0933C19.5551 26.8834 19.6708 26.603 19.6708 26.304C19.6708 26.0052 19.5551 25.7153 19.345 25.5054L15.0479 21.1988L28.7 21.1988C29.3155 21.1988 29.8019 20.7169 29.8019 20.1013L29.8019 19.1556C29.8019 18.5399 29.3155 18.0094 28.7 18.0094L14.9991 18.0094L19.3448 13.6788C19.5549 13.4686 19.6707 13.1958 19.6707 12.8968C19.6707 12.5982 19.5549 12.3214 19.3448 12.1113L18.6761 11.4445C18.4658 11.2343 18.1857 11.1197 17.8866 11.1197C17.5878 11.1197 17.3075 11.2358 17.0973 11.446L9.73148 18.8118C9.52072 19.0228 9.40481 19.3043 9.40564 19.6036C9.40498 19.9039 9.52072 20.1857 9.73164 20.3963Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_98_514">
+                                        <rect width="20.3962" height="20.3962" fill="white"
+                                            transform="translate(29.8019 29.8018) rotate(180)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#" data-aos="fade-up">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="20" fill="#0F5B89" />
+                                <g clip-path="url(#clip0_98_519)">
+                                    <path
+                                        d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_98_519">
+                                        <rect width="20.3962" height="20.3962" fill="white"
+                                            transform="translate(10.1981 10.1982)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
 
-                    </a>
-                </div>
-            </section>
+                        </a>
+                    </div>
+                </section>
             @endif
 
             <section class="w-11/12 mt-12" id="studylocation">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
-                    data-aos-duration="3000" data-aos-delay="100">STUDY LOCATION</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">Study Change To Learn</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">You can choose to learn Data Science according to your choice location</p>
-                <div class="overflow-x-auto flex mt-10" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="100">
+                    >STUDY LOCATION</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                    >Study Change To Learn</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up"
+                    >You can choose to learn Data Science according to your choice location</p>
+                <div class="overflow-x-auto flex mt-10" data-aos="fade-up"
+                    >
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
                             <img src="{{ Vite::asset('resources/image/ilustration/indonesia_2.png') }}"
@@ -1114,14 +1264,14 @@
                     </div>
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}"
-                                alt="person 1" class="rounded-lg w-full h-64">
+                            <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}" alt="person 1"
+                                class="rounded-lg w-full h-64">
                             <p class="font-bold text-2xl p-6 text-center mt-6">Tokyo</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
-                    <a href="#" data-aos="fade-right">
+                <div class="flex gap-3" data-aos="fade-up" >
+                    <a href="#" data-aos="fade-up">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20"
@@ -1139,7 +1289,7 @@
                             </defs>
                         </svg>
                     </a>
-                    <a href="#" data-aos="fade-left">
+                    <a href="#" data-aos="fade-up">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#0F5B89" />
@@ -1160,16 +1310,16 @@
                 </div>
             </section>
 
-            <section class="alumni w-11/12 mt-12" id="alumni" >
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-left"
-                    data-aos-duration="3000" data-aos-delay="100">All Alumni Story</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="200">What alumni say about QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="300">Listen to the stories of alumni of the Data Science
+            <section class="alumni w-11/12 mt-12" id="alumni">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
+                    >All Alumni Story</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                    >What alumni say about QarirLabs</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up"
+                    >Listen to the stories of alumni of the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="400">
+                <div class="overflow-x-auto flex" data-aos="fade-up"
+                   >
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
@@ -1179,10 +1329,14 @@
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Marketing Manager at KUMPUL | Digital Marketing & Startup Practitioner | BNSP Certified</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Marketing Manager
+                                                at KUMPUL | Digital Marketing & Startup Practitioner | BNSP Certified
+                                            </p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to attend fun classes, but also improve my networking and knowledge because of the highly experienced trainer." Hieronymus </p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to
+                                        attend fun classes, but also improve my networking and knowledge because of the
+                                        highly experienced trainer." Hieronymus </p>
                                 </div>
                             </div>
                         </div>
@@ -1196,10 +1350,13 @@
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Brand Performance & Strategy at majoo Indonesia</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Brand Performance
+                                                & Strategy at majoo Indonesia</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5"> "Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!"-Tyas</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5"> "Turning my dream of working
+                                        as a performance specialist into reality by starting to learn Digital Marketing
+                                        Bootcamp!"-Tyas</p>
                                 </div>
                             </div>
                         </div>
@@ -1214,10 +1371,13 @@
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Angeline Lie </p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Founder & CEO at Digmo Agency</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Founder & CEO at
+                                                Digmo Agency</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"The learning materials are very comprehensive, the classes are well-structured, and the consultation service is satisfying." - Angeline Lie</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"The learning materials are
+                                        very comprehensive, the classes are well-structured, and the consultation
+                                        service is satisfying." - Angeline Lie</p>
                                 </div>
                             </div>
                         </div>
@@ -1231,10 +1391,12 @@
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Balad Al Barokah</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Growth Analyst at MGD Digital Marketing Consultant</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Growth Analyst at
+                                                MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new opportunity to work in the digital field!"- Balad </p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new
+                                        opportunity to work in the digital field!"- Balad </p>
                                 </div>
                             </div>
                         </div>
@@ -1248,10 +1410,14 @@
                                             alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Andimas Iben D. </p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Msc. Marketing Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Msc. Marketing
+                                                Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain a deeper understanding of data science. After taking their course and staying connected with my mentor, I was able to start working at my dream company using the significantly improved skills." - Andimas Iben </p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain
+                                        a deeper understanding of data science. After taking their course and staying
+                                        connected with my mentor, I was able to start working at my dream company using
+                                        the significantly improved skills." - Andimas Iben </p>
                                 </div>
                             </div>
                         </div>
@@ -1265,16 +1431,19 @@
                                             alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Indira Yasmin Amarti</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Promo Planner at NET MEDIATAMA TELEVISI</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Promo Planner at
+                                                NET MEDIATAMA TELEVISI</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was presented in an engaging manner, and also guided by experienced practitioners so that various case studies could be solved."- Indira Yasmine</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was
+                                        presented in an engaging manner, and also guided by experienced practitioners so
+                                        that various case studies could be solved."- Indira Yasmine</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="100">
+                <div class="flex gap-3" data-aos="fade-up" >
                     <a href="#">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -1315,43 +1484,43 @@
             </section>
 
             <section class="w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-right"
-                    data-aos-duration="3000" data-aos-delay="100">PARTNERSHIPS</p>
-                <p class="font-black text-4xl mb-2"data-aos="fade-right" data-aos-duration="3000"
-                    data-aos-delay="300">Graduates have Worked in</p>
+                <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-up"
+                    >PARTNERSHIPS</p>
+                <p class="font-black text-4xl mb-2"data-aos="fade-up"
+                    >Graduates have Worked in</p>
                 <div class="mt-8 flex flex-wrap justify-start items-center">
                     <img src="{{ Vite::asset('resources/image/icon/detsu_grey.png') }}" alt="dentsu"
-                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="100">
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up"
+                        >
                     <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="tokopedia"
-                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="300">
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up"
+                        >
                     <img src="{{ Vite::asset('resources/image/icon/danone.png') }}" alt="danone"
-                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="500">
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up"
+                        >
                     <img src="{{ Vite::asset('resources/image/icon/kaskus.png') }}" alt="kaskus"
-                        class="h-9 object-cover px- pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="700">
+                        class="h-9 object-cover px- pt-5 mt-3" data-aos="fade-up"
+                       >
                     <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
-                        class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up" data-aos-duration="3000"
-                        data-aos-delay="900">
+                        class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up"
+                       >
                     <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}"
                         alt="telkom_indonesia" class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up"
-                        data-aos-duration="3000" data-aos-delay="1100">
+                        >
                 </div>
             </section>
 
             <section class="portofolio w-11/12 mt-12" id="portofolio">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">PORTOFOLIO ALUMNI</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">Portfolio Student at Bootcamp QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">Listen to the stories of alumni of the Data Science
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
+                    >PORTOFOLIO ALUMNI</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                    >Portfolio Student at Bootcamp QarirLabs</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up"
+                    >Listen to the stories of alumni of the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="300">
-                    <div class="flex-none" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="10500">
+                <div class="overflow-x-auto flex" data-aos="fade-up"
+                    >
+                    <div class="flex-none" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
@@ -1364,16 +1533,17 @@
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Kadek Mardika Pranata</p>
                                         <div class="mt-12 flex w-full text-center">
-                                            <a href="https://drive.google.com/file/d/10p1af15lw6lbzdG4Ayyqpjei0bV6g2YW/view" target="_blank"
-                                            class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
-                                            Portofolio</a>
+                                            <a href="https://drive.google.com/file/d/10p1af15lw6lbzdG4Ayyqpjei0bV6g2YW/view"
+                                                target="_blank"
+                                                class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
+                                                Portofolio</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex-none" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="10500">
+                    <div class="flex-none" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
@@ -1385,16 +1555,17 @@
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Syifaya Qorina</p>
                                         <div class="mt-12 flex w-full text-center">
-                                            <a href="https://drive.google.com/file/d/1emvOSQ_nmwTw5bx_7xZG66L4vCSOr-y5/view" target="_blank"
-                                            class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
-                                            Portofolio</a>
+                                            <a href="https://drive.google.com/file/d/1emvOSQ_nmwTw5bx_7xZG66L4vCSOr-y5/view"
+                                                target="_blank"
+                                                class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
+                                                Portofolio</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex-none" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="10500">
+                    <div class="flex-none" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
@@ -1405,9 +1576,10 @@
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
                                         <div class="mt-12 flex w-full text-center">
-                                            <a href="https://drive.google.com/file/d/1VT3mlpV2piycnSUkSp5uD1sPGd94IAXw/view" target="_blank"
-                                            class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
-                                            Portofolio</a>
+                                            <a href="https://drive.google.com/file/d/1VT3mlpV2piycnSUkSp5uD1sPGd94IAXw/view"
+                                                target="_blank"
+                                                class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
+                                                Portofolio</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1415,7 +1587,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-3">
+                <div class="flex gap-3" data-aos="fade-up">
                     <a href="#">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -1455,13 +1627,13 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mt-14" id="gethired" >
+            <section class="w-11/12 mt-14" id="gethired">
                 <p class="font-bold text-base text-[#262626] mb-6"data-aos="fade-up"
-                    data-aos-duration="3000" data-aos-delay="300">GET HIRED</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="300">3-Stage Work Plan</p>
+                    >GET HIRED</p>
+                <p class="font-black text-4xl mb-2" data-aos="fade-up"
+                    >3-Stage Work Plan</p>
                 <div class="flex flex-wrap mt-8 justify-between">
-                    <div class="w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div
                             class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
@@ -1478,7 +1650,7 @@
                                 doing so, you will shine in the job market.</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1300">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div
                             class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
@@ -1496,7 +1668,7 @@
                                 practice interviewing with professional recruiters.</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1600">
+                    <div class="w-1/3 mb-8" data-aos="fade-up">
                         <div
                             class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
@@ -1549,17 +1721,20 @@
 
             <section class="w-11/12 mt-12" id="admissions">
                 <div class="flex flex-row justify-center items-center">
-                    <div class="w-1/2 mr-16" data-aos="fade-right" data-aos-duration="3000"
-                        data-aos-delay="500">
+                    <div class="w-1/2 mr-16" data-aos="fade-up"
+                        >
                         <p class="font-bold text-base text-[#262626] mb-5">ADMISSIONS</p>
                         <p class="font-bold text-4xl text-black mb-5">Explore About Yourself</p>
-                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-6">Complete a brief career assessment with 8 questions in just 90 seconds.
+                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-6">Complete a brief career
+                            assessment with 8 questions in just 90 seconds.
                         </p>
                         <br>
-                        <a href="https://y-data.typeform.com/to/U4W5pFEE/?form_position=%2F&gaid=1160409597.1681175250&referrer=N%2FA&_ga=2.178558691.63757594.1681175250-1160409597.1681175250&typeform-source=practicum.com" target="_blank"
-                            class="bg-[#0F5B89] px-10 py-4 rounded-md text-white text-lg font-bold mb-11 mt-6">Take a Career Quiz</a>
+                        <a href="https://y-data.typeform.com/to/U4W5pFEE/?form_position=%2F&gaid=1160409597.1681175250&referrer=N%2FA&_ga=2.178558691.63757594.1681175250-1160409597.1681175250&typeform-source=practicum.com"
+                            target="_blank"
+                            class="bg-[#0F5B89] px-10 py-4 rounded-md text-white text-lg font-bold mb-11 mt-6">Take a
+                            Career Quiz</a>
                     </div>
-                    <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="700">
+                    <div class="w-1/2" data-aos="fade-up">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
                             alt="ilustration 9" class="object-contain rounded-xl">
                     </div>
@@ -1569,7 +1744,7 @@
 
 
             <section class="ready_join w-11/12 mt-12 mb-10" id="ready_join" data-aos="fade-up"
-                data-aos-duration="3000" data-aos-delay="500">
+                >
                 <div class="relative flex justify-end rounded-xl">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_5.png') }}"
                         alt="ilustration 2" class="h-80 rounded-xl">

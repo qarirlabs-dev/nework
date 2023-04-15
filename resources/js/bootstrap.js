@@ -1,6 +1,8 @@
 import AOS from "aos";
 document.addEventListener("DOMContentLoaded", (e) => {
-    AOS.init();
+    AOS.init({
+        duration: 2000
+    });
 });
 
 /**

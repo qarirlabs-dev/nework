@@ -1,80 +1,4 @@
 <x-landing-layout>
-    @push('scripts')
-        <script>
-            var selectedProgram = null;
-            const route = "{{ route('detail', ['slug' => ':any1', 'course' => ':any2']) }}";
-
-            function toggleModal() {
-                document.getElementById('modal-program').classList.toggle("hidden");
-            }
-
-            function showModal(program) {
-                selectedProgram = program
-                toggleModal()
-            }
-
-            function redirectToPage(selectedLocation) {
-                location.href = route.replaceAll(':any1', selectedLocation).replaceAll(':any2', selectedProgram)
-            }
-        </script>
-    @endpush
-    <div class="relative z-50 hidden" id="modal-program" aria-labelledby="modal-title" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-gray-500 bg-opacity-50 transition-opacity"></div>
-
-        <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                <div
-                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
-                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-                        <div class="flex flex-grow flex-row justify-between items-start">
-                            <p class="font-black text-xl">Where would you like to learn Data Sciences Bootcamp?</p>
-                            <button class="cursor-pointer m-3 mt-1.5" onclick="toggleModal()">
-                                <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
-                                        fill="#838383" />
-                                    <path
-                                        d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
-                                        fill="#838383" />
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="font-medium text-sm text-[#646464] mt-2">You can choose to learn Data Sciences in over
-                            3 country ready or online. Find now your learning destination!</p>
-                        <hr class="my-5">
-                        <div class="flex flex-wrap">
-                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
-                                onclick="redirectToPage('online')">
-                                <img src="{{ Vite::asset('resources/image/ilustration/online.png') }}" alt="online"
-                                    class="h-24 w-24 rounded-lg">
-                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Online</p>
-                            </div>
-                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
-                                onclick="redirectToPage('indonesia')">
-                                <img src="{{ Vite::asset('resources/image/ilustration/indonesia.png') }}" alt="online"
-                                    class="h-24 w-24 rounded-lg">
-                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Indonesia</p>
-                            </div>
-                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
-                                onclick="redirectToPage('istanbul')">
-                                <img src="{{ Vite::asset('resources/image/ilustration/istanbul.png') }}" alt="online"
-                                    class="h-24 w-24 rounded-lg">
-                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Istanbul</p>
-                            </div>
-                            <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
-                                onclick="redirectToPage('Tokyo')">
-                                <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}"
-                                    alt="online" class="h-24 w-24 rounded-lg">
-                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Tokyo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[46rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -92,7 +16,7 @@
         </svg>
         <div class="absolute top-16">
             <div class="flex flex-row justify-between items-center w-10/12 mx-auto">
-                <div class="flex-auto w-2/3" data-aos="fade-right" data-aos-duration="3000">
+                <div class="flex-auto w-2/3" data-aos="fade-up">
                     <div class="text-5xl font-black mb-6 mt-24">Create New Success Shortcuts. <br/>Land Your New Dream
                         Job.
                     </div>
@@ -101,11 +25,11 @@
                         class="bg-[#FF9500] z-30 px-10 py-4 rounded-md text-white text-lg font-bold mb-8 mt-6">Browse
                         Classess</a>
                 </div>
-                <div class="flex-auto w-1/3 -mr-6" data-aos="fade-up" data-aos-duration="3000">
+                <div class="flex-auto w-1/3 -mr-6" data-aos="fade-up">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="flex flex-row w-10/12 mx-auto mt-8" data-aos="fade-right" data-aos-duration="3000">
+            <div class="flex flex-row w-10/12 mx-auto mt-8" data-aos="fade-up">
                 <div class="mr-12">
                     <div class="mb-6 font-medium text-xl">Talents</div>
                     <div class="flex items-center">
@@ -161,7 +85,7 @@
     </section>
     <section class="programs hero w-10/12 mx-auto -mt-16" id="classes">
         <div class="flex flex-wrap">
-            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('data science')" data-aos="fade-right" data-aos-duration="3000">
+            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('data science')" data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
@@ -183,7 +107,7 @@
                         src="{{ Vite::asset('resources/image/ilustration/data_science_2.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('digital marketing')" data-aos="fade-up" data-aos-duration="3000">
+            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('digital marketing')" data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
@@ -205,7 +129,7 @@
                         src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="">
                 </div>
             </div>
-            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('web development')" data-aos="fade-left" data-aos-duration="3000">
+            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('web development')" data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
@@ -230,8 +154,8 @@
         </div>
     </section>
     <section class="benerif hero w-10/12 mx-auto mt-16">
-        <div class="flex flex-col justify-center items-center" data-aos="fade-zoom-in" data-aos-duration="1000">
-            <div class="static mb-5" data-aos="fade-zoom-in" data-aos-duration="3000" data-aos-delay="300">
+        <div class="flex flex-col justify-center items-center" data-aos="fade-up">
+            <div class="static mb-5" data-aos="fade-up">
                 <div class="font-black text-4xl z-1">Why choose <div class="inline-block relative">
                         <div class="relative z-10">QarirLabs</div>
                         <div class="-z-10">
@@ -242,7 +166,7 @@
             <p class="font-medium text-lg text-[#262626] opacity-50 w-1/2 text-center">QarirLabs has been proven to
                 produce competent graduates in the industry through the bootcamp program.</p>
             <div class="flex flex-wrap mt-24">
-                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000">
+                <div class="w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -264,7 +188,7 @@
                             are well experienced experts with senior-director level practitioners.</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <div class="w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -282,7 +206,7 @@
                             startups</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <div class="w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -299,7 +223,7 @@
                         <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Our class is limited only for 7-15 and 15-35 students. For all beginners, they can join extra class sessions to accelerate their skills as they wish.</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <div class="w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -316,7 +240,7 @@
                             soft skill class</p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <div class="w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -335,7 +259,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+                <div class="w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
@@ -384,23 +308,23 @@
                         fill="#FF9500" />
                 </svg>
             </div>
-            <p class="font-black text-white text-center text-4xl pt-20 pb-6 w-1/2 mx-auto" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">More than a bootcamp.
+            <p class="font-black text-white text-center text-4xl pt-20 pb-6 w-1/2 mx-auto" data-aos="fade-up">More than a bootcamp.
                 Get hired at top tech companies.
             </p>
-            <p class="font-medium text-white opacity-60 text-center w-1/2 mx-auto pb-10" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="500">QarirLabs helps you land your
+            <p class="font-medium text-white opacity-60 text-center w-1/2 mx-auto pb-10" data-aos="fade-up">QarirLabs helps you land your
                 dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
                 Education Field)</p>
             <div class="flex justify-center items-start w-1/2 mx-auto">
-                <div class="w-1/5 pb-7" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
+                <div class="w-1/5 pb-7" data-aos="fade-up">
                     <p class="text-center font-black text-4xl text-[#FF9500]">1K+</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni</p>
                 </div>
-                <div class="w-1/3 flex flex-col justify-center" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
+                <div class="w-1/3 flex flex-col justify-center" data-aos="fade-up">
                     <p class="text-center font-black text-4xl text-[#FF9500]">91%</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni Get a job less
                         than 12 months</p>
                 </div>
-                <div class="w-1/3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
+                <div class="w-1/3" data-aos="fade-up">
                     <p class="text-center font-black text-4xl text-[#FF9500]">88%</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Completed rate</p>
                 </div>
@@ -410,7 +334,7 @@
     <section class="alumni -mt-48 w-10/12 mx-auto">
         <p class="font-black text-4xl text-white text-center pb-12">Hear How Our Student Enjoying The Class</p>
         <div class="flex flex-wrap">
-            <div class="w-1/3 px-3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
+            <div class="w-1/3 px-3" data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
                     <img src="{{ Vite::asset('resources/image/avatar/person_1.png') }}" alt="person 1"
                         class="rounded-lg w-full">
@@ -451,7 +375,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/3 px-3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
+            <div class="w-1/3 px-3" data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
                     <img src="{{ Vite::asset('resources/image/avatar/person_2.png') }}" alt="person 1"
                         class="rounded-lg w-full">
@@ -492,7 +416,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-1/3 px-3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">
+            <div class="w-1/3 px-3" data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm">
                     <img src="{{ Vite::asset('resources/image/avatar/person_3.png') }}" alt="person 1"
                         class="rounded-lg w-full">
@@ -534,18 +458,18 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
+        <div class="flex justify-center mt-8" data-aos="fade-up">
             <button
                 class="text-[#FF9500] font-bold text-lg px-10 py-5 rounded-lg li outline outline-1 outline-[#FF9500]">See
                 More</button>
         </div>
     </section>
     <section class="alumni-say mt-28 w-10/12 mx-auto">
-        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">Alumni Success Story</p>
-        <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-2/4 mx-auto mt-5" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">Our main focus is to
+        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto" data-aos="fade-up">Alumni Success Story</p>
+        <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-2/4 mx-auto mt-5" data-aos="fade-up">Our main focus is to
             provide the best learning experience for students, here are some testimonials from our alumni</p>
         <div class="flex flex-wrap mt-8">
-            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
+            <div class="w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_200_200/0/1660618827710?e=1686787200&v=beta&t=nUe35MsO-mHTZTMyHh-re25dXvZbaI6DzS0jB44f_ng" alt="avatar 1"
@@ -558,7 +482,7 @@
                     <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to attend fun classes, but also improve my networking and knowledge because of the highly experienced trainer." Hieronymus</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">
+            <div class="w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_200_200/0/1606718704142?e=1686787200&v=beta&t=46wXqFTFvJSmlyEzdRCCdKtjSDY8HXaodU4UYzoWaNk" alt="avatar 1"
@@ -571,7 +495,7 @@
                     <p class="font-medium text-base text-[#262626] mt-5">"Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!"-Tyas</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">
+            <div class="w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_200_200/0/1680666708180?e=1682125200&v=beta&t=hm0E7yO1hyONlSgfXeyRBY9byPH-Shbu62aILKwZzwA" alt="avatar 1"
@@ -584,7 +508,7 @@
                     <p class="font-medium text-base text-[#262626] mt-5">"The learning materials are very comprehensive, the classes are well-structured, and the consultation service is satisfying." - Angeline Lie</p>
                 </div>
             </div>
-            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1200">
+            <div class="w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_200_200/0/1542432196651?e=1686787200&v=beta&t=ZcC6r7sEF2jj3We9KRPq3pOyi8NVd3mFHdUyDmI4PNc" alt="avatar 1"
@@ -597,7 +521,7 @@
                     <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new opportunity to work in the digital field!"- Balad </p>
                 </div>
             </div>
-            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1500">
+            <div class="w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/C5603AQG8h--cdyYYRA/profile-displayphoto-shrink_200_200/0/1622167619010?e=1686787200&v=beta&t=t85-LKlDJFQgQXS_qFjeMIk2ylsOyWuU9_De8GbZTp0" alt="avatar 1"
@@ -610,7 +534,7 @@
                     <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain a deeper understanding of data science. After taking their course and staying connected with my mentor, I was able to start working at my dream company using the significantly improved skills." - Andimas Iben </p>
                 </div>
             </div>
-            <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1800">
+            <div class="w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/C4E03AQFSzaO6pHzsUA/profile-displayphoto-shrink_200_200/0/1623405781794?e=1686787200&v=beta&t=8AG9GZHTtqaLY4UlQ70Tl7QPamHCLh6ExZxeJVWIe_E" alt="avatar 1"
@@ -624,7 +548,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
+        <div class="flex justify-center mt-8" data-aos="fade-up">
             <button class="text-white font-bold text-lg px-10 py-5 rounded-lg bg-[#FF9500]">Upgrade Skill Today</button>
         </div>
     </section>
@@ -636,9 +560,9 @@
                 style="background: linear-gradient(90.49deg, #00263D 36.68%, rgba(255, 255, 255, 0) 98.95%);"></div>
             <div class="absolute top-0 left-0 h-80 w-full flex justify-start items-center ">
                 <div class="flex flex-col ml-28">
-                    <p class="font-black text-4xl text-white" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Looking for<br>Financial Aid?</p>
-                    <p class="font-medium text-base text-white w-1/2 mt-2" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Finances shouldn't be the main obstacle to accessing our bootcamps. We're always finding new ways to facilitate payments and fundings.</p>
-                    <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">
+                    <p class="font-black text-4xl text-white" data-aos="fade-up">Looking for<br>Financial Aid?</p>
+                    <p class="font-medium text-base text-white w-1/2 mt-2" data-aos="fade-up">Finances shouldn't be the main obstacle to accessing our bootcamps. We're always finding new ways to facilitate payments and fundings.</p>
+                    <div data-aos="fade-up">
                         <button
                             class="bg-[#FF9500] px-10 py-2 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact Us</button>
                     </div>
@@ -649,11 +573,11 @@
 
     <section class="faq mt-20 w-10/12 mx-auto">
         <div class="flex flex-row justify-center items-center">
-            <div class="mx-10" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
+            <div class="mx-10" data-aos="fade-up">
                 <img src="{{ Vite::asset('resources/image/ilustration/ilustration_9.png') }}" alt="ilustration 9"
                     class="object-contain rounded-xl">
             </div>
-            <div class="mx-10" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="600">
+            <div class="mx-10" data-aos="fade-up">
                 <p class="font-bold text-4xl text-black">Are you an Enterprise looking for Tech Training or Talent ?
                 </p>
                 <p class="font-medium text-lg text-[#262626] opacity-60">Transform your teams with QarirLabs corporate
@@ -664,7 +588,7 @@
         </div>
     </section>
 
-    <section class="media mt-20 mb-24"data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
+    <section class="media mt-20 mb-24"data-aos="fade-up">
         <p class="font-black text-4xl text-center">The media that has covered us</p>
         <div class="flex w-1/2 mx-auto justify-center items-end mt-8">
             <img src="{{ Vite::asset('resources/image/icon/net.png') }}" alt="net" class="h-8 mx-8">
