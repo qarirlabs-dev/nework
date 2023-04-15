@@ -1,5 +1,5 @@
 <x-landing-layout>
-    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[74rem] lg:h-[46rem] -mt-20">
+    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[74rem] lg:h-[50rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
@@ -69,7 +69,7 @@
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/bri_color.png') }}" alt="ek"
                             class="mx-2 h-6">
-                        <div class="flex mx-2 text-xl items-center font-medium">
+                        <div class="hidden lg:flex mx-2 text-xl items-center font-medium">
                             <span class="mr-2">View More</span>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -105,7 +105,7 @@
                         <img src="{{ Vite::asset('resources/image/icon/bri_color.png') }}" alt="ek"
                             class="mx-2 h-6">
                     </div>
-                    <div class="flex mx-2 text-xl items-center font-medium mt-5">
+                    <div class="lg:hidden flex mx-2 text-xl items-center font-medium mt-5">
                         <span class="mr-2 font-medium text-sm">View More</span>
                         <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -657,7 +657,7 @@
                 </p>
                 <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with QarirLabs corporate
                     training or hire our tech-alumni now.</p>
-                <button class="bg-[#FF9500] px-10 py-4 rounded-md text-white lg:text-[#262626] text-lg font-bold mb-11 mt-6">Contact
+                <button class="bg-[#FF9500] px-10 py-4 rounded-md text-white lg:text-[#262626] text-lg font-bold mb-11 mt-6 w-full lg:w-auto">Contact
                     Our Partnership Team</button>
             </div>
         </div>

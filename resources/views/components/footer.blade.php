@@ -1,6 +1,6 @@
 <footer>
-    <div class="relative w-full h-[70rem] lg:h-[30rem] bg-[#00263D] flex justify-center">
-        <img src="{{Vite::asset('resources/image/ilustration/word_map.png')}}" alt="word" class="absolute top-0 h-[30rem] opacity-30">
+    <div class="relative w-full h-[70rem] lg:h-[40rem] bg-[#00263D] flex justify-center items-start">
+        <img src="{{Vite::asset('resources/image/ilustration/word_map.png')}}" alt="word" class="absolute top-0 h-[30rem] w-auto opacity-30 object-contain">
         <div class="flex flex-col lg:flex-row w-full lg:w-10/12">
             <div class="lg:mt-11 lg:mx-12 p-5 lg:p-0 w-full lg:w-1/2">
                 <img src="{{Vite::asset('resources/image/icon/logo_hozontal_white.png')}}" alt="logo" class="w-36">
@@ -19,12 +19,12 @@
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5">Bootcamp</p>
                         <p class="text-white font-normal text-base lg:pt-7 pt-2">Digital Marketing</p>
-                        <p class="text-white font-normal text-base">Data Science</p>
+                        <p class="text-white font-normal text-base pt-2">Data Science</p>
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0">International Bootcamp</p>
                         <p class="text-white font-normal text-base pt-2 lg:pt-0">Bootcamp Istanbul</p>
-                        <p class="text-white font-normal text-base">Bootcamp Tokyo</p>
+                        <p class="text-white font-normal text-base pt-2">Bootcamp Tokyo</p>
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0">Resources</p>
@@ -32,9 +32,9 @@
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0" >About</p>
-                        <p class="text-white font-normal text-base lg:pt-12 pt-2">Career</p>
-                        <p class="text-white font-normal text-base lg:pt-12 pt-2">Partnership</p>
-                        <p class="text-white font-normal text-base lg:pt-12 pt-2">Pricing</p>
+                        <p class="text-white font-normal text-base lg:pt-7 pt-2">Career</p>
+                        <p class="text-white font-normal text-base lg:pt-0 pt-2">Partnership</p>
+                        <p class="text-white font-normal text-base lg:pt-0 pt-2">Pricing</p>
                     </div>
                 </div>
                 <div class="p-5 lg:p-0 lg:ml-14 mt-24">

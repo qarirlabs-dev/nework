@@ -362,7 +362,7 @@
                         </svg>
                     </button>
                 </div>
-                <div class="flex flex-1 lg:items-center lg:justify-center items-stretch justify-start">
+                <div class="flex flex-1 lg:items-center lg:justify-start items-stretch justify-start">
                     <a href="{{ route('landing') }}" class="flex flex-shrink-0 items-center">
                         <img src="{{ Vite::asset('resources/image/icon/logo_horizontal.png') }}" alt="logo big"
                             class="hidden lg:block h-8 w-auto">

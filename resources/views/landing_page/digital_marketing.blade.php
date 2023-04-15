@@ -77,30 +77,67 @@
             const destinationScroller = document.getElementById('destination-navigation');
             const schoolChange = document.getElementById('study-change-location');
             const portoSlider = document.getElementById('portofolio-slider');
+            const alumniSlider = document.getElementById('alumni-slider');
             const scrollAmount = 400;
-            
-            document.getElementById('previews-destination').addEventListener('click', function() {
-                destinationScroller.scroll({ left: destinationScroller.scrollLeft - scrollAmount, behavior: 'smooth' });
+
+            try {
+                document.getElementById('previews-destination').addEventListener('click', function() {
+                    destinationScroller.scroll({
+                        left: destinationScroller.scrollLeft - scrollAmount,
+                        behavior: 'smooth'
+                    });
+                })
+
+                document.getElementById('next-destination').addEventListener('click', function() {
+                    destinationScroller.scroll({
+                        left: destinationScroller.scrollLeft + scrollAmount,
+                        behavior: 'smooth'
+                    });
+                })
+            } catch (error) {
+
+            }
+
+            document.getElementById('previews-alumni').addEventListener('click', function() {
+                alumniSlider.scroll({
+                    left: alumniSlider.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
-            document.getElementById('next-destination').addEventListener('click', function() {
-                destinationScroller.scroll({ left: destinationScroller.scrollLeft + scrollAmount, behavior: 'smooth' });
+            document.getElementById('next-alumni').addEventListener('click', function() {
+                alumniSlider.scroll({
+                    left: alumniSlider.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('previews-study-change-location').addEventListener('click', function() {
-                schoolChange.scroll({ left: schoolChange.scrollLeft - scrollAmount, behavior: 'smooth' });
+                schoolChange.scroll({
+                    left: schoolChange.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('next-study-change-location').addEventListener('click', function() {
-                schoolChange.scroll({ left: schoolChange.scrollLeft + scrollAmount, behavior: 'smooth' });
+                schoolChange.scroll({
+                    left: schoolChange.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('previews-portofolio').addEventListener('click', function() {
-                portoSlider.scroll({ left: portoSlider.scrollLeft - scrollAmount, behavior: 'smooth' });
+                portoSlider.scroll({
+                    left: portoSlider.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('next-portofolio').addEventListener('click', function() {
-                portoSlider.scroll({ left: portoSlider.scrollLeft + scrollAmount, behavior: 'smooth' });
+                portoSlider.scroll({
+                    left: portoSlider.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
             })
         </script>
     @endpush
@@ -1120,7 +1157,7 @@
                     of
                     the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex" data-aos="fade-up">
+                <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
@@ -1245,7 +1282,7 @@
                     </div>
                 </div>
                 <div class="flex gap-3" data-aos="fade-up">
-                    <a href="#">
+                    <button type="button" id="previews-alumni">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20"
@@ -1262,8 +1299,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                    </a>
-                    <a href="#">
+                    </button>
+                    <button type="button" id="next-alumni">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#0F5B89" />
@@ -1280,7 +1317,7 @@
                             </defs>
                         </svg>
 
-                    </a>
+                    </button>
                 </div>
             </section>
 

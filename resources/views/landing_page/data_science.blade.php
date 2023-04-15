@@ -77,30 +77,67 @@
             const destinationScroller = document.getElementById('destination-navigation');
             const schoolChange = document.getElementById('study-change-location');
             const portoSlider = document.getElementById('portofolio-slider');
+            const alumniSlider = document.getElementById('alumni-slider');
             const scrollAmount = 400;
-            
-            document.getElementById('previews-destination').addEventListener('click', function() {
-                destinationScroller.scroll({ left: destinationScroller.scrollLeft - scrollAmount, behavior: 'smooth' });
+
+            try {
+                document.getElementById('previews-destination').addEventListener('click', function() {
+                    destinationScroller.scroll({
+                        left: destinationScroller.scrollLeft - scrollAmount,
+                        behavior: 'smooth'
+                    });
+                })
+
+                document.getElementById('next-destination').addEventListener('click', function() {
+                    destinationScroller.scroll({
+                        left: destinationScroller.scrollLeft + scrollAmount,
+                        behavior: 'smooth'
+                    });
+                })
+            } catch (error) {
+
+            }
+
+            document.getElementById('previews-alumni').addEventListener('click', function() {
+                alumniSlider.scroll({
+                    left: alumniSlider.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
-            document.getElementById('next-destination').addEventListener('click', function() {
-                destinationScroller.scroll({ left: destinationScroller.scrollLeft + scrollAmount, behavior: 'smooth' });
+            document.getElementById('next-alumni').addEventListener('click', function() {
+                alumniSlider.scroll({
+                    left: alumniSlider.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('previews-study-change-location').addEventListener('click', function() {
-                schoolChange.scroll({ left: schoolChange.scrollLeft - scrollAmount, behavior: 'smooth' });
+                schoolChange.scroll({
+                    left: schoolChange.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('next-study-change-location').addEventListener('click', function() {
-                schoolChange.scroll({ left: schoolChange.scrollLeft + scrollAmount, behavior: 'smooth' });
+                schoolChange.scroll({
+                    left: schoolChange.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('previews-portofolio').addEventListener('click', function() {
-                portoSlider.scroll({ left: portoSlider.scrollLeft - scrollAmount, behavior: 'smooth' });
+                portoSlider.scroll({
+                    left: portoSlider.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
             })
 
             document.getElementById('next-portofolio').addEventListener('click', function() {
-                portoSlider.scroll({ left: portoSlider.scrollLeft + scrollAmount, behavior: 'smooth' });
+                portoSlider.scroll({
+                    left: portoSlider.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
             })
         </script>
     @endpush
@@ -264,6 +301,10 @@
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Study Location</span>
                     </a>
+                    <a href="#alumni" class="inline-flex items-center ml-4 side-nav-menu">
+                        <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
+                        <span class="text-[#A5A5A5] font-medium text-lg">All Alumni Story</span>
+                    </a>
                     <a href="#portofolio" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Portofolio Alumni</span>
@@ -284,7 +325,8 @@
         <div class="w-full lg:w-8/12">
             <section class="overview w-full lg:w-11/12" id="overview">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">OVERVIEW</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in Istanbul?</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in Istanbul?
+                </p>
                 <div class="flex flex-col mt-8">
                     <div class="bg-white rounded-xl p-6 shadow-sm my-3" data-aos="fade-up">
                         <div class="flex flex-row">
@@ -1232,7 +1274,8 @@
             @if (count($destinations) > 0)
                 <section class="w-full lg:w-11/12 mt-12" id="destination">
                     <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">DESTINATION</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Various Choices of Wonderful Destinations
+                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Various Choices of Wonderful
+                        Destinations
                     </p>
                     <p class="font-normal text-base text-[#262626]" data-aos="fade-up">More than 1000+ choices of
                         amazing tourist destinations</p>
@@ -1366,7 +1409,7 @@
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
                     of the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex" data-aos="fade-up">
+                <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
@@ -1491,7 +1534,7 @@
                     </div>
                 </div>
                 <div class="flex gap-3" data-aos="fade-up">
-                    <a href="#">
+                    <button type="button" id="previews-alumni">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20"
@@ -1508,8 +1551,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                    </a>
-                    <a href="#">
+                    </button>
+                    <button type="button" id="next-alumni">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#0F5B89" />
@@ -1526,7 +1569,7 @@
                             </defs>
                         </svg>
 
-                    </a>
+                    </button>
                 </div>
             </section>
 
@@ -1764,15 +1807,17 @@
                     <div class="w-full lg:w-1/2 lg:mr-16" data-aos="fade-up">
                         <p class="font-bold text-base text-[#262626] mb-5">ADMISSIONS</p>
                         <p class="font-bold text-2xl lg:text-4xl text-black mb-5">Explore About Yourself</p>
-                        <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 lg:mb-6">Complete a brief career
+                        <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 lg:mb-6">Complete a brief
+                            career
                             assessment with 8 questions in just 90 seconds.
                         </p>
                         <br>
                         <div class="flex w-full lg:w-auto">
                             <a href="https://y-data.typeform.com/to/U4W5pFEE/?form_position=%2F&gaid=1160409597.1681175250&referrer=N%2FA&_ga=2.178558691.63757594.1681175250-1160409597.1681175250&typeform-source=practicum.com"
-                            target="_blank"
-                            class=" bg-[#0F5B89] px-10 py-4 rounded-md text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Take a
-                            Career Quiz</a>
+                                target="_blank"
+                                class=" bg-[#0F5B89] px-10 py-4 rounded-md text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Take
+                                a
+                                Career Quiz</a>
                         </div>
                     </div>
                     <div class="hidden lg:block w-full lg:w-1/2" data-aos="fade-up">
