@@ -73,9 +73,38 @@
                 })
 
             }
+
+            const destinationScroller = document.getElementById('destination-navigation');
+            const schoolChange = document.getElementById('study-change-location');
+            const portoSlider = document.getElementById('portofolio-slider');
+            const scrollAmount = 400;
+            
+            document.getElementById('previews-destination').addEventListener('click', function() {
+                destinationScroller.scroll({ left: destinationScroller.scrollLeft - scrollAmount, behavior: 'smooth' });
+            })
+
+            document.getElementById('next-destination').addEventListener('click', function() {
+                destinationScroller.scroll({ left: destinationScroller.scrollLeft + scrollAmount, behavior: 'smooth' });
+            })
+
+            document.getElementById('previews-study-change-location').addEventListener('click', function() {
+                schoolChange.scroll({ left: schoolChange.scrollLeft - scrollAmount, behavior: 'smooth' });
+            })
+
+            document.getElementById('next-study-change-location').addEventListener('click', function() {
+                schoolChange.scroll({ left: schoolChange.scrollLeft + scrollAmount, behavior: 'smooth' });
+            })
+
+            document.getElementById('previews-portofolio').addEventListener('click', function() {
+                portoSlider.scroll({ left: portoSlider.scrollLeft - scrollAmount, behavior: 'smooth' });
+            })
+
+            document.getElementById('next-portofolio').addEventListener('click', function() {
+                portoSlider.scroll({ left: portoSlider.scrollLeft + scrollAmount, behavior: 'smooth' });
+            })
         </script>
     @endpush
-    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[46rem] -mt-20">
+    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[73rem] lg:h-[46rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
@@ -91,51 +120,15 @@
             </defs>
         </svg>
         <div class="absolute w-full top-28">
-            <div class="w-10/12 mx-auto mb-20">
-                <div class="flex flex-row justify-between items-center">
-                    <div class="flex-auto w-6/12">
-                        <div class="text-5xl font-black mb-6 mt-16" data-aos="fade-up">{{ ucwords($course) }} Bootcamp
-                            <div class="text-[#FF9500]">
-                                {{ $detail }}</div>
-                        </div>
-                        <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-5/7"
-                            data-aos="fade-up">Learn and experience
-                            real projects of Digital Marketing and land your dream job within 9 months.</div>
-                        <div class="flex flex-wrap">
-                            <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"
-                                data-aos="fade-up">Online - Hybrid
-                            </button>
-                            <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-up">Beginner
-                                Friendly</button>
-                            <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-up">35
-                                limited seat</button>
-                        </div>
-                        <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up">
-                            <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
-                                style="width: 88%; background: linear-gradient(151.77deg, #FFB855 18.11%, #FFA220 39.42%, #FFB855 60.73%, #FFB855 82.05%, #FFA220 103.36%, #FFB855 124.67%, #FFA220 145.98%, #FFB855 167.29%);">
-                                <span class="ml-6 font-bold text-xs text-white">88% seat has been filled</span>
-                            </div>
-                        </div>
-                        <div class="flex flex-row mt-8">
-                            <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
-                                data-aos="fade-up">Choose
-                                Destination</button>
-                            <button
-                                class="ml-4 text-[#FF9500] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#FF9500]"
-                                data-aos="fade-up">Download
-                                Syllabus</button>
-                        </div>
-                    </div>
-                    <div class="flex-auto w-4/12">
+            <div class="w-full lg:w-10/12 mx-auto mb-20">
+                <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-between items-center">
+                    <div class="lg:hidden flex-auto w-full lg:w-4/12">
                         @if (count($heroImages) == 1 && $slug == 'online')
                             @foreach ($heroImages as $item)
                                 <img src="{{ Vite::asset($item) }}" alt="ilustration 1" data-aos="fade-up">
                             @endforeach
                         @else
-                            <div class="ml-36">
+                            <div class="p-6 lg:ml-36">
                                 <div class="grid grid-rows-2 grid-flow-col gap-4">
                                     <div class="row-span-2 relative" data-aos="fade-up">
                                         <div class="absolute flex w-full h-full justify-center items-center">
@@ -165,13 +158,88 @@
                         @endif
 
                     </div>
+                    <div class="p-6 lg:p-0 flex-auto w-full lg:w-6/12">
+                        <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-16" data-aos="fade-up">
+                            {{ ucwords($course) }} Bootcamp
+                            <div class="text-[#FF9500]">
+                                {{ $detail }}</div>
+                        </div>
+                        <div class="text-[#262626] font-normal text-sm lg:text-2xl mb-6 text-opacity-75 leading-5 lg:leading-9 w-5/7"
+                            data-aos="fade-up">Learn and experience
+                            real projects of Digital Marketing and land your dream job within 9 months.</div>
+                        <div class="flex flex-wrap">
+                            <button
+                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-4 lg:mb-11 outline outline-1 outline-[#FF7A00]"
+                                data-aos="fade-up">Online - Hybrid
+                            </button>
+                            <button
+                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-4 lg:mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-up">Beginner
+                                Friendly</button>
+                            <button
+                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-4 lg:mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-up">35
+                                limited seat</button>
+                        </div>
+                        <div class="w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up">
+                            <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
+                                style="width: 88%; background: linear-gradient(151.77deg, #FFB855 18.11%, #FFA220 39.42%, #FFB855 60.73%, #FFB855 82.05%, #FFA220 103.36%, #FFB855 124.67%, #FFA220 145.98%, #FFB855 167.29%);">
+                                <span class="ml-6 font-bold text-xs text-white">88% seat has been filled</span>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap lg:flex-nowrap lg:flex-row mt-8">
+                            <button
+                                class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11 w-full lg:w-auto"
+                                data-aos="fade-up">Choose
+                                Destination</button>
+                            <button
+                                class="lg:ml-4 text-[#FF9500] px-10 py-2 rounded-md  text-lg font-bold mb-11 w-full lg:w-auto outline outline-1 outline-[#FF9500]"
+                                data-aos="fade-up">Download
+                                Syllabus</button>
+                        </div>
+                    </div>
+                    <div class="hidden flex-auto w-4/12">
+                        @if (count($heroImages) == 1 && $slug == 'online')
+                            @foreach ($heroImages as $item)
+                                <img src="{{ Vite::asset($item) }}" alt="ilustration 1" data-aos="fade-up">
+                            @endforeach
+                        @else
+                            <div class="ml-36">
+                                <div class="grid grid-rows-2 grid-flow-col gap-4">
+                                    <div class="row-span-2 relative" data-aos="fade-up">
+                                        <div class="absolute flex w-full h-full justify-center items-center">
+                                            <svg class="" width="44" height="44" viewBox="0 0 44 44"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="22" cy="22" r="22"
+                                                    fill="white" />
+                                                <path
+                                                    d="M17 15.8685C17 15.0698 17.8901 14.5934 18.5547 15.0365L27.5662 21.0442C28.2051 21.4701 28.1455 22.4272 27.4587 22.7706L18.4472 27.2764C17.7823 27.6088 17 27.1253 17 26.382V15.8685Z"
+                                                    fill="#FF9500" />
+                                            </svg>
+                                            <div
+                                                class="absolute flex w-full h-full rounded-xl bg-gradient-to-b from-indigo-800 opacity-50">
+                                            </div>
+                                        </div>
+
+                                        <img src="{{ Vite::asset($heroImages[0]) }}" alt="ilustration 1"
+                                            class=" h-full object-cover rounded-lg">
+                                    </div>
+                                    <div class="col-span-1"><img src="{{ Vite::asset($heroImages[1]) }}"
+                                            alt="ilustration 2" class=" object-cover rounded-lg" data-aos="fade-up">
+                                    </div>
+                                    <div class="row-span-1 col-span-1"><img src="{{ Vite::asset($heroImages[2]) }}"
+                                            alt="ilustration 3" class=" object-cover rounded-lg" data-aos="fade-up">
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="flex flex-row my-10" data-aos="fade-up">
-        <div class="w-4/12 relative">
+        <div class="hidden lg:block w-4/12 relative">
             <div class="sticky top-10">
                 <div class="w-52 mx-auto">
                     <p class="font-black text-2xl">Course Details Data Science</p>
@@ -216,10 +284,11 @@
                 </div>
             </div>
         </div>
-        <div class="w-8/12">
-            <section class="overview w-11/12">
+        <div class="w-full lg:w-8/12">
+            <section class="overview p-6 lg:p-0 w-full lg:w-11/12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="overview" data-aos="fade-up">OVERVIEW</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up">Why you should study in Istanbul?</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in Istanbul?
+                </p>
                 <div class="flex flex-col mt-8">
                     <div class="bg-white rounded-xl p-6 shadow-sm my-3" data-aos="fade-up">
                         <div class="flex flex-row">
@@ -341,13 +410,14 @@
                         </div>
                     </div>
                 </div>
-                <p class="font-black text-4xl mb-2 mt-6" data-aos="fade-up">WHY JOIN US?</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6" data-aos="fade-up">WHY JOIN US?</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Master Data Science and see the
                     benefits after
                     graduation</p>
-                <div class="flex flex-wrap mt-8 justify-between">
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
-                        <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
+                <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
+                        <div
+                            class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 w-56 lg:w-auto shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_79_3706)">
@@ -387,8 +457,9 @@
                                 curriculum designed by experts</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
-                        <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
+                        <div
+                            class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 w-56 lg:w-auto shadow-sm">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -430,8 +501,9 @@
                                 curriculum (in-person learning experience)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
-                        <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
+                        <div
+                            class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 w-56 lg:w-auto shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -449,8 +521,9 @@
                                 Hiring Partners</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
-                        <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
+                        <div
+                            class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 w-56 lg:w-auto shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_79_3706)">
@@ -490,8 +563,9 @@
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
-                        <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
+                        <div
+                            class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 w-56 lg:w-auto shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_79_3706)">
@@ -531,8 +605,9 @@
                                 passionate trainers</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
-                        <div class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 shadow-sm">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
+                        <div
+                            class="bg-white p-3 flex flex-col justify-center items-center mr-6 h-56 w-56 lg:w-auto shadow-sm">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_79_3706)">
@@ -589,36 +664,38 @@
                 </div>
             </section>
 
-            <section class="curriculum w-11/12 mt-12">
+            <section class="p-6 lg:p-0 curriculum w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="learcnphase" data-aos="fade-up">LEARN PHASE
                 </p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up">What You Will Learn in Practice</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What You Will Learn in Practice</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Each subject will require you to
                     apply what you learn
                     by hands-on experience through practical assignments and direct feedback from your instructor. In
                     detail, you will learn:</p>
-                <div class="grid grid-cols-2 mt-11">
+                <div class="grid grid-cols-1 lg:grid-cols-2 mt-11">
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <span class="font-bold text-xl ml-3">Preparation</span>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
@@ -643,24 +720,26 @@
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <div class="font-bold text-xl ml-3">Branding, Influencer Strategic, and Content
                                     Strategy Plan <span class="font-normal text-xl">(Module 1)</span></div>
                             </div>
@@ -685,24 +764,26 @@
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <div class="font-bold text-xl ml-3">Social Media Ads & Performance analyst <span
                                         class="font-normal text-xl">(Module 2)</span></div>
                             </div>
@@ -727,24 +808,26 @@
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <div class="font-bold text-xl ml-3">Google Ads & Media Recommendation<span
                                         class="font-normal text-xl">(Module 3)</span></div>
                             </div>
@@ -769,24 +852,26 @@
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <div class="font-bold text-xl ml-3">SEO <span class="font-normal text-xl">(Module
                                         4)</span></div>
                             </div>
@@ -810,24 +895,26 @@
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <div class="font-bold text-xl ml-3">Project Week <span
                                         class="font-normal text-xl">(Module 5)</span></div>
                             </div>
@@ -851,24 +938,26 @@
                     <div class="mr-4 mb-4 collapse-menu" data-aos="fade-up">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm ">
                             <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
+                                <div class="w-9 h-9">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="40" height="40" rx="6.66667"
+                                            fill="url(#paint0_linear_122_455)" />
+                                        <path
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
+                                            fill="white" />
+                                        <path
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#FFB72B" />
+                                                <stop offset="1" stop-color="#FFA01B" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
                                 <div class="font-bold text-xl ml-3">Career Weeks <span
                                         class="font-normal text-xl"></span></div>
                             </div>
@@ -892,13 +981,14 @@
             </section>
 
             @if (count($destinations) > 0)
-                <section class="w-11/12 mt-12" id="destination">
+                <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="destination">
                     <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">DESTINATION</p>
-                    <p class="font-black text-4xl mb-2" data-aos="fade-up">Various Choices of Wonderful Destinations
+                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Various Choices of Wonderful
+                        Destinations
                     </p>
                     <p class="font-normal text-base text-[#262626]" data-aos="fade-up">More than 1000+ choices of
                         amazing tourist destinations</p>
-                    <div class="overflow-x-auto flex mt-10" data-aos="fade-up">
+                    <div class="overflow-x-auto flex mt-10" data-aos="fade-up" id="destination-navigation">
                         @foreach ($destinations as $item)
                             <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                                 <div class="relative bg-white rounded-lg shadow-sm w-96">
@@ -913,7 +1003,7 @@
                         @endforeach
                     </div>
                     <div class="flex gap-3" data-aos="fade-up">
-                        <a href="#" data-aos="fade-up">
+                        <button type="button" data-aos="fade-up" id="previews-destination">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="40" y="40" width="40" height="40" rx="20"
@@ -930,11 +1020,11 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                        </a>
-                        <a href="#" data-aos="fade-up">
+                        </button>
+                        <button type="button" href="#" data-aos="fade-up" id="next-destination">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
-                                <rect width="40" height="40" rx="20" fill="#0F5B89" />
+                                <rect width="40" height="40" rx="20" fill="#FF9500" />
                                 <g clip-path="url(#clip0_98_519)">
                                     <path
                                         d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
@@ -947,24 +1037,23 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-
-                        </a>
+                        </button>
                     </div>
                 </section>
             @endif
 
-            <section class="w-11/12 mt-12">
+            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="studylocation" data-aos="fade-up">STUDY
                     LOCATION</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up">Study Change To Learn</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Study Change To Learn</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">You can choose to learn Data
                     Science according to your
                     choice location</p>
-                <div class="overflow-x-auto flex mt-10" data-aos="fade-up">
+                <div class="overflow-x-auto flex mt-10" data-aos="fade-up" id="study-change-location">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/indonesia_2.png') }}" alt="person 1"
-                                class="rounded-lg w-full h-64">
+                            <img src="{{ Vite::asset('resources/image/ilustration/indonesia_2.png') }}"
+                                alt="person 1" class="rounded-lg w-full h-64">
                             <p class="font-bold text-2xl p-6 text-center mt-6">Online (Bahasa Indonesia)</p>
                         </div>
                     </div>
@@ -984,7 +1073,7 @@
                     </div>
                 </div>
                 <div class="flex gap-3" data-aos="fade-up">
-                    <a href="#" data-aos="fade-up">
+                    <button type="button" data-aos="fade-up" id="previews-study-change-location">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20"
@@ -1001,8 +1090,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                    </a>
-                    <a href="#" data-aos="fade-up">
+                    </button>
+                    <button type="button" data-aos="fade-up" id="next-study-change-location">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#FF9500" />
@@ -1019,14 +1108,16 @@
                             </defs>
                         </svg>
 
-                    </a>
+                    </button>
                 </div>
             </section>
 
-            <section class="alumni w-11/12 mt-12" id="alumni">
+            <section class="alumni p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="alumni">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">All Alumni Story</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up">What alumni say about QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni of
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What alumni say about QarirLabs
+                </p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
+                    of
                     the Data Science
                     Bootcamp program at QarirLabs!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up">
@@ -1193,11 +1284,11 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mt-12">
+            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-up">
                     PARTNERSHIPS</p>
-                <p class="font-black text-4xl mb-2"data-aos="fade-up">Graduates have Worked in</p>
-                <div class="mt-8 flex flex-wrap justify-start items-center">
+                <p class="font-black text-2xl lg:text-4xl mb-2"data-aos="fade-up">Graduates have Worked in</p>
+                <div class="mt-8 flex flex-row overflow-x-auto lg:flex-wrap justify-start items-center">
                     <img src="{{ Vite::asset('resources/image/icon/detsu_grey.png') }}" alt="dentsu"
                         class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up">
                     <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="tokopedia"
@@ -1213,13 +1304,14 @@
                 </div>
             </section>
 
-            <section class="portofolio w-11/12 mt-12" id="portofolio">
+            <section class="portofolio p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="portofolio">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up">Portfolio Student at Bootcamp QarirLabs</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Portfolio Student at Bootcamp
+                    QarirLabs</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
                     of the Data Science
                     Bootcamp program at QarirLabs!</p>
-                <div class="overflow-x-auto flex" data-aos="fade-up">
+                <div class="overflow-x-auto flex" data-aos="fade-up" id="portofolio-slider">
                     <div class="flex-none" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
@@ -1285,8 +1377,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-3" data-aos="fade-up"> 
-                    <a href="#">
+                <div class="flex gap-3" data-aos="fade-up">
+                    <button type="button" id="previews-portofolio">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="40" y="40" width="40" height="40" rx="20"
@@ -1303,8 +1395,8 @@
                                 </clipPath>
                             </defs>
                         </svg>
-                    </a>
-                    <a href="#">
+                    </button>
+                    <button type="button" id="next-portofolio">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect width="40" height="40" rx="20" fill="#0F5B89" />
@@ -1321,17 +1413,17 @@
                             </defs>
                         </svg>
 
-                    </a>
+                    </button>
                 </div>
             </section>
 
-            <section class="overview w-11/12 mt-14">
+            <section class="gethired p-6 lg:p-0 w-full lg:w-11/12 mt-14">
                 <p class="font-bold text-base text-[#262626] mb-6" id="gethired" data-aos="fade-up">GET HIRED</p>
-                <p class="font-black text-4xl mb-2" data-aos="fade-up">3-Stage Work Plan</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">3-Stage Work Plan</p>
                 <div class="flex flex-wrap mt-8 justify-between">
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-center items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1346,9 +1438,9 @@
                                 doing so, you will shine in the job market.</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-center items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1364,9 +1456,9 @@
                                 practice interviewing with professional recruiters.</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8" data-aos="fade-up">
+                    <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-center items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_226_1196)">
@@ -1415,19 +1507,24 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mt-12">
-                <div class="flex flex-row justify-center items-center" id="admissions">
-                    <div class="w-1/2 mr-16" data-aos="fade-up">
+            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="admissions">
+                <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-center items-center">
+                    <div class="lg:hidden w-full lg:w-1/2 mb-5" data-aos="fade-up">
+                        <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
+                            alt="ilustration 9" class="object-contain rounded-xl">
+                    </div>
+                    <div class="w-full lg:w-1/2 lg:mr-16" data-aos="fade-up">
                         <p class="font-bold text-base text-[#262626] mb-5">ADMISSIONS</p>
-                        <p class="font-bold text-4xl text-black mb-5">Explore About Yourself</p>
-                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-5">Take the free assessment and
+                        <p class="font-bold text-2xl lg:text-4xl text-black mb-5">Explore About Yourself</p>
+                        <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 mb-5">Take the free
+                            assessment and
                             uncover things you didn’t know about yourself.
                         </p>
                         <button
-                            class="bg-[#FF9500] px-10 py-4 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Take
+                            class="bg-[#FF9500] px-10 py-4 rounded-md text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Take
                             Assessment Test</button>
                     </div>
-                    <div class="w-1/2" data-aos="fade-up">
+                    <div class="hidden lg:block w-full lg:w-1/2" data-aos="fade-up">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
                             alt="ilustration 9" class="object-contain rounded-xl">
                     </div>
@@ -1436,7 +1533,8 @@
             </section>
 
 
-            <section class="ready_join w-11/12 mt-12 mb-10" id="ready_join" data-aos="fade-up">
+            <section class="ready_join p-6 lg:p-0 w-full lg:w-11/12 mt-12 mb-10" id="ready_join"
+                data-aos="fade-up">
                 <div class="relative flex justify-end rounded-xl">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_5.png') }}"
                         alt="ilustration 2" class="h-80 rounded-xl">
@@ -1444,8 +1542,9 @@
                         style="background: linear-gradient(90.49deg, #00263D 36.68%, rgba(255, 255, 255, 0) 98.95%);">
                     </div>
                     <div class="absolute top-0 left-0 h-80 w-full flex justify-start items-center ">
-                        <div class="flex flex-col ml-28">
-                            <p class="font-black text-4xl text-white">Ready to be the next <br>Master Data Science?
+                        <div class="flex flex-col lg:ml-28 p-10 lg:p-0">
+                            <p class="font-black text-2xl lg:text-4xl text-white">Ready to be the next <br>Master Data
+                                Science?
                             </p>
                             <div>
                                 <button
