@@ -17,13 +17,13 @@ class LandingPageController extends Controller
             $heroImages = ['resources/image/ilustration/ilustration_3.png'];
         } elseif ($slug == 'indonesia') {
             $detail = "In Indonesia";
-            $heroImages = ['resources/image/ilustration/indonesia.png','resources/image/ilustration/istanbul.png','resources/image/ilustration/south_korea.png'];
+            $heroImages = ['resources/image/ilustration/indonesia.png','resources/image/ilustration/indonesia_2.png','resources/image/ilustration/indonesia_3.jpg'];
         } elseif ($slug == 'istanbul') {
             $detail = "In Istanbul";
-            $heroImages = ['resources/image/ilustration/istanbul.png','resources/image/ilustration/south_korea.png','resources/image/ilustration/indonesia.png'];
-        } elseif ($slug == 'south korea') {
-            $detail = "In South Korea";
-            $heroImages = ['resources/image/ilustration/south_korea.png','resources/image/ilustration/indonesia.png','resources/image/ilustration/istanbul.png',];
+            $heroImages = ['resources/image/ilustration/istanbul_3.png','resources/image/ilustration/istanbul.png','resources/image/ilustration/istanbul_2.png'];
+        } elseif ($slug == 'Tokyo') {
+            $detail = "In Tokyo";
+            $heroImages = ['resources/image/ilustration/tokyo.jpg','resources/image/ilustration/tokyo_2.png','resources/image/ilustration/tokyo_3.png',];
         }
 
         if ($course == 'data science') {

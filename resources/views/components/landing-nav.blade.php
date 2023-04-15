@@ -1,8 +1,18 @@
 <div class="static w-full">
     <div class="relative">
+        @php
+            $url = request()->url();
+            $current = explode('/', $url);
+            $current = $current[count($current)-1];
+            $current = urldecode($current);
+            $color = '#FFD770';
+            if ($current == 'data science') {
+                $color = '#0F5B89';
+            }
+        @endphp
         <svg class="absolute right-0 h-96 w-96" viewBox="0 0 603 556" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_301)">
-                <circle cx="427.5" cy="128.5" r="193.5" fill="#FFD770" />
+                <circle cx="427.5" cy="128.5" r="193.5" fill="{{ $color }}" />
             </g>
             <defs>
                 <filter id="filter0_f_33_301" x="0" y="-299" width="855" height="855"
@@ -192,7 +202,11 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="relative">
+                                <div class="flex flex-row items-center cursor-pointer dropdown-menu">
+                                    <button class="text-black  px-3 py-2 font-medium ml-4">About</button>
+                                </div>
+                            </div>
                             <div class="relative">
                                 <div class="flex flex-row items-center cursor-pointer dropdown-menu"
                                     onclick="toggleProgramMenuInternational()">
@@ -304,7 +318,7 @@
                                                             </clipPath>
                                                         </defs>
                                                     </svg>
-                                                    <p class="font-black text-base ml-4">South Korea</p>
+                                                    <p class="font-black text-base ml-4">Tokyo</p>
                                                 </div>
                                                 <a href="#"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
@@ -339,8 +353,12 @@
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <a href="#" class="text-black  px-3 py-2 font-bold mx-2">Login</a>
 
-                    <a href="#" class="text-[#FF9500] px-5 py-2 font-bold rounded-md bg-[#262626] mx-2">Join
-                        Now</a>
+                    @if ($current == 'data science')
+                    <a href="#" class="text-white px-5 py-2 font-bold rounded-md bg-[#0F5B89] mx-2">JoinNow</a>    
+                    @else
+                    <a href="#" class="text-[#FF9500] px-5 py-2 font-bold rounded-md bg-[#262626] mx-2">JoinNow</a>    
+                    @endif
+                    
                     <div class="text-[#DEDEDE] mx-2 text-xl">|</div>
                     <div class="relative mx-2">
                         <div class="flex flex-row items-center dropdown-menu" onclick="toggleLanguageMenu()">

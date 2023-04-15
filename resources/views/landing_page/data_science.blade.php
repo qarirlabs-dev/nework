@@ -11,13 +11,13 @@
                         const previousElement = target.previousElementSibling;
                         if (parent.getAttribute('href') == window.location.hash) {
                             if (target.classList.contains('text-[#A5A5A5]')) {
-                                target.classList.replace("text-[#A5A5A5]", "text-[#FF9500]");
+                                target.classList.replace("text-[#A5A5A5]", "text-[#0F5B89]");
                             }
                             if (target.classList.contains('font-medium')) {
                                 target.classList.replace("font-medium","font-bold");
                             }
                             if (previousElement.classList.contains('bg-[#A5A5A5]')) {
-                                previousElement.classList.replace("bg-[#A5A5A5]", "bg-[#FF9500]");
+                                previousElement.classList.replace("bg-[#A5A5A5]", "bg-[#0F5B89]");
                             }
                             if (previousElement.classList.contains('w-0.5')) {
                                 previousElement.classList.replace("w-0.5","w-1");
@@ -32,8 +32,8 @@
                 sideNavMenu.forEach(element => {
                     Array.from(element.children).forEach(item => {
                         console.log(item.classList)
-                        if (item.classList.contains('text-[#FF9500]')) {
-                            item.classList.replace("text-[#FF9500]", "text-[#A5A5A5]");
+                        if (item.classList.contains('text-[#0F5B89]')) {
+                            item.classList.replace("text-[#0F5B89]", "text-[#A5A5A5]");
                         }
 
                         if (item.classList.contains('font-bold')) {
@@ -41,8 +41,8 @@
                         }
                         
                         
-                        if (item.classList.contains('bg-[#FF9500]')) {
-                            item.classList.replace("bg-[#FF9500]", "bg-[#A5A5A5]");
+                        if (item.classList.contains('bg-[#0F5B89]')) {
+                            item.classList.replace("bg-[#0F5B89]", "bg-[#A5A5A5]");
                         }
 
                         if (item.classList.contains('w-1')) {
@@ -54,11 +54,11 @@
             }
         </script>
     @endpush
-    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[46rem] -mt-20">
+    <section class="hero static bg-gradient-to-t from-[#EEF9FF] to-[#FFFFFF] w-full h-[46rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
-                <circle cx="144.5" cy="348.5" r="193.5" fill="#FFD770" />
+                <circle cx="144.5" cy="348.5" r="193.5" fill="#0F5B89" />
             </g>
             <defs>
                 <filter id="filter0_f_33_300" x="-283" y="-79" width="855" height="855"
@@ -74,7 +74,7 @@
                 <div class="flex flex-row justify-between items-center">
                     <div class="flex-auto w-6/12">
                         <div class="text-5xl font-black mb-6 mt-16" data-aos="fade-right" data-aos-duration="3000"
-                            data-aos-delay="300">{{ ucwords($course) }} Bootcamp <div class="text-[#FF9500]">
+                            data-aos-delay="300">{{ ucwords($course) }} Bootcamp <div class="text-[#0F5B89]">
                                 {{ $detail }}</div>
                         </div>
                         <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-5/7"
@@ -83,31 +83,31 @@
                             land your dream job within 9 months.</div>
                         <div class="flex flex-wrap">
                             <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"
+                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"
                                 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Online
                                 - Hybrid </button>
                             <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
+                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"data-aos="fade-right"
                                 data-aos-duration="3000" data-aos-delay="1200">Beginner
                                 Friendly</button>
                             <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
+                                class="text-[#0F5B89] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#0F5B89]"data-aos="fade-right"
                                 data-aos-duration="3000" data-aos-delay="1500">120
                                 limited quota</button>
                         </div>
                         <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="flip-left"
                             data-aos-duration="3000" data-aos-delay="300">
-                            <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
-                                style="width: 67%; background: linear-gradient(151.77deg, #FFB855 18.11%, #FFA220 39.42%, #FFB855 60.73%, #FFB855 82.05%, #FFA220 103.36%, #FFB855 124.67%, #FFA220 145.98%, #FFB855 167.29%);">
-                                <span class="ml-6 font-bold text-xs text-white">85% Class Slot Has Been Filled%</span>
+                            <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center bg-[#0F5B89]"
+                                style="width: 87%;">
+                                <span class="ml-6 font-bold text-xs text-white">87% seat has been filled                                </span>
                             </div>
                         </div>
                         <div class="flex flex-row mt-8">
-                            <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
+                            <button class="bg-[#0F5B89] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
                                 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Choose
                                 Destination</button>
                             <button
-                                class="ml-4 text-[#FF9500] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#FF9500]"
+                                class="ml-4 text-[#0F5B89] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#0F5B89]"
                                 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">Download
                                 Syllabus</button>
                         </div>
@@ -129,7 +129,7 @@
                                                 <circle cx="22" cy="22" r="22" fill="white" />
                                                 <path
                                                     d="M17 15.8685C17 15.0698 17.8901 14.5934 18.5547 15.0365L27.5662 21.0442C28.2051 21.4701 28.1455 22.4272 27.4587 22.7706L18.4472 27.2764C17.7823 27.6088 17 27.1253 17 26.382V15.8685Z"
-                                                    fill="#FF9500" />
+                                                    fill="#0F5B89" />
                                             </svg>
                                             <div
                                                 class="absolute flex w-full h-full rounded-xl bg-gradient-to-b from-indigo-800 opacity-50">
@@ -163,8 +163,8 @@
                 </div>
                 <div class="flex flex-col w-3/6 mx-auto mt-6">
                     <a href="#overview" class="inline-flex items-center ml-4 side-nav-menu">
-                        <div class="h-11 w-1 bg-[#FF9500] mr-4"></div>
-                        <span class="text-[#FF9500] font-bold text-lg">Overview</span>
+                        <div class="h-11 w-1 bg-[#0F5B89] mr-4"></div>
+                        <span class="text-[#0F5B89] font-bold text-lg">Overview</span>
                     </a>
                     <a href="#learcnphase" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
@@ -173,14 +173,6 @@
                     <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Destination</span>
-                    </a>
-                    <a href="#alumni" class="inline-flex items-center ml-4 side-nav-menu">
-                        <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">All Alumni Story</span>
-                    </a>
-                    <a href="#partnerships" class="inline-flex items-center ml-4 side-nav-menu">
-                        <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Meet Trainers</span>
                     </a>
                     <a href="#portofolio" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
@@ -194,17 +186,17 @@
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
                         <span class="text-[#A5A5A5] font-medium text-lg">Admission Process</span>
                     </a>
-                    <button class="ml-4 mt-8 bg-[#FF9500] px-9 py-4 rounded-md text-white text-lg font-bold">Let's Get
+                    <button class="ml-4 mt-8 bg-[#0F5B89] px-9 py-4 rounded-md text-white text-lg font-bold">Let's Get
                         Started</button>
                 </div>
             </div>
         </div>
         <div class="w-8/12">
-            <section class="overview w-11/12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="overview" data-aos="fade-left"
+            <section class="overview w-11/12" id="overview">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-left"
                     data-aos-duration="3000" data-aos-delay="300">OVERVIEW</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="600">Our Experience</p>
+                    data-aos-delay="600">WHY JOIN US?</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
                     data-aos-delay="600">Master Data Science and see the benefits after
                     graduation</p>
@@ -227,18 +219,18 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_79_3706" x1="16.6667" y1="4"
                                         x2="24.3581" y2="17.6736" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_79_3706" x1="0.666656" y1="23.2402"
                                         x2="15.7943" y2="58.2175" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_79_3706" x1="0.666656" y1="10"
                                         x2="12.5023" y2="41.5616" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <clipPath id="clip0_79_3706">
                                         <rect width="48" height="48" fill="white"
@@ -269,23 +261,23 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_79_3715" x1="21.9763" y1="16.0928"
                                         x2="25.2574" y2="19.3747" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_79_3715" x1="-2.28882e-05" y1="0.000488281"
                                         x2="24.3531" y2="41.2584" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_79_3715" x1="8.87491" y1="20.6426"
                                         x2="42.8212" y2="65.8874" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint3_linear_79_3715" x1="30.7418" y1="36.6245"
                                         x2="34.025" y2="39.9064" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                 </defs>
                             </svg>
@@ -303,8 +295,8 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_79_3724" x1="1.83337" y1="1.49756"
                                         x2="46.8349" y2="46.4976" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                 </defs>
                             </svg>
@@ -330,18 +322,18 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_79_3706" x1="16.6667" y1="4"
                                         x2="24.3581" y2="17.6736" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_79_3706" x1="0.666656" y1="23.2402"
                                         x2="15.7943" y2="58.2175" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_79_3706" x1="0.666656" y1="10"
                                         x2="12.5023" y2="41.5616" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <clipPath id="clip0_79_3706">
                                         <rect width="48" height="48" fill="white"
@@ -371,18 +363,18 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_79_3706" x1="16.6667" y1="4"
                                         x2="24.3581" y2="17.6736" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_79_3706" x1="0.666656" y1="23.2402"
                                         x2="15.7943" y2="58.2175" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_79_3706" x1="0.666656" y1="10"
                                         x2="12.5023" y2="41.5616" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <clipPath id="clip0_79_3706">
                                         <rect width="48" height="48" fill="white"
@@ -412,18 +404,18 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_79_3706" x1="16.6667" y1="4"
                                         x2="24.3581" y2="17.6736" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_79_3706" x1="0.666656" y1="23.2402"
                                         x2="15.7943" y2="58.2175" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_79_3706" x1="0.666656" y1="10"
                                         x2="12.5023" y2="41.5616" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <clipPath id="clip0_79_3706">
                                         <rect width="48" height="48" fill="white"
@@ -483,32 +475,32 @@
                                                 <linearGradient id="paint0_linear_174_2764" x1="-7.62939e-06"
                                                     y1="20.4722" x2="8.53333" y2="24.7388"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint1_linear_174_2764" x1="8.889"
                                                     y1="13.3608" x2="18.6749" y2="16.2966"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint2_linear_174_2764" x1="17.7777"
                                                     y1="16.9165" x2="27.1293" y2="20.4233"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint3_linear_174_2764" x1="26.6667"
                                                     y1="11.5835" x2="36.5949" y2="14.2912"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint4_linear_174_2764" x1="-7.62939e-06"
                                                     y1="0.916504" x2="10.5568" y2="24.6692"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <clipPath id="clip0_174_2764">
                                                     <rect width="32" height="32" fill="white" />
@@ -547,38 +539,38 @@
                                                 <linearGradient id="paint0_linear_174_2772" x1="6.21432"
                                                     y1="0" x2="13.0715" y2="6.85714"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint1_linear_174_2772" x1="3.92853"
                                                     y1="6.85742" x2="8.49996" y2="16.0003"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint2_linear_174_2772" x1="0.5"
                                                     y1="13.7139" x2="18.7857" y2="31.9996"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint3_linear_174_2772" x1="7.35715"
                                                     y1="20.5713" x2="11.9286" y2="25.1427"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint4_linear_174_2772" x1="27.9285"
                                                     y1="0" x2="32.5" y2="4.57143"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint5_linear_174_2772" x1="18.7857"
                                                     y1="0" x2="39.4626" y2="11.8154"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <clipPath id="clip0_174_2772">
                                                     <rect width="32" height="32" fill="white"
@@ -613,26 +605,26 @@
                                                 <linearGradient id="paint0_linear_174_2783" x1="7.5625"
                                                     y1="16" x2="20.9376" y2="37.7902"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint1_linear_174_2783" x1="0"
                                                     y1="1" x2="4.20729" y2="14.7088"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint2_linear_174_2783" x1="0"
                                                     y1="10.375" x2="2.45922" y2="21.0589"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint3_linear_174_2783" x1="0"
                                                     y1="17.875" x2="6.19193" y2="29.607"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                             </defs>
                                         </svg>
@@ -663,26 +655,26 @@
                                                 <linearGradient id="paint0_linear_174_2791" x1="3.69562"
                                                     y1="13.3032" x2="11.2475" y2="31.4624"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint1_linear_174_2791" x1="3.69562"
                                                     y1="21.3501" x2="11.2475" y2="39.5093"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint2_linear_174_2791" x1="3.69562"
                                                     y1="5.51416" x2="11.1788" y2="23.6048"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                                 <linearGradient id="paint3_linear_174_2791" x1="4.02042"
                                                     y1="0" x2="8.93479" y2="14.8702"
                                                     gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="#FFB72B" />
-                                                    <stop offset="1" stop-color="#FFA01B" />
+                                                    <stop stop-color="#0F5B89" />
+                                                    <stop offset="1" stop-color="#256C99" />
                                                 </linearGradient>
                                             </defs>
                                         </svg>
@@ -697,8 +689,8 @@
                 </div>
             </section>
 
-            <section class="curriculum w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="learcnphase" data-aos="fade-down"
+            <section class="curriculum w-11/12 mt-12" id="learcnphase">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-down"
                     data-aos-duration="3000" data-aos-delay="100">LEARN PHASE</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-right" data-aos-duration="3000"
                     data-aos-delay="100">What You Will Learn in Practice</p>
@@ -724,8 +716,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -764,8 +756,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -805,8 +797,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -846,8 +838,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -886,8 +878,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -926,8 +918,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -965,8 +957,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -1004,8 +996,8 @@
                                     <defs>
                                         <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
                                             x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="#FFB72B" />
-                                            <stop offset="1" stop-color="#FFA01B" />
+                                            <stop stop-color="#0F5B89" />
+                                            <stop offset="1" stop-color="#256C99" />
                                         </linearGradient>
                                     </defs>
                                 </svg>
@@ -1028,8 +1020,8 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="destination" data-aos="fade-up"
+            <section class="w-11/12 mt-12" id="destination">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up"
                     data-aos-duration="3000" data-aos-delay="100">DESTINATION</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="100">Study Change To Learn</p>
@@ -1054,9 +1046,9 @@
                     </div>
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
+                            <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}"
                                 alt="person 1" class="rounded-lg w-full h-64">
-                            <p class="font-bold text-2xl p-6 text-center mt-6">South Korea</p>
+                            <p class="font-bold text-2xl p-6 text-center mt-6">Tokyo</p>
                         </div>
                     </div>
                 </div>
@@ -1082,7 +1074,7 @@
                     <a href="#" data-aos="fade-left">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF9500" />
+                            <rect width="40" height="40" rx="20" fill="#0F5B89" />
                             <g clip-path="url(#clip0_98_519)">
                                 <path
                                     d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
@@ -1100,8 +1092,8 @@
                 </div>
             </section>
 
-            <section class="alumni w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="alumni" data-aos="fade-left"
+            <section class="alumni w-11/12 mt-12" id="alumni" >
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-left"
                     data-aos-duration="3000" data-aos-delay="100">All Alumni Story</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
                     data-aos-delay="200">What alumni say about QarirLabs</p>
@@ -1115,19 +1107,14 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="{{ Vite::asset('resources/image/avatar/avatar_1.png') }}"
-                                            alt="avatar 1" class="w-12 h-12">
+                                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
+                                            alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Guy Hawkins</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Data Science at
-                                                GOTO</p>
+                                            <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Marketing Manager at KUMPUL | Digital Marketing & Startup Practitioner | BNSP Certified</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit
-                                        eleifend urna, a
-                                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to attend fun classes, but also improve my networking and knowledge because of the highly experienced trainer." Hieronymus </p>
                                 </div>
                             </div>
                         </div>
@@ -1137,19 +1124,14 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="{{ Vite::asset('resources/image/avatar/avatar_2.png') }}"
-                                            alt="avatar 1" class="w-12 h-12">
+                                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
+                                            alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Dianne Russell</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Digital Marketing
-                                                at Tik Tok</p>
+                                            <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Brand Performance & Strategy at majoo Indonesia</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit
-                                        eleifend urna, a
-                                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5"> "Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!"-Tyas</p>
                                 </div>
                             </div>
                         </div>
@@ -1160,19 +1142,14 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="{{ Vite::asset('resources/image/avatar/avatar_3.png') }}"
-                                            alt="avatar 1" class="w-12 h-12">
+                                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
+                                            alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Kristin Watson</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Digital Marketing
-                                                at Shopee</p>
+                                            <p class="font-medium text-base text-black">Angeline Lie </p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Founder & CEO at Digmo Agency</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit
-                                        eleifend urna, a
-                                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"The learning materials are very comprehensive, the classes are well-structured, and the consultation service is satisfying." - Angeline Lie</p>
                                 </div>
                             </div>
                         </div>
@@ -1182,19 +1159,14 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="{{ Vite::asset('resources/image/avatar/avatar_4.png') }}"
-                                            alt="avatar 1" class="w-12 h-12">
+                                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
+                                            alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Arlene McCoy</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Data Science at
-                                                Tokopedia</p>
+                                            <p class="font-medium text-base text-black">Balad Al Barokah</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Growth Analyst at MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit
-                                        eleifend urna, a
-                                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new opportunity to work in the digital field!"- Balad </p>
                                 </div>
                             </div>
                         </div>
@@ -1204,19 +1176,14 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="{{ Vite::asset('resources/image/avatar/avatar_5.png') }}"
+                                        <img src="https://media.licdn.com/dms/image/C5603AQG8h--cdyYYRA/profile-displayphoto-shrink_400_400/0/1622167619010?e=1686787200&v=beta&t=pt0lB-J_pJN1fndt9dOagpPc3fGi_Eu4tY5_WMuP-VY"
                                             alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Jacob Jones</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Software Engineer
-                                                at Tik Tok</p>
+                                            <p class="font-medium text-base text-black">Andimas Iben D. </p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Msc. Marketing Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit
-                                        eleifend urna, a
-                                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain a deeper understanding of data science. After taking their course and staying connected with my mentor, I was able to start working at my dream company using the significantly improved skills." - Andimas Iben </p>
                                 </div>
                             </div>
                         </div>
@@ -1226,19 +1193,14 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="{{ Vite::asset('resources/image/avatar/avatar_6.png') }}"
+                                        <img src="https://media.licdn.com/dms/image/C4E03AQFSzaO6pHzsUA/profile-displayphoto-shrink_400_400/0/1623405781794?e=1686787200&v=beta&t=zqlyqp4DRq3XiG4hYqgXWv4_3R6URXpA-IS5xT_moFU"
                                             alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Albert Flores</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Software Engineer
-                                                at GOTO</p>
+                                            <p class="font-medium text-base text-black">Indira Yasmin Amarti</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Promo Planner at NET MEDIATAMA TELEVISI</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet,
-                                        consectetur
-                                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit
-                                        eleifend urna, a
-                                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was presented in an engaging manner, and also guided by experienced practitioners so that various case studies could be solved."- Indira Yasmine</p>
                                 </div>
                             </div>
                         </div>
@@ -1266,7 +1228,7 @@
                     <a href="#">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF9500" />
+                            <rect width="40" height="40" rx="20" fill="#0F5B89" />
                             <g clip-path="url(#clip0_98_519)">
                                 <path
                                     d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
@@ -1321,21 +1283,23 @@
                     Bootcamp program at QarirLabs!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="300">
-                    <div class="flex-none">
+                    <div class="flex-none" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="10500">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
-                                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_4.png') }}"
-                                        alt="ilustration 4">
+                                    <img src="{{ Vite::asset('resources/image/portofolio/portofolio_1.png') }}"
+                                        alt="ilustration 4 rounded-xl">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">Credit Card Customer
-                                            Segmentation</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">Promosi
+                                            Karyawan
+                                            (Employee promotion)</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
-                                        <p class="font-normal text-base text-[#262626]">Guy Hawkins, Nanang, Andre,
-                                            Hilman</p>
-                                        <button
-                                            class="mt-6 w-full text-[#FF9500] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#FF9500]">See
-                                            Portofolio</button>
+                                        <p class="font-normal text-base text-[#262626]">Kadek Mardika Pranata</p>
+                                        <div class="mt-12 flex w-full text-center">
+                                            <a href="https://drive.google.com/file/d/10p1af15lw6lbzdG4Ayyqpjei0bV6g2YW/view" target="_blank"
+                                            class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
+                                            Portofolio</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1345,77 +1309,38 @@
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
-                                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_4.png') }}"
-                                        alt="ilustration 4">
+                                    <img src="{{ Vite::asset('resources/image/portofolio/portofolio_2.png') }}"
+                                        alt="ilustration 4 rounded-xl">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">Credit Card Customer
-                                            Segmentation</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">Job & Department
+                                            Promotion</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
-                                        <p class="font-normal text-base text-[#262626]">Guy Hawkins, Nanang, Andre,
-                                            Hilman</p>
-                                        <button
-                                            class="mt-6 w-full text-[#FF9500] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#FF9500]">See
-                                            Portofolio</button>
+                                        <p class="font-normal text-base text-[#262626]">Syifaya Qorina</p>
+                                        <div class="mt-12 flex w-full text-center">
+                                            <a href="https://drive.google.com/file/d/1emvOSQ_nmwTw5bx_7xZG66L4vCSOr-y5/view" target="_blank"
+                                            class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
+                                            Portofolio</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex-none">
+                    <div class="flex-none" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="10500">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
-                                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_4.png') }}"
-                                        alt="ilustration 4">
+                                    <img src="{{ Vite::asset('resources/image/portofolio/portofolio_3.png') }}"
+                                        alt="ilustration 4 rounded-xl">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">Credit Card Customer
-                                            Segmentation</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">QarirLabs Data Science</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
-                                        <p class="font-normal text-base text-[#262626]">Guy Hawkins, Nanang, Andre,
-                                            Hilman</p>
-                                        <button
-                                            class="mt-6 w-full text-[#FF9500] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#FF9500]">See
-                                            Portofolio</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-none">
-                        <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="w-80 p-3">
-                                <div class="bg-white rounded-lg p-2 shadow-sm">
-                                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_4.png') }}"
-                                        alt="ilustration 4">
-                                    <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">Credit Card Customer
-                                            Segmentation</p>
-                                        <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
-                                        <p class="font-normal text-base text-[#262626]">Guy Hawkins, Nanang, Andre,
-                                            Hilman</p>
-                                        <button
-                                            class="mt-6 w-full text-[#FF9500] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#FF9500]">See
-                                            Portofolio</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex-none">
-                        <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="w-80 p-3">
-                                <div class="bg-white rounded-lg p-2 shadow-sm">
-                                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_4.png') }}"
-                                        alt="ilustration 4">
-                                    <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">Credit Card Customer
-                                            Segmentation</p>
-                                        <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
-                                        <p class="font-normal text-base text-[#262626]">Guy Hawkins, Nanang, Andre,
-                                            Hilman</p>
-                                        <button
-                                            class="mt-6 w-full text-[#FF9500] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#FF9500]">See
-                                            Portofolio</button>
+                                        <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
+                                        <div class="mt-12 flex w-full text-center">
+                                            <a href="https://drive.google.com/file/d/1VT3mlpV2piycnSUkSp5uD1sPGd94IAXw/view" target="_blank"
+                                            class="w-full text-[#0F5B89] px-10 py-2 rounded-md text-lg font-bold mb-3 outline outline-1 outline-[#0F5B89]">See
+                                            Portofolio</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1444,7 +1369,7 @@
                     <a href="#">
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="#FF9500" />
+                            <rect width="40" height="40" rx="20" fill="#0F5B89" />
                             <g clip-path="url(#clip0_98_519)">
                                 <path
                                     d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
@@ -1462,8 +1387,8 @@
                 </div>
             </section>
 
-            <section class="overview w-11/12 mt-14">
-                <p class="font-bold text-base text-[#262626] mb-6" id="gethired" data-aos="fade-up"
+            <section class="w-11/12 mt-14" id="gethired" >
+                <p class="font-bold text-base text-[#262626] mb-6"data-aos="fade-up"
                     data-aos-duration="3000" data-aos-delay="300">GET HIRED</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="300">3-Stage Work Plan</p>
@@ -1475,7 +1400,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M28.5 4H12.5C11.4391 4 10.4217 4.42143 9.67159 5.17157C8.92144 5.92172 8.50002 6.93913 8.50002 8V40C8.50002 41.0609 8.92144 42.0783 9.67159 42.8284C10.4217 43.5786 11.4391 44 12.5 44H26.5C25.68 43.5 24.9 42.88 24.22 42.2C22.9629 41.0444 21.9467 39.6516 21.2298 38.1019C20.5128 36.5521 20.1093 34.876 20.0424 33.1697C19.9755 31.4635 20.2465 29.7608 20.8399 28.1597C21.4333 26.5586 22.3373 25.0905 23.5 23.84C27.88 19 35.16 18.26 40.5 22V16L28.5 4ZM26.5 18V7L37.5 18H26.5ZM41.12 37.8C43.78 33.58 42.5 28 38.32 25.36C34.1 22.7 28.5 24 25.88 28.16C23.2 32.38 24.5 37.94 28.68 40.6C31.6 42.46 35.32 42.46 38.26 40.64L44.5 46.78L47.28 44L41.12 37.8ZM33.5 38C32.1739 38 30.9022 37.4732 29.9645 36.5355C29.0268 35.5979 28.5 34.3261 28.5 33C28.5 31.6739 29.0268 30.4021 29.9645 29.4645C30.9022 28.5268 32.1739 28 33.5 28C34.8261 28 36.0979 28.5268 37.0355 29.4645C37.9732 30.4021 38.5 31.6739 38.5 33C38.5 34.3261 37.9732 35.5979 37.0355 36.5355C36.0979 37.4732 34.8261 38 33.5 38Z"
-                                    fill="#FFAC23" />
+                                    fill="#0F5B89" />
                             </svg>
 
                             <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Real Study Case
@@ -1492,7 +1417,7 @@
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M26.5 18H37.5L26.5 7V18ZM12.5 4H28.5L40.5 16V40C40.5 41.0609 40.0786 42.0783 39.3284 42.8284C38.5783 43.5786 37.5609 44 36.5 44H12.5C11.4391 44 10.4217 43.5786 9.67157 42.8284C8.92143 42.0783 8.5 41.0609 8.5 40V8C8.5 5.78 10.28 4 12.5 4ZM28.5 40V38C28.5 35.34 23.16 34 20.5 34C17.84 34 12.5 35.34 12.5 38V40H28.5ZM20.5 24C19.4391 24 18.4217 24.4214 17.6716 25.1716C16.9214 25.9217 16.5 26.9391 16.5 28C16.5 29.0609 16.9214 30.0783 17.6716 30.8284C18.4217 31.5786 19.4391 32 20.5 32C21.5609 32 22.5783 31.5786 23.3284 30.8284C24.0786 30.0783 24.5 29.0609 24.5 28C24.5 26.9391 24.0786 25.9217 23.3284 25.1716C22.5783 24.4214 21.5609 24 20.5 24Z"
-                                    fill="#FFB72B" />
+                                    fill="#0F5B89" />
                             </svg>
 
 
@@ -1522,18 +1447,18 @@
                                 <defs>
                                     <linearGradient id="paint0_linear_226_1196" x1="16.5001" y1="4"
                                         x2="24.1915" y2="17.6736" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint1_linear_226_1196" x1="0.500061" y1="23.2402"
                                         x2="15.6277" y2="58.2175" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <linearGradient id="paint2_linear_226_1196" x1="0.500061" y1="10"
                                         x2="12.3357" y2="41.5616" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#FFB72B" />
-                                        <stop offset="1" stop-color="#FFA01B" />
+                                        <stop stop-color="#0F5B89" />
+                                        <stop offset="1" stop-color="#256C99" />
                                     </linearGradient>
                                     <clipPath id="clip0_226_1196">
                                         <rect width="48" height="48" fill="white"
@@ -1554,18 +1479,17 @@
                 </div>
             </section>
 
-            <section class="w-11/12 mt-12">
-                <div class="flex flex-row justify-center items-center" id="admissions">
+            <section class="w-11/12 mt-12" id="admissions">
+                <div class="flex flex-row justify-center items-center">
                     <div class="w-1/2 mr-16" data-aos="fade-right" data-aos-duration="3000"
                         data-aos-delay="500">
                         <p class="font-bold text-base text-[#262626] mb-5">ADMISSIONS</p>
                         <p class="font-bold text-4xl text-black mb-5">Explore About Yourself</p>
-                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-5">Take the free assessment and
-                            uncover things you didn’t know about yourself.
+                        <p class="font-medium text-lg text-[#262626] opacity-60 mb-6">Complete a brief career assessment with 8 questions in just 90 seconds.
                         </p>
-                        <button
-                            class="bg-[#FF9500] px-10 py-4 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Take
-                            Assessment Test</button>
+                        <br>
+                        <a href="https://y-data.typeform.com/to/U4W5pFEE/?form_position=%2F&gaid=1160409597.1681175250&referrer=N%2FA&_ga=2.178558691.63757594.1681175250-1160409597.1681175250&typeform-source=practicum.com" target="_blank"
+                            class="bg-[#0F5B89] px-10 py-4 rounded-md text-white text-lg font-bold mb-11 mt-6">Take a Career Quiz</a>
                     </div>
                     <div class="w-1/2" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="700">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
@@ -1590,7 +1514,7 @@
                             </p>
                             <div>
                                 <button
-                                    class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11 mt-10">Let's
+                                    class="bg-[#0F5B89] px-10 py-2 rounded-md text-white text-lg font-bold mb-11 mt-10">Let's
                                     Get Started</button>
                             </div>
                         </div>

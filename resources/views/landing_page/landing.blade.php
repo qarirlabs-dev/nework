@@ -63,10 +63,10 @@
                                 <p class="font-bold text-sm text-[#262626] px-2 py-3">Istanbul</p>
                             </div>
                             <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
-                                onclick="redirectToPage('south korea')">
-                                <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
+                                onclick="redirectToPage('Tokyo')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}"
                                     alt="online" class="h-24 w-24 rounded-lg">
-                                <p class="font-bold text-sm text-[#262626] px-2 py-3">South Korea</p>
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Tokyo</p>
                             </div>
                         </div>
                     </div>
@@ -93,22 +93,19 @@
         <div class="absolute top-16">
             <div class="flex flex-row justify-between items-center w-10/12 mx-auto">
                 <div class="flex-auto w-2/3" data-aos="fade-right" data-aos-duration="3000">
-                    <div class="text-5xl font-black mb-6 mt-24 w-5/6">Create New Success Shortcuts. Land Your New Dream
+                    <div class="text-5xl font-black mb-6 mt-24">Create New Success Shortcuts. <br/>Land Your New Dream
                         Job.
                     </div>
-                    <div class="text-[#262626] font-normal text-xl mb-6 text-opacity-75 leading-9 w-10/12">Accelerate
-                        your
-                        career with our top-tier trainers, personal coaches, and proven methods. Get guaranteed results
-                        through our intensive online and offline classes.</div>
-                    <a href="#classes"
-                        class="bg-[#FF9500] z-30 px-10 py-2 rounded-md text-white text-lg font-bold">Browse
+                    <div class="text-[#262626] font-normal text-xl mb-6 text-opacity-75 leading-9 w-10/12">Welcome to the Career Accelerator that helps you go further than you are in school. Built to be the best, by the best, our highly-qualified trainers, personal coaches, intensive classes, and proven method mean guaranteed results – whether you learn online, offline or both.</div>
+                    <a href="#"
+                        class="bg-[#FF9500] z-30 px-10 py-4 rounded-md text-white text-lg font-bold mb-8 mt-6">Browse
                         Classess</a>
                 </div>
                 <div class="flex-auto w-1/3 -mr-6" data-aos="fade-up" data-aos-duration="3000">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="flex flex-row w-10/12 mx-auto" data-aos="fade-right" data-aos-duration="3000">
+            <div class="flex flex-row w-10/12 mx-auto mt-8" data-aos="fade-right" data-aos-duration="3000">
                 <div class="mr-12">
                     <div class="mb-6 font-medium text-xl">Talents</div>
                     <div class="flex items-center">
@@ -122,7 +119,7 @@
                     </div>
                 </div>
                 <div class="mx-2">
-                    <div class="mb-6 font-medium text-xl">Our grads get hired by</div>
+                    <div class="mb-6 font-medium text-xl">Our Alumni Work For Leading Companies</div>
                     <div class="flex items-end">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
@@ -164,7 +161,7 @@
     </section>
     <section class="programs hero w-10/12 mx-auto -mt-16" id="classes">
         <div class="flex flex-wrap">
-            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('data science')" data-aos="fade-right" data-aos-duration="3000">
+            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('data science')" data-aos="fade-right" data-aos-duration="3000">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
@@ -182,12 +179,11 @@
                             d="M342.5 171.5C342.5 183.323 341.684 192.282 340.082 198.921C338.48 205.562 336.106 209.824 333.035 212.321C329.978 214.807 326.155 215.605 321.51 215.157C316.854 214.708 311.42 213.01 305.203 210.554C300.284 208.611 294.891 206.199 289.036 203.581C265.342 192.984 234.075 179 196 179C172.25 179 148.107 184.435 125.276 191.09C114.983 194.09 104.948 197.34 95.3358 200.454C94.2877 200.794 93.2447 201.131 92.2069 201.467C81.6462 204.884 71.6284 208.08 62.3532 210.535C53.0766 212.992 44.563 214.702 37.0115 215.156C29.4586 215.609 22.903 214.802 17.5192 212.257C6.81208 207.194 0.5 195.117 0.5 171.5C0.5 77.0593 77.0593 0.5 171.5 0.5C265.941 0.5 342.5 77.0593 342.5 171.5Z"
                             stroke="#00263D" />
                     </svg>
-                    <img class="absolute bottom-0 right-0 w-80 h-48"
-                        src="{{ Vite::asset('resources/image/ilustration/data_science_2.png') }}" alt="ilustration 1"
-                        class="rounded-r-lg">
+                    <img class="absolute bottom-0 right-0 w-80 h-48 rounded-r-lg"
+                        src="{{ Vite::asset('resources/image/ilustration/data_science_2.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('digital marketing')" data-aos="fade-up" data-aos-duration="3000">
+            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('digital marketing')" data-aos="fade-up" data-aos-duration="3000">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
@@ -205,11 +201,11 @@
                             d="M342.5 171.5C342.5 183.323 341.684 192.282 340.082 198.921C338.48 205.562 336.106 209.824 333.035 212.321C329.978 214.807 326.155 215.605 321.51 215.157C316.854 214.708 311.42 213.01 305.203 210.554C300.284 208.611 294.891 206.199 289.036 203.581C265.342 192.984 234.075 179 196 179C172.25 179 148.107 184.435 125.276 191.09C114.983 194.09 104.948 197.34 95.3358 200.454C94.2877 200.794 93.2447 201.131 92.2069 201.467C81.6462 204.884 71.6284 208.08 62.3532 210.535C53.0766 212.992 44.563 214.702 37.0115 215.156C29.4586 215.609 22.903 214.802 17.5192 212.257C6.81208 207.194 0.5 195.117 0.5 171.5C0.5 77.0593 77.0593 0.5 171.5 0.5C265.941 0.5 342.5 77.0593 342.5 171.5Z"
                             stroke="#00263D" />
                     </svg>
-                    <img class="absolute bottom-0 right-0 w-80 h-48"
+                    <img class="absolute bottom-0 right-0 w-80 h-48 rounded-r-lg"
                         src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="">
                 </div>
             </div>
-            <div class="w-1/3 px-3 cursor-pointer program" onclick="showModal('web development')" data-aos="fade-left" data-aos-duration="3000">
+            <div class="w-1/3 px-5 cursor-pointer program" onclick="showModal('web development')" data-aos="fade-left" data-aos-duration="3000">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
@@ -226,7 +222,7 @@
                             d="M342.5 171.5C342.5 183.323 341.684 192.282 340.082 198.921C338.48 205.562 336.106 209.824 333.035 212.321C329.978 214.807 326.155 215.605 321.51 215.157C316.854 214.708 311.42 213.01 305.203 210.554C300.284 208.611 294.891 206.199 289.036 203.581C265.342 192.984 234.075 179 196 179C172.25 179 148.107 184.435 125.276 191.09C114.983 194.09 104.948 197.34 95.3358 200.454C94.2877 200.794 93.2447 201.131 92.2069 201.467C81.6462 204.884 71.6284 208.08 62.3532 210.535C53.0766 212.992 44.563 214.702 37.0115 215.156C29.4586 215.609 22.903 214.802 17.5192 212.257C6.81208 207.194 0.5 195.117 0.5 171.5C0.5 77.0593 77.0593 0.5 171.5 0.5C265.941 0.5 342.5 77.0593 342.5 171.5Z"
                             stroke="#00263D" />
                     </svg>
-                    <img class="absolute bottom-0 right-0 w-80 h-48"
+                    <img class="absolute bottom-0 right-0 w-80 h-48 rounded-r-lg"
                         src="{{ Vite::asset('resources/image/ilustration/software_enginering.png') }}"
                         alt="">
                 </div>
@@ -300,8 +296,7 @@
 
                         </div>
                         <p class="font-bold text-2xl text-center mt-6">Personalized Curriculum</p>
-                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Personalized
-                            Curriculum</p>
+                        <p class="font-normal text-base text-[#262626] opacity-75 mt-3 text-center">Our class is limited only for 7-15 and 15-35 students. For all beginners, they can join extra class sessions to accelerate their skills as they wish.</p>
                     </div>
                 </div>
                 <div class="w-1/3 mb-20" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300">
@@ -401,12 +396,12 @@
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni</p>
                 </div>
                 <div class="w-1/3 flex flex-col justify-center" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
-                    <p class="text-center font-black text-4xl text-[#FF9500]">90%</p>
+                    <p class="text-center font-black text-4xl text-[#FF9500]">91%</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni Get a job less
                         than 12 months</p>
                 </div>
                 <div class="w-1/3" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
-                    <p class="text-center font-black text-4xl text-[#FF9500]">85%</p>
+                    <p class="text-center font-black text-4xl text-[#FF9500]">88%</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Completed rate</p>
                 </div>
             </div>
@@ -546,103 +541,91 @@
         </div>
     </section>
     <section class="alumni-say mt-28 w-10/12 mx-auto">
-        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">What alumni say about<br />QarirLabs</p>
+        <p class="text-black font-black text-4xl text-center w-1/2 mx-auto" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">Alumni Success Story</p>
         <p class="font-medium text-lg text-[#262626] opacity-60 text-center w-2/4 mx-auto mt-5" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="300">Our main focus is to
             provide the best learning experience for students, here are some testimonials from our alumni</p>
         <div class="flex flex-wrap mt-8">
             <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">
-                <div class="bg-white rounded-lg p-8 shadow-sm">
+                <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
-                        <img src="{{ Vite::asset('resources/image/avatar/avatar_1.png') }}" alt="avatar 1"
-                            class="w-12 h-12">
+                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_200_200/0/1660618827710?e=1686787200&v=beta&t=nUe35MsO-mHTZTMyHh-re25dXvZbaI6DzS0jB44f_ng" alt="avatar 1"
+                            class="w-12 h-12 rounded-full">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Guy Hawkins</p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Data Science at GOTO</p>
+                            <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Marketing Manager at KUMPUL | Digital Marketing & Startup Practitioner | BNSP Certified</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
-                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to attend fun classes, but also improve my networking and knowledge because of the highly experienced trainer." Hieronymus</p>
                 </div>
             </div>
             <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">
-                <div class="bg-white rounded-lg p-8 shadow-sm">
+                <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
-                        <img src="{{ Vite::asset('resources/image/avatar/avatar_2.png') }}" alt="avatar 1"
-                            class="w-12 h-12">
+                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_200_200/0/1606718704142?e=1686787200&v=beta&t=46wXqFTFvJSmlyEzdRCCdKtjSDY8HXaodU4UYzoWaNk" alt="avatar 1"
+                            class="w-12 h-12 rounded-full">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Dianne Russell</p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Digital Marketing at Tik Tok</p>
+                            <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Brand Performance & Strategy at majoo Indonesia</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
-                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!"-Tyas</p>
                 </div>
             </div>
             <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">
-                <div class="bg-white rounded-lg p-8 shadow-sm">
+                <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
-                        <img src="{{ Vite::asset('resources/image/avatar/avatar_3.png') }}" alt="avatar 1"
-                            class="w-12 h-12">
+                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_200_200/0/1680666708180?e=1682125200&v=beta&t=hm0E7yO1hyONlSgfXeyRBY9byPH-Shbu62aILKwZzwA" alt="avatar 1"
+                            class="w-12 h-12 rounded-full">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Kristin Watson</p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Digital Marketing at Shopee</p>
+                            <p class="font-medium text-base text-black">Angeline Lie</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Founder & CEO at Digmo Agency</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
-                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"The learning materials are very comprehensive, the classes are well-structured, and the consultation service is satisfying." - Angeline Lie</p>
                 </div>
             </div>
             <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1200">
-                <div class="bg-white rounded-lg p-8 shadow-sm">
+                <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
-                        <img src="{{ Vite::asset('resources/image/avatar/avatar_4.png') }}" alt="avatar 1"
-                            class="w-12 h-12">
+                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_200_200/0/1542432196651?e=1686787200&v=beta&t=ZcC6r7sEF2jj3We9KRPq3pOyi8NVd3mFHdUyDmI4PNc" alt="avatar 1"
+                            class="w-12 h-12 rounded-full">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Arlene McCoy</p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Data Science at Tokopedia</p>
+                            <p class="font-medium text-base text-black">Balad Al Barokah</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Growth Analyst at MGD Digital Marketing Consultant</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
-                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new opportunity to work in the digital field!"- Balad </p>
                 </div>
             </div>
             <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1500">
-                <div class="bg-white rounded-lg p-8 shadow-sm">
+                <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
-                        <img src="{{ Vite::asset('resources/image/avatar/avatar_5.png') }}" alt="avatar 1"
+                        <img src="https://media.licdn.com/dms/image/C5603AQG8h--cdyYYRA/profile-displayphoto-shrink_200_200/0/1622167619010?e=1686787200&v=beta&t=t85-LKlDJFQgQXS_qFjeMIk2ylsOyWuU9_De8GbZTp0" alt="avatar 1"
                             class="w-12 h-12">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Jacob Jones</p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Software Engineer at Tik Tok</p>
+                            <p class="font-medium text-base text-black">Andimas Iben D.</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Msc. Marketing Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
-                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain a deeper understanding of data science. After taking their course and staying connected with my mentor, I was able to start working at my dream company using the significantly improved skills." - Andimas Iben </p>
                 </div>
             </div>
             <div class="w-1/3 p-3" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="1800">
-                <div class="bg-white rounded-lg p-8 shadow-sm">
+                <div class="bg-white rounded-lg p-8 shadow-sm h-72">
                     <div class="flex ">
-                        <img src="{{ Vite::asset('resources/image/avatar/avatar_6.png') }}" alt="avatar 1"
-                            class="w-12 h-12">
+                        <img src="https://media.licdn.com/dms/image/C4E03AQFSzaO6pHzsUA/profile-displayphoto-shrink_200_200/0/1623405781794?e=1686787200&v=beta&t=8AG9GZHTtqaLY4UlQ70Tl7QPamHCLh6ExZxeJVWIe_E" alt="avatar 1"
+                            class="w-12 h-12 rounded-full">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Albert Flores</p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Software Engineer at GOTO</p>
+                            <p class="font-medium text-base text-black">Indira Yasmin Amarti </p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Promo Planner at NET MEDIATAMA TELEVISI</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit. Phasellus egestas, urna eu consequat consequat, leo velit eleifend urna, a
-                        lobortis sapien nibh tristique mi. Duis arcu nulla.</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was presented in an engaging manner, and also guided by experienced practitioners so that various case studies could be solved."- Indira Yasmine</p>
                 </div>
             </div>
         </div>
         <div class="flex justify-center mt-8" data-aos="fade-down" data-aos-duration="3000" data-aos-delay="1000">
-            <button class="text-white font-bold text-lg px-10 py-5 rounded-lg bg-[#FF9500]">Upgrade Skill Now</button>
+            <button class="text-white font-bold text-lg px-10 py-5 rounded-lg bg-[#FF9500]">Upgrade Skill Today</button>
         </div>
     </section>
     <section class="ready mt-20">
@@ -653,12 +636,11 @@
                 style="background: linear-gradient(90.49deg, #00263D 36.68%, rgba(255, 255, 255, 0) 98.95%);"></div>
             <div class="absolute top-0 left-0 h-80 w-full flex justify-start items-center ">
                 <div class="flex flex-col ml-28">
-                    <p class="font-black text-4xl text-white" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Ready to be the next <br />digital talent?</p>
+                    <p class="font-black text-4xl text-white" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Looking for<br>Financial Aid?</p>
+                    <p class="font-medium text-base text-white w-1/2 mt-2" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Finances shouldn't be the main obstacle to accessing our bootcamps. We're always finding new ways to facilitate payments and fundings.</p>
                     <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">
                         <button
-                            class="bg-[#FF9500] px-10 py-2 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact
-                            Us
-                            Now</button>
+                            class="bg-[#FF9500] px-10 py-2 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact Us</button>
                     </div>
                 </div>
             </div>

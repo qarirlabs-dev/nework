@@ -990,9 +990,9 @@
                     </div>
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
+                            <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}"
                                 alt="person 1" class="rounded-lg w-full h-64">
-                            <p class="font-bold text-2xl p-6 text-center mt-6">South Korea</p>
+                            <p class="font-bold text-2xl p-6 text-center mt-6">Tokyo</p>
                         </div>
                     </div>
                 </div>
