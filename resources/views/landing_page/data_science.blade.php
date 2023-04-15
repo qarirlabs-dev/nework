@@ -325,7 +325,7 @@
         <div class="w-full lg:w-8/12">
             <section class="overview w-full lg:w-11/12" id="overview">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">OVERVIEW</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in Istanbul?
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in {{ucwords($slug)}}?
                 </p>
                 <div class="flex flex-col mt-8">
                     <div class="bg-white rounded-xl p-6 shadow-sm my-3" data-aos="fade-up">
