@@ -31,7 +31,7 @@
                         proven method mean guaranteed results – whether you learn online, offline or both.</div>
                     <div class="flex">
                         <a href="#classes"
-                            class="bg-[#FF9500] z-30 px-10 py-4 w-full lg:w-auto rounded-md text-white text-center text-lg font-bold lg:mb-8 mt-6">Browse
+                            class="bg-[#FF9500] z-30 px-10 py-4 w-full lg:w-auto rounded-full text-white text-center text-lg font-bold lg:mb-8 mt-6">Browse
                             Classess</a>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                 data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
-                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
+                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-lg py-2 px-5 bg-opacity-10">Enrolled
                             May 10, 2023</span>
                     </div>
                     <p class="font-bold text-4xl mb-4">Data Science Bootcamp</p>
@@ -157,7 +157,7 @@
                 data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
-                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-full py-2 px-5 bg-opacity-10">Enrolled
+                            class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-lg py-2 px-5 bg-opacity-10">Enrolled
                             May 10, 2023</span>
                     </div>
                     <p class="font-bold text-4xl mb-4">Digital Marketing Bootcamp</p>
@@ -180,7 +180,7 @@
                 data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
-                            class="text-black font-bold text-base bg-[#00263D] rounded-full py-2 px-5 bg-opacity-10">Intermedate</span>
+                            class="text-black font-bold text-base bg-[#00263D] rounded-lg py-2 px-5 bg-opacity-10">Full Booked</span>
                     </div>
                     <p class="font-bold text-4xl mb-4">Web Development Bootcamp</p>
                     <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Software Engineering and
@@ -384,15 +384,15 @@
         </div>
     </section>
     <section class="alumni -mt-56 lg:-mt-48 w-11/12 lg:w-10/12 mx-auto">
-        <p class="font-black text-2xl lg:text-4xl text-white text-center pb-12">Hear How Our Student Enjoying The Class</p>
+        <p class="font-black text-2xl lg:text-4xl text-white text-center pb-12" data-aos="fade-up">See Our Class!!</p>
         <div class="flex flex-wrap">
             <div class="w-full lg:w-1/3 px-3" data-aos="fade-up">
-                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm">
-                    <img src="{{ Vite::asset('resources/image/avatar/person_1.png') }}" alt="person 1"
+                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm h-[30rem]">
+                    <img src="{{ Vite::asset('resources/image/ilustration/video_1.png') }}" alt="person 1"
                         class="rounded-lg w-full">
                     <div class="flex justify-center -mt-7">
-                        <a href=""
-                            class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-lg flex w-24 lg:w-32 justify-center items-center">
+                        <a href="https://youtu.be/FPZxdd4fZ_k" target="_blank"
+                            class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-full flex w-24 lg:w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -403,9 +403,9 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Cody Fisher</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at Bukalapak</p>
-                    <div class="flex justify-center mt-3 mb-8">
+                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Digital Marketing Offline Class</p>
+                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See our offline class here</p>
+                    {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_2)">
@@ -424,16 +424,16 @@
                             </defs>
                         </svg>
 
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="w-full lg:w-1/3 px-3" data-aos="fade-up">
-                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm">
-                    <img src="{{ Vite::asset('resources/image/avatar/person_2.png') }}" alt="person 1"
+                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm h-[30rem]">
+                    <img src="{{ Vite::asset('resources/image/ilustration/video_2.png') }}" alt="person 1"
                         class="rounded-lg w-full">
                     <div class="flex justify-center -mt-7">
-                        <a href=""
-                            class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-lg flex w-24 lg:w-32 justify-center items-center">
+                        <a href="https://youtu.be/GRLniV4UJPY" target="_blank"
+                            class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-full flex w-24 lg:w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -444,9 +444,10 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Arlene McCoy</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">DigData Science at Grab</p>
-                    <div class="flex justify-center mt-3 mb-8">
+                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">What They Say?
+                        Beetwen Bootcamp and Digital Marketing</p>
+                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Student QnA with Us</p>
+                    {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_2)">
@@ -465,16 +466,16 @@
                             </defs>
                         </svg>
 
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="w-full lg:w-1/3 px-3" data-aos="fade-up">
-                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm">
-                    <img src="{{ Vite::asset('resources/image/avatar/person_3.png') }}" alt="person 1"
+                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm h-[30rem]">
+                    <img src="{{ Vite::asset('resources/image/ilustration/video_3.png') }}" alt="person 1"
                         class="rounded-lg w-full">
                     <div class="flex justify-center -mt-7">
-                        <a href=""
-                            class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-lg flex w-24 lg:w-32 justify-center items-center">
+                        <a href="https://youtu.be/YX0ncJCCurk" target="_blank"
+                            class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-full flex w-24 lg:w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -485,9 +486,9 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Theresa Webb</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at Detik.com</p>
-                    <div class="flex justify-center mt-3 mb-8">
+                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Qinfo - Digital Marketing for Newbie</p>
+                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at Detik.com/p>
+                    {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_2)">
@@ -506,15 +507,15 @@
                             </defs>
                         </svg>
 
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8" data-aos="fade-up">
-            <button
-                class="text-[#FF9500] font-bold text-lg lg:text-lg px-10 py-2 lg:py-5 rounded-lg li outline outline-1 outline-[#FF9500]">See
-                More</button>
-        </div>
+        {{-- <div class="flex justify-center mt-8" data-aos="fade-up">
+            <a href="https://www.youtube.com/@qarirlabs1739" target="_blank"
+                class="text-[#FF9500] font-bold text-lg lg:text-lg px-10 py-2 lg:py-5 rounded-full li outline outline-1 outline-[#FF9500]">See
+                More</a>
+        </div> --}}
     </section>
     <section class="alumni-say mt-28 w-11/12 lg:w-10/12 mx-auto">
         <p class="text-black font-black text-2xl lg:text-4xl text-center w-full lg:w-1/2 mx-auto" data-aos="fade-up">Alumni Success Story
@@ -588,7 +589,7 @@
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
                         <img src="https://media.licdn.com/dms/image/C5603AQG8h--cdyYYRA/profile-displayphoto-shrink_200_200/0/1622167619010?e=1686787200&v=beta&t=t85-LKlDJFQgQXS_qFjeMIk2ylsOyWuU9_De8GbZTp0"
-                            alt="avatar 1" class="w-12 h-12">
+                            alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Andimas Iben D.</p>
                             <p class="font-medium text-xs text-[#0E144A] opacity-60">Msc. Marketing Candidate at RuG |
@@ -618,12 +619,12 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center mt-8" data-aos="fade-up">
+        {{-- <div class="flex justify-center mt-8" data-aos="fade-up">
             <button class="text-white font-bold text-lg px-10 py-2 lg:py-5 rounded-lg bg-[#FF9500]">Upgrade Skill
                 Today</button>
-        </div>
+        </div> --}}
     </section>
-    <section class="ready mt-20">
+    <section class="ready mt-20" data-aos="fade-up">
         <div class="relative flex justify-end">
             <img src="{{ Vite::asset('resources/image/ilustration/ilustration_2.png') }}" alt="ilustration 2"
                 class="lg:h-80 h-96 object-cover">
@@ -636,20 +637,20 @@
                     <p class="font-medium text-base text-white w-10/12 lg:w-1/2 mt-2" data-aos="fade-up">Finances shouldn't be
                         the main obstacle to accessing our bootcamps. We're always finding new ways to facilitate
                         payments and fundings.</p>
-                    <div data-aos="fade-up">
-                        <button
-                            class="bg-[#FF9500] px-10 py-2 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Contact
-                            Us</button>
+                    <div data-aos="fade-up" class=" mb-11 mt-6">
+                        <a href="tel:+62821-3595-3485" target="_blank"
+                            class="bg-[#FF9500] px-10 py-4 rounded-full text-white text-lg font-bold">Contact
+                            Us</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="faq mt-20 w-11/12 lg:w-10/12 mx-auto">
+    <section class="faq mt-20 w-11/12 lg:w-10/12 mx-auto mb-20">
         <div class="flex flex-wrap lg:flex-row lg:flex-nowrap justify-center items-center">
             <div class="mx-2 lg:mx-10" data-aos="fade-up">
-                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_9.png') }}" alt="ilustration 9"
+                <img src="{{ Vite::asset('resources/image/ilustration/ilustration_11.png') }}" alt="ilustration 9"
                     class="object-contain rounded-xl">
             </div>
             <div class="mx-2 my-5 lg:my-0 lg:mx-10" data-aos="fade-up">
@@ -657,18 +658,21 @@
                 </p>
                 <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with QarirLabs corporate
                     training or hire our tech-alumni now.</p>
-                <button class="bg-[#FF9500] px-10 py-4 rounded-md text-white lg:text-[#262626] text-lg font-bold mb-11 mt-6 w-full lg:w-auto">Contact
-                    Our Partnership Team</button>
+                    <div class=" mb-11 mt-6">
+
+                        <a href="tel:+62821-3595-3485" target="_blank" class="bg-[#FF9500] px-10 py-4 rounded-full text-white  text-lg font-bold w-full lg:w-auto">Contact
+                            Our Partnership Team</a>
+                    </div>
             </div>
         </div>
     </section>
 
-    <section class="media mt-20 mb-24"data-aos="fade-up">
+    {{-- <section class="media mt-20 mb-24"data-aos="fade-up">
         <p class="font-black text-2xl lg:text-4xl text-center px-20 lg:px-0">The media that has covered us</p>
         <div class="flex w-full lg:w-1/2 flex-wrap lg:mx-auto justify-center items-end mt-8">
             <img src="{{ Vite::asset('resources/image/icon/net.png') }}" alt="net" class="h-8 lg:mx-8 mx-2 my-2">
             <img src="{{ Vite::asset('resources/image/icon/techinasia.png') }}" alt="net" class="h-8 lg:mx-8 mx-2 my-2">
             <img src="{{ Vite::asset('resources/image/icon/compas.png') }}" alt="net" class="h-8 lg:mx-8 mx-2 my-2">
         </div>
-    </section>
+    </section> --}}
 </x-landing-layout>
