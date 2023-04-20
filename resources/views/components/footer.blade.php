@@ -1,10 +1,10 @@
 <footer>
-    <div class="relative w-full h-[75rem] lg:h-[40rem] bg-[#00263D] flex justify-center items-start">
+    <div class="relative w-full h-[80rem] lg:h-[40rem] bg-[#00263D] flex justify-center items-start">
         <img src="{{Vite::asset('resources/image/ilustration/word_map.png')}}" alt="word" class="absolute top-0 h-[30rem] w-auto opacity-30 object-contain">
         <div class="flex flex-col lg:flex-row w-full lg:w-10/12">
             <div class="lg:mt-11 lg:mx-12 p-5 lg:p-0 w-full lg:w-1/2">
                 <img src="{{Vite::asset('resources/image/icon/logo_hozontal_white.png')}}" alt="logo" class="w-36">
-                <p class="font-normal text-base text-white mt-5">Since 2019, Qarirlabs is a Career accelerator for Freshgraduate and early career stage people to achieve their dream job in tech by bridging them into our hiring partners and even becoming outstanding in the tech industry.</p>
+                <p class="font-normal text-base text-white mt-5">Since 2019, Qarirlabs is a Career accelerator for freshgraduate and early career stage people to achieve their dream job in tech by bridging them into our hiring partners and even becoming outstanding in the tech industry.</p>
                 <div class="flex flex-row justify-start mt-9">
                     <a href="https://www.instagram.com/qarirlabs.official/" target="_blank" class="mr-5"><img src="{{Vite::asset('resources/image/icon/instagram.png')}}" alt="instagram" class="h-6 object-cover"></a>
                     <a href="https://www.linkedin.com/company/qarirlabscom/" target="_blank" class="mr-5"><img src="{{Vite::asset('resources/image/icon/linkdin.png')}}" alt="linkdin" class="h-6 object-cover"></a>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0">Resources</p>
-                        <p class="text-white font-normal text-base lg:pt-7 pt-2">CertificatePrivacy & Policy</p>
+                        <p class="text-white font-normal text-base lg:pt-7 pt-2">Certificate Privacy & Policy</p>
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0" >About</p>

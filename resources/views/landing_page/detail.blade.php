@@ -114,37 +114,37 @@
                 });
             })
 
-            // document.getElementById('previews-study-change-location').addEventListener('click', function() {
-            //     schoolChange.scroll({
-            //         left: schoolChange.scrollLeft - scrollAmount,
-            //         behavior: 'smooth'
-            //     });
-            // })
+            document.getElementById('previews-study-change-location').addEventListener('click', function() {
+                schoolChange.scroll({
+                    left: schoolChange.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
+            })
 
-            // document.getElementById('next-study-change-location').addEventListener('click', function() {
-            //     schoolChange.scroll({
-            //         left: schoolChange.scrollLeft + scrollAmount,
-            //         behavior: 'smooth'
-            //     });
-            // })
+            document.getElementById('next-study-change-location').addEventListener('click', function() {
+                schoolChange.scroll({
+                    left: schoolChange.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
+            })
 
-            // document.getElementById('previews-portofolio').addEventListener('click', function() {
-            //     portoSlider.scroll({
-            //         left: portoSlider.scrollLeft - scrollAmount,
-            //         behavior: 'smooth'
-            //     });
-            // })
+            document.getElementById('previews-portofolio').addEventListener('click', function() {
+                portoSlider.scroll({
+                    left: portoSlider.scrollLeft - scrollAmount,
+                    behavior: 'smooth'
+                });
+            })
 
-            // document.getElementById('next-portofolio').addEventListener('click', function() {
-            //     portoSlider.scroll({
-            //         left: portoSlider.scrollLeft + scrollAmount,
-            //         behavior: 'smooth'
-            //     });
-            // })
+            document.getElementById('next-portofolio').addEventListener('click', function() {
+                portoSlider.scroll({
+                    left: portoSlider.scrollLeft + scrollAmount,
+                    behavior: 'smooth'
+                });
+            })
         </script>
     @endpush
     <section
-        class="hero static bg-gradient-to-t from-[{{ $themeColor2 }}] to-[#FFFFFF] w-full h-[65rem] lg:h-[46rem] -mt-20">
+        class="hero static bg-gradient-to-t from-[{{ $themeColor }}] to-[#FFFFFF] w-full h-[65rem] lg:h-[46rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
@@ -164,18 +164,17 @@
                 <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-between items-center">
                     <div class="lg:hidden flex-auto w-full lg:w-4/12">
                         {{-- @if (count($heroImages) == 1 && $slug == 'online') --}}
-                        <div class="relative flex mx-auto lg:h-96 lg:w-96 w-72 h-72">
+                        <div class="relative flex lg:h-96 lg:w-96 w-72 h-72">
                             @if (strtolower($slug) != 'indonesia')
-                                <div
-                                    class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[{{ $themeColor }}] rounded-xl">
+                                <div class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
                                 </div>
                                 <div
-                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[{{ $themeColor }}] rounded-xl">
+                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
                                 </div>
                             @endif
                             @foreach ($heroImages as $item)
                                 <img src="{{ Vite::asset($item) }}" alt="ilustration 1"
-                                    class="lg:h-96 lg:w-96 w-72 h-72 object-cover rounded-2xl absolute top-4 lg:left-4 left-0">
+                                    class="lg:h-96 lg:w-96 w-72 h-72 object-cover rounded-2xl absolute top-4 left-4">
                             @endforeach
                         </div>
                         {{-- @else
@@ -209,42 +208,31 @@
                         @endif --}}
 
                     </div>
-                    <div class="p-6 mt-10 lg:p-0 flex-auto w-6/12">
-                        <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-16" data-aos="fade-up">
-                            {{ ucwords($course) }} <span
-                                class="bg-[{{ $themeColor }}] px-2 text-white rounded-lg">Bootcamp</span>
-                            <div class="text-[{{ $themeColor }}]">
-                                {{ $detail }}</div>
+                    <div class="p-6 lg:p-0 flex-auto w-6/12">
+                        <div class="mb-6 lg:mt-16" data-aos="fade-up">
+                            <p class="text-2xl lg:text-5xl font-black ">
+                                {{ ucwords($course) }} <span
+                                    class="bg-[{{ $themeColor }}] px-2 text-white rounded-lg">Bootcamp</span> <br>
+                                <span class="text-[{{ $themeColor }}]">
+                                    {{ $detail }}</span>
+                            </p>
                         </div>
-                        <div class="text-[#262626] font-normal text-sm lg:text-2xl mb-6 text-opacity-75 leading-5 lg:leading-9 w-full lg:w-5/7"
+                        <div class="text-[#262626] font-normal text-sm lg:text-2xl mb-6 text-opacity-75 leading-5 lg:leading-9 w-5/7"
                             data-aos="fade-up">
                             @if (strtolower($slug) == 'istanbul')
-                                <div class="hidden lg:block">
-                                    Learn and
-                                    experience real projects of <span
-                                        class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">{{ $course }}</span>
-                                    and
-                                    land your dream job within 9 months. 😍
-                                </div>
-                                <div class="lg:hidden" style="line-height: 2rem;">
-                                    Learn and
-                                    experience real projects of<br /> <span
-                                        class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">{{ $course }}</span>
-                                    and
-                                    land your dream job within 9 months. 😍
-                                </div>
+                                Learn and
+                                experience real projects of <span
+                                    class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">{{ $course }}</span>
+                                and
+                                land your dream job within 9 months.
                             @else
                                 @if (strtolower($slug) == 'indonesia')
-                                    Lebih dari belajar! Kerjakan proyek, dapatkan bimbingan bersama pakar, bertemu
-                                    dengan pemimpin industri data, dan bersiaplah memulai karir menjadi <span
-                                        class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">{{ $course }}</span>!
-                                    😎
+                                Lebih dari belajar! Kerjakan proyek, dapatkan bimbingan bersama pakar, bertemu dengan pemimpin industri data, dan bersiaplah memulai karir menjadi {{ $course }}!
                                 @else
-                                    Learn and
-                                    <span class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">experience
-                                        real
-                                        projects</span> of {{ $course }} and
-                                    land your dream job within 9 months.😎
+                                Learn and
+                                <span class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">experience real
+                                    projects</span> of {{ $course }} and
+                                land your dream job within 9 months.
                                 @endif
                             @endif
                             {{-- {{ strtolower($detail) == 'indonesia'
@@ -255,19 +243,19 @@
                         </div>
                         <div class="flex flex-wrap">
                             <button
-                                class="text-[{{ $themeColor }}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{ $themeColor2 }}]"
+                                class="text-[{{ $themeColor }}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[#DCF2FF]"
                                 data-aos="fade-up">Online
                                 - Hybrid </button>
                             <button
-                                class="text-[{{ $themeColor }}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{ $themeColor2 }}]"data-aos="fade-up">Beginner
+                                class="text-[{{ $themeColor }}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[#DCF2FF]"data-aos="fade-up">Beginner
                                 Friendly</button>
                             {{-- @if (strtolower($detail) == 'indonesia')
                                 <button
-                                    class="text-[{{$themeColor}}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{$themeColor2}}]"data-aos="fade-up">120
+                                    class="text-[{{$themeColor}}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[#DCF2FF]"data-aos="fade-up">120
                                     Job connector</button>
                             @else
                                 <button
-                                    class="text-[{{$themeColor}}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{$themeColor2}}]"data-aos="fade-up">120
+                                    class="text-[{{$themeColor}}] px-4 lg:py-3 py-2 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[#DCF2FF]"data-aos="fade-up">120
                                     limited quota</button>
                             @endif --}}
                         </div>
@@ -347,55 +335,52 @@
         <div class="hidden lg:block w-4/12 relative">
             <div class="sticky top-10">
                 <div class="w-52 mx-auto">
-                    <p class="font-black lg:text-2xl">Course Details Data Science</p>
+                    <p class="font-black lg:text-2xl">{{ strtolower($slug) == 'indonesia' ? 'Detail Kursus Data Science' : 'Course Details Data Science' }}</p>
                 </div>
                 <div class="flex flex-col w-3/6 mx-auto mt-6">
                     <a href="#overview" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-1 bg-[{{ $themeColor }}] mr-4"></div>
-                        <span class="text-[{{ $themeColor }}] font-bold text-lg">Overview</span>
+                        <span class="text-[{{ $themeColor }}] font-bold text-lg">{{ strtolower($slug) == 'indonesia' ? 'Ringkasan' : 'Overview' }}</span>
                     </a>
                     <a href="#learcnphase" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Learn Phase</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Fase Belajar' : 'Learn Phase' }}</span>
                     </a>
                     @if (count($destinations) > 0)
                         <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
                             <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                            <span class="text-[#A5A5A5] font-medium text-lg">Destination</span>
+                            <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Destinasi' : 'Destination' }}</span>
                         </a>
                     @endif
                     <a href="#studylocation" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Study Location</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Lokasi Belajar' : 'Study Location' }}</span>
                     </a>
                     <a href="#alumni" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">All Alumni Story</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Cerita Alumni' : 'All Alumni Story' }}</span>
                     </a>
                     <a href="#portofolio" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Portofolio Alumni</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Portofolio Alumni' : 'Portofolio Alumni' }}</span>
                     </a>
                     <a href="#gethired" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Get Hired</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Get Hired' : 'Get Hired' }}</span>
                     </a>
                     <a href="#admissions" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Admission Process</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg">{{ strtolower($slug) == 'indonesia' ? 'Proses Penerimaan' : 'Admission Process' }}</span>
                     </a>
                     <button
-                        class="ml-4 mt-8 bg-[{{ $themeColor }}] px-9 py-4 rounded-full text-white text-lg font-bold">Let's
-                        Get
-                        Started</button>
+                        class="ml-4 mt-8 bg-[{{ $themeColor }}] px-9 py-4 rounded-full text-white text-lg font-bold">{{ strtolower($slug) == 'indonesia' ? 'Mulai Sekarang' : "Let's Get Started" }}</button>
                 </div>
             </div>
         </div>
         <div class="w-full lg:w-8/12">
             <section class="overview w-full lg:w-11/12" id="overview">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">OVERVIEW</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in
-                    {{ ucwords($slug) }}?
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'RINGKASAN' : 'OVERVIEW' }}</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'Kenapa Anda harus belajar in '.ucwords($slug).'?' : 'Why you should study in '.ucwords($slug).'?' }}
                 </p>
                 <div class="flex flex-col mt-8">
                     @foreach ($whySouldStay as $item)
@@ -410,17 +395,15 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6" data-aos="fade-up">WHY JOIN US?</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Master Data Science and see the
-                    benefits after
-                    graduation</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'Kenapa Bergabung QarirLabs' : 'WHY JOIN US?' }}</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'Master '. ucwords($course) .' dan lihat manfaatnya setelah lulus' : 'Master '. ucwords($course) .'and see the benefits after graduation' }}</p>
                 <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
-                                <svg class="mt-3" width="49" height="48" viewBox="0 0 49 48"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_79_3706)">
                                         <path
                                             d="M30.6667 13C29.5627 13 28.6667 12.104 28.6667 11V8H20.6667V11C20.6667 12.104 19.7707 13 18.6667 13C17.5627 13 16.6667 12.104 16.6667 11V8C16.6667 5.794 18.4607 4 20.6667 4H28.6667C30.8727 4 32.6667 5.794 32.6667 8V11C32.6667 12.104 31.7707 13 30.6667 13Z"
@@ -455,13 +438,12 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Well structured
-                                curriculum designed by experts</p>
+                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">{{ strtolower($slug) == 'indonesia' ? 'Kurikulum terstruktur dengan baik dirancang oleh para ahli' : 'Well structured curriculum designed by experts' }}</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -470,13 +452,12 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Personalized
-                                curriculum (in-person learning experience)</p>
+                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">{{ strtolower($slug) == 'indonesia' ? 'Kurikulum yang dipersonalisasi (pengalaman belajar langsung)' : 'Personalized curriculum (in-person learning experience)' }}</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -491,13 +472,12 @@
                                     </g>
                                 </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Mentorship by
-                                Hiring Partners</p>
+                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">{{ strtolower($slug) == 'indonesia' ? 'Bimbingan oleh Mitra Perekrutan' : 'Mentorship by Hiring Partners' }}</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -512,7 +492,7 @@
                     </div>
                     <div class="w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -527,7 +507,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -814,353 +794,7 @@
                     require you to apply what you learn
                     by hands-on experience through practical assignments and direct feedback from your instructor. In
                     detail, you will learn:</p>
-                <div class="lg:hidden flex flex-row flex-wrap mt-11" data-aos="fade-up">
-                    {{-- preparatiaon --}}
-                    <div class="mb-4 collapse-menu w-full">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <span class="font-bold text-xl ml-3">Preparation</span>
-                            </div>
-                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Qarirlabs provides career preparation, Once you’ve been accepted, you'll get the fixed
-                            schedule of career mapping & soft skill class with our passionate trainers. You also
-                            will
-                            receive about 10-20 hours of online learning resources, carefully curated by QarirLabs
-                            Expert to be intuitive and interactive. This preparation phase will ensure you have the
-                            necessary foundations in Python before the bootcamp starts.
-                        </div>
-                    </div>
-                    {{-- 1 --}}
-                    <div class="mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Data Analysis <span
-                                        class="font-normal text-xl">(Module 1)</span></div>
-                            </div>
-                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Master the use of Python programming language, particularly for data science
-                            applications,
-                            which entails proficiency in extracting data from relational databases, handling
-                            extensive
-                            data sets, and generating data visualizations. Furthermore, attain a thorough
-                            comprehension
-                            of fundamental mathematical principles, such as statistics and linear algebra, to
-                            facilitate
-                            efficient data analysis. .* (2023 Newest Module)
-                        </div>
-                    </div>
-                    {{-- 2 --}}
-                    <div class="mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Decision Science <span
-                                        class="font-normal text-xl">(Module 2)</span></div>
-                            </div>
-                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Imagine being a data consultant and mastering the art of navigating through the data
-                            preparation phase of a massive dataset. Utilize your skills in interpreting statistical
-                            results derived from various tools such as multivariate regression models, hypothesis
-                            testing, and confidence intervals to extract valuable insights.
-
-                        </div>
-                    </div>
-                    {{-- 3 --}}
-                    <div class=" mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Machine Learning <span
-                                        class="font-normal text-xl">(Module 3)</span></div>
-                            </div>
-                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Execute the Machine Learning, which involves performing data preparation, feature
-                            engineering, model selection, evaluation, and fine-tuning. Develop a comprehension of
-                            the
-                            mathematical principles and numerical implementations of Machine Learning models.
-
-                        </div>
-                    </div>
-                    {{-- 4 --}}
-                    <div class=" mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Deep Learning <span
-                                        class="font-normal text-xl">(Module 4)</span></div>
-                            </div>
-                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Uncover the secrets of Deep Learning! Learn about neural network structure and
-                            components,
-                            create your own networks for processing images, sequences, and text, apply pre-trained
-                            models through transfer learning, and practice with auto-encoders, batch processing, and
-                            GPU
-                            training.
-                        </div>
-                    </div>
-                    {{-- 5 --}}
-                    <div class=" mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Machine Learning Engineering <span
-                                        class="font-normal text-xl">(Module 5)</span></div>
-                            </div>
-                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Convert your superior handmade models into a Python package for cloud-based replication
-                            and
-                            training with virtual machines and online databases. Monitor and update performance with
-                            new
-                            data, and share predictions through APIs or websites.* (2023 Newest Module)
-                        </div>
-                    </div>
-                    {{-- 6 --}}
-                    <div class=" mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Project Weeks <span
-                                        class="font-normal text-xl">(Module 6)</span></div>
-                            </div>
-                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Join or propose a genuine data science project with 3-4 team members. Use public data
-                            sources or your own private dataset. Get full-time mentoring from expert teachers to
-                            achieve
-                            your aspirations.
-                        </div>
-                    </div>
-                    {{-- career --}}
-                    <div class=" mb-4 collapse-menu w-full">
-                        <div
-                            class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
-                            <div class="inline-flex items-center">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="40" height="40" rx="6.66667"
-                                        fill="url(#paint0_linear_122_455)" />
-                                    <path
-                                        d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
-                                        fill="white" />
-                                    <path
-                                        d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
-                                        fill="white" />
-                                    <defs>
-                                        <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
-                                            x2="40" y2="40" gradientUnits="userSpaceOnUse">
-                                            <stop stop-color="{{ $themeColor }}" />
-                                            <stop offset="1" stop-color="{{ $themeColor }}" />
-                                        </linearGradient>
-                                    </defs>
-                                </svg>
-                                <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                        class="font-normal text-xl"></span></div>
-                            </div>
-                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-
-                        <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Enhance your job search skills by meeting data science professionals employed in
-                            startups or
-                            leading tech companies, practicing mock interviews, and refining your CV.
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden lg:flex flex-row flex-wrap mt-11" data-aos="fade-up">
+                <div class="flex flex-row flex-wrap mt-11" data-aos="fade-up">
                     <div class="w-full lg:w-1/2 pr-1">
                         <div class="mb-4 collapse-menu w-full">
                             <div
@@ -1169,15 +803,21 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
-
                                     <span class="font-bold text-xl ml-3">Preparation</span>
                                 </div>
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -1204,13 +844,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Decision Science <span
                                             class="font-normal text-xl">(Module 2)</span></div>
@@ -1239,13 +886,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Deep Learning <span
                                             class="font-normal text-xl">(Module 4)</span></div>
@@ -1275,13 +929,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Project Weeks <span
                                             class="font-normal text-xl">(Module 6)</span></div>
@@ -1311,13 +972,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Data Analysis <span
                                             class="font-normal text-xl">(Module 1)</span></div>
@@ -1350,13 +1018,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Machine Learning <span
                                             class="font-normal text-xl">(Module 3)</span></div>
@@ -1378,7 +1053,6 @@
 
                             </div>
                         </div>
-
                         <div class=" mb-4 collapse-menu w-full">
                             <div
                                 class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
@@ -1386,13 +1060,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Machine Learning Engineering <span
                                             class="font-normal text-xl">(Module 5)</span></div>
@@ -1421,13 +1102,20 @@
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
-                                            fill="{{ $themeColor }}" />
+                                            fill="url(#paint0_linear_122_455)" />
                                         <path
-                                            d="M17.3832 13.1904H22.6214C22.9106 13.1904 23.145 12.956 23.145 12.6666V11.0952H22.0975C22.0975 9.93809 21.1594 9 20.0023 9C18.845 9 17.9069 9.93809 17.9069 11.0952H16.8594V12.6666C16.8594 12.956 17.0939 13.1904 17.3832 13.1904Z"
+                                            d="M17.3831 13.1904H22.6212C22.9104 13.1904 23.1449 12.956 23.1449 12.6666V11.0952H22.0974C22.0974 9.93809 21.1593 9 20.0022 9C18.8449 9 17.9068 9.93809 17.9068 11.0952H16.8593V12.6666C16.8593 12.956 17.0937 13.1904 17.3831 13.1904Z"
                                             fill="white" />
                                         <path
-                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
+                                            d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6213 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.145C11.8558 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8558 30.9999 12.145 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7059 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9652 27.7038 15.9652 27.7036L14.9175 26.6561C14.7165 26.4479 14.7223 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6582 25.9154L16.3356 26.5926L18.0604 24.8677C18.2685 24.6668 18.6002 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7059 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9652 23.5133 15.9652 23.5132L14.9175 22.4656C14.7165 22.2575 14.7223 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6582 21.7249L16.3354 22.4022L18.0604 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7059 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9652 19.3229 15.9652 19.3227L14.9175 18.2752C14.7165 18.067 14.7223 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6582 17.5345L16.3354 18.2117L18.0604 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5736C21.2844 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2844 25.7618 21.5736 25.7618H24.7165C25.0057 25.7618 25.2402 25.9964 25.2402 26.2856C25.2402 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5736C21.2844 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2844 21.5713 21.5736 21.5713H24.7165C25.0057 21.5713 25.2402 21.806 25.2402 22.0952C25.2402 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5736C21.2844 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2844 17.3809 21.5736 17.3809H24.7165C25.0057 17.3809 25.2402 17.6154 25.2402 17.9047C25.2402 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
+                                        <defs>
+                                            <linearGradient id="paint0_linear_122_455" x1="0" y1="0"
+                                                x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="{{ $themeColor }}" />
+                                                <stop offset="1" stop-color="{{ $themeColor }}" />
+                                            </linearGradient>
+                                        </defs>
                                     </svg>
                                     <div class="font-bold lg:text-xl ml-3">Career Weeks <span
                                             class="font-normal text-xl"></span></div>
@@ -1467,7 +1155,7 @@
                     <div class="flex justify-between lg:flex-row flex-col mt-10" data-aos="fade-up"
                         id="destination-navigation">
                         @foreach ($destinations as $item)
-                            <div class="lg:w-1/3 w-full py-4 lg:py-0 lg:px-3">
+                            <div class="lg:w-1/3 w-full py-0 px-3">
                                 <div class="relative bg-white rounded-lg shadow-sm">
                                     <img src="{{ Vite::asset($item['image']) }}" alt="person 1"
                                         class="rounded-lg h-64">
@@ -1523,12 +1211,11 @@
             @if (count($programFee) > 0)
                 <section class="w-full lg:w-11/12 mt-12" id="programFee">
                     <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">Program FEE</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Study and Stay - Prices
-                        Starting From...</p>
-                    <div class="flex justify-between lg:flex-row flex-col mt-4 lg:mt-10" data-aos="fade-up"
+                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Investment For Your Future Career</p>
+                    <div class="flex justify-between lg:flex-row flex-col mt-10" data-aos="fade-up"
                         id="destination-navigation">
                         @foreach ($programFee as $item)
-                            <div class="lg:w-1/2 w-full py-4 lg:py-0 lg:px-3">
+                            <div class="lg:w-1/2 w-full py-0 px-3">
                                 <div class="bg-white rounded-lg shadow-sm">
                                     <div class="bg-[#FFE6CE] rounded-t-lg p-4">
                                         <p class="font-black text-lg text-[#8C5200]">{{ $item['title'] }}</p>
@@ -1538,8 +1225,7 @@
                                     <div class="px-4 pt-4">
                                         <p class="font-normal text-sm text-[#262626]">Price</p>
                                         @foreach ($item['price'] as $prc)
-                                            <div class="font-black text-xl text-[#262626] mt-1">{!! $prc !!}
-                                            </div>
+                                            <div class="font-black text-xl text-[#262626] mt-1">{!! $prc !!}</div>
                                         @endforeach
                                     </div>
                                     <div class="px-4 pt-5 flex items-center">
@@ -1573,16 +1259,12 @@
             @endif
 
             <section class="w-full mt-12 mx-auto" id="studylocation">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">STUDY LOCATION</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2 uppercase" data-aos="fade-up">Find The Best Destination
-                </p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Better to have new life,
-                    experiencing culture, and get hired by International Companies.
-                </p>
-                <div class="w-full lg:w-11/12 flex lg:flex-row flex-col mt-10" data-aos="fade-up"
-                    id="study-change-location">
+                <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Explore Qarirlabs Global</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Find The Best Destination</p>
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Better to have new life, experiencing culture, and get hired by International Companies</p>
+                <div class="w-full lg:w-11/12 flex lg:flex-row flex-col mt-10" data-aos="fade-up" id="study-change-location">
                     <a href="{{ route('detail', ['slug' => 'indonesia', 'course' => $course]) }}"
-                        class="w-full lg:w-1/4 lg:p-3 my-3 lg:my-0">
+                        class="w-full lg:w-1/4 p-3">
                         <div class="relative bg-white rounded-lg shadow-sm w-full">
                             <img src="{{ Vite::asset('resources/image/ilustration/indonesia_2.png') }}"
                                 alt="person 1" class="rounded-lg w-full h-48">
@@ -1590,14 +1272,14 @@
                         </div>
                     </a>
                     <a href="{{ route('detail', ['slug' => 'istanbul', 'course' => $course]) }}"
-                        class="w-full lg:w-1/4 lg:p-3 my-3 lg:my-0">
+                        class="w-full lg:w-1/4 p-3">
                         <div class="relative bg-white rounded-lg shadow-sm w-full">
                             <img src="{{ Vite::asset('resources/image/ilustration/istanbul.png') }}" alt="person 1"
                                 class="rounded-lg w-full h-48">
                             <p class="font-bold text-xl px-4 py-5 text-center">Istanbul</p>
                         </div>
                     </a>
-                    <div class="w-full lg:w-1/4 lg:p-3 my-3 lg:my-0">
+                    <div class="w-full lg:w-1/4 p-3">
                         <div class="relative bg-white rounded-lg shadow-sm w-full">
                             <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}" alt="person 1"
                                 class="rounded-lg w-full h-48">
@@ -1610,7 +1292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full lg:w-1/4 lg:p-3 my-3 lg:my-0">
+                    <div class="w-full lg:w-1/4 p-3">
                         <div class="relative bg-white rounded-lg shadow-sm w-full">
                             <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
                                 alt="person 1" class="rounded-lg w-full h-48">
@@ -1759,7 +1441,7 @@
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
-                                            alt="avatar 1" class="w-12 h-12 rounded-full">
+                                            alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Andimas Iben D. </p>
                                             <p class="font-medium text-xs text-[#0E144A] opacity-60">Msc. Marketing
@@ -1779,22 +1461,17 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
-                                            alt="avatar 1" class="w-12 h-12 rounded-full">
+                                        <img src="https://media.licdn.com/dms/image/C4E03AQFSzaO6pHzsUA/profile-displayphoto-shrink_400_400/0/1623405781794?e=1686787200&v=beta&t=zqlyqp4DRq3XiG4hYqgXWv4_3R6URXpA-IS5xT_moFU"
+                                            alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
-                                            <p class="font-medium text-base text-black">Agnes Friska Cyntia
-                                                Puspitasari</p>
-                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Co-Founder di PT
-                                                Visuels Inspirasi
-                                                Digispora | Digital Marketing Expert | Instagram & Tiktok Content
-                                                Creator</p>
+                                            <p class="font-medium text-base text-black">Indira Yasmin Amarti</p>
+                                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Promo Planner at
+                                                NET MEDIATAMA TELEVISI</p>
                                         </div>
                                     </div>
                                     <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was
-                                        presented in an
-                                        engaging manner, and also guided by experienced practitioners so that various
-                                        case studies could
-                                        be solved."- Indira Yasmine</p>
+                                        presented in an engaging manner, and also guided by experienced practitioners so
+                                        that various case studies could be solved."- Indira Yasmine</p>
                                 </div>
                             </div>
                         </div>
@@ -1849,8 +1526,8 @@
                         class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up">
                     <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="tokopedia"
                         class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up">
-                    <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}"
-                        alt="telkom_indonesia" class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up">
+                    <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="telkom_indonesia"
+                        class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up">
                     <img src="{{ Vite::asset('resources/image/icon/detsu_grey.png') }}" alt="dentsu"
                         class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up">
                     <img src="{{ Vite::asset('resources/image/icon/glint_color.png') }}" alt="danone"
@@ -1863,6 +1540,7 @@
                         class="h-14 object-cover px-3 pt-5 mt-3" data-aos="fade-up">
                     {{-- <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
                         class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up"> --}}
+
                 </div>
             </section>
 
@@ -1876,12 +1554,12 @@
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="lg:p-3 my-3">
+                            <div class=" lg:w-80 p-3">
                                 <div class="bg-white rounded-2xl p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_1.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">Final Project Promosi
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">Final Project Promosi
                                             Karyawan</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Kadek Mardika Pranata</p>
@@ -1898,12 +1576,12 @@
                     </div>
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="lg:p-3 my-3">
+                            <div class=" lg:w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_2.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">Job & Department
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">Job & Department
                                             Promotion</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Syifaya Qorina</p>
@@ -1920,13 +1598,12 @@
                     </div>
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="lg:p-3 my-3">
+                            <div class=" lg:w-80 p-3">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_3.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">QarirLabs Data Science
-                                        </p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">QarirLabs Data Science</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
                                         <div class="mt-12 flex w-full text-center">
@@ -1983,9 +1660,9 @@
 
             @if (strtolower($slug) == 'indonesia')
                 <section class="portofolio w-full lg:w-11/12 mt-12" id="portofolio" data-aos="fade-up">
-                    <div class="w-full h-72 flex rounded-xl p-4 lg:p-10"
-                        style="background-image: url('{{ Vite::asset('resources/image/ilustration/meet_our_career.png') }}'); border-radius: 16px; background-size: cover; ">
-                        <div class="lg:mx-0 bg-white rounded-2xl w-full lg:w-7/12 p-6 shadow-sm lg:shadow-none">
+                    <div class="w-full h-72 flex rounded-xl p-4 lg:p-10" style="background-image: url('{{ Vite::asset('resources/image/ilustration/meet_our_career.png') }}'); border-radius: 16px; background-size: cover; ">
+                        <div
+                            class="lg:mx-0 bg-white rounded-2xl w-full lg:w-7/12 p-6 shadow-sm lg:shadow-none">
                             <p class="font-black text-2xl text-[#262626] w-full lg:w-10/12">Meet Our Career Manager In
                                 Indonesia
                             </p>
@@ -2005,10 +1682,10 @@
             <section class="w-full lg:w-11/12 mt-14" id="gethired">
                 <p class="font-bold text-base text-[#262626] mb-6"data-aos="fade-up">GET HIRED</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">3-Stage Work Plan</p>
-                <div class="flex flex-wrap mt-8 justify-between" data-aos="fade-up">
+                <div class="flex flex-wrap mt-8 justify-between">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2017,6 +1694,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
+
                             <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Real Study Case
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">You will work
@@ -2026,7 +1704,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2035,6 +1713,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
+
                             <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">CV Review
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">With your
@@ -2044,7 +1723,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2090,7 +1769,6 @@
                                 our job is done.</p>
                         </div>
                     </div>
-
                 </div>
             </section>
 
@@ -2146,11 +1824,5 @@
                 </div>
             </section>
         </div>
-    </div>
-    <div class="hidden">
-        <p class="text-[#2622B9] bg-[#DBDAFF] outline-[#DBDAFF]">test1</p>
-        <p class="text-[#FF9500] bg-[#FFE6CE] outline-[#FFE6CE]">test1</p>
-        <p class="text-[#EE0A0A] bg-[#FFE3E3] outline-[#FFE3E3]">test1</p>
-        <p class="text-[#0F5B89] bg-[#DCF2FF] outline-[#DCF2FF]">test1</p>
     </div>
 </x-landing-layout>

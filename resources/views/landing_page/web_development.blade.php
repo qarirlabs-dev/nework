@@ -14,13 +14,13 @@
                                 target.classList.replace("text-[#A5A5A5]", "text-[#FF9500]");
                             }
                             if (target.classList.contains('font-medium')) {
-                                target.classList.replace("font-medium","font-bold");
+                                target.classList.replace("font-medium", "font-bold");
                             }
                             if (previousElement.classList.contains('bg-[#A5A5A5]')) {
                                 previousElement.classList.replace("bg-[#A5A5A5]", "bg-[#FF9500]");
                             }
                             if (previousElement.classList.contains('w-0.5')) {
-                                previousElement.classList.replace("w-0.5","w-1");
+                                previousElement.classList.replace("w-0.5", "w-1");
                             }
                         }
                     }, 100);
@@ -37,20 +37,20 @@
                         }
 
                         if (item.classList.contains('font-bold')) {
-                            item.classList.replace("font-bold","font-medium");
+                            item.classList.replace("font-bold", "font-medium");
                         }
-                        
-                        
+
+
                         if (item.classList.contains('bg-[#FF9500]')) {
                             item.classList.replace("bg-[#FF9500]", "bg-[#A5A5A5]");
                         }
 
                         if (item.classList.contains('w-1')) {
-                            item.classList.replace("w-1","w-0.5");
+                            item.classList.replace("w-1", "w-0.5");
                         }
                     })
                 })
-                
+
             }
         </script>
     @endpush
@@ -78,11 +78,13 @@
                                 {{ $detail }}</div>
                         </div>
                         <div class="text-[#262626] font-normal text-2xl mb-6 text-opacity-75 leading-9 w-5/7"
-                            data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">Learn and experience real projects of Digital Marketing and land your dream job within 9 months.</div>
+                            data-aos="fade-right" data-aos-duration="3000" data-aos-delay="600">Learn and experience
+                            real projects of Digital Marketing and land your dream job within 9 months.</div>
                         <div class="flex flex-wrap">
                             <button
                                 class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"
-                                data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Online - Hybrid </button>
+                                data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900">Online - Hybrid
+                            </button>
                             <button
                                 class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
                                 data-aos-duration="3000" data-aos-delay="1200">Beginner
@@ -345,7 +347,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <p class="text-center font-bold text-sm text-[#262626] opacity-80 mt-6">Equipped by
+                            <p class="text-center font-bold text-sm text-[#262626] opacity-80 mt-6">
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
@@ -736,7 +738,11 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Qarirlabs provides career preparation. Once you’ve been accepted, you'll get the fixed schedule of career mapping & soft skill class with our passionate trainers. You also will receive about 10-20 hours of online learning resources, carefully curated by QarirLabs Expert to be intuitive and interactive. This preparation phase will ensure you have the necessary Digital Marketing fundamentals before the bootcamp starts.
+                            Qarirlabs provides career preparation. Once you’ve been accepted, you'll get the fixed
+                            schedule of career mapping & soft skill class with our passionate trainers. You also will
+                            receive about 10-20 hours of online learning resources, carefully curated by QarirLabs
+                            Expert to be intuitive and interactive. This preparation phase will ensure you have the
+                            necessary Digital Marketing fundamentals before the bootcamp starts.
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
@@ -761,8 +767,8 @@
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                                <div class="font-bold text-xl ml-3">Branding, Influencer Strategic, and Content Strategy Plan <span
-                                        class="font-normal text-xl">(Module 1)</span></div>
+                                <div class="font-bold text-xl ml-3">Branding, Influencer Strategic, and Content
+                                    Strategy Plan <span class="font-normal text-xl">(Module 1)</span></div>
                             </div>
                             <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -773,7 +779,10 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            There’s nothing important than branding and content for a digital marketer, learn digital marketing from the basic. Start from explaination of social media's objective and its feature, Hacking strategy to think creative, How to make a good & relevant content, Create content calendar. Its not only about the theory but also practical!
+                            There’s nothing important than branding and content for a digital marketer, learn digital
+                            marketing from the basic. Start from explaination of social media's objective and its
+                            feature, Hacking strategy to think creative, How to make a good & relevant content, Create
+                            content calendar. Its not only about the theory but also practical!
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
@@ -810,7 +819,10 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Start to run your own ads! maintain your brand's social media, do's and dont's, and creativity to reach the best ROI. Explaining the phase of campaign, success content at FB Ads Manager. Retargeting Audience (Custom Audience, Lookalike) FB Pixel, Relevant Score, and Set up facebook business manager.
+                            Start to run your own ads! maintain your brand's social media, do's and dont's, and
+                            creativity to reach the best ROI. Explaining the phase of campaign, success content at FB
+                            Ads Manager. Retargeting Audience (Custom Audience, Lookalike) FB Pixel, Relevant Score, and
+                            Set up facebook business manager.
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
@@ -847,7 +859,10 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Find the right keyword for your campaign, in this module trainer will explain about, bidding strategy, strength and weakness analysis for SEM, and success tips to run SEM Campaign. There are also an implementation and practice session to make and analyze a brand campaign. programmatic
+                            Find the right keyword for your campaign, in this module trainer will explain about, bidding
+                            strategy, strength and weakness analysis for SEM, and success tips to run SEM Campaign.
+                            There are also an implementation and practice session to make and analyze a brand campaign.
+                            programmatic
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
@@ -872,8 +887,8 @@
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                                <div class="font-bold text-xl ml-3">SEO <span
-                                        class="font-normal text-xl">(Module 4)</span></div>
+                                <div class="font-bold text-xl ml-3">SEO <span class="font-normal text-xl">(Module
+                                        4)</span></div>
                             </div>
                             <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -884,7 +899,9 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Execute the media then optimize through search engines, which involve media brief, budgeting and creative communication plan. Get to know more about how google search works, in detail to meet Google's needs. Develop more about the strategy and implementation of SEO.
+                            Execute the media then optimize through search engines, which involve media brief, budgeting
+                            and creative communication plan. Get to know more about how google search works, in detail
+                            to meet Google's needs. Develop more about the strategy and implementation of SEO.
                         </div>
                     </div>
                     <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
@@ -921,11 +938,13 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Join or propose a genuine Digital Marketing project with 3-4 team members/Individual. You can use some existing brand (Dummy project) or your own private brand (UMKM Project). Get full-time mentoring from expert teachers to achieve your aspirations.
+                            Join or propose a genuine Digital Marketing project with 3-4 team members/Individual. You
+                            can use some existing brand (Dummy project) or your own private brand (UMKM Project). Get
+                            full-time mentoring from expert teachers to achieve your aspirations.
                         </div>
                     </div>
-                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up"
-                        data-aos-duration="3000" data-aos-delay="1200">
+                    <div class="bg-white rounded-lg shadow-sm mr-4 mb-4" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="1200">
                         <div class="flex flex-row justify-between items-center p-5">
                             <div class="inline-flex items-center">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -958,7 +977,8 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Enhance your job search skills by meeting data science professionals employed in startups or leading tech companies, practicing mock interviews, and refining your CV.
+                            Enhance your job search skills by meeting data science professionals employed in startups or
+                            leading tech companies, practicing mock interviews, and refining your CV.
                         </div>
                     </div>
                 </div>
@@ -990,8 +1010,8 @@
                     </div>
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="relative bg-white rounded-lg shadow-sm w-96">
-                            <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}"
-                                alt="person 1" class="rounded-lg w-full h-64">
+                            <img src="{{ Vite::asset('resources/image/ilustration/tokyo.jpg') }}" alt="person 1"
+                                class="rounded-lg w-full h-64">
                             <p class="font-bold text-2xl p-6 text-center mt-6">Tokyo</p>
                         </div>
                     </div>
@@ -1238,7 +1258,10 @@
                     <img src="{{ Vite::asset('resources/image/icon/kaskus.png') }}" alt="kaskus"
                         class="h-9 object-cover px- pt-5 mt-3" data-aos="fade-up" data-aos-duration="3000"
                         data-aos-delay="700">
-                    <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
+                    {{-- <img src="{{ Vite::asset('resources/image/icon/stick_earn.png') }}" alt="stick_earn"
+                        class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-delay="900"> --}}
+                    <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}" alt="stick_earn"
                         class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up" data-aos-duration="3000"
                         data-aos-delay="900">
                     <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}"
@@ -1497,7 +1520,7 @@
                         <p class="font-bold text-base text-[#262626] mb-5">ADMISSIONS</p>
                         <p class="font-bold text-4xl text-black mb-5">Explore About Yourself</p>
                         <p class="font-medium text-lg text-[#262626] opacity-60 mb-5">Take the free assessment and
-                            uncover things you didn’t know about yourself.
+                            uncover things you dont know about yourself.
                         </p>
                         <button
                             class="bg-[#FF9500] px-10 py-4 rounded-md text-[#262626] text-lg font-bold mb-11 mt-6">Take

@@ -20,9 +20,9 @@
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
                 <div class="flex-auto w-11/12 lg:w-2/3" data-aos="fade-up">
-                    <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-24">Create New Success Shortcuts. <br />Land
-                        Your New Dream
-                        Job.
+                    <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-16" style="line-height: 4rem;">Create <span
+                            class="bg-[#FF9500] px-2 text-white rounded-lg">success shortcuts</span><br /><span>&land
+                                your dream job!.</span>
                     </div>
                     <div
                         class="text-[#262626] font-normal text-sm lg:text-xl mb-6 text-opacity-75 leading-5 lg:leading-9 w-11/12 lg:w-10/12">
@@ -57,7 +57,9 @@
                     <div class="hidden lg:flex items-end flex-wrap lg:flex-nowrap">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
-                        <img src="{{ Vite::asset('resources/image/icon/stickearn_color.png') }}" alt="stackearn"
+                        <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="stackearn"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="stackearn"
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/dentsu_color.png') }}" alt="dentsu"
                             class="mx-2 h-6">
@@ -70,8 +72,8 @@
                         <img src="{{ Vite::asset('resources/image/icon/bri_color.png') }}" alt="ek"
                             class="mx-2 h-6">
                         <div class="hidden lg:flex mx-2 text-xl items-center font-medium">
-                            <span class="mr-2">View More</span>
-                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                            <span class="mr-2">and many more</span>
+                            {{-- <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect x="0.20755" width="24" height="24" rx="12" fill="white" />
                                 <g clip-path="url(#clip0_5_2582)">
@@ -85,14 +87,16 @@
                                             transform="translate(6.20755 6)" />
                                     </clipPath>
                                 </defs>
-                            </svg>
+                            </svg> --}}
 
                         </div>
                     </div>
                     <div class="lg:hidden grid grid-cols-2 gap-4">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
-                        <img src="{{ Vite::asset('resources/image/icon/stickearn_color.png') }}" alt="stackearn"
+                        <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="stackearn"
+                            class="mx-2 h-6">
+                        <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="stackearn"
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/dentsu_color.png') }}" alt="dentsu"
                             class="mx-2 h-6">
@@ -106,8 +110,8 @@
                             class="mx-2 h-6">
                     </div>
                     <div class="lg:hidden flex mx-2 text-xl items-center font-medium mt-5">
-                        <span class="mr-2 font-medium text-sm">View More</span>
-                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                        <span class="mr-2 font-medium text-sm">and many more</span>
+                        {{-- <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.20755" width="24" height="24" rx="12" fill="white" />
                             <g clip-path="url(#clip0_5_2582)">
@@ -121,7 +125,7 @@
                                         transform="translate(6.20755 6)" />
                                 </clipPath>
                             </defs>
-                        </svg>
+                        </svg> --}}
                     </div>
                 </div>
             </div>
@@ -139,6 +143,22 @@
                     <p class="font-bold text-4xl mb-4">Data Science Bootcamp</p>
                     <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Data Scientist and build your
                         on AI products from scratch</p>
+                    <div class="flex justify-start items-center mt-5">
+                        <p class="font-bold text-base text-[#FF9500] mr-6">See Detail</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_325_3168)">
+                                <path
+                                    d="M15.7443 7.37838L9.9661 1.60008C9.80116 1.43514 9.58132 1.3446 9.34692 1.3446C9.11225 1.3446 8.89255 1.43527 8.7276 1.60008L8.20299 2.12483C8.03818 2.28951 7.94738 2.50947 7.94738 2.74401C7.94738 2.97841 8.03818 3.20579 8.20299 3.37047L11.5739 6.74879H0.864383C0.381525 6.74879 0 7.1268 0 7.60979L0 8.35164C0 8.83462 0.381525 9.25075 0.864383 9.25075H11.6121L8.20312 12.6479C8.03831 12.8129 7.94751 13.0269 7.94751 13.2614C7.94751 13.4957 8.03831 13.7128 8.20312 13.8776L8.72773 14.4006C8.89268 14.5656 9.11238 14.6555 9.34705 14.6555C9.58145 14.6555 9.80129 14.5644 9.96623 14.3995L15.7444 8.62129C15.9097 8.45583 16.0007 8.23496 16 8.00016C16.0005 7.76459 15.9097 7.54358 15.7443 7.37838Z"
+                                    fill="#FF9500" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_325_3168">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
                     <svg class="absolute bottom-0 right-0 w-80 h-52" viewBox="0 0 297 195" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -163,6 +183,22 @@
                     <p class="font-bold text-4xl mb-4">Digital Marketing Bootcamp</p>
                     <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Digital Marketing and build
                         your on your company</p>
+                    <div class="flex justify-start items-center mt-5">
+                        <p class="font-bold text-base text-[#FF9500] mr-6">See Detail</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_325_3168)">
+                                <path
+                                    d="M15.7443 7.37838L9.9661 1.60008C9.80116 1.43514 9.58132 1.3446 9.34692 1.3446C9.11225 1.3446 8.89255 1.43527 8.7276 1.60008L8.20299 2.12483C8.03818 2.28951 7.94738 2.50947 7.94738 2.74401C7.94738 2.97841 8.03818 3.20579 8.20299 3.37047L11.5739 6.74879H0.864383C0.381525 6.74879 0 7.1268 0 7.60979L0 8.35164C0 8.83462 0.381525 9.25075 0.864383 9.25075H11.6121L8.20312 12.6479C8.03831 12.8129 7.94751 13.0269 7.94751 13.2614C7.94751 13.4957 8.03831 13.7128 8.20312 13.8776L8.72773 14.4006C8.89268 14.5656 9.11238 14.6555 9.34705 14.6555C9.58145 14.6555 9.80129 14.5644 9.96623 14.3995L15.7444 8.62129C15.9097 8.45583 16.0007 8.23496 16 8.00016C16.0005 7.76459 15.9097 7.54358 15.7443 7.37838Z"
+                                    fill="#FF9500" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_325_3168">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
                     <svg class="absolute bottom-0 right-0 w-80 h-52" viewBox="0 0 297 195" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -180,11 +216,28 @@
                 data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
-                            class="text-black font-bold text-base bg-[#00263D] rounded-lg py-2 px-5 bg-opacity-10">Full Booked</span>
+                            class="text-black font-bold text-base bg-[#00263D] rounded-lg py-2 px-5 bg-opacity-10">Full
+                            Booked</span>
                     </div>
                     <p class="font-bold text-4xl mb-4">Web Development Bootcamp</p>
                     <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Software Engineering and
                         build your product impactfull</p>
+                    <div class="flex justify-start items-center mt-5">
+                        <p class="font-bold text-base text-[#FF9500] mr-6">See Detail</p>
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_325_3168)">
+                                <path
+                                    d="M15.7443 7.37838L9.9661 1.60008C9.80116 1.43514 9.58132 1.3446 9.34692 1.3446C9.11225 1.3446 8.89255 1.43527 8.7276 1.60008L8.20299 2.12483C8.03818 2.28951 7.94738 2.50947 7.94738 2.74401C7.94738 2.97841 8.03818 3.20579 8.20299 3.37047L11.5739 6.74879H0.864383C0.381525 6.74879 0 7.1268 0 7.60979L0 8.35164C0 8.83462 0.381525 9.25075 0.864383 9.25075H11.6121L8.20312 12.6479C8.03831 12.8129 7.94751 13.0269 7.94751 13.2614C7.94751 13.4957 8.03831 13.7128 8.20312 13.8776L8.72773 14.4006C8.89268 14.5656 9.11238 14.6555 9.34705 14.6555C9.58145 14.6555 9.80129 14.5644 9.96623 14.3995L15.7444 8.62129C15.9097 8.45583 16.0007 8.23496 16 8.00016C16.0005 7.76459 15.9097 7.54358 15.7443 7.37838Z"
+                                    fill="#FF9500" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_325_3168">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
                     <svg class="absolute bottom-0 right-0 w-80 h-52" viewBox="0 0 297 195" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -204,7 +257,8 @@
     <section class="benerif hero w-10/12 mx-auto mt-16">
         <div class="flex flex-col justify-center items-center" data-aos="fade-up">
             <div class="static mb-5" data-aos="fade-up">
-                <div class="font-black text-2xl lg:text-4xl z-1 text-center">Why choose <div class="inline-block relative">
+                <div class="font-black text-2xl lg:text-4xl z-1 text-center">Why choose <div
+                        class="inline-block relative">
                         <div class="relative z-10">QarirLabs</div>
                         <div class="-z-10">
                             <div class="absolute bottom-0 right-0 w-28 lg:w-44 h-3 bg-[#FF9500]"></div>
@@ -232,7 +286,8 @@
                             </svg>
                         </div>
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">Passionate Trainers</p>
-                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">All our trainers
+                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">All our
+                            trainers
                             are well experienced experts with senior-director level practitioners.</p>
                     </div>
                 </div>
@@ -248,8 +303,9 @@
                             </svg>
 
                         </div>
-                        <p class="font-bold text-xl lg:text-2xl text-center mt-6">Equipped by Enrichment Program</p>
-                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Join our enrichment
+                        <p class="font-bold text-xl lg:text-2xl text-center mt-6">by Enrichment Program</p>
+                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Join our
+                            enrichment
                             program in form of internship (part-time) for several projects at corporates/leading
                             startups</p>
                     </div>
@@ -268,7 +324,8 @@
 
                         </div>
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">Personalized Curriculum</p>
-                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Our class is
+                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Our
+                            class is
                             limited only for 7-15 and 15-35 students. For all beginners, they can join extra class
                             sessions to accelerate their skills as they wish.</p>
                     </div>
@@ -285,7 +342,8 @@
                             </svg>
                         </div>
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">Hiring Partners Mentorship</p>
-                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Get Mentoring
+                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Get
+                            Mentoring
                             session with our hiring partners to learn more about company culture, industry update, and
                             soft skill class</p>
                     </div>
@@ -303,7 +361,8 @@
 
                         </div>
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">International Destination</p>
-                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">You only need to
+                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">You only
+                            need to
                             bring your laptop & bag from your home country to find new opportunity, get networking
                             access, learn new culture, and go further with our international bootcamp across the world
                         </p>
@@ -327,7 +386,8 @@
                             </svg>
                         </div>
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">5 Star Services</p>
-                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">This is where
+                        <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">This is
+                            where
                             Education meets hospitality. 24/7 services from our global team representative will respond
                             to your needs.</p>
                     </div>
@@ -348,8 +408,8 @@
                         d="M32 26.0001C36.2023 26.0001 40.3635 26.8278 44.2459 28.4359C48.1283 30.0441 51.6559 32.4012 54.6274 35.3726C57.5989 38.3441 59.956 41.8718 61.5641 45.7542C63.1723 49.6366 64 53.7978 64 58.0001L32 58.0001L32 26.0001Z"
                         fill="#FF9500" />
                 </svg>
-                <svg class="absolute bottom-10 lg:bottom-6 left-6" width="109" height="110" viewBox="0 0 109 110"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="absolute bottom-10 lg:bottom-6 left-6" width="109" height="110"
+                    viewBox="0 0 109 110" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M30.9096 95.2156C26.8505 94.1279 23.0454 92.2514 19.7115 89.6932C16.3776 87.135 13.5802 83.9452 11.479 80.3059C9.37787 76.6666 8.01411 72.6491 7.4656 68.4828C6.91709 64.3164 7.19457 60.0828 8.2822 56.0237L39.1918 64.3059L30.9096 95.2156Z"
                         fill="#FF9500" />
@@ -358,17 +418,19 @@
                         fill="#FF9500" />
                 </svg>
             </div>
-            <p class="font-black text-white text-center text-2xl lg:text-4xl pt-20 pb-6 w-9/12 lg:w-1/2 mx-auto" data-aos="fade-up">More
+            <p class="font-black text-white text-center text-2xl lg:text-4xl pt-20 pb-6 w-9/12 lg:w-1/2 mx-auto"
+                data-aos="fade-up">More
                 than a bootcamp.
                 Get hired at top tech companies.
             </p>
-            <p class="font-medium text-base text-white opacity-60 text-center lg:w-1/2 mx-auto pb-10" data-aos="fade-up">QarirLabs
+            <p class="font-medium text-base text-white opacity-60 text-center lg:w-1/2 mx-auto pb-10"
+                data-aos="fade-up">QarirLabs
                 helps you land your
                 dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
                 Education Field)</p>
             <div class="flex flex-wrap lg:flex-nowrap justify-center items-start lg:w-1/2 mx-auto">
                 <div class="w-full lg:w-3/5 pb-7" data-aos="fade-up">
-                    <p class="text-center font-black text-4xl text-[#FF9500]">1K+</p>
+                    <p class="text-center font-black text-4xl text-[#FF9500]">3K+</p>
                     <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni</p>
                 </div>
                 <div class="w-full lg:w-4/5 flex flex-col justify-center mb-8 lg:mb-0" data-aos="fade-up">
@@ -404,7 +466,8 @@
                         </a>
                     </div>
                     <p class="font-bold text-xl lg:text-2xl text-center mt-11">Digital Marketing Offline Class</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See our offline class here</p>
+                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See our offline class
+                        here</p>
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -487,7 +550,8 @@
                         </a>
                     </div>
                     <p class="font-bold text-xl lg:text-2xl text-center mt-11">Qinfo - Digital Marketing for Newbie</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at Detik.com/p>
+                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at
+                        Detik.com</p>
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -518,9 +582,11 @@
         </div> --}}
     </section>
     <section class="alumni-say mt-28 w-11/12 lg:w-10/12 mx-auto">
-        <p class="text-black font-black text-2xl lg:text-4xl text-center w-full lg:w-1/2 mx-auto" data-aos="fade-up">Alumni Success Story
+        <p class="text-black font-black text-2xl lg:text-4xl text-center w-full lg:w-1/2 mx-auto" data-aos="fade-up">
+            Alumni Success Story
         </p>
-        <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 text-center w-full lg:w-2/4 mx-auto mt-5" data-aos="fade-up">Our
+        <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 text-center w-full lg:w-2/4 mx-auto mt-5"
+            data-aos="fade-up">Our
             main focus is to
             provide the best learning experience for students, here are some testimonials from our alumni</p>
         <div class="flex flex-nowrap overflow-x-auto lg:flex-wrap mt-8">
@@ -588,7 +654,7 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/C5603AQG8h--cdyYYRA/profile-displayphoto-shrink_200_200/0/1622167619010?e=1686787200&v=beta&t=t85-LKlDJFQgQXS_qFjeMIk2ylsOyWuU9_De8GbZTp0"
+                        <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Andimas Iben D.</p>
@@ -605,12 +671,12 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/C4E03AQFSzaO6pHzsUA/profile-displayphoto-shrink_200_200/0/1623405781794?e=1686787200&v=beta&t=8AG9GZHTtqaLY4UlQ70Tl7QPamHCLh6ExZxeJVWIe_E"
+                        <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
-                            <p class="font-medium text-base text-black">Indira Yasmin Amarti </p>
-                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Promo Planner at NET MEDIATAMA
-                                TELEVISI</p>
+                            <p class="font-medium text-base text-black">Agnes Friska Cyntia Puspitasari</p>
+                            <p class="font-medium text-xs text-[#0E144A] opacity-60">Co-Founder di PT Visuels Inspirasi
+                                Digispora | Digital Marketing Expert | Instagram & Tiktok Content Creator</p>
                         </div>
                     </div>
                     <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was presented in an
@@ -630,11 +696,15 @@
                 class="lg:h-80 h-96 object-cover">
             <div class="hidden lg:block absolute top-0 left-0 lg:h-80 h-96 w-full"
                 style="background: linear-gradient(90.49deg, #00263D 36.68%, rgba(255, 255, 255, 0) 98.95%);"></div>
-            <div class="lg:hidden absolute top-0 left-0 lg:h-80 h-96 w-full" style="background: linear-gradient(359.96deg, #00263D 40.46%, rgba(0, 38, 61, 0.565899) 76.18%, rgba(255, 255, 255, 0) 105.07%);"></div>
+            <div class="lg:hidden absolute top-0 left-0 lg:h-80 h-96 w-full"
+                style="background: linear-gradient(359.96deg, #00263D 40.46%, rgba(0, 38, 61, 0.565899) 76.18%, rgba(255, 255, 255, 0) 105.07%);">
+            </div>
             <div class="absolute bottom-0 lg:top-0 left-0 h-80 w-full flex justify-start items-center ">
                 <div class="flex flex-col ml-8 lg:ml-28">
-                    <p class="font-black text-3xl lg:text-4xl text-white" data-aos="fade-up">Looking for<br>Financial Aid?</p>
-                    <p class="font-medium text-base text-white w-10/12 lg:w-1/2 mt-2" data-aos="fade-up">Finances shouldn't be
+                    <p class="font-black text-3xl lg:text-4xl text-white" data-aos="fade-up">Looking for<br>Financial
+                        Aid?</p>
+                    <p class="font-medium text-base text-white w-10/12 lg:w-1/2 mt-2" data-aos="fade-up">Finances
+                        shouldn't be
                         the main obstacle to accessing our bootcamps. We're always finding new ways to facilitate
                         payments and fundings.</p>
                     <div data-aos="fade-up" class=" mb-11 mt-6">
@@ -654,18 +724,28 @@
                     class="object-contain rounded-xl">
             </div>
             <div class="mx-2 my-5 lg:my-0 lg:mx-10" data-aos="fade-up">
-                <p class="font-bold text-2xl lg:text-4xl text-black">Are you an Enterprise looking for Tech Training or Talent ?
+                <p class="font-bold text-2xl lg:text-4xl text-black">Are you an Enterprise looking for Tech Training or
+                    Talent ?
                 </p>
-                <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with QarirLabs corporate
+                <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with
+                    QarirLabs corporate
                     training or hire our tech-alumni now.</p>
-                    <div class=" mb-11 mt-6">
+                <div class=" mb-11 mt-6">
 
-                        <a href="tel:+62821-3595-3485" target="_blank" class="bg-[#FF9500] px-10 py-4 rounded-full text-white  text-lg font-bold w-full lg:w-auto">Contact
-                            Our Partnership Team</a>
-                    </div>
+                    <a href="tel:+62821-3595-3485" target="_blank"
+                        class="bg-[#FF9500] px-10 py-4 rounded-full text-white  text-lg font-bold w-full lg:w-auto">Contact
+                        Our Partnership Team</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <div class="hidden">
+        <p class="text-[#2622B9] bg-[#DBDAFF] outline-[#DBDAFF]">test1</p>
+        <p class="text-[#FF9500] bg-[#FFE6CE] outline-[#FFE6CE]">test1</p>
+        <p class="text-[#EE0A0A] bg-[#FFE3E3] outline-[#FFE3E3]">test1</p>
+        <p class="text-[#0F5B89] bg-[#DCF2FF] outline-[#DCF2FF]">test1</p>
+    </div>
 
     {{-- <section class="media mt-20 mb-24"data-aos="fade-up">
         <p class="font-black text-2xl lg:text-4xl text-center px-20 lg:px-0">The media that has covered us</p>

@@ -164,10 +164,10 @@
                     </li> --}}
                     <li class="font-bold text-base text-[#262626] py-2 mobile-menu">
                         <div class="flex flex-row justify-between items-center">
-                            <p>International Program</p>
+                            <p>Course And Location</p>
                             <div class="h-6 w-6 flex justify-center items-center">
-                                <svg class="rotate-0" width="10" height="7" viewBox="0 0 10 7"
-                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg class="rotate-0" width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M5.93332 0.933415L9.39998 4.40008C9.82221 4.8223 9.91643 5.30541 9.68265 5.84941C9.44887 6.39341 9.03243 6.66586 8.43332 6.66675L1.56665 6.66675C0.966652 6.66675 0.549763 6.3943 0.315986 5.84942C0.0822076 5.30453 0.176873 4.82142 0.599984 4.40008L4.06665 0.933415C4.19998 0.800081 4.34443 0.700082 4.49998 0.633416C4.65554 0.566749 4.82221 0.533414 4.99998 0.533414C5.17776 0.533414 5.34443 0.566749 5.49998 0.633416C5.65554 0.700082 5.79998 0.800081 5.93332 0.933415Z"
                                         fill="black" />
@@ -334,14 +334,29 @@
 
         </div>
     </div>
+
     <div class="relative">
         @php
             $url = request()->url();
             $current = explode('/', $url);
-            $current = $current[count($current) - 1];
-            $current = urldecode($current);
+            $course = $current[count($current) - 1];
+            $location = $current[count($current) - 2];
+            $course = urldecode($course);
+            $location = urldecode($location);
             $color = '#FFD770';
-            if ($current == 'data science') {
+            if ($location == 'indonesia' && $course == 'data science') {
+                $color = '#2622B9';
+            }
+            
+            if ($location == 'indonesia' && $course == 'digital marketing') {
+                $color = '#FF9500';
+            }
+            
+            if ($location == 'istanbul' && $course == 'data science') {
+                $color = '#EE0A0A';
+            }
+            
+            if ($location == 'istanbul' && $course == 'digital marketing') {
                 $color = '#0F5B89';
             }
         @endphp
@@ -470,7 +485,7 @@
                             <div class="relative">
                                 <div class="flex flex-row items-center cursor-pointer dropdown-menu"
                                     onclick="toggleProgramMenuInternational()">
-                                    <button class="text-black  px-3 py-2 font-medium">International Programs</button>
+                                    <button class="text-black  px-3 py-2 font-medium">Course And Location</button>
                                     <svg width="8" height="5" viewBox="0 0 8 5" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -548,7 +563,7 @@
                                                             Bootcamp</p>
                                                     </div>
                                                 </a>
-                                                <a href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'digital marketing']) }}"
+                                                <a href="{{ route('detail', ['slug' => 'indonesia', 'course' => 'digital marketing']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-1">
                                                     <div class="inline-flex items-center">
@@ -864,19 +879,38 @@
                                     </div>
                                 </div>
                             </div>
-
+                            <div class="relative">
+                                <div class="flex flex-row items-center cursor-pointer dropdown-menu">
+                                    <button class="text-black  px-3 py-2 font-medium ml-4">Enterprise</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="absolute inset-y-0 right-8 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <a href="#" class="hidden lg:block text-black  px-3 py-2 font-bold mx-2">Login</a>
+                    @if ($location == '')
+                        <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
+                            class="text-white px-5 py-2 font-bold rounded-full bg-[#FF9500] mx-2">Book a call</a>
+                    @endif
+                    @if ($location == 'indonesia' && $course == 'data science')
+                        <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
+                            class="text-white px-5 py-2 font-bold rounded-full bg-[#2622B9] mx-2">Book a call</a>
+                    @endif
 
-                    @if ($current == 'data science')
-                        <a href="#" class="text-white px-5 py-2 font-bold rounded-full bg-[#0F5B89] mx-2">Join
-                            Now</a>
-                    @else
-                        <a href="#" class="text-white px-5 py-2 font-bold rounded-full bg-[#FF9500] mx-2">Join
-                            Now</a>
+                    @if ($location == 'indonesia' && $course == 'digital marketing')
+                        <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
+                            class="text-white px-5 py-2 font-bold rounded-full bg-[#FF9500] mx-2">Book a call</a>
+                    @endif
+
+                    @if ($location == 'istanbul' && $course == 'data science')
+                        <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
+                            class="text-white px-5 py-2 font-bold rounded-full bg-[#EE0A0A] mx-2">Book a call</a>
+                    @endif
+
+                    @if ($location == 'istanbul' && $course == 'digital marketing')
+                        <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
+                            class="text-white px-5 py-2 font-bold rounded-full bg-[#0F5B89] mx-2">Book a call</a>
                     @endif
 
                     <div class="hidden lg:block text-[#DEDEDE] mx-2 text-xl">|</div>

@@ -6,21 +6,43 @@ use Illuminate\Http\Request;
 
 class LandingPageController extends Controller
 {
-    public function index() {
+    public function index()
+    {
         return view('landing_page.landing');
     }
 
-    public function detail($slug, $course) {
-        
-        $programFee = [];
-        if ($course == 'data science') {
-            $color1 = '#0F5B89';
-            $color2 = '#256C99';
-        } else {
-            $color1 = '#FFB72B';
-            $color2 = '#FFA01B';
+    public function detail($slug, $course)
+    {
+
+        $themeColor = '#0F5B89';
+        // Determine Color
+        if (strtolower($slug) == 'indonesia' && strtolower($course) == 'data science') {
+            $themeColor = '#2622B9';
+            $themeColor2 = '#DBDAFF';
+            $themeColor3 = '#DBDAFF';
         }
 
+        if (strtolower($slug) == 'indonesia' && strtolower($course) == 'digital marketing') {
+            $themeColor = '#FF9500';
+            $themeColor2 = '#FFE6CE';
+            $themeColor3 = '#FFE6CE';
+        }
+
+        if (strtolower($slug) == 'istanbul' && strtolower($course) == 'data science') {
+            $themeColor = '#EE0A0A';
+            $themeColor2 = '#FFE3E3';
+            $themeColor3 = '#FFE3E3';
+        }
+
+        if (strtolower($slug) == 'istanbul' && strtolower($course) == 'digital marketing') {
+            $themeColor = '#0F5B89';
+            $themeColor2 = '#EEF9FF';
+            $themeColor3 = '#DCF2FF';
+        }
+
+        // dd($themeColor, strtolower($slug), strtolower($course));
+
+        $programFee = [];
 
         if ($slug == 'online') {
             $detail = "Online";
@@ -42,23 +64,23 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_866" x1="6.00049" y1="40.042"
                             x2="6.48659" y2="45.9179" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_866" x1="7.94727" y1="34.8574"
                             x2="8.49182" y2="40.723" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_866" x1="6" y1="5"
                             x2="12.0802" y2="24.9459" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_866" x1="7.50439" y1="18.1265"
                             x2="18.2459" y2="42.3777" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -81,28 +103,28 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_881" x1="8.24963" y1="2.25"
                             x2="49.5783" y2="32.1782" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_881" x1="27" y1="15.75"
                             x2="32.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_881" x1="22.5" y1="15.75"
                             x2="27.5103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_881" x1="12" y1="6"
                             x2="36" y2="30" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint4_linear_268_881" x1="18" y1="15.75"
                             x2="23.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -121,8 +143,8 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_890" x1="2" y1="2"
                             x2="46" y2="46" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -131,6 +153,30 @@ class LandingPageController extends Controller
                 ],
             ];
         } elseif ($slug == 'indonesia') {
+            if (strtolower($course) == 'digital marketing') {
+                $programFee = [
+                    [
+                        "title" => "Digital Marketing Bootcamp",
+                        "type" => "Beginner Friendly",
+                        "price" => [
+                            "Rp10,500,000",
+                            "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
+                        ],
+                        "duration" => "16 Weeks",
+                        "note" => "Include job connector + student club "
+                    ],
+                    [
+                        "title" => "Digital Marketing Bootcamp",
+                        "type" => "Beginner Friendly & Hybrid Offline",
+                        "price" => [
+                            "Rp14,000,000",
+                            "Rp12,000,000"
+                        ],
+                        "duration" => "16 Weeks",
+                        "note" => "Include job connector + student club"
+                    ]
+                ];
+            }
             $detail = "Indonesia";
             $heroImages = ['resources/image/ilustration/indonesia_hero.png'];
             $destinations = [];
@@ -150,27 +196,27 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_866" x1="6.00049" y1="40.042"
                             x2="6.48659" y2="45.9179" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_866" x1="7.94727" y1="34.8574"
                             x2="8.49182" y2="40.723" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_866" x1="6" y1="5"
                             x2="12.0802" y2="24.9459" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_866" x1="7.50439" y1="18.1265"
                             x2="18.2459" y2="42.3777" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
-                    "content" => "Our bootcamp indonesia class was very flexible, you can choose between Hybrid class and online class to join! No need to worried about place"
+                    "content" => strtolower($slug) == 'indonesia' ? "Kelas bootcamp Indonesia kami sangat fleksibel, Anda dapat memilih antara kelas Hybrid dan kelas online untuk bergabung! Di mana pun Anda tinggal!" : "Our bootcamp indonesia class was very flexible, you can choose between Hybrid class and online class to join! No need to worried about place"
                 ],
                 [
                     "image" => '<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -187,32 +233,32 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_881" x1="8.24963" y1="2.25"
                             x2="49.5783" y2="32.1782" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_881" x1="27" y1="15.75"
                             x2="32.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_881" x1="22.5" y1="15.75"
                             x2="27.5103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_881" x1="12" y1="6"
                             x2="36" y2="30" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint4_linear_268_881" x1="18" y1="15.75"
                             x2="23.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
-                    "content" => "As one of the largest economies in Southeast Asia, Indonesia is an ideal destination where you can get a high-quality education at affordable prices. "
+                    "content" => strtolower($slug) == 'indonesia' ? "Sebagai salah satu ekonomi terbesar di Asia Tenggara, Indonesia mengubah semua sektor menjadi digital dengan cepat. Menjadi Tech atau Digital Talent di Indonesia memberi Anda peluang besar untuk mendapatkan pekerjaan dan proyek bergaji tinggi!" : "As one of the largest economies in Southeast Asia, Indonesia is an ideal destination where you can get a high-quality education at affordable prices. "
                 ],
                 [
                     "image" => '<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -223,12 +269,12 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_890" x1="2" y1="2"
                             x2="46" y2="46" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
-                    "content" => "Offers a rich social program,
+                    "content" => strtolower($slug) == 'indonesia' ? "Kendala bahasa inggris? Semua kelas dilakukan dalam Bahasa Indonesia, Damn We love Indonesia !" : "Offers a rich social program,
                     including organized daily trips around Istanbul European Side & Asian Side"
                 ],
             ];
@@ -237,14 +283,14 @@ class LandingPageController extends Controller
                 [
                     "title" => "Data Sciences Intensive Bootcamp",
                     "type" => "Study Only",
-                    "price" => "$1.100",
+                    "price" => ["$1.100"],
                     "duration" => "12 Weeks",
                     "note" => "14 DAYS CLASS IN ISTANBUL + 2 month online"
                 ],
                 [
                     "title" => "Data Sciences Intensive Bootcamp",
                     "type" => "Study and Accomodation",
-                    "price" => "$1.500",
+                    "price" => ["$1.500"],
                     "duration" => "12 Weeks",
                     "note" => "14 DAYS CLASS IN ISTANBUL + 2 month online"
                 ]
@@ -284,23 +330,23 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_866" x1="6.00049" y1="40.042"
                             x2="6.48659" y2="45.9179" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_866" x1="7.94727" y1="34.8574"
                             x2="8.49182" y2="40.723" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_866" x1="6" y1="5"
                             x2="12.0802" y2="24.9459" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_866" x1="7.50439" y1="18.1265"
                             x2="18.2459" y2="42.3777" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -323,28 +369,28 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_881" x1="8.24963" y1="2.25"
                             x2="49.5783" y2="32.1782" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_881" x1="27" y1="15.75"
                             x2="32.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_881" x1="22.5" y1="15.75"
                             x2="27.5103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_881" x1="12" y1="6"
                             x2="36" y2="30" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint4_linear_268_881" x1="18" y1="15.75"
                             x2="23.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -363,8 +409,8 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_890" x1="2" y1="2"
                             x2="46" y2="46" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -408,23 +454,23 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_866" x1="6.00049" y1="40.042"
                             x2="6.48659" y2="45.9179" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_866" x1="7.94727" y1="34.8574"
                             x2="8.49182" y2="40.723" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_866" x1="6" y1="5"
                             x2="12.0802" y2="24.9459" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_866" x1="7.50439" y1="18.1265"
                             x2="18.2459" y2="42.3777" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -445,28 +491,28 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_881" x1="8.24963" y1="2.25"
                             x2="49.5783" y2="32.1782" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_881" x1="27" y1="15.75"
                             x2="32.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_881" x1="22.5" y1="15.75"
                             x2="27.5103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_881" x1="12" y1="6"
                             x2="36" y2="30" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint4_linear_268_881" x1="18" y1="15.75"
                             x2="23.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -481,8 +527,8 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_890" x1="2" y1="2"
                             x2="46" y2="46" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -525,23 +571,23 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_866" x1="6.00049" y1="40.042"
                             x2="6.48659" y2="45.9179" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_866" x1="7.94727" y1="34.8574"
                             x2="8.49182" y2="40.723" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_866" x1="6" y1="5"
                             x2="12.0802" y2="24.9459" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_866" x1="7.50439" y1="18.1265"
                             x2="18.2459" y2="42.3777" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -562,28 +608,28 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_881" x1="8.24963" y1="2.25"
                             x2="49.5783" y2="32.1782" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint1_linear_268_881" x1="27" y1="15.75"
                             x2="32.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint2_linear_268_881" x1="22.5" y1="15.75"
                             x2="27.5103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint3_linear_268_881" x1="12" y1="6"
                             x2="36" y2="30" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                         <linearGradient id="paint4_linear_268_881" x1="18" y1="15.75"
                             x2="23.0103" y2="17.9768" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -598,8 +644,8 @@ class LandingPageController extends Controller
                     <defs>
                         <linearGradient id="paint0_linear_268_890" x1="2" y1="2"
                             x2="46" y2="46" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="'.$color1.'" />
-                            <stop offset="1" stop-color="'.$color2.'" />
+                            <stop stop-color="'.$themeColor.'" />
+                            <stop offset="1" stop-color="'.$themeColor.'" />
                         </linearGradient>
                     </defs>
                 </svg>',
@@ -608,12 +654,25 @@ class LandingPageController extends Controller
             ];
         }
 
+        if (in_array(strtolower($slug), ['tokyo', 'south korea'])) {
+            return view('landing_page.coming_soon', compact('slug'));
+        }
+
+        // return view('landing_page.detail', compact('detail', 'heroImages', 'slug', 'course', 'destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));
         if ($course == 'data science') {
-            return view('landing_page.data_science', compact('detail', 'heroImages','slug', 'course', 'destinations', 'whySouldStay', 'programFee'));
+            if (strtolower($slug) == 'indonesia') {
+                return view('landing_page.data_science_id', compact('detail', 'heroImages','slug', 'course', 'destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));
+            } else {
+                return view('landing_page.data_science', compact('detail', 'heroImages','slug', 'course', 'destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));
+            }
         } elseif ($course == 'digital marketing') {
-            return view('landing_page.digital_marketing', compact('detail', 'heroImages','slug', 'course','destinations', 'whySouldStay', 'programFee'));
+            if (strtolower($slug) == 'indonesia') {
+                return view('landing_page.digital_marketing_id', compact('detail', 'heroImages','slug', 'course','destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));   
+            } else {
+                return view('landing_page.digital_marketing', compact('detail', 'heroImages','slug', 'course','destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));   
+            }
         } elseif ($course == 'web development') {
-            return view('landing_page.web_development', compact('detail', 'heroImages','slug', 'course', 'destinations', 'whySouldStay', 'programFee'));
+            return view('landing_page.web_development', compact('detail', 'heroImages','slug', 'course', 'destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));
         }
     }
 }
