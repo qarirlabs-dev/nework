@@ -23,7 +23,7 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-[#FFFCF9]">
+    <div class="min-h-screen bg-[#F9F9F9]">
         <x-landing-nav />
         <!-- Page Content -->
         <main>

@@ -1695,7 +1695,7 @@
                                 </svg>
                             </div>
 
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Real Study Case
+                            <p class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Real Study Case
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">You will work
                                 on a real company case and fill your LinkedIn profiles with professional projects. By
@@ -1714,7 +1714,7 @@
                                 </svg>
                             </div>
 
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">CV Review
+                            <p class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">CV Review
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">With your
                                 personal career consultant, you will be able to write an effective cover letter and
@@ -1761,7 +1761,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Job Connected
+                            <p class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Job Connected
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">We will
                                 continue to support you until you find a company that is the right fit for you. We will

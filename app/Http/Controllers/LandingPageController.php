@@ -153,30 +153,28 @@ class LandingPageController extends Controller
                 ],
             ];
         } elseif ($slug == 'indonesia') {
-            if (strtolower($course) == 'digital marketing') {
-                $programFee = [
-                    [
-                        "title" => "Digital Marketing Bootcamp",
-                        "type" => "Beginner Friendly",
-                        "price" => [
-                            "Rp10,500,000",
-                            "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
-                        ],
-                        "duration" => "16 Weeks",
-                        "note" => "Include job connector + student club "
+            $programFee = [
+                [
+                    "title" => "Digital Marketing Bootcamp",
+                    "type" => "Beginner Friendly",
+                    "price" => [
+                        "Rp10,500,000",
+                        "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
                     ],
-                    [
-                        "title" => "Digital Marketing Bootcamp",
-                        "type" => "Beginner Friendly & Hybrid Offline",
-                        "price" => [
-                            "Rp14,000,000",
-                            "Rp12,000,000"
-                        ],
-                        "duration" => "16 Weeks",
-                        "note" => "Include job connector + student club"
-                    ]
-                ];
-            }
+                    "duration" => "16 Weeks",
+                    "note" => "Include job connector + student club "
+                ],
+                [
+                    "title" => "Digital Marketing Bootcamp",
+                    "type" => "Beginner Friendly & Hybrid Offline",
+                    "price" => [
+                        "Rp14,000,000",
+                        "Rp12,000,000"
+                    ],
+                    "duration" => "16 Weeks",
+                    "note" => "Include job connector + student club"
+                ]
+            ];
             $detail = "Indonesia";
             $heroImages = ['resources/image/ilustration/indonesia_hero.png'];
             $destinations = [];

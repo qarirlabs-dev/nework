@@ -255,9 +255,6 @@
                             <button
                                 class="text-[{{ $themeColor }}] px-4 py-3 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{ $themeColor3 }}]"data-aos="fade-up">Beginner
                                 Friendly</button>
-                            <button
-                                class="text-[{{ $themeColor }}] px-4 py-3 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{ $themeColor3 }}]"data-aos="fade-up">35
-                                limited seat</button>
                         </div>
                         <div class="w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up">
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
@@ -400,8 +397,8 @@
                 <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_327_5460)">
@@ -424,14 +421,14 @@
                                 </svg>
                             </div>
 
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Kurikulum
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Kurikulum
                                 terstruktur dengan baik dirancang oleh para ahli</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -440,14 +437,14 @@
                                 </svg>
 
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Kurikulum yang
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Kurikulum yang
                                 dipersonalisasi (pengalaman belajar langsung)</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_327_5469" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -462,14 +459,14 @@
                                 </svg>
                             </div>
 
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Bimbingan oleh
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Bimbingan oleh
                                 Mitra Perekrutan</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -478,14 +475,14 @@
                                 </svg>
                             </div>
 
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">
                                 Program pengayaan (Proyek Paruh waktu)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -494,14 +491,14 @@
                                 </svg>
                             </div>
 
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Terhubung dengan
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Terhubung dengan
                                 pelatih yang bersemangat</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <mask id="mask0_327_5481" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -516,7 +513,7 @@
                                 </svg>
                             </div>
 
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Layanan bintang 5
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Layanan bintang 5
                                 dengan Pusat Layanan Siswa khusus</p>
                         </div>
                     </div>
@@ -540,16 +537,16 @@
             <section class="p-6 lg:p-0 curriculum w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="learcnphase" data-aos="fade-up">Fase Belajar
                 </p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What You Will Learn in Practice</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Apa yang Akan Anda Pelajari dalam Praktek</p>
                 <p class="font-normal text-base text-[#262626] mt-2" data-aos="fade-up">Setiap mata pelajaran akan
                     meminta Anda untuk menerapkan apa yang Anda pelajari melalui pengalaman langsung melalui tugas
                     praktis dan umpan balik langsung dari instruktur Anda. Secara rinci, Anda akan belajar:</p>
                 <div class="lg:hidden flex flex-row flex-wrap mt-11" data-aos="fade-up">
                     {{-- Prep --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -562,7 +559,7 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <span class="font-bold lg:text-xl ml-3">Persiapan</span>
+                                <span class="font-bold lg:text-xl text-base">Persiapan</span>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -575,7 +572,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Qarirlabs menyediakan persiapan karir. Setelah Anda diterima, Anda akan mendapatkan jadwal
                             tetap kelas pemetaan karir & soft skill dengan pelatih kami yang bersemangat. Anda juga akan
                             menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar
@@ -584,10 +581,10 @@
                         </div>
                     </div>
                     {{-- 1 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -600,8 +597,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Branding, Influencer Strategic, and Content
-                                    Strategy Plan <span class="font-normal text-xl">(Module 1)</span></div>
+                                <div class="font-bold lg:text-xl text-base">Branding, Influencer Strategic, and Content
+                                    Strategy Plan <span class="font-normal text-base lg:text-xl">(Module 1)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -614,7 +611,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Tidak ada yang penting selain branding dan konten bagi digital marketer, pelajari digital
                             marketing dari dasar. Mulai dari penjelasan tujuan media sosial dan fiturnya, strategi
                             Hacking untuk berpikir kreatif, Cara membuat konten yang baik & relevan, Membuat kalender
@@ -622,10 +619,10 @@
                         </div>
                     </div>
                     {{-- 2 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -638,8 +635,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Social Media Ads & Performance analyst <span
-                                        class="font-normal text-xl">(Module 2)</span></div>
+                                <div class="font-bold lg:text-xl text-base">Social Media Ads & Performance analyst <span
+                                        class="font-normal text-base lg:text-xl">(Module 2)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -652,7 +649,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Mulai jalankan iklan Anda sendiri! pertahankan media sosial merek Anda, lakukan dan jangan
                             lakukan, dan kreativitas untuk mencapai ROI terbaik. Menjelaskan fase campaign, konten
                             sukses di FB Ads Manager. Retargeting Audience (Custom Audience, Lookalike) FB Pixel,
@@ -660,10 +657,10 @@
                         </div>
                     </div>
                     {{-- 3 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -676,8 +673,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Google Ads & Media Recommendation<span
-                                        class="font-normal text-xl">(Module 3)</span></div>
+                                <div class="font-bold lg:text-xl text-base">Google Ads & Media Recommendation<span
+                                        class="font-normal text-base lg:text-xl"> (Module 3)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-0180" width="8" height="5" viewBox="0 0 8 5"
@@ -690,7 +687,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Temukan kata kunci yang tepat untuk kampanye Anda, dalam modul ini trainer akan menjelaskan
                             tentang, strategi penawaran, analisis kekuatan dan kelemahan untuk SEM, dan tips sukses
                             menjalankan Kampanye SEM. Ada juga sesi implementasi dan latihan untuk membuat dan
@@ -698,10 +695,10 @@
                         </div>
                     </div>
                     {{-- 4 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -714,7 +711,7 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">SEO <span class="font-normal text-xl">(Module
+                                <div class="font-bold lg:text-xl text-base">SEO <span class="font-normal text-base lg:text-xl">(Module
                                         4)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
@@ -728,7 +725,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Jalankan media kemudian optimalkan melalui mesin pencari, yang melibatkan media brief,
                             penganggaran dan rencana komunikasi kreatif. Kenali lebih jauh cara kerja pencarian google,
                             secara detail untuk memenuhi kebutuhan Google. Mengembangkan lebih lanjut tentang strategi
@@ -736,10 +733,10 @@
                         </div>
                     </div>
                     {{-- 5 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -752,8 +749,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Project Week <span
-                                        class="font-normal text-xl">(Module 5)</span></div>
+                                <div class="font-bold lg:text-xl text-base">Project Week <span
+                                        class="font-normal text-base lg:text-xl">(Module 5)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -766,7 +763,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Bergabunglah atau ajukan proyek Pemasaran Digital asli dengan 3-4 anggota tim/Individu. Anda
                             dapat menggunakan beberapa merek yang sudah ada (Proyek Dummy) atau merek pribadi Anda
                             sendiri (Proyek UMKM). Dapatkan pendampingan penuh waktu dari guru ahli untuk mencapai
@@ -774,10 +771,10 @@
                         </div>
                     </div>
                     {{-- career --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -790,8 +787,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                        class="font-normal text-xl"></span></div>
+                                <div class="font-bold lg:text-xl text-base">Career Weeks <span
+                                        class="font-normal text-base lg:text-xl"></span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -804,7 +801,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Tingkatkan keterampilan pencarian kerja Anda dengan bertemu profesional pemasaran digital
                             yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih wawancara
                             palsu, dan sempurnakan CV Anda.
@@ -813,11 +810,11 @@
                 </div>
                 <div class="hidden lg:flex flex-row flex-wrap mt-11" data-aos="fade-up">
                     <div class="w-full lg:w-1/2 pr-1">
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -838,7 +835,7 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <span class="font-bold lg:text-xl ml-3">Preparation</span>
+                                    <span class="font-bold lg:text-xl text-base">Persiapan</span>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -851,7 +848,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Qarirlabs menyediakan persiapan karir. Setelah Anda diterima, Anda akan mendapatkan
                                 jadwal tetap kelas pemetaan karir & soft skill dengan pelatih kami yang bersemangat.
                                 Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan
@@ -860,11 +857,11 @@
                                 dimulai.
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -885,8 +882,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Social Media Ads & Performance analyst <span
-                                            class="font-normal text-xl">(Module 2)</span></div>
+                                    <div class="font-bold lg:text-xl text-base">Social Media Ads & Performance analyst <span
+                                            class="font-normal text-base lg:text-xl">(Module 2)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -899,18 +896,18 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Mulai jalankan iklan Anda sendiri! pertahankan media sosial merek Anda, lakukan dan
                                 jangan lakukan, dan kreativitas untuk mencapai ROI terbaik. Menjelaskan fase campaign,
                                 konten sukses di FB Ads Manager. Retargeting Audience (Custom Audience, Lookalike) FB
                                 Pixel, Relevan Score, dan Setup facebook business manager.
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -931,8 +928,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">SEO <span
-                                            class="font-normal text-xl">(Module
+                                    <div class="font-bold lg:text-xl text-base">SEO <span
+                                            class="font-normal text-base lg:text-xl">(Module
                                             4)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
@@ -946,18 +943,18 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Jalankan media kemudian optimalkan melalui mesin pencari, yang melibatkan media brief,
                                 penganggaran dan rencana komunikasi kreatif. Kenali lebih jauh cara kerja pencarian
                                 google, secara detail untuk memenuhi kebutuhan Google. Mengembangkan lebih lanjut
                                 tentang strategi dan implementasi SEO.
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -978,8 +975,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                            class="font-normal text-xl"></span></div>
+                                    <div class="font-bold lg:text-xl text-base">Career Weeks <span
+                                            class="font-normal text-base lg:text-xl"></span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -992,7 +989,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Tingkatkan keterampilan pencarian kerja Anda dengan bertemu profesional pemasaran
                                 digital yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka,
                                 berlatih wawancara palsu, dan sempurnakan CV Anda.
@@ -1000,11 +997,11 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2 pr-1">
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -1025,8 +1022,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Branding, Influencer Strategic, and Content
-                                        Strategy Plan <span class="font-normal text-xl">(Module 1)</span></div>
+                                    <div class="font-bold lg:text-xl text-base">Branding, Influencer Strategic, and Content
+                                        Strategy Plan <span class="font-normal text-base lg:text-xl">(Module 1)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -1039,18 +1036,18 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Tidak ada yang penting selain branding dan konten bagi digital marketer, pelajari
                                 digital marketing dari dasar. Mulai dari penjelasan tujuan media sosial dan fiturnya,
                                 strategi Hacking untuk berpikir kreatif, Cara membuat konten yang baik & relevan,
                                 Membuat kalender konten. Ini bukan hanya tentang teori tetapi juga praktis!
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -1071,8 +1068,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Google Ads & Media Recommendation<span
-                                            class="font-normal text-xl">(Module 3)</span></div>
+                                    <div class="font-bold lg:text-xl text-base">Google Ads & Media Recommendation<span
+                                            class="font-normal text-base lg:text-xl">(Module 3)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-0180" width="8" height="5" viewBox="0 0 8 5"
@@ -1085,18 +1082,18 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Temukan kata kunci yang tepat untuk kampanye Anda, dalam modul ini trainer akan
                                 menjelaskan tentang, strategi penawaran, analisis kekuatan dan kelemahan untuk SEM, dan
                                 tips sukses menjalankan Kampanye SEM. Ada juga sesi implementasi dan latihan untuk
                                 membuat dan menganalisa brand campaign. terprogram
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
                             <div
-                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                                class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -1117,8 +1114,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Project Week <span
-                                            class="font-normal text-xl">(Module 5)</span></div>
+                                    <div class="font-bold lg:text-xl text-base">Project Week <span
+                                            class="font-normal text-base lg:text-xl">(Module 5)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -1131,7 +1128,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Bergabunglah atau ajukan proyek Pemasaran Digital asli dengan 3-4 anggota tim/Individu.
                                 Anda dapat menggunakan beberapa merek yang sudah ada (Proyek Dummy) atau merek pribadi
                                 Anda sendiri (Proyek UMKM). Dapatkan pendampingan penuh waktu dari guru ahli untuk
@@ -1480,9 +1477,7 @@
                                                 Creator</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Sebagai orang awam, kelas
-                                        disajikan dengan menarik, dan juga dipandu oleh praktisi berpengalaman sehingga
-                                        berbagai studi kasus dapat diselesaikan."- Indira Yasmine</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Program Berkualitas Tinggi dengan mentor terbaik. Layanan mereka memenuhi 5 bintang" - Agnes Friska</p>
                                 </div>
                             </div>
                         </div>
@@ -1531,7 +1526,7 @@
             <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-up">
                     PARTNERSHIPS</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2"data-aos="fade-up">Graduates have Worked in</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2"data-aos="fade-up">Graduates have Worked inLulusan kami bekerja di</p>
                 <div class="mt-8 flex flex-row overflow-x-auto justify-start items-center">
                     <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}" alt="stick_earn"
                         class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up">
@@ -1556,14 +1551,14 @@
 
             <section class="portofolio p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="portofolio">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Portofolio Student di Bootcamp
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Portfolio Peserta pada Bootcamp
                     QarirLabs</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Simak kisah para alumni program
                     Digital Marketing Bootcamp di QarirLabs!</p>
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="lg:p-3 p-0 my-3">
+                            <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketin_1.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
@@ -1621,7 +1616,7 @@
                                         <p class="font-bold text-base text-[#262626] mb-2">Disusun oleh</p>
                                         <p class="font-normal text-base text-[#262626]">Group 3</p>
                                         <div class="mt-12 flex w-full text-center">
-                                            <a href="https://drive.google.com/file/d/1IdPOKd5v84YGDvhfNMmlFunG8k1AousD/view?usp=sharing "
+                                            <a href="https://drive.google.com/file/d/1SeIvJV8anWanmrVLc_XiEpSCUXkYg7bI/view?usp=sharing"
                                                 target="_blank"
                                                 class="w-full text-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-lg font-bold mb-3 outline outline-1 outline-[{{ $themeColor }}]">See
                                                 Portofolio</a>
@@ -1678,8 +1673,8 @@
                 <div class="flex flex-wrap mt-8 justify-between">
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
-                            <div class="w-12 h-12">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1687,7 +1682,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Kasus Studi Nyata
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Studi Kasus Nyata
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">Anda akan
                                 mengerjakan kasus perusahaan nyata dan mengisi profil LinkedIn Anda dengan proyek
@@ -1696,8 +1691,8 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
-                            <div class="w-12 h-12">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -1705,7 +1700,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Ulasan CV
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Ulasan CV
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">Dengan
                                 konsultan karir pribadi Anda, Anda akan dapat menulis surat lamaran yang efektif dan
@@ -1714,8 +1709,8 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
-                            <div class="w-12 h-12">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_226_1196)">
@@ -1752,7 +1747,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Pekerjaan
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Pekerjaan
                                 Terhubung
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">Kami akan

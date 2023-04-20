@@ -89,9 +89,6 @@
                                 class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
                                 data-aos-duration="3000" data-aos-delay="1200">Beginner
                                 Friendly</button>
-                            <button
-                                class="text-[#FF7A00] px-4 py-3 mr-6 rounded-full text-sm font-bold mb-11 outline outline-1 outline-[#FF7A00]"data-aos="fade-right"
-                                data-aos-duration="3000" data-aos-delay="1500">35 limited seat</button>
                         </div>
                         <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="flip-left"
                             data-aos-duration="3000" data-aos-delay="300">
@@ -1437,7 +1434,7 @@
                                     fill="#FFAC23" />
                             </svg>
 
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Real Study Case
+                            <p class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Real Study Case
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">You will work
                                 on a real company case and fill your LinkedIn profiles with professional projects. By
@@ -1455,7 +1452,7 @@
                             </svg>
 
 
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">CV Review
+                            <p class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">CV Review
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">With your
                                 personal career consultant, you will be able to write an effective cover letter and
@@ -1501,7 +1498,7 @@
                                 </defs>
                             </svg>
 
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Job Connected
+                            <p class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Job Connected
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">We will
                                 continue to support you until you find a company that is the right fit for you. We will

@@ -23,12 +23,15 @@
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0">International Bootcamp</p>
-                        <p class="text-white font-normal text-base pt-2 lg:pt-0">Bootcamp Istanbul</p>
+                        <p class="text-white font-normal text-base pt-2 lg:pt-0">Bootcamp Indonesia</p>
+                        <p class="text-white font-normal text-base pt-2">Bootcamp Istanbul</p>
                         <p class="text-white font-normal text-base pt-2">Bootcamp Tokyo</p>
+                        <p class="text-white font-normal text-base pt-2">Bootcamp South Korea</p>
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0">Resources</p>
-                        <p class="text-white font-normal text-base lg:pt-7 pt-2">Certificate Privacy & Policy</p>
+                        <p class="text-white font-normal text-base lg:pt-7 pt-2">Certificate Privacy &</p>
+                        <p class="text-white font-normal text-base lg:pt-7 pt-2">Policy</p>
                     </div>
                     <div class="w-full lg:w-1/4 lg:mx-2">
                         <p class="font-bold text-lg text-[#FF9E16] lg:mb-5 mt-5 lg:mt-0" >About</p>

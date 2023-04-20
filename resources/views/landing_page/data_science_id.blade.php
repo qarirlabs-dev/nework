@@ -397,8 +397,8 @@
                 <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="mt-3 w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg class="mt-3" width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_79_3706)">
@@ -435,13 +435,13 @@
                                 </defs>
                             </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Kurikulum terstruktur dengan baik dirancang oleh para ahli</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Kurikulum terstruktur dengan baik dirancang oleh para ahli</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="mt-3 w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -449,13 +449,13 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Bimbingan oleh Mitra Perekrutan</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Bimbingan oleh Mitra Perekrutan</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="mt-3 w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_327_5439" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -469,13 +469,13 @@
                                 </g>
                             </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Dilengkapi dengan proyek  Pengayaan (Part time Project)</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Dilengkapi dengan proyek  Pengayaan (Part time Project)</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="mt-3 w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -483,14 +483,14 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
                     <div class="w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="mt-3 w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -498,13 +498,13 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Terhubung dengan pelatih yang bersemangat</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Terhubung dengan pelatih yang bersemangat</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
-                            <div class="mt-3 w-12 h-12">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_327_5445" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -518,7 +518,7 @@
                                 </g>
                             </svg>
                             </div>
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Pusat Layanan Siswa dengan layanan bintang 5</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Pusat Layanan Siswa dengan layanan bintang 5</p>
                         </div>
                     </div>
                 </div>
@@ -794,6 +794,7 @@
                     <div class="mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -804,7 +805,8 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <span class="font-bold text-xl ml-3">Persiapan</span>
+                                </div>
+                                <span class="font-bold lg:text-xl text-base">Persiapan</span>
                             </div>
                             <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -821,6 +823,7 @@
                     <div class="mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -831,8 +834,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Data Analysis <span
-                                        class="font-normal text-xl">(Module 1)</span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Data Analysis <span
+                                        class="font-normal lg:text-xl text-base">(Module 1)</span></div>
                             </div>
                             <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -851,6 +855,7 @@
                     <div class="mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -861,8 +866,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Decision Science <span
-                                        class="font-normal text-xl">(Module 2)</span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Decision Science <span
+                                        class="font-normal lg:text-xl text-base">(Module 2)</span></div>
                             </div>
                             <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -873,7 +879,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
 
                         </div>
                     </div>
@@ -881,6 +887,7 @@
                     <div class=" mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -891,8 +898,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Machine Learning <span
-                                        class="font-normal text-xl">(Module 3)</span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Machine Learning <span
+                                        class="font-normal lg:text-xl text-base">(Module 3)</span></div>
                             </div>
                             <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -903,13 +911,14 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Jalankan Machine learning, yang melibatkan persiapan data, rekayasa fitur, pemilihan model, evaluasi, dan penyempurnaan. Kembangkan pemahaman tentang prinsip-prinsip matematika dan implementasi numerik dari model Machine Learning.
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Jalankan Machine learning, yang melibatkan persiapan data, rekayasa fitur, pemilihan model, evaluasi, dan penyempurnaan. Kembangkan pemahaman tentang prinsip-prinsip matematika dan implementasi numerik dari model Machine Learning.
                         </div>
                     </div>
                     {{-- 4 --}}
                     <div class=" mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -920,8 +929,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Deep Learning <span
-                                        class="font-normal text-xl">(Module 4)</span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Deep Learning <span
+                                        class="font-normal lg:text-xl text-base">(Module 4)</span></div>
                             </div>
                             <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -932,7 +942,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Temukan rahasia Deep Learning! Pelajari tentang struktur dan komponen jaringan neural, buat jaringan Anda sendiri untuk memproses gambar, urutan, dan teks, terapkan model yang telah dilatih sebelumnya melalui pembelajaran transfer, dan praktikkan dengan pembuat enkode otomatis, pemrosesan batch, dan pelatihan GPU.
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Temukan rahasia Deep Learning! Pelajari tentang struktur dan komponen jaringan neural, buat jaringan Anda sendiri untuk memproses gambar, urutan, dan teks, terapkan model yang telah dilatih sebelumnya melalui pembelajaran transfer, dan praktikkan dengan pembuat enkode otomatis, pemrosesan batch, dan pelatihan GPU.
 
                         </div>
                     </div>
@@ -940,6 +950,7 @@
                     <div class=" mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -950,8 +961,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Machine Learning Engineering <span
-                                        class="font-normal text-xl">(Module 5)</span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Machine Learning Engineering <span
+                                        class="font-normal lg:text-xl text-base">(Module 5)</span></div>
                             </div>
                             <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -962,7 +974,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Convert your superior handmade models into a Python package for cloud-based replication and training with virtual machines and online databases. Monitor and update performance with new data, and share predictions through APIs or websites.* (2023 Newest Module)
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Convert your superior handmade models into a Python package for cloud-based replication and training with virtual machines and online databases. Monitor and update performance with new data, and share predictions through APIs or websites.* (2023 Newest Module)
                             Ubah model karya Anda yang unggul menjadi paket Python untuk replikasi dan pelatihan berbasis cloud dengan mesin virtual dan database online. Pantau dan perbarui kinerja dengan data baru, dan bagikan prediksi melalui API atau situs web.* (Modul Terbaru 2023)                                
                         </div>
                     </div>
@@ -970,6 +982,7 @@
                     <div class=" mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -980,8 +993,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Project Weeks <span
-                                        class="font-normal text-xl">(Module 6)</span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Project Weeks <span
+                                        class="font-normal lg:text-xl text-base">(Module 6)</span></div>
                             </div>
                             <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -992,7 +1006,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Bergabunglah dengan proyek data science bersama  3-4 anggota tim. Gunakan sumber data publik atau kumpulan data pribadi Klien Anda sendiri. Dapatkan pendampingan penuh waktu dari guru ahli untuk mencapai prestasi Anda.
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bergabunglah dengan proyek data science bersama  3-4 anggota tim. Gunakan sumber data publik atau kumpulan data pribadi Klien Anda sendiri. Dapatkan pendampingan penuh waktu dari guru ahli untuk mencapai prestasi Anda.
 
                         </div>
                     </div>
@@ -1000,6 +1014,7 @@
                     <div class=" mb-4 collapse-menu w-full">
                         <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                             <div class="inline-flex items-center">
+                                <div class="w-9 h-9 mr-3">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667" fill="{{ $themeColor }}" />
@@ -1010,8 +1025,9 @@
                                             d="M27.8592 11.0952H24.1926V12.6666C24.1916 13.5342 23.4887 14.2371 22.6212 14.2381H17.3831C16.5155 14.2371 15.8126 13.534 15.8117 12.6666V11.0952H12.1449C11.8557 11.0952 11.6211 11.3297 11.6211 11.6191V30.4761C11.6211 30.7655 11.8557 30.9999 12.1449 30.9999H27.8592C28.1486 30.9999 28.3831 30.7655 28.3831 30.4761V11.6191C28.3831 11.3297 28.1486 11.0952 27.8592 11.0952ZM18.8011 25.6084L16.7058 27.7036C16.5014 27.9082 16.1699 27.9082 15.9653 27.7039C15.9653 27.7038 15.9651 27.7038 15.9651 27.7036L14.9174 26.6561C14.7165 26.4479 14.7222 26.1163 14.9304 25.9154C15.1333 25.7193 15.4552 25.7193 15.6581 25.9154L16.3356 26.5926L18.0603 24.8677C18.2685 24.6668 18.6001 24.6725 18.8011 24.8806C18.9971 25.0835 18.9971 25.4055 18.8011 25.6084ZM18.8011 21.4179L16.7058 23.5132C16.5014 23.7178 16.1699 23.7178 15.9653 23.5135C15.9653 23.5133 15.9651 23.5133 15.9651 23.5132L14.9174 22.4656C14.7165 22.2575 14.7222 21.9258 14.9304 21.7249C15.1333 21.5289 15.4552 21.5289 15.6581 21.7249L16.3354 22.4022L18.0603 20.6772C18.2685 20.4763 18.6 20.482 18.8011 20.6901C18.9971 20.8931 18.9971 21.215 18.8011 21.4179ZM18.8011 17.2275L16.7058 19.3227C16.5014 19.5273 16.1699 19.5273 15.9653 19.323C15.9653 19.3229 15.9651 19.3229 15.9651 19.3227L14.9174 18.2752C14.7165 18.067 14.7222 17.7354 14.9304 17.5345C15.1333 17.3384 15.4552 17.3384 15.6581 17.5345L16.3354 18.2117L18.0603 16.4868C18.2685 16.2859 18.6 16.2916 18.8011 16.4997C18.9971 16.7026 18.9971 17.0244 18.8011 17.2275ZM24.7165 26.8095H21.5735C21.2843 26.8095 21.0497 26.575 21.0497 26.2856C21.0497 25.9964 21.2843 25.7618 21.5735 25.7618H24.7165C25.0057 25.7618 25.2401 25.9964 25.2401 26.2856C25.2401 26.575 25.0057 26.8095 24.7165 26.8095ZM24.7165 22.619H21.5735C21.2843 22.619 21.0497 22.3846 21.0497 22.0952C21.0497 21.806 21.2843 21.5713 21.5735 21.5713H24.7165C25.0057 21.5713 25.2401 21.806 25.2401 22.0952C25.2401 22.3846 25.0057 22.619 24.7165 22.619ZM24.7165 18.4286H21.5735C21.2843 18.4286 21.0497 18.1939 21.0497 17.9047C21.0497 17.6154 21.2843 17.3809 21.5735 17.3809H24.7165C25.0057 17.3809 25.2401 17.6154 25.2401 17.9047C25.2401 18.1939 25.0057 18.4286 24.7165 18.4286Z"
                                             fill="white" />
                                     </svg>
-                                <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                        class="font-normal text-xl"></span></div>
+                                </div>
+                                <div class="font-bold lg:text-xl text-base">Career Weeks <span
+                                        class="font-normal lg:text-xl text-base"></span></div>
                             </div>
                             <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1022,7 +1038,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Tingkatkan keterampilan pencarian kerja Anda dengan bertemu dengan para profesional ilmu data yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih simulasi wawancara , dan menyempurnakan CV Anda.
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Tingkatkan keterampilan pencarian kerja Anda dengan bertemu dengan para profesional ilmu data yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih simulasi wawancara , dan menyempurnakan CV Anda.
                         </div>
                     </div>
                 </div>
@@ -1031,6 +1047,7 @@
                         <div class="mb-4 collapse-menu w-full">
                             <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1049,7 +1066,8 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <span class="font-bold text-xl ml-3">Persiapan</span>
+                                    </div>
+                                    <span class="font-bold lg:text-xl text-base">Persiapan</span>
                                 </div>
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1065,6 +1083,7 @@
                         <div class="mb-4 collapse-menu w-full">
                             <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1083,8 +1102,9 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Decision Science <span
-                                            class="font-normal text-xl">(Module 2)</span></div>
+                                    </div>
+                                    <div class="font-bold lg:text-xl text-base">Decision Science <span
+                                            class="font-normal lg:text-xl text-base">(Module 2)</span></div>
                                 </div>
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1095,13 +1115,14 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
+                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
 
                             </div>
                         </div>
                         <div class=" mb-4 collapse-menu w-full">
                             <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1120,8 +1141,9 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Deep Learning <span
-                                            class="font-normal text-xl">(Module 4)</span></div>
+                                    </div>
+                                    <div class="font-bold lg:text-xl text-base">Deep Learning <span
+                                            class="font-normal lg:text-xl text-base">(Module 4)</span></div>
                                 </div>
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1132,13 +1154,14 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Temukan rahasia Deep Learning! Pelajari tentang struktur dan komponen jaringan neural, buat jaringan Anda sendiri untuk memproses gambar, urutan, dan teks, terapkan model yang telah dilatih sebelumnya melalui pembelajaran transfer, dan praktikkan dengan pembuat enkode otomatis, pemrosesan batch, dan pelatihan GPU.
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Temukan rahasia Deep Learning! Pelajari tentang struktur dan komponen jaringan neural, buat jaringan Anda sendiri untuk memproses gambar, urutan, dan teks, terapkan model yang telah dilatih sebelumnya melalui pembelajaran transfer, dan praktikkan dengan pembuat enkode otomatis, pemrosesan batch, dan pelatihan GPU.
 
                             </div>
                         </div>
                         <div class=" mb-4 collapse-menu w-full">
                             <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1157,8 +1180,9 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Project Weeks <span
-                                            class="font-normal text-xl">(Module 6)</span></div>
+                                    </div>
+                                    <div class="font-bold lg:text-xl text-base">Project Weeks <span
+                                            class="font-normal lg:text-xl text-base">(Module 6)</span></div>
                                 </div>
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1169,7 +1193,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Bergabunglah dengan proyek data science bersama  3-4 anggota tim. Gunakan sumber data publik atau kumpulan data pribadi Klien Anda sendiri. Dapatkan pendampingan penuh waktu dari guru ahli untuk mencapai prestasi Anda.
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bergabunglah dengan proyek data science bersama  3-4 anggota tim. Gunakan sumber data publik atau kumpulan data pribadi Klien Anda sendiri. Dapatkan pendampingan penuh waktu dari guru ahli untuk mencapai prestasi Anda.
 
                             </div>
                         </div>
@@ -1178,6 +1202,7 @@
                         <div class="mb-4 collapse-menu w-full">
                             <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1196,8 +1221,9 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Data Analysis <span
-                                            class="font-normal text-xl">(Module 1)</span></div>
+                                    </div>
+                                    <div class="font-bold lg:text-xl text-base">Data Analysis <span
+                                            class="font-normal lg:text-xl text-base">(Module 1)</span></div>
                                 </div>
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1215,6 +1241,7 @@
                         <div class=" mb-4 collapse-menu w-full">
                             <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1233,8 +1260,9 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Machine Learning <span
-                                            class="font-normal text-xl">(Module 3)</span></div>
+                                    </div>
+                                    <div class="font-bold lg:text-xl text-base">Machine Learning <span
+                                            class="font-normal lg:text-xl text-base">(Module 3)</span></div>
                                 </div>
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1245,7 +1273,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Jalankan Machine learning, yang melibatkan persiapan data, rekayasa fitur, pemilihan model, evaluasi, dan penyempurnaan. Kembangkan pemahaman tentang prinsip-prinsip matematika dan implementasi numerik dari model Machine Learning.
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Jalankan Machine learning, yang melibatkan persiapan data, rekayasa fitur, pemilihan model, evaluasi, dan penyempurnaan. Kembangkan pemahaman tentang prinsip-prinsip matematika dan implementasi numerik dari model Machine Learning.
                             </div>
                         </div>
                         <div class=" mb-4 collapse-menu w-full">
@@ -1269,8 +1297,8 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Machine Learning Engineering <span
-                                            class="font-normal text-xl">(Module 5)</span></div>
+                                    <div class="font-bold lg:text-xl text-base">Machine Learning Engineering <span
+                                            class="font-normal lg:text-xl text-base">(Module 5)</span></div>
                                 </div>
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1281,7 +1309,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Convert your superior handmade models into a Python package for cloud-based replication and training with virtual machines and online databases. Monitor and update performance with new data, and share predictions through APIs or websites.* (2023 Newest Module)
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Convert your superior handmade models into a Python package for cloud-based replication and training with virtual machines and online databases. Monitor and update performance with new data, and share predictions through APIs or websites.* (2023 Newest Module)
                                 Ubah model karya Anda yang unggul menjadi paket Python untuk replikasi dan pelatihan berbasis cloud dengan mesin virtual dan database online. Pantau dan perbarui kinerja dengan data baru, dan bagikan prediksi melalui API atau situs web.* (Modul Terbaru 2023)                                
                             </div>
                         </div>
@@ -1306,8 +1334,8 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                            class="font-normal text-xl"></span></div>
+                                    <div class="font-bold lg:text-xl text-base">Career Weeks <span
+                                            class="font-normal lg:text-xl text-base"></span></div>
                                 </div>
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1318,7 +1346,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Tingkatkan keterampilan pencarian kerja Anda dengan bertemu dengan para profesional ilmu data yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih simulasi wawancara , dan menyempurnakan CV Anda.
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Tingkatkan keterampilan pencarian kerja Anda dengan bertemu dengan para profesional ilmu data yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih simulasi wawancara , dan menyempurnakan CV Anda.
                             </div>
                         </div>
                     </div>
@@ -1642,9 +1670,7 @@
                                                 Digispora | Digital Marketing Expert | Instagram & Tiktok Content Creator</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">Sebagai orang awam, kelas disajikan dalam sebuah
-                                        cara yang menarik, dan juga dipandu oleh praktisi yang berpengalaman sehingga berbagai studi kasus dapat dilakukan
-                                        diselesaikan."- Indira Yasmine</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Program Berkualitas Tinggi dengan mentor terbaik. Layanan mereka memenuhi 5 bintang" - Agnes Friska</p>
                                 </div>
                             </div>
                         </div>
@@ -1862,7 +1888,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Real Study Case
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Studi Kasus Nyata
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">Anda akan mengerjakan kasus perusahaan nyata dan mengisi profil LinkedIn Anda dengan proyek profesional. Dengan demikian, Anda akan bersinar di pasar kerja.</p>
                         </div>
@@ -1878,7 +1904,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">CV Review
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">CV Review
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">Dengan konsultan karir pribadi Anda, Anda akan dapat menulis surat lamaran yang efektif dan berlatih wawancara dengan perekrut profesional.
                             </p>
@@ -1924,7 +1950,7 @@
                                 </defs>
                             </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Job Connected
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Job Connected
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">Kami akan terus mendukung Anda sampai Anda menemukan perusahaan yang tepat untuk Anda. Kami akan ada untuk Anda sampai Anda menyelesaikan masa percobaan Anda di perusahaan.
                             </p>

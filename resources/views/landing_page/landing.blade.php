@@ -1,5 +1,5 @@
 <x-landing-layout>
-    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[74rem] lg:h-[50rem] -mt-20">
+    <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[60rem] lg:h-[50rem] -mt-20">
         <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
@@ -20,12 +20,11 @@
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
                 <div class="flex-auto w-11/12 lg:w-2/3" data-aos="fade-up">
-                    <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-16" style="line-height: 4rem;">Create <span
-                            class="bg-[#FF9500] px-2 text-white rounded-lg">success shortcuts</span><br /><span>&land
-                                your dream job!.</span>
+                    <div class="text-2xl lg:text-5xl font-black mb-4 lg:mt-16">Create <span
+                            class="bg-[#FF9500] px-2 text-white rounded-lg">success shortcuts</span><br /><span>& land
+                            your dream job!.</span>
                     </div>
-                    <div
-                        class="text-[#262626] font-normal text-sm lg:text-xl mb-6 text-opacity-75 leading-5 lg:leading-9 w-11/12 lg:w-10/12">
+                    <div class="text-[#262626] font-normal text-sm lg:text-xl mb-6 text-opacity-75 w-full lg:w-10/12">
                         Welcome to the Career Accelerator that helps you go further than you are in school. Built to be
                         the best, by the best, our highly-qualified trainers, personal coaches, intensive classes, and
                         proven method mean guaranteed results – whether you learn online, offline or both.</div>
@@ -39,9 +38,9 @@
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="flex flex-row w-10/12 mx-auto mt-8" data-aos="fade-up">
+            <div class="flex lg:flex-row flex-col w-11/12 mx-auto mt-8" data-aos="fade-up">
                 <div class="mr-12">
-                    <div class="mb-6 font-medium text-sm lg:text-xl">Talents</div>
+                    <div class="lg:mb-6 mb-2 font-medium text-sm lg:text-xl">Talents</div>
                     <div class="flex items-center">
                         <svg width="36" height="18" viewBox="0 0 36 18" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +51,8 @@
                         <div class="font-bold text-lg lg:text-3xl mx-2">3K+</div>
                     </div>
                 </div>
-                <div class="mx-2">
-                    <div class="mb-6 font-medium text-sm lg:text-xl">Our Alumni Work For Leading Companies</div>
+                <div class="lg:mx-2 mt-4">
+                    <div class="lg:mb-6 mb-2 font-medium text-sm lg:text-xl">Our grads get hired by</div>
                     <div class="hidden lg:flex items-end flex-wrap lg:flex-nowrap">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
@@ -91,7 +90,7 @@
 
                         </div>
                     </div>
-                    <div class="lg:hidden grid grid-cols-2 gap-4">
+                    <div class="lg:hidden items-end flex flex-nowrap overflow-x-auto">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="stackearn"
@@ -108,25 +107,9 @@
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/bri_color.png') }}" alt="ek"
                             class="mx-2 h-6">
+                        <div class="whitespace-nowrap ml-3 font-medium text-sm mb-1">And many more</div>
                     </div>
-                    <div class="lg:hidden flex mx-2 text-xl items-center font-medium mt-5">
-                        <span class="mr-2 font-medium text-sm">and many more</span>
-                        {{-- <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="0.20755" width="24" height="24" rx="12" fill="white" />
-                            <g clip-path="url(#clip0_5_2582)">
-                                <path
-                                    d="M18.0157 11.5339L13.6821 7.20015C13.5584 7.07645 13.3935 7.00854 13.2177 7.00854C13.0417 7.00854 12.877 7.07654 12.7533 7.20015L12.3598 7.59371C12.2362 7.71722 12.1681 7.8822 12.1681 8.0581C12.1681 8.2339 12.2362 8.40444 12.3598 8.52795L14.888 11.0617H6.85584C6.49369 11.0617 6.20755 11.3452 6.20755 11.7074V12.2638C6.20755 12.6261 6.49369 12.9382 6.85584 12.9382H14.9166L12.3599 15.486C12.2363 15.6097 12.1682 15.7702 12.1682 15.9461C12.1682 16.1218 12.2363 16.2847 12.3599 16.4083L12.7534 16.8006C12.8771 16.9243 13.0418 16.9917 13.2178 16.9917C13.3936 16.9917 13.5585 16.9234 13.6822 16.7997L18.0158 12.4661C18.1398 12.342 18.208 12.1763 18.2076 12.0002C18.2079 11.8235 18.1398 11.6578 18.0157 11.5339Z"
-                                    fill="#FF9500" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_5_2582">
-                                    <rect width="12" height="12" fill="white"
-                                        transform="translate(6.20755 6)" />
-                                </clipPath>
-                            </defs>
-                        </svg> --}}
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -679,9 +662,8 @@
                                 Digispora | Digital Marketing Expert | Instagram & Tiktok Content Creator</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was presented in an
-                        engaging manner, and also guided by experienced practitioners so that various case studies could
-                        be solved."- Indira Yasmine</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"High Quality Program with the best mentors.
+                        Their services meet 5 stars" - Agnes Friska</p>
                 </div>
             </div>
         </div>

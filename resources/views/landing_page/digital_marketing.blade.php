@@ -249,9 +249,6 @@
                             <button
                                 class="text-[{{$themeColor}}] px-4 py-3 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{$themeColor3}}]"data-aos="fade-up">Beginner
                                 Friendly</button>
-                            <button
-                                class="text-[{{$themeColor}}] px-4 py-3 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{$themeColor3}}]"data-aos="fade-up">35
-                                limited seat</button>
                         </div>
                         <div class="w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up">
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
@@ -262,8 +259,7 @@
                         <div class="flex flex-wrap lg:flex-nowrap lg:flex-row mt-8">
                             <button
                                 class="bg-[{{$themeColor}}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold lg:mb-11 mb-5 w-full lg:w-auto"
-                                data-aos="fade-up">Choose
-                                Destination</button>
+                                data-aos="fade-up">Apply Now</button>
                             <button
                                 class="lg:ml-4 text-[{{$themeColor}}] px-10 lg:py-4 py-2 rounded-full  text-lg font-bold mb-11 w-full lg:w-auto outline outline-1 outline-[{{$themeColor}}]"
                                 data-aos="fade-up">Download
@@ -392,7 +388,8 @@
                 <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_327_5460)">
@@ -413,29 +410,32 @@
                                     </clipPath>
                                 </defs>
                             </svg>
+                            </div>
 
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Well structured
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Well structured
                                 curriculum designed by experts</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M38.995 4L28.995 13V35L38.995 26V4ZM13.995 10C10.095 10 5.895 10.8 2.995 13V42.32C2.995 42.82 3.495 43.32 3.995 43.32C4.195 43.32 4.295 43.18 4.495 43.18C7.195 41.88 11.095 41 13.995 41C17.895 41 22.095 41.8 24.995 44C27.695 42.3 32.595 41 35.995 41C39.295 41 42.695 41.62 45.495 43.12C45.695 43.22 45.795 43.18 45.995 43.18C46.495 43.18 46.995 42.68 46.995 42.18V13C45.795 12.1 44.495 11.5 42.995 11V38C40.795 37.3 38.395 37 35.995 37C32.595 37 27.695 38.3 24.995 40V13C22.095 10.8 17.895 10 13.995 10Z"
                                     fill="{{$themeColor}}" />
                             </svg>
+                            </div>
 
-
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Personalized
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Personalized
                                 curriculum (in-person learning experience)</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_327_5469" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -448,45 +448,48 @@
                                         fill="{{$themeColor}}" />
                                 </g>
                             </svg>
+                            </div>
 
-
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Mentorship by
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Mentorship by
                                 Hiring Partners</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M23.2065 0V7.61692H25.7937V0H23.2063H23.2065ZM12.6421 2.289L10.5225 3.77312L14.8906 10.011L17.0091 8.5268L12.6421 2.289ZM36.3576 2.289L31.9907 8.52684L34.1096 10.011L38.4776 3.77312L36.3579 2.289H36.3576ZM24.4996 9.70096C18.1705 9.70096 13.0399 13.5443 13.0399 18.286L19.5507 38.0039H29.4495L35.9599 18.286C35.9599 13.5444 30.8295 9.70096 24.5002 9.70096H24.4996ZM3.91863 11.9869L3.03467 14.4195L10.1886 17.024L11.0759 14.5926L3.91847 11.9869H3.91863ZM45.0811 11.9869L37.9237 14.5928L38.8079 17.0245L45.9654 14.4195L45.0811 11.9869ZM10.7303 23.1072L3.37427 25.0803L4.04171 27.5775L11.3977 25.6073L10.7304 23.1072H10.7303ZM38.2695 23.1072L37.6025 25.6073L44.9585 27.5772L45.6255 25.0799L38.2695 23.1072V23.1072ZM19.4064 39.4413V42.8687H29.5939V39.4418H19.4065L19.4064 39.4413ZM19.4064 44.5726V48H29.5939V44.5731H19.4065L19.4064 44.5726Z"
                                     fill="{{$themeColor}}" />
                             </svg>
+                            </div>
 
-
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M21.995 8.99812H29.51L37.7515 0.740205C37.9844 0.505659 38.2614 0.319495 38.5667 0.192452C38.872 0.0654083 39.1994 0 39.5301 0C39.8608 0 40.1882 0.0654083 40.4934 0.192452C40.7987 0.319495 41.0758 0.505659 41.3086 0.740205L47.7716 7.22142C48.2381 7.69027 48.5 8.32451 48.5 8.98561C48.5 9.64671 48.2381 10.2809 47.7716 10.7498L42.0351 16.5053H21.995V21.5101C21.995 22.1738 21.7311 22.8103 21.2613 23.2796C20.7915 23.7489 20.1543 24.0125 19.49 24.0125C18.8256 24.0125 18.1884 23.7489 17.7187 23.2796C17.2489 22.8103 16.985 22.1738 16.985 21.5101V14.0029C16.985 12.6756 17.5128 11.4026 18.4524 10.464C19.3919 9.52541 20.6662 8.99812 21.995 8.99812ZM6.96492 21.5101V31.5197L1.22844 37.2502C0.761878 37.7191 0.5 38.3533 0.5 39.0144C0.5 39.6755 0.761878 40.3097 1.22844 40.7786L7.69137 47.2598C7.92424 47.4943 8.2013 47.6805 8.50656 47.8075C8.81182 47.9346 9.13924 48 9.46993 48C9.80062 48 10.128 47.9346 10.4333 47.8075C10.7386 47.6805 11.0156 47.4943 11.2485 47.2598L21.995 36.5245H32.015C32.6794 36.5245 33.3166 36.2609 33.7863 35.7916C34.2561 35.3223 34.52 34.6858 34.52 34.0221V31.5197H37.0251C37.6894 31.5197 38.3266 31.2561 38.7964 30.7868C39.2662 30.3175 39.5301 29.681 39.5301 29.0173V26.5149H42.0351C42.6995 26.5149 43.3366 26.2513 43.8064 25.782C44.2762 25.3127 44.5401 24.6762 44.5401 24.0125V21.5101H27.005V24.0125C27.005 25.3399 26.4772 26.6129 25.5376 27.5514C24.598 28.49 23.3237 29.0173 21.995 29.0173H16.985C15.6562 29.0173 14.3819 28.49 13.4423 27.5514C12.5028 26.6129 11.9749 25.3399 11.9749 24.0125V16.5053L6.96492 21.5101Z"
                                     fill="{{$themeColor}}" />
                             </svg>
+                            </div>
 
-
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">Connect with
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Connect with
                                 passionate trainers</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white p-3 flex flex-col justify-start items-center mr-6 h-48 w-56 lg:w-auto shadow-sm">
+                            class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <mask id="mask0_327_5481" style="mask-type:alpha" maskUnits="userSpaceOnUse"
@@ -499,9 +502,9 @@
                                         fill="{{$themeColor}}" />
                                 </g>
                             </svg>
+                            </div>
 
-
-                            <p class="text-center font-bold text-xl text-[#262626] opacity-80 mt-6">5 star services
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">5 star services
                                 with dedicated Student Service Center</p>
                         </div>
                     </div>
@@ -531,12 +534,12 @@
                     apply what you learn
                     by hands-on experience through practical assignments and direct feedback from your instructor. In
                     detail, you will learn:</p>
-                <div class="lg:hidden flex flex-row flex-wrap mt-11" data-aos="fade-up">
+                <div class="lg:hidden flex flex-row flex-wrap mt-11 w-full" data-aos="fade-up">
                     {{-- Prep --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -549,7 +552,7 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <span class="font-bold lg:text-xl ml-3">Preparation</span>
+                                <span class="font-bold text-base lg:text-xl">Preparation</span>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -562,7 +565,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Qarirlabs provides career preparation. Once you’ve been accepted, you'll get the fixed
                             schedule of career mapping & soft skill class with our passionate trainers. You also
                             will
@@ -572,10 +575,10 @@
                         </div>
                     </div>
                     {{-- 1 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -588,8 +591,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Branding, Influencer Strategic, and Content
-                                    Strategy Plan <span class="font-normal text-xl">(Module 1)</span></div>
+                                <div class="font-bold text-base lg:text-xl">Branding, Influencer Strategic, and Content
+                                    Strategy Plan <span class="font-normal text-base lg:text-xl">(Module 1)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -602,7 +605,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             There’s nothing important than branding and content for a digital marketer, learn
                             digital
                             marketing from the basic. Start from explaination of social media's objective and its
@@ -612,10 +615,10 @@
                         </div>
                     </div>
                     {{-- 2 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -628,8 +631,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Social Media Ads & Performance analyst <span
-                                        class="font-normal text-xl">(Module 2)</span></div>
+                                <div class="font-bold text-base lg:text-xl">Social Media Ads & Performance analyst <span
+                                        class="font-normal text-base lg:text-xl">(Module 2)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -642,7 +645,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Start to run your own ads! maintain your brand's social media, do's and dont's, and
                             creativity to reach the best ROI. Explaining the phase of campaign, success content at
                             FB
@@ -652,10 +655,10 @@
                         </div>
                     </div>
                     {{-- 3 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -668,8 +671,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Google Ads & Media Recommendation<span
-                                        class="font-normal text-xl">(Module 3)</span></div>
+                                <div class="font-bold text-base lg:text-xl">Google Ads & Media Recommendation<span
+                                        class="font-normal text-base lg:text-xl"> (Module 3)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-0180" width="8" height="5" viewBox="0 0 8 5"
@@ -682,7 +685,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Find the right keyword for your campaign, in this module trainer will explain about,
                             bidding
                             strategy, strength and weakness analysis for SEM, and success tips to run SEM Campaign.
@@ -692,10 +695,10 @@
                         </div>
                     </div>
                     {{-- 4 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -708,7 +711,7 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">SEO <span class="font-normal text-xl">(Module
+                                <div class="font-bold text-base lg:text-xl">SEO <span class="font-normal text-base lg:text-xl">(Module
                                         4)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
@@ -722,7 +725,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Execute the media then optimize through search engines, which involve media brief,
                             budgeting
                             and creative communication plan. Get to know more about how google search works, in
@@ -731,10 +734,10 @@
                         </div>
                     </div>
                     {{-- 5 --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -747,8 +750,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Project Week <span
-                                        class="font-normal text-xl">(Module 5)</span></div>
+                                <div class="font-bold text-base lg:text-xl">Project Week <span
+                                        class="font-normal text-base lg:text-xl">(Module 5)</span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -761,7 +764,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Join or propose a genuine Digital Marketing project with 3-4 team members/Individual.
                             You
                             can use some existing brand (Dummy project) or your own private brand (UMKM Project).
@@ -770,10 +773,10 @@
                         </div>
                     </div>
                     {{-- career --}}
-                    <div class="mr-4 mb-4 collapse-menu">
-                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                    <div class="mr-4 mb-4 collapse-menu w-full">
+                        <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                             <div class="inline-flex items-center">
-                                <div class="w-9 h-9">
+                                <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -786,8 +789,8 @@
                                             fill="white" />
                                     </svg>
                                 </div>
-                                <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                        class="font-normal text-xl"></span></div>
+                                <div class="font-bold text-base lg:text-xl">Career Weeks <span
+                                        class="font-normal text-base lg:text-xl"></span></div>
                             </div>
                             <div class="w-12 h-12 flex justify-center items-center">
                                 <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -800,7 +803,7 @@
                         </div>
 
                         <div
-                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Enhance your job search skills by meeting digital marketing professionals employed in
                             startups or
                             leading tech companies, practicing mock interviews, and refining your CV.
@@ -809,10 +812,10 @@
                 </div>
                 <div class="hidden lg:flex flex-row flex-wrap mt-11" data-aos="fade-up">
                     <div class="w-full lg:w-1/2 pr-1">
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -833,7 +836,7 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <span class="font-bold lg:text-xl ml-3">Preparation</span>
+                                    <span class="font-bold text-base lg:text-xl">Preparation</span>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -846,7 +849,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Qarirlabs provides career preparation. Once you’ve been accepted, you'll get the fixed
                                 schedule of career mapping & soft skill class with our passionate trainers. You also
                                 will
@@ -855,10 +858,10 @@
                                 necessary Digital Marketing fundamentals before the bootcamp starts.
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -879,8 +882,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Social Media Ads & Performance analyst <span
-                                            class="font-normal text-xl">(Module 2)</span></div>
+                                    <div class="font-bold text-base lg:text-xl">Social Media Ads & Performance analyst <span
+                                            class="font-normal text-base lg:text-xl">(Module 2)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -893,7 +896,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Start to run your own ads! maintain your brand's social media, do's and dont's, and
                                 creativity to reach the best ROI. Explaining the phase of campaign, success content at
                                 FB
@@ -902,10 +905,10 @@
                                 Set up facebook business manager.
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -926,7 +929,7 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">SEO <span class="font-normal text-xl">(Module
+                                    <div class="font-bold text-base lg:text-xl">SEO <span class="font-normal text-base lg:text-xl">(Module
                                             4)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
@@ -940,7 +943,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Execute the media then optimize through search engines, which involve media brief,
                                 budgeting
                                 and creative communication plan. Get to know more about how google search works, in
@@ -948,10 +951,10 @@
                                 to meet Google's needs. Develop more about the strategy and implementation of SEO.
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -972,8 +975,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Career Weeks <span
-                                            class="font-normal text-xl"></span></div>
+                                    <div class="font-bold text-base lg:text-xl">Career Weeks <span
+                                            class="font-normal text-base lg:text-xl"></span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -986,7 +989,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Enhance your job search skills by meeting digital marketing professionals employed in
                                 startups or
                                 leading tech companies, practicing mock interviews, and refining your CV.
@@ -994,10 +997,10 @@
                         </div>
                     </div>
                     <div class="w-full lg:w-1/2 pr-1">
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -1018,8 +1021,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Branding, Influencer Strategic, and Content
-                                        Strategy Plan <span class="font-normal text-xl">(Module 1)</span></div>
+                                    <div class="font-bold text-base lg:text-xl">Branding, Influencer Strategic, and Content
+                                        Strategy Plan <span class="font-normal text-base lg:text-xl">(Module 1)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
@@ -1032,7 +1035,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 There’s nothing important than branding and content for a digital marketer, learn
                                 digital
                                 marketing from the basic. Start from explaination of social media's objective and its
@@ -1041,10 +1044,10 @@
                                 content calendar. Its not only about the theory but also practical!
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -1065,8 +1068,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Google Ads & Media Recommendation<span
-                                            class="font-normal text-xl">(Module 3)</span></div>
+                                    <div class="font-bold text-base lg:text-xl">Google Ads & Media Recommendation<span
+                                            class="font-normal text-base lg:text-xl">(Module 3)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-0180" width="8" height="5" viewBox="0 0 8 5"
@@ -1079,7 +1082,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Find the right keyword for your campaign, in this module trainer will explain about,
                                 bidding
                                 strategy, strength and weakness analysis for SEM, and success tips to run SEM Campaign.
@@ -1088,10 +1091,10 @@
                                 programmatic
                             </div>
                         </div>
-                        <div class="mr-4 mb-4 collapse-menu">
-                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20">
+                        <div class="mr-4 mb-4 collapse-menu w-full">
+                            <div class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-24">
                                 <div class="inline-flex items-center">
-                                    <div class="w-9 h-9">
+                                    <div class="w-9 h-9 mr-3">
                                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <rect width="40" height="40" rx="6.66667"
@@ -1112,8 +1115,8 @@
                                             </defs>
                                         </svg>
                                     </div>
-                                    <div class="font-bold lg:text-xl ml-3">Project Week <span
-                                            class="font-normal text-xl">(Module 5)</span></div>
+                                    <div class="font-bold text-base lg:text-xl">Project Week <span
+                                            class="font-normal text-base lg:text-xl">(Module 5)</span></div>
                                 </div>
                                 <div class="w-12 h-12 flex justify-center items-center">
                                     <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
@@ -1126,7 +1129,7 @@
                             </div>
 
                             <div
-                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Join or propose a genuine Digital Marketing project with 3-4 team members/Individual.
                                 You
                                 can use some existing brand (Dummy project) or your own private brand (UMKM Project).
@@ -1469,9 +1472,7 @@
                                                 Digispora | Digital Marketing Expert | Instagram & Tiktok Content Creator</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">As a layman, the class was presented in an
-                                        engaging manner, and also guided by experienced practitioners so that various case studies could
-                                        be solved."- Indira Yasmine</p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"High Quality Program with the best mentors. Their services meet 5 stars" - Agnes Friska</p>
                                 </div>
                             </div>
                         </div>
@@ -1553,7 +1554,7 @@
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
-                            <div class="lg:p-3 p-0 my-3">
+                            <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketin_1.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
@@ -1611,7 +1612,7 @@
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Group 3</p>
                                         <div class="mt-12 flex w-full text-center">
-                                            <a href="https://drive.google.com/file/d/1IdPOKd5v84YGDvhfNMmlFunG8k1AousD/view?usp=sharing "
+                                            <a href="https://drive.google.com/file/d/1SeIvJV8anWanmrVLc_XiEpSCUXkYg7bI/view?usp=sharing"
                                                 target="_blank"
                                                 class="w-full text-[{{$themeColor}}] px-10 lg:py-4 py-2 rounded-full text-lg font-bold mb-3 outline outline-1 outline-[{{$themeColor}}]">See
                                                 Portofolio</a>
@@ -1668,8 +1669,8 @@
                 <div class="flex flex-wrap mt-8 justify-between">
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
-                            <div class="w-12 h-12">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1677,7 +1678,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Real Study Case
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Real Study Case
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">You will work
                                 on a real company case and fill your LinkedIn profiles with professional projects. By
@@ -1686,8 +1687,8 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
-                            <div class="w-12 h-12">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1695,7 +1696,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">CV Review
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">CV Review
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">With your
                                 personal career consultant, you will be able to write an effective cover letter and
@@ -1704,8 +1705,8 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
-                            <div class="w-12 h-12">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            <div class="mt-2 lg:mt-5 w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_226_1196)">
@@ -1742,7 +1743,7 @@
                                 </defs>
                             </svg>
                             </div>
-                            <p class="mt-5 text-center font-bold text-sm text-[#262626] opacity-80">Job Connected
+                            <p class="mt-5 text-center font-bold text-xl text-[#262626] opacity-80">Job Connected
                             </p>
                             <p class="mt-3 font-normal text-base text-center text-[#262626] opacity-80">We will
                                 continue to support you until you find a company that is the right fit for you. We will
