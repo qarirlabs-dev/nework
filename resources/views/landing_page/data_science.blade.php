@@ -1,7 +1,64 @@
 <x-landing-layout>
     @push('scripts')
         <script>
+            const sections = document.querySelectorAll('section')
             const sideNavMenu = document.querySelectorAll('.side-nav-menu')
+
+            // Create an Intersection Observer instance
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            // If a section is in the current view
+                            // Add an "active" class to the corresponding navigation link
+                            const targetId = entry.target.getAttribute("id");
+                            sideNavMenu.forEach((link) => {
+                                let children = link.children;
+                                if (link.getAttribute("href") === `#${targetId}`) {
+                                    if (children[1].classList.contains('text-[#A5A5A5]')) {
+                                        children[1].classList.replace("text-[#A5A5A5]",
+                                            "text-[{{ $themeColor }}]");
+                                    }
+                                    if (children[1].classList.contains('font-medium')) {
+                                        children[1].classList.replace("font-medium", "font-bold");
+                                    }
+                                    if (children[0].classList.contains('bg-[#A5A5A5]')) {
+                                        children[0].classList.replace("bg-[#A5A5A5]",
+                                            "bg-[{{ $themeColor }}]");
+                                    }
+                                    if (children[0].classList.contains('w-0.5')) {
+                                        children[0].classList.replace("w-0.5", "w-1");
+                                    }
+                                } else {
+                                    if (targetId != null && targetId != 'programFee') {
+                                        if (children[1].classList.contains('text-[{{ $themeColor }}]')) {
+                                            children[1].classList.replace("text-[{{ $themeColor }}]",
+                                                "text-[#A5A5A5]");
+                                        }
+                                        if (children[1].classList.contains('font-bold')) {
+                                            children[1].classList.replace("font-bold", "font-medium");
+                                        }
+                                        if (children[0].classList.contains('bg-[{{ $themeColor }}]')) {
+                                            children[0].classList.replace("bg-[{{ $themeColor }}]",
+                                                "bg-[#A5A5A5]");
+                                        }
+                                        if (children[0].classList.contains('w-1')) {
+                                            children[0].classList.replace("w-1", "w-0.5");
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                } // Customize the threshold as needed
+            );
+
+            // Observe each section
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
             sideNavMenu.forEach(element => {
                 element.addEventListener('click', function(e) {
                     const target = event.target;

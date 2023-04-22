@@ -1,7 +1,64 @@
 <x-landing-layout>
     @push('scripts')
         <script>
+            const sections = document.querySelectorAll('section')
             const sideNavMenu = document.querySelectorAll('.side-nav-menu')
+
+            // Create an Intersection Observer instance
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            // If a section is in the current view
+                            // Add an "active" class to the corresponding navigation link
+                            const targetId = entry.target.getAttribute("id");
+                            sideNavMenu.forEach((link) => {
+                                let children = link.children;
+                                if (link.getAttribute("href") === `#${targetId}`) {
+                                    if (children[1].classList.contains('text-[#A5A5A5]')) {
+                                        children[1].classList.replace("text-[#A5A5A5]",
+                                            "text-[{{ $themeColor }}]");
+                                    }
+                                    if (children[1].classList.contains('font-medium')) {
+                                        children[1].classList.replace("font-medium", "font-bold");
+                                    }
+                                    if (children[0].classList.contains('bg-[#A5A5A5]')) {
+                                        children[0].classList.replace("bg-[#A5A5A5]",
+                                            "bg-[{{ $themeColor }}]");
+                                    }
+                                    if (children[0].classList.contains('w-0.5')) {
+                                        children[0].classList.replace("w-0.5", "w-1");
+                                    }
+                                } else {
+                                    if (targetId != null && targetId != 'programFee') {
+                                        if (children[1].classList.contains('text-[{{ $themeColor }}]')) {
+                                            children[1].classList.replace("text-[{{ $themeColor }}]",
+                                                "text-[#A5A5A5]");
+                                        }
+                                        if (children[1].classList.contains('font-bold')) {
+                                            children[1].classList.replace("font-bold", "font-medium");
+                                        }
+                                        if (children[0].classList.contains('bg-[{{ $themeColor }}]')) {
+                                            children[0].classList.replace("bg-[{{ $themeColor }}]",
+                                                "bg-[#A5A5A5]");
+                                        }
+                                        if (children[0].classList.contains('w-1')) {
+                                            children[0].classList.replace("w-1", "w-0.5");
+                                        }
+                                    }
+                                }
+                            });
+                        }
+                    });
+                }, {
+                    threshold: 0.5
+                } // Customize the threshold as needed
+            );
+
+            // Observe each section
+            sections.forEach((section) => {
+                observer.observe(section);
+            });
             sideNavMenu.forEach(element => {
                 element.addEventListener('click', function(e) {
                     const target = event.target;
@@ -365,8 +422,8 @@
             </div>
         </div>
         <div class="w-full lg:w-8/12">
-            <section class="overview p-6 lg:p-0 w-full lg:w-11/12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="overview" data-aos="fade-up">OVERVIEW</p>
+            <section class="overview p-6 lg:p-0 w-full lg:w-11/12" id="overview">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">OVERVIEW</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Why you should study in
                     {{ ucwords($slug) }}?
                 </p>
@@ -527,8 +584,8 @@
                 </div> --}}
             </section>
 
-            <section class="p-6 lg:p-0 curriculum w-full lg:w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6 uppercase" id="learcnphase" data-aos="fade-up">LEARN PHASE
+            <section class="p-6 lg:p-0 curriculum w-full lg:w-11/12 mt-12" id="learcnphase">
+                <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">LEARN PHASE
                 </p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What You Will Learn in Practice</p>
                 <p class="font-normal text-base text-[#262626] mt-2" data-aos="fade-up">Each subject will require you
@@ -1260,8 +1317,8 @@
                 </section>
             @endif
 
-            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="studylocation" data-aos="fade-up">EXPLORE QARILABS GLOBAL</p>
+            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="studylocation">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">EXPLORE QARILABS GLOBAL</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 uppercase" data-aos="fade-up">Find The Best Destination</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Better to have new life, experiencing culture, and get hired by International Companies.
                 </p>
@@ -1519,8 +1576,8 @@
                 </div>
             </section>
 
-            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12">
-                <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-up">
+            <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="partnerships">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">
                     PARTNERSHIPS</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Graduates have Worked in</p>
                 <div class="mt-8 flex flex-row overflow-x-auto justify-start items-center">
@@ -1664,8 +1721,8 @@
                 </div> --}}
             </section>
 
-            <section class="gethired p-6 lg:p-0 w-full lg:w-11/12 mt-14">
-                <p class="font-bold text-base text-[#262626] mb-6" id="gethired" data-aos="fade-up">GET HIRED</p>
+            <section class="gethired p-6 lg:p-0 w-full lg:w-11/12 mt-14" id="gethired">
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">GET HIRED</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">3-Stage Work Plan</p>
                 <div class="flex flex-wrap mt-8 justify-between">
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up">

@@ -122,7 +122,7 @@
         </div>
     </div>
     <div class="relative z-50 hidden" id="mobile-menu">
-        <div class="min-h-screen bg-white w-full p-6">
+        <div class="fixed top-0 left-0 h-full bg-white w-full p-6">
             <div class="flex justify-between items-center">
                 <img src="{{ Vite::asset('resources/image/icon/logo_horizontal_color.png') }}" alt="logo big"
                     class="lg:block h-8 w-auto">
@@ -138,7 +138,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="">
+            <div class="h-full overflow-y-auto">
                 <ul class="mt-9">
                     <li class="font-bold text-base text-[#B3BDB8] py-2">MENU</li>
                     {{-- <li class="font-bold text-base text-[#262626] py-2 mobile-menu">
@@ -166,7 +166,7 @@
                         <div class="flex flex-row justify-between items-center">
                             <p>Course And Location</p>
                             <div class="h-6 w-6 flex justify-center items-center">
-                                <svg class="rotate-180" width="10" height="7" viewBox="0 0 10 7" fill="none"
+                                <svg class="rotate-0" width="10" height="7" viewBox="0 0 10 7" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M5.93332 0.933415L9.39998 4.40008C9.82221 4.8223 9.91643 5.30541 9.68265 5.84941C9.44887 6.39341 9.03243 6.66586 8.43332 6.66675L1.56665 6.66675C0.966652 6.66675 0.549763 6.3943 0.315986 5.84942C0.0822076 5.30453 0.176873 4.82142 0.599984 4.40008L4.06665 0.933415C4.19998 0.800081 4.34443 0.700082 4.49998 0.633416C4.65554 0.566749 4.82221 0.533414 4.99998 0.533414C5.17776 0.533414 5.34443 0.566749 5.49998 0.633416C5.65554 0.700082 5.79998 0.800081 5.93332 0.933415Z"
@@ -174,7 +174,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <ul class="menu-mobile-detail hidden">
+                        <ul class="menu-mobile-detail">
                             <li class="font-normal text-xl py-2">
                                 <div class="flex flex-row mt-4 mb-2">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
