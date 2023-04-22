@@ -29,7 +29,7 @@ class LocationSeeder extends Seeder
         ]);
 
         Location::create([
-            'name' => 'South Korea',
+            'name' => 'Seoul',
             'status' => 'soon'
         ]);
     }

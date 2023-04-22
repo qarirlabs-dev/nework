@@ -735,9 +735,9 @@
                         </div>
 
                         <div class="px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            Qarirlabs provides career preparation. Once you’ve been accepted, you'll get the fixed
+                            NeWork provides career preparation. Once you’ve been accepted, you'll get the fixed
                             schedule of career mapping & soft skill class with our passionate trainers. You also will
-                            receive about 10-20 hours of online learning resources, carefully curated by QarirLabs
+                            receive about 10-20 hours of online learning resources, carefully curated by NeWork
                             Expert to be intuitive and interactive. This preparation phase will ensure you have the
                             necessary Digital Marketing fundamentals before the bootcamp starts.
                         </div>
@@ -1057,10 +1057,10 @@
                 <p class="font-bold text-base text-[#262626] mb-6" id="alumni" data-aos="fade-left"
                     data-aos-duration="3000" data-aos-delay="100">All Alumni Story</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-left" data-aos-duration="3000"
-                    data-aos-delay="200">What alumni say about QarirLabs</p>
+                    data-aos-delay="200">What alumni say about NeWork</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-left" data-aos-duration="3000"
                     data-aos-delay="300">Listen to the stories of alumni of the Data Science
-                    Bootcamp program at QarirLabs!</p>
+                    Bootcamp program at NeWork!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-left" data-aos-duration="3000"
                     data-aos-delay="400">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
@@ -1271,10 +1271,10 @@
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="100">PORTOFOLIO ALUMNI</p>
                 <p class="font-black text-4xl mb-2" data-aos="fade-up" data-aos-duration="3000"
-                    data-aos-delay="100">Portfolio Student at Bootcamp QarirLabs</p>
+                    data-aos-delay="100">Portfolio Student at Bootcamp NeWork</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="100">Listen to the stories of alumni of the Data Science
-                    Bootcamp program at QarirLabs!</p>
+                    Bootcamp program at NeWork!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" data-aos-duration="3000"
                     data-aos-delay="300">
                     <div class="flex-none">

@@ -104,10 +104,10 @@
                                 </div>
                             </div>
                             <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer relative"
-                                onclick="redirectToPage('South Korea')">
+                                onclick="redirectToPage('Seoul')">
                                 <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
                                     alt="online" class="h-24 w-24 rounded-lg">
-                                <p class="font-bold text-sm text-[#262626] px-2 py-3">South Korea</p>
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Seoul</p>
                                 <div class="absolute top-0 h-24 w-24 bg-black opacity-50 rounded-lg">
                                 </div>
                                 <div
@@ -124,7 +124,7 @@
     <div class="relative z-50 hidden" id="mobile-menu">
         <div class="min-h-screen bg-white w-full p-6">
             <div class="flex justify-between items-center">
-                <img src="{{ Vite::asset('resources/image/icon/logo_horizontal.png') }}" alt="logo big"
+                <img src="{{ Vite::asset('resources/image/icon/logo_horizontal_color.png') }}" alt="logo big"
                     class="lg:block h-8 w-auto">
                 <button class="p-3" onclick="showMenu()">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -291,14 +291,14 @@
                                     </svg>
 
 
-                                    <div class="ml-3 font-bold text-base">South Korea <span class="mr-3 text-white bg-red-500 text-xs px-3 py-1 rounded-full">Soon</span></div>
+                                    <div class="ml-3 font-bold text-base">Seoul <span class="mr-3 text-white bg-red-500 text-xs px-3 py-1 rounded-full">Soon</span></div>
                                 </div>
                             </li>
                             <li class="font-normal text-xl py-2"><a
-                                    href="{{ route('detail', ['slug' => 'South Korea', 'course' => 'data science']) }}">Data
+                                    href="{{ route('detail', ['slug' => 'Seoul', 'course' => 'data science']) }}">Data
                                     Science Bootcamp</a></li>
                             <li class="font-normal text-xl py-2"><a
-                                    href="{{ route('detail', ['slug' => 'South Korea', 'course' => 'digital marketing']) }}">Digital
+                                    href="{{ route('detail', ['slug' => 'Seoul', 'course' => 'digital marketing']) }}">Digital
                                     Marketing Bootcamp</a></li>
                         </ul>
                     </li>
@@ -456,10 +456,10 @@
                 </div>
                 <div class="flex flex-1 lg:items-center lg:justify-start items-stretch justify-start">
                     <a href="{{ route('landing') }}" class="flex flex-shrink-0 items-center">
-                        <img src="{{ Vite::asset('resources/image/icon/logo_horizontal.png') }}" alt="logo big"
+                        <img src="{{ Vite::asset('resources/image/icon/logo_horizontal_color.png') }}" alt="logo big"
                             class="hidden lg:block h-8 w-auto">
-                        <img src="{{ Vite::asset('resources/image/icon/logo_default.png') }}" alt="logo big"
-                            class="lg:hidden h-8 w-auto">
+                        <img src="{{ Vite::asset('resources/image/icon/logo_horizontal_color.png') }}" alt="logo big"
+                            class="lg:hidden h-6 w-auto">
                     </a>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
@@ -853,9 +853,9 @@
                                                     </svg>
 
 
-                                                    <p class="font-black text-base ml-4">South Korea</p>
+                                                    <p class="font-black text-base ml-4">Seoul</p>
                                                 </div>
-                                                <a href="{{ route('detail', ['slug' => 'South Korea', 'course' => 'data science']) }}"
+                                                <a href="{{ route('detail', ['slug' => 'Seoul', 'course' => 'data science']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-0">
                                                     <div class="inline-flex items-center">
@@ -889,7 +889,7 @@
                                                             Bootcamp</p>
                                                     </div>
                                                 </a>
-                                                <a href="{{ route('detail', ['slug' => 'South Korea', 'course' => 'digital marketing']) }}"
+                                                <a href="{{ route('detail', ['slug' => 'Seoul', 'course' => 'digital marketing']) }}"
                                                     class="block px-4 py-2 text-sm text-gray-700 shadow-sm m-2 rounded-xl bg-white"
                                                     role="menuitem" tabindex="-1" id="user-menu-item-1">
                                                     <div class="inline-flex items-center">
@@ -937,29 +937,30 @@
                     </div>
                 </div>
                 <div class="absolute inset-y-0 right-8 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <a href="#" class="hidden lg:block text-black  px-3 py-2 font-bold mx-2">Login</a>
-                    @if ($location == '')
+                    {{-- <a href="#" class="hidden lg:block text-black  px-3 py-2 font-bold mx-2">Login</a> --}}
+
+                    @if ($location == '' || $location == 'Seoul' || $location == "Tokyo")
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
-                            class="text-white px-5 py-2 font-bold rounded-full bg-[#FF9500] mx-2">Book a call</a>
+                            class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
                     @endif
                     @if ($location == 'indonesia' && $course == 'data science')
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
-                            class="text-white px-5 py-2 font-bold rounded-full bg-[#2622B9] mx-2">Book a call</a>
+                            class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#2622B9] mx-2">Book A Call</a>
                     @endif
 
                     @if ($location == 'indonesia' && $course == 'digital marketing')
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
-                            class="text-white px-5 py-2 font-bold rounded-full bg-[#FF9500] mx-2">Book a call</a>
+                            class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
                     @endif
 
                     @if ($location == 'istanbul' && $course == 'data science')
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
-                            class="text-white px-5 py-2 font-bold rounded-full bg-[#EE0A0A] mx-2">Book a call</a>
+                            class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#EE0A0A] mx-2">Book A Call</a>
                     @endif
 
                     @if ($location == 'istanbul' && $course == 'digital marketing')
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
-                            class="text-white px-5 py-2 font-bold rounded-full bg-[#0F5B89] mx-2">Book a call</a>
+                            class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#0F5B89] mx-2">Book A Call</a>
                     @endif
 
                     <div class="hidden lg:block text-[#DEDEDE] mx-2 text-xl">|</div>

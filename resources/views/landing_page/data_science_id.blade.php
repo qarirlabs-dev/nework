@@ -112,37 +112,37 @@
                 });
             })
 
-            document.getElementById('previews-study-change-location').addEventListener('click', function() {
-                schoolChange.scroll({
-                    left: schoolChange.scrollLeft - scrollAmount,
-                    behavior: 'smooth'
-                });
-            })
+            // document.getElementById('previews-study-change-location').addEventListener('click', function() {
+            //     schoolChange.scroll({
+            //         left: schoolChange.scrollLeft - scrollAmount,
+            //         behavior: 'smooth'
+            //     });
+            // })
 
-            document.getElementById('next-study-change-location').addEventListener('click', function() {
-                schoolChange.scroll({
-                    left: schoolChange.scrollLeft + scrollAmount,
-                    behavior: 'smooth'
-                });
-            })
+            // document.getElementById('next-study-change-location').addEventListener('click', function() {
+            //     schoolChange.scroll({
+            //         left: schoolChange.scrollLeft + scrollAmount,
+            //         behavior: 'smooth'
+            //     });
+            // })
 
-            document.getElementById('previews-portofolio').addEventListener('click', function() {
-                portoSlider.scroll({
-                    left: portoSlider.scrollLeft - scrollAmount,
-                    behavior: 'smooth'
-                });
-            })
+            // document.getElementById('previews-portofolio').addEventListener('click', function() {
+            //     portoSlider.scroll({
+            //         left: portoSlider.scrollLeft - scrollAmount,
+            //         behavior: 'smooth'
+            //     });
+            // })
 
-            document.getElementById('next-portofolio').addEventListener('click', function() {
-                portoSlider.scroll({
-                    left: portoSlider.scrollLeft + scrollAmount,
-                    behavior: 'smooth'
-                });
-            })
+            // document.getElementById('next-portofolio').addEventListener('click', function() {
+            //     portoSlider.scroll({
+            //         left: portoSlider.scrollLeft + scrollAmount,
+            //         behavior: 'smooth'
+            //     });
+            // })
         </script>
     @endpush
     <section class="hero static bg-gradient-to-t from-[{{$themeColor2}}] to-[#FFFFFF] w-full h-[65rem] lg:h-[46rem] -mt-20">
-        <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
+        <svg class="absolute left-0 top-40 h-80 w-80" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
                 <circle cx="144.5" cy="348.5" r="193.5" fill="{{$themeColor}}" />
@@ -161,17 +161,17 @@
                 <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-between items-center">
                     <div class="lg:hidden flex-auto w-full lg:w-4/12">
                         {{-- @if (count($heroImages) == 1 && $slug == 'online') --}}
-                        <div class="relative flex lg:h-96 lg:w-96 w-72 h-72">
+                        <div class="relative flex lg:h-96 lg:w-96 h-80 w-80 mx-auto justify-center items-center">
                             @if (strtolower($slug) != 'indonesia')
-                                <div class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
+                                <div class="absolute lg:h-96 lg:w-96 w-80 h-80 border-2 border-[{{$themeColor}}] rounded-xl">
                                 </div>
                                 <div
-                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
+                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-80 h-80 border-2 border-[{{$themeColor}} rounded-xl">
                                 </div>
                             @endif
                             @foreach ($heroImages as $item)
                                 <img src="{{ Vite::asset($item) }}" alt="ilustration 1"
-                                    class="lg:h-96 lg:w-96 w-72 h-72 object-cover rounded-2xl absolute top-4 left-4">
+                                    class="object-cover rounded-2xl absolute lg:h-96 lg:w-96 h-80 w-80">
                             @endforeach
                         </div>
                         {{-- @else
@@ -206,7 +206,7 @@
 
                     </div>
                     <div class="p-6 lg:p-0 flex-auto w-6/12">
-                        <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-16" data-aos="fade-up">
+                        <div class="text-3xl lg:text-5xl font-black mb-6 lg:mt-16" data-aos="fade-up">
                             {{ ucwords($course) }} <span
                             class="bg-[{{ $themeColor }}] px-2 text-white rounded-lg">Bootcamp</span>  <div class="text-[{{$themeColor}}]">
                                 {{ $detail }}</div>
@@ -222,7 +222,7 @@
                             @else
                                 @if (strtolower($slug) == 'indonesia')
                                 Lebih dari belajar! Kerjakan proyek, dapatkan bimbingan bersama pakar, bertemu dengan pemimpin industri data, dan bersiaplah memulai karir menjadi <span
-                                class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">{{ $course }}</span>!😎
+                                class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">data scientists</span>!😎
                                 @else
                                 Learn and
                                 <span class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">experience real
@@ -274,19 +274,19 @@
                                 Syllabus</button>
                         </div>
                     </div>
-                    <div class="hidden lg:block mx-auto w-4/12" data-aos="fade-up">
+                    <div class="hidden lg:block mx-auto w-5/12" data-aos="fade-up">
                         {{-- @if (count($heroImages) == 1 && $slug == 'online') --}}
-                        <div class="relative flex lg:h-96 lg:w-96 w-60 h-60">
+                        <div class="relative flex lg:h-[40rem] lg:w-[40rem]  w-72 h-72">
                             @if (strtolower($slug) != 'indonesia')
-                                <div class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
+                                <div class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[{{$themeColor}}] rounded-xl">
                                 </div>
                                 <div
-                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
+                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[{{$themeColor}}] rounded-xl">
                                 </div>
                             @endif
                             @foreach ($heroImages as $item)
                                 <img src="{{ Vite::asset($item) }}" alt="ilustration 1"
-                                    class="lg:h-96 lg:w-96 w-72 h-72 object-cover rounded-2xl absolute top-4 left-4">
+                                    class="object-cover rounded-2xl">
                             @endforeach
                         </div>
                         {{-- @else
@@ -339,7 +339,7 @@
                     </a>
                     <a href="#learcnphase" class="inline-flex items-center ml-4 side-nav-menu">
                         <div class="h-11 w-0.5 bg-[#A5A5A5] mr-4"></div>
-                        <span class="text-[#A5A5A5] font-medium text-lg">Fase Belajar</span>
+                        <span class="text-[#A5A5A5] font-medium text-lg ">Fase Belajar</span>
                     </a>
                     @if (count($destinations) > 0)
                         <a href="#destination" class="inline-flex items-center ml-4 side-nav-menu">
@@ -390,7 +390,7 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 uppercase" data-aos="fade-up">Kenapa Bergabung QarirLabs</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 uppercase" data-aos="fade-up">Kenapa Bergabung NeWork</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Master Data Science dan lihat
                     manfaat setelah
                     kelulusan</p>
@@ -435,7 +435,7 @@
                                 </defs>
                             </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Kurikulum terstruktur dengan baik dirancang oleh para ahli</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Kurikulum terstruktur dengan baik dirancang oleh para ahli</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
@@ -449,7 +449,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Bimbingan oleh Mitra Perekrutan</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Bimbingan oleh Mitra Perekrutan</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
@@ -469,7 +469,7 @@
                                 </g>
                             </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Dilengkapi dengan proyek  Pengayaan (Part time Project)</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Dilengkapi dengan proyek  Pengayaan (Part time Project)</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
@@ -483,7 +483,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
@@ -498,7 +498,7 @@
                                     fill="{{$themeColor}}" />
                             </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Terhubung dengan pelatih yang bersemangat</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Terhubung dengan pelatih yang bersemangat</p>
                         </div>
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
@@ -518,7 +518,7 @@
                                 </g>
                             </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Pusat Layanan Siswa dengan layanan bintang 5</p>
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Pusat Layanan Siswa dengan layanan bintang 5</p>
                         </div>
                     </div>
                 </div>
@@ -808,7 +808,7 @@
                                 </div>
                                 <span class="font-bold lg:text-xl text-base">Persiapan</span>
                             </div>
-                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -816,7 +816,7 @@
                             </svg>
                         </div>
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Qarirlabs menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat. Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar QarirLabs agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">NeWork menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat. Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar NeWork agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.
                         </div>
                     </div>
                     {{-- 1 --}}
@@ -838,7 +838,7 @@
                                 <div class="font-bold lg:text-xl text-base">Data Analysis <span
                                         class="font-normal lg:text-xl text-base">(Module 1)</span></div>
                             </div>
-                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -847,7 +847,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Kuasai penggunaan bahasa pemrograman Python, khususnya untuk aplikasi ilmu data, yang memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani kumpulan data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan pemahaman menyeluruh tentang prinsip matematika dasar, seperti statistik dan aljabar linier, untuk memfasilitasi analisis data yang efisien. .* (Modul Terbaru 2023)
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Kuasai penggunaan bahasa pemrograman Python, khususnya untuk aplikasi ilmu data, yang memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani kumpulan data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan pemahaman menyeluruh tentang prinsip matematika dasar, seperti statistik dan aljabar linier, untuk memfasilitasi analisis data yang efisien. .* (Modul Terbaru 2023)
 
                         </div>
                     </div>
@@ -879,7 +879,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
 
                         </div>
                     </div>
@@ -1077,7 +1077,7 @@
                                 </svg>
                             </div>
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Qarirlabs menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat. Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar QarirLabs agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">NeWork menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat. Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar NeWork agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.
                             </div>
                         </div>
                         <div class="mb-4 collapse-menu w-full">
@@ -1115,7 +1115,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.
 
                             </div>
                         </div>
@@ -1234,7 +1234,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Kuasai penggunaan bahasa pemrograman Python, khususnya untuk aplikasi ilmu data, yang memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani kumpulan data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan pemahaman menyeluruh tentang prinsip matematika dasar, seperti statistik dan aljabar linier, untuk memfasilitasi analisis data yang efisien. .* (Modul Terbaru 2023)
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">Kuasai penggunaan bahasa pemrograman Python, khususnya untuk aplikasi ilmu data, yang memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani kumpulan data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan pemahaman menyeluruh tentang prinsip matematika dasar, seperti statistik dan aljabar linier, untuk memfasilitasi analisis data yang efisien. .* (Modul Terbaru 2023)
 
                             </div>
                         </div>
@@ -1369,7 +1369,7 @@
                         id="destination-navigation">
                         @foreach ($destinations as $item)
                             <div class="lg:w-1/3 w-full py-0 px-3">
-                                <div class="relative bg-white rounded-lg shadow-sm">
+                                <div class="relative bg-white rounded-lg shadow-sm h-[27rem]">
                                     <img src="{{ Vite::asset($item['image']) }}" alt="person 1"
                                         class="rounded-lg h-64">
                                     <p class="font-bold text-2xl px-6 pt-6 pb-3 text-left">{{ $item['title'] }}</p>
@@ -1423,13 +1423,12 @@
 
             @if (count($programFee) > 0)
                 <section class="w-full lg:w-11/12 mt-12" id="programFee">
-                    <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">Biaya Program</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Belajar dan Menginap - Harga
-                        Mulai dari...</p>
+                    <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Biaya Program</p>
+                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Investasi untuk karir masa depan Anda</p>
                     <div class="flex justify-between lg:flex-row flex-col mt-10" data-aos="fade-up"
                         id="destination-navigation">
                         @foreach ($programFee as $item)
-                            <div class="lg:w-1/2 w-full py-0 px-3">
+                            <div class="lg:w-1/2 w-full lg:py-0 py-3 lg:first:pr-6 mb-5">
                                 <div class="bg-white rounded-lg shadow-sm">
                                     <div class="bg-[#FFE6CE] rounded-t-lg p-4">
                                         <p class="font-black text-lg text-[#8C5200]">{{ $item['title'] }}</p>
@@ -1473,8 +1472,8 @@
             @endif
 
             <section class="w-full mt-12 mx-auto" id="studylocation">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI QARILABS GLOBAL</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2 uppercase" data-aos="fade-up">Temukan Destinasi Terbaik</p>
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI NEWORK GLOBAL</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Temukan Destinasi Terbaik</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Lebih baik memiliki kehidupan baru, mengalami budaya, dan dipekerjakan oleh Perusahaan Internasional.</p>
                 <div class="w-full lg:w-11/12 flex lg:flex-row flex-col mt-10" data-aos="fade-up" id="study-change-location">
                     <a href="{{ route('detail', ['slug' => 'indonesia', 'course' => $course]) }}"
@@ -1510,7 +1509,7 @@
                         <div class="relative bg-white rounded-lg shadow-sm w-full">
                             <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
                                 alt="person 1" class="rounded-lg w-full h-48">
-                            <p class="font-bold text-xl px-4 py-5 text-center">South Korea</p>
+                            <p class="font-bold text-xl px-4 py-5 text-center">Seoul</p>
                             <div class="absolute top-0 w-full h-48 bg-black opacity-50 rounded-lg">
                             </div>
                             <div
@@ -1561,14 +1560,14 @@
             </section>
 
             <section class="alumni w-11/12 mt-12" id="alumni">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">Cerita beberapa alumni</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Apa yang dikatakan alumni tentang QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Simak kisah para alumni program Data Science Bootcamp di QarirLabs!</p>
+                <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">Cerita beberapa alumni</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Apa yang dikatakan alumni tentang NeWork</p>
+                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Simak kisah para alumni program Data Science Bootcamp di NeWork!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1587,7 +1586,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1606,7 +1605,7 @@
                         <div class="flex flex-col items-center justify-center gap-3">
 
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1624,7 +1623,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1634,7 +1633,7 @@
                                                 MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs membuka peluang baru untuk bekerja di bidang digital!"- Balad </p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork membuka peluang baru untuk bekerja di bidang digital!"- Balad </p>
                                 </div>
                             </div>
                         </div>
@@ -1642,7 +1641,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1652,7 +1651,7 @@
                                                 Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs membantu saya untuk mendapatkan pemahaman yang lebih dalam tentang ilmu data. Setelah mengikuti kursus mereka dan tetap terhubung dengan mentor saya, saya dapat mulai bekerja di perusahaan impian saya menggunakan keterampilan yang meningkat secara signifikan." - Andimas Iben </p>
+                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork membantu saya untuk mendapatkan pemahaman yang lebih dalam tentang ilmu data. Setelah mengikuti kursus mereka dan tetap terhubung dengan mentor saya, saya dapat mulai bekerja di perusahaan impian saya menggunakan keterampilan yang meningkat secara signifikan." - Andimas Iben </p>
                                 </div>
                             </div>
                         </div>
@@ -1660,7 +1659,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1719,7 +1718,7 @@
             <section class="w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-up">
                     KERJASAMA</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2"data-aos="fade-up">Lulusan kami bekerja di</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize"data-aos="fade-up">Lulusan kami bekerja di</p>
                 <div class="mt-8 flex flex-row overflow-x-auto justify-start items-center">
                     <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}" alt="stick_earn"
                         class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up">
@@ -1742,11 +1741,11 @@
                 </div>
             </section>
 
-            <section class="portofolio w-full lg:w-11/12 mt-12" id="portofolio">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Portfolio Peserta pada Bootcamp
-                    QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Simak portofolio alumni program Data Science Bootcamp di QarirLabs!</p>
+            <section class="portofolio w-full lg:w-11/12 mt-12 lg:mt-20" id="portofolio">
+                <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Portfolio Peserta pada Bootcamp
+                    NeWork</p>
+                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Jelajahi portofolio alumni program Data Science Bootcamp di NeWork!</p>
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1799,7 +1798,7 @@
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_3.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">QarirLabs Data Science</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">NeWork Data Science</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Disusun oleh</p>
                                         <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
                                         <div class="mt-12 flex w-full text-center">
@@ -1879,7 +1878,7 @@
                 <div class="flex flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1895,7 +1894,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1912,7 +1911,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -1960,14 +1959,14 @@
                 </div>
             </section>
 
-            <section class="w-full lg:w-11/12 mt-12" id="admissions">
+            <section class="w-full lg:w-11/12 lg:mt-12" id="admissions">
                 <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-center items-center">
                     <div class="lg:hidden w-full lg:w-1/2 mb-5" data-aos="fade-up">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
                             alt="ilustration 9" class="object-contain rounded-xl">
                     </div>
-                    <div class="w-full lg:w-1/2 lg:mr-16" data-aos="fade-up">
-                        <p class="font-bold text-base text-[#262626] mb-5">PENDAFTRAN</p>
+                    <div class="w-full lg:w-1/2 lg:mr-16 mt-12 lg:mt-0" data-aos="fade-up">
+                        <p class="font-bold text-base text-[#262626] mb-5">PENDAFTARAN</p>
                         <p class="font-bold text-2xl lg:text-4xl text-black mb-5">Jelajahi Tentang Diri Anda</p>
                         <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 lg:mb-6">Selesaikan penilaian karir singkat dengan 8 pertanyaan hanya dalam 90 detik.
                         </p>
@@ -1995,8 +1994,8 @@
                     </div>
                     <div class="absolute top-0 left-0 h-80 w-full flex justify-start items-center ">
                         <div class="flex flex-col lg:ml-28 p-10 lg:p-0">
-                            <p class="font-black text-2xl lg:text-4xl text-white">Siap menjadi Master Data Science
-                                <br>yang berikutnya?
+                            <p class="font-black text-2xl lg:text-4xl text-white">Siap Menjadi Master Data Science
+                                <br>Yang Berikutnya?
                             </p>
                             <div>
                                 <button
@@ -2009,8 +2008,8 @@
         </div>
     </div>
     <div class="hidden">
-        <p class="text-[#2622B9] bg-[#DBDAFF] outline-[#DBDAFF]">test1</p>
-        <p class="text-[#FF9500] bg-[#FFE6CE] outline-[#FFE6CE]">test1</p>
+        <p class="text-[#2622B9] bg-[#DBDAFF] outline-[#DBDAFF] line-through font-base">test1</p>
+        <p class="text-[#FF9500] bg-[#FFE6CE] border-2 border-[#FF9500]">test1</p>
         <p class="text-[#EE0A0A] bg-[#FFE3E3] outline-[#FFE3E3]">test1</p>
         <p class="text-[#0F5B89] bg-[#DCF2FF] outline-[#DCF2FF]">test1</p>
     </div>

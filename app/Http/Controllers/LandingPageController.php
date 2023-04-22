@@ -15,6 +15,8 @@ class LandingPageController extends Controller
     {
 
         $themeColor = '#0F5B89';
+        $themeColor2 = '#DBDAFF';
+        $themeColor3 = '#DBDAFF';
         // Determine Color
         if (strtolower($slug) == 'indonesia' && strtolower($course) == 'data science') {
             $themeColor = '#2622B9';
@@ -158,7 +160,7 @@ class LandingPageController extends Controller
                     "title" => "Digital Marketing Bootcamp",
                     "type" => "Beginner Friendly",
                     "price" => [
-                        "Rp10,500,000",
+                        "<p class='line-through text-sm font-base'>Rp10,500,000</p>",
                         "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
                     ],
                     "duration" => "16 Weeks",
@@ -168,7 +170,7 @@ class LandingPageController extends Controller
                     "title" => "Digital Marketing Bootcamp",
                     "type" => "Beginner Friendly & Hybrid Offline",
                     "price" => [
-                        "Rp14,000,000",
+                        "<p class='line-through text-sm font-base'>Rp14,000,000</p>",
                         "Rp12,000,000"
                     ],
                     "duration" => "16 Weeks",
@@ -533,8 +535,8 @@ class LandingPageController extends Controller
                     "content" => "Offers a rich social program, include organized daily trips around Tokyo and other popular destinations"
                 ],
             ];
-        } elseif ($slug == 'South Korea') {
-            $detail = "In South Korea";
+        } elseif ($slug == 'Seoul') {
+            $detail = "In Seoul";
             $heroImages = ['resources/image/ilustration/south_korea_hero.png',];
             $destinations = [
                 [
@@ -589,7 +591,7 @@ class LandingPageController extends Controller
                         </linearGradient>
                     </defs>
                 </svg>',
-                    "content" => "Our bootcamp class in South Korea is surrounded by futuristic modernity and traditional neighborhoods in the corner for you to visit. "
+                    "content" => "Our bootcamp class in Seoul is surrounded by futuristic modernity and traditional neighborhoods in the corner for you to visit. "
                 ],
                 [
                     "image" => '<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -631,7 +633,7 @@ class LandingPageController extends Controller
                         </linearGradient>
                     </defs>
                 </svg>',
-                    "content" => "South Korea has a lot to offer: a rich and unique Asian culture, UNESCO World Heritage Sites, delicious and healthy cuisine and a world-class city: Seoul. "
+                    "content" => "Seoul has a lot to offer: a rich and unique Asian culture, UNESCO World Heritage Sites, delicious and healthy cuisine and a world-class city: Seoul. "
                 ],
                 [
                     "image" => '<svg width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -647,12 +649,12 @@ class LandingPageController extends Controller
                         </linearGradient>
                     </defs>
                 </svg>',
-                    "content" => "Complete your study-trip with organized daily trips around korea palace village and futuristic city in south korea. Meet friendly local, meet our international experts, and gain your network in Seoul."
+                    "content" => "Complete your study-trip with organized daily trips around korea palace village and futuristic city in Seoul. Meet friendly local, meet our international experts, and gain your network in Seoul."
                 ],
             ];
         }
 
-        if (in_array(strtolower($slug), ['tokyo', 'south korea'])) {
+        if (in_array(strtolower($slug), ['tokyo', 'seoul'])) {
             return view('landing_page.coming_soon', compact('slug'));
         }
 

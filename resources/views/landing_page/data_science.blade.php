@@ -145,7 +145,7 @@
     @endpush
     <section
         class="hero static bg-gradient-to-t from-[{{ $themeColor2 }}] to-[#FFFFFF] w-full h-[65rem] lg:h-[46rem] -mt-20">
-        <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
+        <svg class="absolute left-0 top-40 h-80 w-80" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
                 <circle cx="144.5" cy="348.5" r="193.5" fill="{{ $themeColor }}" />
@@ -164,18 +164,17 @@
                 <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-between items-center">
                     <div class="lg:hidden flex-auto w-full lg:w-4/12">
                         {{-- @if (count($heroImages) == 1 && $slug == 'online') --}}
-                        <div class="relative flex mx-auto lg:h-96 lg:w-96 w-72 h-72">
+                        {{-- TODO : BENERIN INI --}}
+                        <div class="relative flex h-72 w-72 mx-auto justify-center items-center">
                             @if (strtolower($slug) != 'indonesia')
-                                <div
-                                    class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[{{ $themeColor }}] rounded-xl">
+                                <div class="absolute lg:top-8 lg:left-8 -top-4 -left-4 h-72 w-72 rounded-xl border-2 border-[{{$themeColor}}]">
                                 </div>
-                                <div
-                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[{{ $themeColor }}] rounded-xl">
+                                <div class="absolute lg:top-8 lg:left-8 top-4 left-4 h-72 w-72 rounded-xl border-2 border-[{{$themeColor}}]">
                                 </div>
                             @endif
                             @foreach ($heroImages as $item)
                                 <img src="{{ Vite::asset($item) }}" alt="ilustration 1"
-                                    class="lg:h-96 lg:w-96 w-72 h-72 object-cover rounded-2xl absolute top-4 lg:left-4 left-0">
+                                    class="absolute lg:top-8 lg:left-8 h-72 w-72 rounded-xl">
                             @endforeach
                         </div>
                         {{-- @else
@@ -209,8 +208,8 @@
                         @endif --}}
 
                     </div>
-                    <div class="p-6 mt-10 lg:p-0 flex-auto w-6/12">
-                        <div class="text-2xl lg:text-5xl font-black mb-6 lg:mt-16" data-aos="fade-up">
+                    <div class="p-6 lg:p-0 flex-auto w-6/12 lg:-mt-10 mt-10">
+                        <div class="text-3xl lg:text-5xl font-black mb-6 lg:mt-12" data-aos="fade-up">
                             {{ ucwords($course) }} <span
                                 class="bg-[{{ $themeColor }}] px-2 text-white rounded-lg">Bootcamp</span>
                             <div class="text-[{{ $themeColor }}]">
@@ -237,7 +236,7 @@
                                 @if (strtolower($slug) == 'indonesia')
                                     Lebih dari belajar! Kerjakan proyek, dapatkan bimbingan bersama pakar, bertemu
                                     dengan pemimpin industri data, dan bersiaplah memulai karir menjadi <span
-                                        class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">{{ $course }}</span>!
+                                        class="bg-[{{ $themeColor }}] px-2 py-1 text-white rounded-lg">data scientists</span>!
                                     😎
                                 @else
                                     Learn and
@@ -291,19 +290,19 @@
                                 Syllabus</button>
                         </div>
                     </div>
-                    <div class="hidden lg:block mx-auto w-4/12" data-aos="fade-up">
+                    <div class="hidden lg:block mx-auto w-5/12 pl-10" data-aos="fade-up">
                         {{-- @if (count($heroImages) == 1 && $slug == 'online') --}}
-                        <div class="relative flex lg:h-96 lg:w-96 w-60 h-60">
+                        <div class="relative flex lg:h-[40rem] lg:w-[40rem]  w-72 h-72">
                             @if (strtolower($slug) != 'indonesia')
-                                <div class="absolute lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
+                                <div class="absolute lg:h-[30rem] lg:w-[30rem] w-72 h-72 border-2 border-[{{$themeColor}}] rounded-xl">
                                 </div>
                                 <div
-                                    class="absolute top-8 left-8 lg:h-96 lg:w-96 w-72 h-72 border-2 border-[#FF9500] rounded-xl">
+                                    class="absolute top-8 left-8 lg:h-[30rem] lg:w-[30rem] w-72 h-72 border-2 border-[{{$themeColor}}] rounded-xl">
                                 </div>
                             @endif
                             @foreach ($heroImages as $item)
                                 <img src="{{ Vite::asset($item) }}" alt="ilustration 1"
-                                    class="lg:h-96 lg:w-96 w-72 h-72 object-cover rounded-2xl absolute top-4 left-4">
+                                    class="lg:h-[30rem] lg:w-[30rem] w-72 h-72 object-cover rounded-2xl absolute top-4 left-4">
                             @endforeach
                         </div>
                         {{-- @else
@@ -455,7 +454,7 @@
                                     </defs>
                                 </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Well structured
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Well structured
                                 curriculum designed by experts</p>
                         </div>
                     </div>
@@ -470,7 +469,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Personalized
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Personalized
                                 curriculum (in-person learning experience)</p>
                         </div>
                     </div>
@@ -491,7 +490,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Mentorship by
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Mentorship by
                                 Hiring Partners</p>
                         </div>
                     </div>
@@ -506,7 +505,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
@@ -521,7 +520,7 @@
                                         fill="{{ $themeColor }}" />
                                 </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">Connect with
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Connect with
                                 passionate trainers</p>
                         </div>
                     </div>
@@ -542,7 +541,7 @@
                                     </g>
                                 </svg>
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6">5 star services
+                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">5 star services
                                 with dedicated Student Service Center</p>
                         </div>
                     </div>
@@ -808,7 +807,7 @@
             </section>
 
             <section class="curriculum w-full lg:w-11/12 mt-12" id="learcnphase">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">LEARN PHASE</p>
+                <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">LEARN PHASE</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What You Will Learn in Practice</p>
                 <p class="font-normal text-sm lg:text-base text-[#262626]" data-aos="fade-up">Each subject will
                     require you to apply what you learn
@@ -839,9 +838,9 @@
                                     </defs>
                                 </svg>
                                 </div>
-                                <span class="font-bold text-xl ml-3">Preparation</span>
+                                <span class="font-bold text-xl">Preparation</span>
                             </div>
-                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -849,11 +848,11 @@
                             </svg>
                         </div>
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
-                            Qarirlabs provides career preparation, Once you’ve been accepted, you'll get the fixed
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
+                            NeWork provides career preparation, Once you’ve been accepted, you'll get the fixed
                             schedule of career mapping & soft skill class with our passionate trainers. You also
                             will
-                            receive about 10-20 hours of online learning resources, carefully curated by QarirLabs
+                            receive about 10-20 hours of online learning resources, carefully curated by NeWork
                             Expert to be intuitive and interactive. This preparation phase will ensure you have the
                             necessary foundations in Python before the bootcamp starts.
                         </div>
@@ -886,7 +885,7 @@
                                 <div class="font-bold lg:text-xl text-base">Data Analysis <span
                                         class="font-normal lg:text-xl text-base">(Module 1)</span></div>
                             </div>
-                            <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5" fill="none"
+                            <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -895,7 +894,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Master the use of Python programming language, particularly for data science
                             applications,
                             which entails proficiency in extracting data from relational databases, handling
@@ -944,7 +943,7 @@
                         </div>
 
                         <div
-                            class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                            class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                             Imagine being a data consultant and mastering the art of navigating through the data
                             preparation phase of a massive dataset. Utilize your skills in interpreting statistical
                             results derived from various tools such as multivariate regression models, hypothesis
@@ -1197,7 +1196,7 @@
                                     </div>
                                     <span class="font-bold text-xl ml-3">Preparation</span>
                                 </div>
-                                <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
+                                <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -1205,11 +1204,11 @@
                                 </svg>
                             </div>
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
-                                Qarirlabs provides career preparation, Once you’ve been accepted, you'll get the fixed
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
+                                NeWork provides career preparation, Once you’ve been accepted, you'll get the fixed
                                 schedule of career mapping & soft skill class with our passionate trainers. You also
                                 will
-                                receive about 10-20 hours of online learning resources, carefully curated by QarirLabs
+                                receive about 10-20 hours of online learning resources, carefully curated by NeWork
                                 Expert to be intuitive and interactive. This preparation phase will ensure you have the
                                 necessary foundations in Python before the bootcamp starts.
                             </div>
@@ -1243,7 +1242,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
                                 Imagine being a data consultant and mastering the art of navigating through the data
                                 preparation phase of a massive dataset. Utilize your skills in interpreting statistical
                                 results derived from various tools such as multivariate regression models, hypothesis
@@ -1347,7 +1346,7 @@
                                     <div class="font-bold lg:text-xl text-base">Data Analysis <span
                                             class="font-normal lg:text-xl text-base">(Module 1)</span></div>
                                 </div>
-                                <svg class="rotate-0" width="8" height="5" viewBox="0 0 8 5"
+                                <svg class="rotate-180" width="8" height="5" viewBox="0 0 8 5"
                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M4.7 0.7L7.3 3.3C7.61667 3.61667 7.68734 3.979 7.512 4.387C7.33667 4.795 7.02434 4.99933 6.575 5L1.425 5C0.975003 5 0.662336 4.79567 0.487003 4.387C0.31167 3.97833 0.382669 3.616 0.700002 3.3L3.3 0.7C3.4 0.6 3.50834 0.525001 3.625 0.475001C3.74167 0.425001 3.86667 0.4 4 0.4C4.13334 0.4 4.25834 0.425 4.375 0.475001C4.49167 0.525001 4.6 0.6 4.7 0.7Z"
@@ -1356,7 +1355,7 @@
                             </div>
 
                             <div
-                                class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
+                                class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Master the use of Python programming language, particularly for data science
                                 applications,
                                 which entails proficiency in extracting data from relational databases, handling
@@ -1499,7 +1498,7 @@
                         id="destination-navigation">
                         @foreach ($destinations as $item)
                             <div class="lg:w-1/3 w-full py-4 lg:py-0 lg:px-3">
-                                <div class="relative bg-white rounded-lg shadow-sm">
+                                <div class="relative bg-white rounded-lg shadow-sm h-[27rem]">
                                     <img src="{{ Vite::asset($item['image']) }}" alt="person 1"
                                         class="rounded-lg h-64">
                                     <p class="font-bold text-2xl px-6 pt-6 pb-3 text-left">{{ $item['title'] }}</p>
@@ -1553,13 +1552,12 @@
 
             @if (count($programFee) > 0)
                 <section class="w-full lg:w-11/12 mt-12" id="programFee">
-                    <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">Program FEE</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Study and Stay - Prices
-                        Starting From...</p>
+                    <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Program FEE</p>
+                    <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Investment for your future career</p>
                     <div class="flex justify-between lg:flex-row flex-col mt-4 lg:mt-10" data-aos="fade-up"
                         id="destination-navigation">
                         @foreach ($programFee as $item)
-                            <div class="lg:w-1/2 w-full py-4 lg:py-0 lg:px-3">
+                            <div class="lg:w-1/2 w-full py-4 lg:py-0 lg:first:pr-6 mb-5">
                                 <div class="bg-white rounded-lg shadow-sm">
                                     <div class="bg-[#FFE6CE] rounded-t-lg p-4">
                                         <p class="font-black text-lg text-[#8C5200]">{{ $item['title'] }}</p>
@@ -1605,7 +1603,7 @@
 
             <section class="w-full mt-12 mx-auto" id="studylocation">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">STUDY LOCATION</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2 uppercase" data-aos="fade-up">Find The Best Destination
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Find The Best Destination
                 </p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Better to have new life,
                     experiencing culture, and get hired by International Companies.
@@ -1645,7 +1643,7 @@
                         <div class="relative bg-white rounded-lg shadow-sm w-full">
                             <img src="{{ Vite::asset('resources/image/ilustration/south_korea.png') }}"
                                 alt="person 1" class="rounded-lg w-full h-48">
-                            <p class="font-bold text-xl px-4 py-5 text-center">South Korea</p>
+                            <p class="font-bold text-xl px-4 py-5 text-center">Seoul</p>
                             <div class="absolute top-0 w-full h-48 bg-black opacity-50 rounded-lg">
                             </div>
                             <div
@@ -1696,17 +1694,17 @@
             </section>
 
             <section class="alumni w-11/12 mt-12" id="alumni">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">All Alumni Story</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What alumni say about QarirLabs
+                <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">All Alumni Story</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">What alumni say about NeWork
                 </p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
+                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Listen to the stories of alumni
                     of the Data Science
-                    Bootcamp program at QarirLabs!</p>
+                    Bootcamp program at NeWork!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1727,7 +1725,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1748,7 +1746,7 @@
                         <div class="flex flex-col items-center justify-center gap-3">
 
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1768,7 +1766,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1778,7 +1776,7 @@
                                                 MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new
+                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork opens up a new
                                         opportunity to work in the digital field!"- Balad </p>
                                 </div>
                             </div>
@@ -1787,7 +1785,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1797,7 +1795,7 @@
                                                 Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain
+                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork helped me to gain
                                         a deeper understanding of data science. After taking their course and staying
                                         connected with my mentor, I was able to start working at my dream company using
                                         the significantly improved skills." - Andimas Iben </p>
@@ -1808,7 +1806,7 @@
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
                             <div class="w-96 p-3">
-                                <div class="bg-white rounded-lg p-8 shadow-sm">
+                                <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
                                         <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
@@ -1870,7 +1868,7 @@
             <section class="w-full lg:w-11/12 mt-12">
                 <p class="font-bold text-base text-[#262626] mb-6" id="partnerships" data-aos="fade-up">
                     PARTNERSHIPS</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2"data-aos="fade-up">Graduates have Worked in</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Graduates have Worked in</p>
                 <div class="mt-8 flex flex-row overflow-x-auto justify-start items-center">
                     <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}" alt="stick_earn"
                         class="h-12 object-cover px-3 pt-5 mt-3 ml-5" data-aos="fade-up">
@@ -1893,13 +1891,13 @@
                 </div>
             </section>
 
-            <section class="portofolio w-full lg:w-11/12 mt-12" id="portofolio">
+            <section class="portofolio w-full lg:w-11/12 mt-20 lg:mt-20" id="portofolio">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Portfolio Student at Bootcamp
-                    QarirLabs</p>
-                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Portfolio Student at Bootcamp
+                    NeWork</p>
+                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Listen to the stories of alumni
                     of the Data Science
-                    Bootcamp program at QarirLabs!</p>
+                    Bootcamp program at NeWork!</p>
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1952,7 +1950,7 @@
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_3.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">QarirLabs Data Science
+                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">NeWork Data Science
                                         </p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
@@ -2022,7 +2020,7 @@
                                 <div class="flex flex-col ml-3 lg:w-8/12">
                                     <p class="font-medium text-base text-black">Naila Waliya</p>
                                     <p class="font-medium text-xs text-[#0E144A] opacity-60">Career Manager at
-                                        Qarirlabs | Copywriting & Digital Media Enthusiast</p>
+                                        NeWork | Copywriting & Digital Media Enthusiast</p>
                                 </div>
                             </div>
                         </div>
@@ -2035,7 +2033,7 @@
                 <div class="flex flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2053,7 +2051,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2071,7 +2069,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start items-center lg:mr-6 min-h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -2175,7 +2173,7 @@
         </div>
     </div>
     <div class="hidden">
-        <p class="text-[#2622B9] bg-[#DBDAFF] outline-[#DBDAFF]">test1</p>
+        <p class="text-[#2622B9] bg-[#DBDAFF] border-2 border-[#EE0A0A] line-through font-base">test1</p>
         <p class="text-[#FF9500] bg-[#FFE6CE] outline-[#FFE6CE]">test1</p>
         <p class="text-[#EE0A0A] bg-[#FFE3E3] outline-[#FFE3E3]">test1</p>
         <p class="text-[#0F5B89] bg-[#DCF2FF] outline-[#DCF2FF]">test1</p>

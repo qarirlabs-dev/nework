@@ -1,6 +1,6 @@
 <x-landing-layout>
     <section class="hero static bg-gradient-to-t from-[#FFEFE3] to-[#FFFFFF] w-full h-[60rem] lg:h-[50rem] -mt-20">
-        <svg class="absolute left-0 top-40 h-96 w-96" viewBox="0 0 572 624" fill="none"
+        <svg class="absolute left-0 top-40 lg:h-96 lg:w-96 h-80 w-80" viewBox="0 0 572 624" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3" filter="url(#filter0_f_33_300)">
                 <circle cx="144.5" cy="348.5" r="193.5" fill="#FFD770" />
@@ -17,28 +17,32 @@
         <div class="absolute top-16">
             <div class="flex flex-col lg:flex-row justify-between items-center w-full lg:w-10/12 mx-auto">
                 <div class="lg:hidden flex-auto" data-aos="fade-up">
-                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
+                    <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1_mobile.png') }}" alt="ilustration 1">
                 </div>
                 <div class="flex-auto w-11/12 lg:w-2/3" data-aos="fade-up">
-                    <div class="text-2xl lg:text-5xl font-black mb-4 lg:mt-16">Create <span
-                            class="bg-[#FF9500] px-2 text-white rounded-lg">success shortcuts</span><br /><span>& land
-                            your dream job!.</span>
+                    <div class="hidden lg:block text-2xl lg:text-5xl font-black lg:leading-relaxed mb-4 lg:mt-16">Create <span
+                            class="bg-[#FF9500] px-2 text-white rounded-lg">Success Shortcuts</span><br /><span>& Land
+                            Your Dream Job!</span>
                     </div>
+                    <div class="lg:hidden text-4xl lg:text-5xl font-black mb-4 lg:mt-16">Create 
+                        <span class="bg-[#FF9500] px-2 text-white rounded-lg">Success</span>
+                        <span class="bg-[#FF9500] px-2 text-white rounded-lg">Shortcuts</span>
+                        <span>& Land Your Dream Job!</span>
+                </div>
                     <div class="text-[#262626] font-normal text-sm lg:text-xl mb-6 text-opacity-75 w-full lg:w-10/12">
                         Welcome to the Career Accelerator that helps you go further than you are in school. Built to be
                         the best, by the best, our highly-qualified trainers, personal coaches, intensive classes, and
                         proven method mean guaranteed results – whether you learn online, offline or both.</div>
                     <div class="flex">
                         <a href="#classes"
-                            class="bg-[#FF9500] z-30 px-10 py-4 w-full lg:w-auto rounded-full text-white text-center text-lg font-bold lg:mb-8 mt-6">Browse
-                            Classess</a>
+                            class="bg-[#FF9500] z-30 lg:px-10 lgpy-4 px-4 py-3 w-full lg:w-auto rounded-full text-white text-center text-lg font-bold lg:mb-8 mt-6">Browse Classes</a>
                     </div>
                 </div>
                 <div class="hidden lg:flex flex-auto w-1/3 -mr-6" data-aos="fade-up">
                     <img src="{{ Vite::asset('resources/image/ilustration/ilustration_1.png') }}" alt="ilustration 1">
                 </div>
             </div>
-            <div class="flex lg:flex-row flex-col w-11/12 mx-auto mt-8" data-aos="fade-up">
+            <div class="flex lg:flex-row flex-col w-10/12 lg:w-10/12 mx-auto mt-8" data-aos="fade-up">
                 <div class="mr-12">
                     <div class="lg:mb-6 mb-2 font-medium text-sm lg:text-xl">Talents</div>
                     <div class="flex items-center">
@@ -51,8 +55,8 @@
                         <div class="font-bold text-lg lg:text-3xl mx-2">3K+</div>
                     </div>
                 </div>
-                <div class="lg:mx-2 mt-4">
-                    <div class="lg:mb-6 mb-2 font-medium text-sm lg:text-xl">Our grads get hired by</div>
+                <div class="lg:mx-2 mt-2 lg:mt-0">
+                    <div class="lg:mb-6 mb-2 font-medium text-sm lg:text-xl">Our Alumni Get Hired By</div>
                     <div class="hidden lg:flex items-end flex-wrap lg:flex-nowrap">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
@@ -123,11 +127,11 @@
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-lg py-2 px-5 bg-opacity-10">Enrolled
                             May 10, 2023</span>
                     </div>
-                    <p class="font-bold text-4xl mb-4">Data Science Bootcamp</p>
-                    <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Data Scientist and build your
+                    <p class="font-bold lg:text-4xl text-2xl mb-4">Data Science Bootcamp</p>
+                    <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Data Scientist and build your
                         on AI products from scratch</p>
                     <div class="flex justify-start items-center mt-5">
-                        <p class="font-bold text-base text-[#FF9500] mr-6">See Detail</p>
+                        <p class="font-bold lg:text-base text-sm text-[#FF9500] mr-6">See Detail</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_325_3168)">
@@ -163,11 +167,11 @@
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-lg py-2 px-5 bg-opacity-10">Enrolled
                             May 10, 2023</span>
                     </div>
-                    <p class="font-bold text-4xl mb-4">Digital Marketing Bootcamp</p>
-                    <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Digital Marketing and build
+                    <p class="font-bold lg:text-4xl text-2xl mb-4">Digital Marketing Bootcamp</p>
+                    <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Digital Marketing and build
                         your on your company</p>
                     <div class="flex justify-start items-center mt-5">
-                        <p class="font-bold text-base text-[#FF9500] mr-6">See Detail</p>
+                        <p class="font-bold lg:text-base text-sm text-[#FF9500] mr-6">See Detail</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_325_3168)">
@@ -202,11 +206,11 @@
                             class="text-black font-bold text-base bg-[#00263D] rounded-lg py-2 px-5 bg-opacity-10">Full
                             Booked</span>
                     </div>
-                    <p class="font-bold text-4xl mb-4">Web Development Bootcamp</p>
-                    <p class="font-normal text-base text-[#6E6E6E]">Learn the skills of a Software Engineering and
+                    <p class="font-bold lg:text-4xl text-2xl mb-4">Web Development Bootcamp</p>
+                    <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Software Engineering and
                         build your product impactfull</p>
                     <div class="flex justify-start items-center mt-5">
-                        <p class="font-bold text-base text-[#FF9500] mr-6">See Detail</p>
+                        <p class="font-bold lg:text-base text-sm text-[#FF9500] mr-6">See Detail</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_325_3168)">
@@ -237,19 +241,19 @@
             </div>
         </div>
     </section>
-    <section class="benerif hero w-10/12 mx-auto mt-16">
+    <section class="benerif hero w-full lg:w-10/12 lg:mx-auto mt-16 px-4">
         <div class="flex flex-col justify-center items-center" data-aos="fade-up">
             <div class="static mb-5" data-aos="fade-up">
-                <div class="font-black text-2xl lg:text-4xl z-1 text-center">Why choose <div
+                <div class="font-black text-2xl lg:text-4xl z-1 text-center">Why Choose <div
                         class="inline-block relative">
-                        <div class="relative z-10">QarirLabs</div>
+                        <div class="relative z-10">NeWork</div>
                         <div class="-z-10">
-                            <div class="absolute bottom-0 right-0 w-28 lg:w-44 h-3 bg-[#FF9500]"></div>
+                            <div class="absolute bottom-0 right-0 w-24 lg:w-36 h-3 bg-[#FF9500]"></div>
                         </div>
                     </div>?</div>
             </div>
-            <p class="font-medium text-lg text-[#262626] opacity-50 lg:w-1/2 text-center">QarirLabs has been proven to
-                produce competent graduates in the industry through the bootcamp program.</p>
+            <p class="font-medium text-lg text-[#262626] opacity-50 lg:w-1/2 text-center" data-aos="fade-up">{{ucwords('NeWork Has Been Proven o
+                produce competent graduates in the industry through the bootcamp program.')}}</p>
             <div class="flex flex-wrap mt-24">
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
@@ -286,7 +290,7 @@
                             </svg>
 
                         </div>
-                        <p class="font-bold text-xl lg:text-2xl text-center mt-6">by Enrichment Program</p>
+                        <p class="font-bold text-xl lg:text-2xl text-center mt-6">By Enrichment Program</p>
                         <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Join our
                             enrichment
                             program in form of internship (part-time) for several projects at corporates/leading
@@ -402,12 +406,12 @@
                 </svg>
             </div>
             <p class="font-black text-white text-center text-2xl lg:text-4xl pt-20 pb-6 w-9/12 lg:w-1/2 mx-auto"
-                data-aos="fade-up">More
-                than a bootcamp.
-                Get hired at top tech companies.
+                data-aos="fade-up">{{ucwords('More
+                Than a Bootcamp.
+                Get Hired at top tech companies.')}}
             </p>
-            <p class="font-medium text-base text-white opacity-60 text-center lg:w-1/2 mx-auto pb-10"
-                data-aos="fade-up">QarirLabs
+            <p class="font-medium text-base text-white opacity-60 text-center lg:w-1/2 lg:mx-auto px-4 pb-10"
+                data-aos="fade-up">NeWork
                 helps you land your
                 dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
                 Education Field)</p>
@@ -418,12 +422,12 @@
                 </div>
                 <div class="w-full lg:w-4/5 flex flex-col justify-center mb-8 lg:mb-0" data-aos="fade-up">
                     <p class="text-center font-black text-4xl text-[#FF9500]">91%</p>
-                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni Get a job less
-                        than 12 months</p>
+                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Alumni Get a Job Less
+                        Than 12 Months</p>
                 </div>
                 <div class="w-full lg:w-3/5" data-aos="fade-up">
                     <p class="text-center font-black text-4xl text-[#FF9500]">88%</p>
-                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Completed rate</p>
+                    <p class="text-center text-white font-medium text-base pt-3 w-2/3 mx-auto">Completed Rate</p>
                 </div>
             </div>
         </div>
@@ -449,8 +453,8 @@
                         </a>
                     </div>
                     <p class="font-bold text-xl lg:text-2xl text-center mt-11">Digital Marketing Offline Class</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See our offline class
-                        here</p>
+                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See Our Offline Class
+                        Here</p>
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -490,8 +494,7 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">What They Say?
-                        Beetwen Bootcamp and Digital Marketing</p>
+                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">What They Say? (Student QnA) </p>
                     <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Student QnA with Us</p>
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
@@ -532,7 +535,7 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Qinfo - Digital Marketing for Newbie</p>
+                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">QnA With Trainer (Digital for Newbie)</p>
                     <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at
                         Detik.com</p>
                     {{-- <div class="flex justify-center mt-3 mb-8">
@@ -630,7 +633,7 @@
                                 Marketing Consultant</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">"Qarirlabs opens up a new opportunity to work
+                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork opens up a new opportunity to work
                         in the digital field!"- Balad </p>
                 </div>
             </div>
@@ -645,7 +648,7 @@
                                 Ex - Tokopedia | LPDP Awardee PK-194</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">"QarirLabs helped me to gain a deeper
+                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork helped me to gain a deeper
                         understanding of data science. After taking their course and staying connected with my mentor, I
                         was able to start working at my dream company using the significantly improved skills." -
                         Andimas Iben </p>
@@ -691,7 +694,7 @@
                         payments and fundings.</p>
                     <div data-aos="fade-up" class=" mb-11 mt-6">
                         <a href="tel:+62821-3595-3485" target="_blank"
-                            class="bg-[#FF9500] px-10 py-4 rounded-full text-white text-lg font-bold">Contact
+                            class="bg-[#FF9500] lg:px-10 lgpy-4 px-4 py-3 rounded-full text-white text-lg font-bold">Contact
                             Us</a>
                     </div>
                 </div>
@@ -706,16 +709,16 @@
                     class="object-contain rounded-xl">
             </div>
             <div class="mx-2 my-5 lg:my-0 lg:mx-10" data-aos="fade-up">
-                <p class="font-bold text-2xl lg:text-4xl text-black">Are you an Enterprise looking for Tech Training or
+                <p class="font-bold text-2xl lg:text-4xl text-black capitalize">Are you an Enterprise looking for Tech Training or
                     Talent ?
                 </p>
                 <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with
-                    QarirLabs corporate
+                    NeWork corporate
                     training or hire our tech-alumni now.</p>
                 <div class=" mb-11 mt-6">
 
                     <a href="tel:+62821-3595-3485" target="_blank"
-                        class="bg-[#FF9500] px-10 py-4 rounded-full text-white  text-lg font-bold w-full lg:w-auto">Contact
+                        class="bg-[#FF9500] lg:px-10 lgpy-4 px-4 py-3 rounded-full text-white text-lg font-bold w-full lg:w-auto">Contact
                         Our Partnership Team</a>
                 </div>
             </div>
