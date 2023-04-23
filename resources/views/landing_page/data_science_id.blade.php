@@ -459,7 +459,7 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 uppercase" data-aos="fade-up">Kenapa Bergabung
+                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 capitalize" data-aos="fade-up">Kenapa Bergabung
                     NeWork</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Master Data Science dan lihat
                     manfaat setelah
@@ -506,7 +506,7 @@
                                 </svg>
                             </div>
                             <p
-                                class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">
+                                class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">
                                 Kurikulum terstruktur dengan baik dirancang oleh para ahli</p>
                         </div>
                     </div>
@@ -564,7 +564,7 @@
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-full lg:w-1/3 mb-8">
                         <div
                             class="bg-white lg:p-3 p-6 flex flex-col justify-start lg:items-center items-start mr-6 h-60 lg:h-56 w-56 lg:w-auto shadow-sm">
                             <div class="mt-2 lg:mt-5 w-12 h-12">
@@ -603,271 +603,13 @@
                         </div>
                     </div>
                 </div>
-                {{-- <p class="font-bold text-2xl mt-4 mb-5" data-aos="fade-up">Ideal Criteria for Bootcamp Program
-                    Participants</p>
-                <div class="bg-white rounded-lg p-4 shadow-sm mb-6 " data-aos="fade-up">
-                    <p class="text-[##262626] opacity-75">Through the Data Science Bootcamp program, we want to open
-                        opportunities for anyone to start a career in the digital industry. Therefore, program
-                        participants will be more likely to get a job if they have the following ideal criteria:</p>
-                    <ol class="list-decimal p-4 text-[#262626] opacity-75">
-                        <li>Maximum age of 30 years;</li>
-                        <li>S1 graduate/equivalent or have at least 1 year work experience;</li>
-                        <li>
-                            Have a background in one of the fields such as IT/coding, mathematics, statistics,
-                            economics, or business and the like.</li>
-                    </ol>
-                </div>
-                <div class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-between">
-                    <div class="font-bold text-[#262626] text-lg lg:text-2xl w-full lg:w-4/12" data-aos="fade-up">
-                        Professions that can be obtained after
-                        graduation</div>
-                    <div class="w-full lg:w-7/12">
-                        <div class="flex flex-wrap">
-                            <div class="w-1/2" data-aos="fade-up">
-                                <div class="bg-white rounded-lg p-4 shadow-sm m-2">
-                                    <div class="flex flex-row items-center justify-start">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_174_2764)">
-                                                <path
-                                                    d="M0.88899 20.4722H4.44433C4.93521 20.4722 5.33333 20.87 5.33333 21.3608V30.2498C5.33333 30.7407 4.93521 31.1388 4.44433 31.1388H0.88899C0.398104 31.1388 -7.62939e-06 30.7407 -7.62939e-06 30.2498V21.3608C-7.62939e-06 20.87 0.398104 20.4722 0.88899 20.4722Z"
-                                                    fill="url(#paint0_linear_174_2764)" />
-                                                <path
-                                                    d="M9.77767 13.3608H13.3333C13.8242 13.3608 14.2223 13.759 14.2223 14.2498V30.2498C14.2223 30.7407 13.8242 31.1388 13.3333 31.1388H9.77767C9.28678 31.1388 8.889 30.7407 8.889 30.2498V14.2498C8.889 13.759 9.28678 13.3608 9.77767 13.3608Z"
-                                                    fill="url(#paint1_linear_174_2764)" />
-                                                <path
-                                                    d="M18.6667 16.9165H22.2223C22.7132 16.9165 23.111 17.3146 23.111 17.8055V30.2498C23.111 30.7407 22.7132 31.1388 22.2223 31.1388H18.6667C18.1758 31.1388 17.7777 30.7407 17.7777 30.2498V17.8055C17.7777 17.3146 18.1758 16.9165 18.6667 16.9165Z"
-                                                    fill="url(#paint2_linear_174_2764)" />
-                                                <path
-                                                    d="M27.5557 11.5835H31.111C31.6019 11.5835 32 11.9816 32 12.4725V30.2502C32 30.741 31.6019 31.1392 31.111 31.1392H27.5557C27.0648 31.1392 26.6667 30.741 26.6667 30.2502V12.4725C26.6667 11.9816 27.0648 11.5835 27.5557 11.5835Z"
-                                                    fill="url(#paint3_linear_174_2764)" />
-                                                <path
-                                                    d="M29.3333 0.916504C27.8613 0.918132 26.6683 2.11117 26.6667 3.58317C26.6702 3.87354 26.7217 4.1613 26.819 4.43473L22.3691 7.07992C21.7851 6.46045 20.9385 6.16032 20.0947 6.27327C19.2506 6.38623 18.513 6.8986 18.1123 7.6499L14.1875 5.70589C14.2067 5.59163 14.2181 5.4764 14.2223 5.36084C14.2243 4.28141 13.5755 3.30745 12.5788 2.89307C11.582 2.479 10.4339 2.70654 9.67057 3.46956C8.90689 4.23258 8.6787 5.38037 9.09244 6.37744L4.00129 10.1769C3.59765 9.93636 3.13671 9.80811 2.66666 9.8055C1.194 9.8055 -7.62939e-06 10.9992 -7.62939e-06 12.4722C-7.62939e-06 13.9448 1.194 15.1388 2.66666 15.1388C4.13932 15.1388 5.33333 13.9448 5.33333 12.4722C5.33105 12.1512 5.2705 11.8338 5.15461 11.5347L10.2965 7.6971C11.3024 8.25798 12.557 8.09359 13.3841 7.29216L17.8473 9.50277C18.1448 10.828 19.3919 11.7173 20.7419 11.5669C22.0918 11.4165 23.1126 10.2749 23.111 8.9165C23.111 8.8488 23.096 8.78499 23.0911 8.71859L27.931 5.84131C28.3506 6.10661 28.8366 6.24821 29.3333 6.24984C30.806 6.24984 32 5.05583 32 3.58317C32 2.11051 30.806 0.916504 29.3333 0.916504Z"
-                                                    fill="url(#paint4_linear_174_2764)" />
-                                            </g>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_174_2764" x1="-7.62939e-06"
-                                                    y1="20.4722" x2="8.53333" y2="24.7388"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_174_2764" x1="8.889"
-                                                    y1="13.3608" x2="18.6749" y2="16.2966"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint2_linear_174_2764" x1="17.7777"
-                                                    y1="16.9165" x2="27.1293" y2="20.4233"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint3_linear_174_2764" x1="26.6667"
-                                                    y1="11.5835" x2="36.5949" y2="14.2912"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint4_linear_174_2764" x1="-7.62939e-06"
-                                                    y1="0.916504" x2="10.5568" y2="24.6692"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <clipPath id="clip0_174_2764">
-                                                    <rect width="32" height="32" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <p class="ml-4 font-bold text-base text-[#262626] opacity-75">Data Analyst</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-1/2" data-aos="fade-up">
-                                <div class="bg-white rounded-lg p-4 shadow-sm m-2">
-                                    <div class="flex flex-row items-center justify-start">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_174_2772)">
-                                                <path
-                                                    d="M9.6429 6.85714C11.5364 6.85714 13.0715 5.32212 13.0715 3.42857C13.0715 1.53502 11.5364 0 9.6429 0C7.74935 0 6.21432 1.53502 6.21432 3.42857C6.21432 5.32212 7.74935 6.85714 9.6429 6.85714Z"
-                                                    fill="url(#paint0_linear_174_2772)" />
-                                                <path
-                                                    d="M11.9285 6.85742H9.64281H7.3571C5.46647 6.85742 3.92853 8.39537 3.92853 10.286V11.4289C3.92853 12.0605 4.44025 12.5717 5.07139 12.5717H14.2142C14.8454 12.5717 15.3571 12.0605 15.3571 11.4289V10.286C15.3571 8.39537 13.8192 6.85742 11.9285 6.85742Z"
-                                                    fill="url(#paint1_linear_174_2772)" />
-                                                <path
-                                                    d="M18.4265 21.5702L16.2187 20.9226C16.0797 20.4493 15.8944 19.996 15.662 19.5712L16.7635 17.5555C16.8556 17.3407 16.8076 17.0915 16.6424 16.9263L15.5732 15.8571C15.4081 15.692 15.1589 15.644 14.9441 15.736L12.9284 16.8375C12.5036 16.6051 12.0503 16.4199 11.5769 16.2809L10.9294 14.073C10.8426 13.8561 10.6325 13.7139 10.3989 13.7139H8.88686C8.65325 13.7139 8.44308 13.8561 8.35631 14.073L7.70877 16.2809C7.23542 16.4199 6.78216 16.6051 6.35735 16.8375L4.34159 15.736C4.12681 15.644 3.87765 15.692 3.71247 15.8571L2.64335 16.9263C2.4781 17.0915 2.43011 17.3407 2.52218 17.5555L3.62367 19.5712C3.39132 19.996 3.20605 20.4493 3.06703 20.9226L0.859236 21.5702C0.642229 21.6569 0.5 21.867 0.5 22.1007V23.6127C0.5 23.8463 0.642229 24.0565 0.859235 24.1433L3.06703 24.7908C3.20605 25.2642 3.39132 25.7174 3.62367 26.1422L2.52218 28.158C2.43011 28.3728 2.4781 28.6219 2.64335 28.7871L3.71247 29.8562C3.87765 30.0215 4.12681 30.0695 4.34159 29.9774L6.35735 28.8759C6.78216 29.1083 7.23542 29.2935 7.70877 29.4325L8.35631 31.6403C8.44308 31.8573 8.65325 31.9996 8.88686 31.9996H10.3989C10.6325 31.9996 10.8426 31.8573 10.9294 31.6403L11.5769 29.4325C12.0503 29.2935 12.5036 29.1083 12.9284 28.8759L14.9441 29.9774C15.1589 30.0695 15.4081 30.0215 15.5732 29.8562L16.6424 28.7871C16.8076 28.6219 16.8556 28.3728 16.7635 28.158L15.662 26.1422C15.8944 25.7174 16.0797 25.2642 16.2187 24.7908L18.4265 24.1433C18.6435 24.0565 18.7857 23.8463 18.7857 23.6127V22.1007C18.7857 21.867 18.6435 21.6569 18.4265 21.5702ZM9.64286 26.2853C7.7493 26.2853 6.21429 24.7503 6.21429 22.8567C6.21429 20.9632 7.7493 19.4282 9.64286 19.4282C11.5364 19.4282 13.0714 20.9632 13.0714 22.8567C13.0714 24.7503 11.5364 26.2853 9.64286 26.2853Z"
-                                                    fill="url(#paint2_linear_174_2772)" />
-                                                <path
-                                                    d="M9.64286 25.1427C10.9052 25.1427 11.9286 24.1194 11.9286 22.857C11.9286 21.5946 10.9052 20.5713 9.64286 20.5713C8.3805 20.5713 7.35715 21.5946 7.35715 22.857C7.35715 24.1194 8.3805 25.1427 9.64286 25.1427Z"
-                                                    fill="url(#paint3_linear_174_2772)" />
-                                                <path d="M27.9285 0V4.57143H32.5L27.9285 0Z"
-                                                    fill="url(#paint4_linear_174_2772)" />
-                                                <path
-                                                    d="M27.9285 5.71429C27.2974 5.71429 26.7857 5.20264 26.7857 4.57143V0H19.9285C19.2974 0 18.7857 0.511649 18.7857 1.14286V17.1429C18.7857 17.7741 19.2974 18.2857 19.9285 18.2857H24.5V21.7143H19.9285V24H25.6428C26.2745 24 26.7857 23.4888 26.7857 22.8571V18.2857H31.3571C31.9883 18.2857 32.5 17.7741 32.5 17.1429V5.71429H27.9285ZM29.6428 16H21.6428C21.327 16 21.0714 15.7444 21.0714 15.4286C21.0714 15.1127 21.327 14.8571 21.6428 14.8571H29.6428C29.9587 14.8571 30.2142 15.1127 30.2142 15.4286C30.2142 15.7444 29.9587 16 29.6428 16ZM29.6428 13.7143H21.6428C21.327 13.7143 21.0714 13.4587 21.0714 13.1429C21.0714 12.827 21.327 12.5714 21.6428 12.5714H29.6428C29.9587 12.5714 30.2142 12.827 30.2142 13.1429C30.2142 13.4587 29.9587 13.7143 29.6428 13.7143ZM29.6428 11.4286H21.6428C21.327 11.4286 21.0714 11.173 21.0714 10.8571C21.0714 10.5413 21.327 10.2857 21.6428 10.2857H29.6428C29.9587 10.2857 30.2142 10.5413 30.2142 10.8571C30.2142 11.173 29.9587 11.4286 29.6428 11.4286ZM29.6428 9.14286H21.6428C21.327 9.14286 21.0714 8.88728 21.0714 8.57143C21.0714 8.25558 21.327 8 21.6428 8H29.6428C29.9587 8 30.2142 8.25558 30.2142 8.57143C30.2142 8.88728 29.9587 9.14286 29.6428 9.14286Z"
-                                                    fill="url(#paint5_linear_174_2772)" />
-                                            </g>
-                                            <defs>
-                                                <linearGradient id="paint0_linear_174_2772" x1="6.21432"
-                                                    y1="0" x2="13.0715" y2="6.85714"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_174_2772" x1="3.92853"
-                                                    y1="6.85742" x2="8.49996" y2="16.0003"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint2_linear_174_2772" x1="0.5"
-                                                    y1="13.7139" x2="18.7857" y2="31.9996"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint3_linear_174_2772" x1="7.35715"
-                                                    y1="20.5713" x2="11.9286" y2="25.1427"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint4_linear_174_2772" x1="27.9285"
-                                                    y1="0" x2="32.5" y2="4.57143"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint5_linear_174_2772" x1="18.7857"
-                                                    y1="0" x2="39.4626" y2="11.8154"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <clipPath id="clip0_174_2772">
-                                                    <rect width="32" height="32" fill="white"
-                                                        transform="translate(0.5)" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-
-                                        <p class="ml-4 font-bold text-base text-[#262626] opacity-75">Data Engineer
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-1/2" data-aos="fade-up">
-                                <div class="bg-white rounded-lg p-4 shadow-sm m-2">
-                                    <div class="flex flex-row items-center justify-start">
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M26.3125 19.75H25.9911C25.2084 17.5372 23.088 16 20.6875 16C18.2714 16 16.1401 17.5573 15.3692 19.7921C13.3916 20.0594 11.8014 21.5655 11.4068 23.5H11.3125C9.24431 23.5 7.5625 25.1818 7.5625 27.25C7.5625 29.3182 9.24431 31 11.3125 31H26.3125C29.4143 31 32 28.4768 32 25.375C32 22.2732 29.4143 19.75 26.3125 19.75Z"
-                                                fill="url(#paint0_linear_174_2783)" />
-                                            <path
-                                                d="M24.4375 1H0V8.5H24.4375V1ZM5.6875 6.625H3.8125V4.75H5.6875V6.625ZM9.4375 6.625H7.5625V4.75H9.4375V6.625ZM13.1875 6.625H11.3125V4.75H13.1875V6.625Z"
-                                                fill="url(#paint1_linear_174_2783)" />
-                                            <path
-                                                d="M20.6875 14.125C22.0346 14.125 23.3208 14.4899 24.4375 15.1362V10.375H0V16H15.7484C17.0871 14.8254 18.8237 14.125 20.6875 14.125ZM5.6875 14.125H3.8125V12.25H5.6875V14.125ZM9.4375 14.125H7.5625V12.25H9.4375V14.125ZM13.1875 14.125H11.3125V12.25H13.1875V14.125Z"
-                                                fill="url(#paint2_linear_174_2783)" />
-                                            <path
-                                                d="M9.99869 21.7798C10.7595 20.0631 12.228 18.7447 14.0261 18.1781C14.0809 18.0722 14.1509 17.9776 14.2104 17.875H0V25.375H6.01013C6.64094 23.5964 8.14144 22.2258 9.99869 21.7798ZM7.5625 19.75H9.4375V21.625H7.5625V19.75ZM5.6875 21.625H3.8125V19.75H5.6875V21.625Z"
-                                                fill="url(#paint3_linear_174_2783)" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_174_2783" x1="7.5625"
-                                                    y1="16" x2="20.9376" y2="37.7902"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_174_2783" x1="0"
-                                                    y1="1" x2="4.20729" y2="14.7088"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint2_linear_174_2783" x1="0"
-                                                    y1="10.375" x2="2.45922" y2="21.0589"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint3_linear_174_2783" x1="0"
-                                                    y1="17.875" x2="6.19193" y2="29.607"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-
-                                        <p class="ml-4 font-bold text-base text-[#262626] opacity-75">Data Architect
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="w-1/2" data-aos="fade-up">
-                                <div class="bg-white rounded-lg p-4 shadow-sm m-2">
-                                    <div class="flex flex-row items-center justify-start">
-                                        <svg width="33" height="32" viewBox="0 0 33 32" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M16.4967 17.4481C10.4882 17.4481 5.4531 15.683 4.07839 13.3032C3.8367 13.7221 3.69562 14.1574 3.69562 14.609V18.5035C3.69562 21.5121 9.4285 23.9531 16.4967 23.9531C23.5693 23.9531 29.3044 21.5121 29.3044 18.5035V14.609C29.3044 14.1574 29.1611 13.7221 28.9172 13.3032C27.5425 15.6819 22.5117 17.4481 16.4967 17.4481Z"
-                                                fill="url(#paint0_linear_174_2791)" />
-                                            <path
-                                                d="M16.4967 25.4928C10.4882 25.4928 5.4531 23.7255 4.07839 21.3501C3.8367 21.7668 3.69562 22.202 3.69562 22.6526V26.5504C3.69562 29.5601 9.4285 32 16.4967 32C23.5693 32 29.3044 29.5612 29.3044 26.5504V22.6526C29.3044 22.202 29.1611 21.7668 28.9172 21.3512C27.5425 23.7255 22.5117 25.4928 16.4967 25.4928Z"
-                                                fill="url(#paint1_linear_174_2791)" />
-                                            <path
-                                                d="M28.9544 5.51416C28.7029 7.71894 23.2325 9.48299 16.4967 9.48299C9.76424 9.48299 4.29384 7.71895 4.0434 5.51525C3.82357 5.91553 3.69562 6.3333 3.69562 6.7631V10.6576C3.69562 13.6673 9.4285 16.1072 16.4967 16.1072C23.5693 16.1072 29.3044 13.6684 29.3044 10.6576V6.7631C29.3044 6.3333 29.1742 5.91553 28.9544 5.51416Z"
-                                                fill="url(#paint2_linear_174_2791)" />
-                                            <path
-                                                d="M16.4967 8.24716C23.3899 8.24716 28.9752 6.40219 28.9752 4.12303C28.9752 1.84607 23.3899 0 16.4967 0C9.60784 0.00109364 4.02042 1.84716 4.02042 4.12413C4.02042 6.40219 9.60784 8.24716 16.4967 8.24716Z"
-                                                fill="url(#paint3_linear_174_2791)" />
-                                            <defs>
-                                                <linearGradient id="paint0_linear_174_2791" x1="3.69562"
-                                                    y1="13.3032" x2="11.2475" y2="31.4624"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint1_linear_174_2791" x1="3.69562"
-                                                    y1="21.3501" x2="11.2475" y2="39.5093"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint2_linear_174_2791" x1="3.69562"
-                                                    y1="5.51416" x2="11.1788" y2="23.6048"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                                <linearGradient id="paint3_linear_174_2791" x1="4.02042"
-                                                    y1="0" x2="8.93479" y2="14.8702"
-                                                    gradientUnits="userSpaceOnUse">
-                                                    <stop stop-color="{{$themeColor}}" />
-                                                    <stop offset="1" stop-color="{{$themeColor}}" />
-                                                </linearGradient>
-                                            </defs>
-                                        </svg>
-
-                                        <p class="ml-4 font-bold text-base text-[#262626] opacity-75">Data Scientist
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
             </section>
 
             <section class="curriculum w-full lg:w-11/12 mt-12" id="learcnphase">
                 <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Fase Belajar</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Apa yang Akan Anda Pelajari dalam
                     Praktek</p>
-                <p class="font-normal text-sm lg:text-base text-[#262626]" data-aos="fade-up">Setiap mata pelajaran
+                <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Setiap mata pelajaran
                     akan
                     mengharuskan Anda untuk menerapkan apa yang Anda pelajari
                     dengan pengalaman langsung melalui tugas praktis dan umpan balik langsung dari instruktur Anda. Di
@@ -1447,6 +1189,7 @@
                             <div
                                 class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1465,6 +1208,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
+                                    </div>
                                     <div class="font-bold lg:text-xl text-base">Machine Learning Engineering <span
                                             class="font-normal lg:text-xl text-base">(Module 5)</span></div>
                                 </div>
@@ -1490,6 +1234,7 @@
                             <div
                                 class="flex flex-row justify-between items-center p-5 bg-white rounded-lg shadow-sm h-20 ">
                                 <div class="inline-flex items-center">
+                                    <div class="w-9 h-9 mr-3">
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <rect width="40" height="40" rx="6.66667"
@@ -1508,6 +1253,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
+                                    </div>
                                     <div class="font-bold lg:text-xl text-base">Career Weeks <span
                                             class="font-normal lg:text-xl text-base"></span></div>
                                 </div>
@@ -1602,7 +1348,7 @@
             @if (count($programFee) > 0)
                 <section class="w-full lg:w-11/12 mt-12" id="programFee">
                     <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Biaya Program</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Investasi untuk karir masa
+                    <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Investasi untuk karir masa
                         depan Anda</p>
                     <div class="flex justify-between lg:flex-row flex-col mt-10" data-aos="fade-up"
                         id="destination-navigation">
@@ -1755,7 +1501,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
+                                        <img src="{{Vite::asset('resources/image/avatar/hieronymus_kopong_bali.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
@@ -1776,7 +1522,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
+                                        <img src="{{Vite::asset('resources/image/avatar/tyas_fitri_anggarinii.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
@@ -1797,7 +1543,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
+                                        <img src="{{Vite::asset('resources/image/avatar/angeline_lie.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Angeline Lie </p>
@@ -1817,7 +1563,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
+                                        <img src="{{Vite::asset('resources/image/avatar/balad_al_barokah.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Balad Al Barokah</p>
@@ -1836,7 +1582,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
+                                        <img src="{{Vite::asset('resources/image/avatar/andhimas_iben_d.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Andimas Iben D. </p>
@@ -1858,7 +1604,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
+                                        <img src="{{Vite::asset('resources/image/avatar/agnes_friska_cyntia_puspitasari.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Agnes Friska Cyntia Puspitasari

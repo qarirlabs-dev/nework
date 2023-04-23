@@ -490,7 +490,7 @@
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
-                    <div class="w-1/3 mb-8">
+                    <div class="w-full lg:w-1/3 mb-8">
                         <div
                             class="bg-white p-3 flex flex-col justify-start items-center mr-6 min-h-48 w-56 lg:w-auto shadow-sm">
                             <div class="mt-3 w-12 h-12">
@@ -1359,7 +1359,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
+                                        <img src="{{Vite::asset('resources/image/avatar/hieronymus_kopong_bali.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
@@ -1380,7 +1380,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
+                                        <img src="{{Vite::asset('resources/image/avatar/tyas_fitri_anggarinii.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
@@ -1401,7 +1401,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
+                                        <img src="{{Vite::asset('resources/image/avatar/angeline_lie.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Angeline Lie </p>
@@ -1421,7 +1421,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
+                                        <img src="{{Vite::asset('resources/image/avatar/balad_al_barokah.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Balad Al Barokah</p>
@@ -1440,7 +1440,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
+                                        <img src="{{Vite::asset('resources/image/avatar/andhimas_iben_d.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Andimas Iben D. </p>

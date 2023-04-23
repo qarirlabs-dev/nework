@@ -448,7 +448,7 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 uppercase" data-aos="fade-up">Kenapa Bergabung
+                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 capitalize" data-aos="fade-up">Kenapa Bergabung
                     NeWork?</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Kuasai Digital Marketing dan lihat
                     manfaatnya setelah lulus</p>
@@ -479,7 +479,7 @@
                                 </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Kurikulum
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Kurikulum
                                 terstruktur dengan baik dirancang oleh para ahli</p>
                         </div>
                     </div>
@@ -495,7 +495,7 @@
                                 </svg>
 
                             </div>
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Kurikulum yang
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Kurikulum yang
                                 dipersonalisasi (pengalaman belajar langsung)</p>
                         </div>
                     </div>
@@ -517,7 +517,7 @@
                                 </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Bimbingan oleh
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Bimbingan oleh
                                 Mitra Perekrutan</p>
                         </div>
                     </div>
@@ -533,7 +533,7 @@
                                 </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">
                                 Program pengayaan (Proyek Paruh waktu)</p>
                         </div>
                     </div>
@@ -549,7 +549,7 @@
                                 </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Terhubung dengan
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Terhubung dengan
                                 pelatih yang bersemangat</p>
                         </div>
                     </div>
@@ -571,25 +571,11 @@
                                 </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Layanan bintang 5
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Layanan bintang 5
                                 dengan Pusat Layanan Siswa khusus</p>
                         </div>
                     </div>
                 </div>
-                {{-- <p class="font-bold text-2xl mt-4 mb-5" data-aos="fade-up">Ideal Criteria for Bootcamp Program
-                    Participants</p>
-                <div class="bg-white rounded-lg p-4 shadow-sm mb-6 " data-aos="fade-up">
-                    <p class="text-[##262626] opacity-75">Through the Data Science Bootcamp program, we want to open
-                        opportunities for anyone to start a career in the digital industry. Therefore, program
-                        participants will be more likely to get a job if they have the following ideal criteria:</p>
-                    <ol class="list-decimal p-4 text-[#262626] opacity-75">
-                        <li>Maximum age of 30 years;</li>
-                        <li>S1 graduate/equivalent or have at least 1 year work experience;</li>
-                        <li>
-                            Have a background in one of the fields such as IT/coding, mathematics, statistics,
-                            economics, or business and the like.</li>
-                    </ol>
-                </div> --}}
             </section>
 
             <section class="p-6 lg:p-0 curriculum w-full lg:w-11/12 mt-12" id="learcnphase">
@@ -1268,7 +1254,7 @@
             @if (count($programFee) > 0)
                 <section class="w-full lg:w-11/12 mt-12 p-6 lg:p-0" id="programFee">
                     <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Biaya Program</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Investasi untuk karir masa depan Anda</p>
+                    <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Investasi untuk karir masa depan Anda</p>
                     <div class="flex justify-between lg:flex-row flex-col mt-10" data-aos="fade-up"
                         id="destination-navigation">
                         @foreach ($programFee as $item)
@@ -1318,7 +1304,7 @@
 
             <section class="p-6 lg:p-0 w-full lg:w-11/12 lg:mt-12" id="studylocation">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI NEWORK GLOBAL</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2 uppercase" data-aos="fade-up">Temukan Tujuan Terbaik
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Temukan Tujuan Terbaik
                 </p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Lebih baik memiliki kehidupan baru,
                     mengalami budaya, dan dipekerjakan oleh Perusahaan Internasional.
@@ -1419,7 +1405,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
+                                        <img src="{{Vite::asset('resources/image/avatar/hieronymus_kopong_bali.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
@@ -1440,7 +1426,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
+                                        <img src="{{Vite::asset('resources/image/avatar/tyas_fitri_anggarinii.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
@@ -1461,7 +1447,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
+                                        <img src="{{Vite::asset('resources/image/avatar/angeline_lie.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Angeline Lie </p>
@@ -1481,7 +1467,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
+                                        <img src="{{Vite::asset('resources/image/avatar/balad_al_barokah.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Balad Al Barokah</p>
@@ -1500,7 +1486,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
+                                        <img src="{{Vite::asset('resources/image/avatar/andhimas_iben_d.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Andimas Iben D. </p>
@@ -1522,7 +1508,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
+                                        <img src="{{Vite::asset('resources/image/avatar/agnes_friska_cyntia_puspitasari.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Agnes Friska Cyntia Puspitasari
@@ -1616,7 +1602,7 @@
                             <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketin_1.png') }}"
-                                        alt="ilustration 4" class="rounded-lg">
+                                        alt="ilustration 4" class="rounded-lg h-56 w-auto object-contain">
                                     <div class="p-4">
                                         <div class="h-28">
                                             <p class="font-bold text-2xl text-[#262626] mb-4 h-20">Disney+ Hotstar Strategi
@@ -1640,7 +1626,7 @@
                             <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketing_2.png') }}"
-                                        alt="ilustration 4" class="rounded-lg">
+                                        alt="ilustration 4" class="rounded-lg h-56 w-auto object-contain">
                                     <div class="p-4">
                                         <div class="h-28">
                                             <p class="font-bold text-2xl text-[#262626] mb-4 h-20">Takoyaki Disini</p>
@@ -1663,13 +1649,13 @@
                             <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketing_3.png') }}"
-                                        alt="ilustration 4" class="rounded-lg">
+                                        alt="ilustration 4" class="rounded-lg h-56 w-auto object-contain">
                                     <div class="p-4">
                                         <div class="h-28">
-                                            <p class="font-bold text-2xl text-[#262626] mb-4 h-20">Soffi Beauty</p>
+                                            <p class="font-bold text-2xl text-[#262626] mb-4 h-20">Tauto KedungRasa</p>
                                         </div>
                                         <p class="font-bold text-base text-[#262626] mb-2">Disusun oleh</p>
-                                        <p class="font-normal text-base text-[#262626]">Group 3</p>
+                                        <p class="font-normal text-base text-[#262626]">Group 1</p>
                                         <div class="mt-12 flex w-full text-center">
                                             <a href="https://drive.google.com/file/d/1SeIvJV8anWanmrVLc_XiEpSCUXkYg7bI/view?usp=sharing"
                                                 target="_blank"

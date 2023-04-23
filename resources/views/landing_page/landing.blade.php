@@ -65,7 +65,7 @@
                         <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="stackearn"
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/dentsu_color.png') }}" alt="dentsu"
-                            class="mx-2 h-6">
+                            class="mx-2 h-4">
                         <img src="{{ Vite::asset('resources/image/icon/glint_color.png') }}" alt="glint"
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/kitabisa_color.png') }}" alt="ek"
@@ -94,7 +94,7 @@
 
                         </div>
                     </div>
-                    <div class="lg:hidden items-end flex flex-nowrap overflow-x-auto">
+                    <div class="lg:hidden items-end flex flex-nowrap overflow-x-auto scrollbar-hide">
                         <img src="{{ Vite::asset('resources/image/icon/shopee_color.png') }}"
                             alt="shopee"class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/tokopedia.png') }}" alt="stackearn"
@@ -102,7 +102,7 @@
                         <img src="{{ Vite::asset('resources/image/icon/telkom_indonesia.png') }}" alt="stackearn"
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/dentsu_color.png') }}" alt="dentsu"
-                            class="mx-2 h-6">
+                            class="mx-2 h-4 mb-0.5">
                         <img src="{{ Vite::asset('resources/image/icon/glint_color.png') }}" alt="glint"
                             class="mx-2 h-6">
                         <img src="{{ Vite::asset('resources/image/icon/kitabisa_color.png') }}" alt="ek"
@@ -252,11 +252,11 @@
                         </div>
                     </div>?</div>
             </div>
-            <p class="font-medium text-lg text-[#262626] opacity-50 lg:w-1/2 text-center" data-aos="fade-up">{{ucwords('NeWork Has Been Proven o
+            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center" data-aos="fade-up">{{ucwords('NeWork Has Been Proven o
                 produce competent graduates in the industry through the bootcamp program.')}}</p>
             <div class="flex flex-wrap mt-24">
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
-                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -279,7 +279,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
-                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
@@ -298,7 +298,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
-                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
                         <div
                             class="flex justify-center items-center p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
@@ -318,7 +318,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
-                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
@@ -336,7 +336,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
-                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
@@ -356,7 +356,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
-                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 h-72">
+                    <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
                         <div
                             class="flex justify-center items-center  p-6 bg-gradient-to-t from-[#FFB72B] to-[#FFA01B] rounded-xl -mt-14">
                             <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
@@ -436,10 +436,10 @@
         <p class="font-black text-2xl lg:text-4xl text-white text-center pb-12" data-aos="fade-up">See Our Class!!</p>
         <div class="flex flex-wrap">
             <div class="w-full lg:w-1/3 px-3" data-aos="fade-up">
-                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm h-[30rem]">
+                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm lg:h-[28rem] mb-10">
                     <img src="{{ Vite::asset('resources/image/ilustration/video_1.png') }}" alt="person 1"
                         class="rounded-lg w-full">
-                    <div class="flex justify-center -mt-7">
+                    <div class="flex justify-center -mt-6">
                         <a href="https://youtu.be/FPZxdd4fZ_k" target="_blank"
                             class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-full flex w-24 lg:w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -452,9 +452,9 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">Digital Marketing Offline Class</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See Our Offline Class
-                        Here</p>
+                    <p class="font-bold text-xl lg:text-2xl text-center my-6">Digital Marketing Offline Class</p>
+                    {{-- <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">See Our Offline Class
+                        Here</p> --}}
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -478,10 +478,10 @@
                 </div>
             </div>
             <div class="w-full lg:w-1/3 px-3" data-aos="fade-up">
-                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm h-[30rem]">
+                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm lg:h-[28rem] mb-10">
                     <img src="{{ Vite::asset('resources/image/ilustration/video_2.png') }}" alt="person 1"
                         class="rounded-lg w-full">
-                    <div class="flex justify-center -mt-7">
+                    <div class="flex justify-center -mt-6">
                         <a href="https://youtu.be/GRLniV4UJPY" target="_blank"
                             class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-full flex w-24 lg:w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -494,8 +494,8 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">What They Say? (Student QnA) </p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Student QnA with Us</p>
+                    <p class="font-bold text-xl lg:text-2xl text-center my-6">What They Say? (Student QnA) </p>
+                    {{-- <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Student QnA with Us</p> --}}
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -519,10 +519,10 @@
                 </div>
             </div>
             <div class="w-full lg:w-1/3 px-3" data-aos="fade-up">
-                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm h-[30rem]">
+                <div class="relative bg-white p-2 lg:p-6 rounded-lg shadow-sm lg:h-[28rem] mb-10">
                     <img src="{{ Vite::asset('resources/image/ilustration/video_3.png') }}" alt="person 1"
                         class="rounded-lg w-full">
-                    <div class="flex justify-center -mt-7">
+                    <div class="flex justify-center -mt-6">
                         <a href="https://youtu.be/YX0ncJCCurk" target="_blank"
                             class="bg-[#FF9500] px-4 py-2 lg:py-3 rounded-full flex w-24 lg:w-32 justify-center items-center">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -535,9 +535,9 @@
                             <span class="text-white text-lg font-bold ml-3">Play</span>
                         </a>
                     </div>
-                    <p class="font-bold text-xl lg:text-2xl text-center mt-11">QnA With Trainer (Digital for Newbie)</p>
-                    <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at
-                        Detik.com</p>
+                    <p class="font-bold text-xl lg:text-2xl text-center my-6">QnA With Trainer (Digital for Newbie)</p>
+                    {{-- <p class="font-normal text-sm lg:text-base text-[#6E6E6E] text-center mt-3">Digital Marketing at
+                        Detik.com</p> --}}
                     {{-- <div class="flex justify-center mt-3 mb-8">
                         <svg width="93" height="24" viewBox="0 0 93 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -579,7 +579,7 @@
             <div class="w-full lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_200_200/0/1660618827710?e=1686787200&v=beta&t=nUe35MsO-mHTZTMyHh-re25dXvZbaI6DzS0jB44f_ng"
+                        <img src="{{Vite::asset('resources/image/avatar/hieronymus_kopong_bali.jpeg')}}"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
@@ -595,7 +595,7 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_200_200/0/1606718704142?e=1686787200&v=beta&t=46wXqFTFvJSmlyEzdRCCdKtjSDY8HXaodU4UYzoWaNk"
+                        <img src="{{Vite::asset('resources/image/avatar/tyas_fitri_anggarinii.jpeg')}}"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
@@ -610,7 +610,7 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_200_200/0/1680666708180?e=1682125200&v=beta&t=hm0E7yO1hyONlSgfXeyRBY9byPH-Shbu62aILKwZzwA"
+                        <img src="{{Vite::asset('resources/image/avatar/angeline_lie.jpeg')}}"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Angeline Lie</p>
@@ -625,7 +625,7 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_200_200/0/1542432196651?e=1686787200&v=beta&t=ZcC6r7sEF2jj3We9KRPq3pOyi8NVd3mFHdUyDmI4PNc"
+                        <img src="{{Vite::asset('resources/image/avatar/balad_al_barokah.jpeg')}}"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Balad Al Barokah</p>
@@ -640,7 +640,7 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
+                        <img src="{{Vite::asset('resources/image/avatar/andhimas_iben_d.jpeg')}}"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Andimas Iben D.</p>
@@ -657,7 +657,7 @@
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
                 <div class="bg-white rounded-lg p-8 shadow-sm h-96 lg:h-80 w-72 lg:w-full">
                     <div class="flex ">
-                        <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
+                        <img src="{{Vite::asset('resources/image/avatar/agnes_friska_cyntia_puspitasari.jpeg')}}"
                             alt="avatar 1" class="w-12 h-12 rounded-full">
                         <div class="ml-5">
                             <p class="font-medium text-base text-black">Agnes Friska Cyntia Puspitasari</p>

@@ -471,7 +471,7 @@
                             </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Well structured
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Well structured
                                 curriculum designed by experts</p>
                         </div>
                     </div>
@@ -487,7 +487,7 @@
                             </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Personalized
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Personalized
                                 curriculum (in-person learning experience)</p>
                         </div>
                     </div>
@@ -509,7 +509,7 @@
                             </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Mentorship by
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Mentorship by
                                 Hiring Partners</p>
                         </div>
                     </div>
@@ -525,7 +525,7 @@
                             </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">
                                 Enrichment program (Part time Project)</p>
                         </div>
                     </div>
@@ -541,7 +541,7 @@
                             </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">Connect with
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">Connect with
                                 passionate trainers</p>
                         </div>
                     </div>
@@ -563,7 +563,7 @@
                             </svg>
                             </div>
 
-                            <p class="text-start lg:text-center lg:font-bold font-medium text-xl text-[#262626] opacity-80 mt-6 capitalize">5 star services
+                            <p class="text-start lg:text-center lg:font-bold font-medium lg:text-xl text-lg text-[#262626] opacity-80 mt-6 capitalize">5 star services
                                 with dedicated Student Service Center</p>
                         </div>
                     </div>
@@ -1270,7 +1270,7 @@
             @if (count($programFee) > 0)
                 <section class="lg:mt-12 mx-auto p-5 lg:p-0" id="programFee">
                     <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Program FEE</p>
-                    <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Investment for your future career</p>
+                    <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Investment for your future career</p>
                     <div class="flex justify-between lg:flex-row flex-col mt-10" data-aos="fade-up"
                         id="destination-navigation">
                         @foreach ($programFee as $item)
@@ -1319,7 +1319,7 @@
 
             <section class="p-6 lg:p-0 w-full lg:w-11/12 mt-12" id="studylocation">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">EXPLORE QARILABS GLOBAL</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2 uppercase" data-aos="fade-up">Find The Best Destination</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Find The Best Destination</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Better to have new life, experiencing culture, and get hired by International Companies.
                 </p>
                 <div class="flex lg:flex-row flex-col mt-10" data-aos="fade-up" id="study-change-location">
@@ -1366,44 +1366,6 @@
                         </div>
                     </div>
                 </div>
-                {{-- <div class="flex gap-3" data-aos="fade-up">
-                    <button type="button" data-aos="fade-up" id="previews-study-change-location">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect x="40" y="40" width="40" height="40" rx="20"
-                                transform="rotate(180 40 40)" fill="#A7A7A7" />
-                            <g clip-path="url(#clip0_98_514)">
-                                <path
-                                    d="M9.73164 20.3963L17.0974 27.7622C17.3077 27.9725 17.5879 28.0879 17.8868 28.0879C18.1859 28.0879 18.466 27.9723 18.6762 27.7622L19.345 27.0933C19.5551 26.8834 19.6708 26.603 19.6708 26.304C19.6708 26.0052 19.5551 25.7153 19.345 25.5054L15.0479 21.1988L28.7 21.1988C29.3155 21.1988 29.8019 20.7169 29.8019 20.1013L29.8019 19.1556C29.8019 18.5399 29.3155 18.0094 28.7 18.0094L14.9991 18.0094L19.3448 13.6788C19.5549 13.4686 19.6707 13.1958 19.6707 12.8968C19.6707 12.5982 19.5549 12.3214 19.3448 12.1113L18.6761 11.4445C18.4658 11.2343 18.1857 11.1197 17.8866 11.1197C17.5878 11.1197 17.3075 11.2358 17.0973 11.446L9.73148 18.8118C9.52072 19.0228 9.40481 19.3043 9.40564 19.6036C9.40498 19.9039 9.52072 20.1857 9.73164 20.3963Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_98_514">
-                                    <rect width="20.3962" height="20.3962" fill="white"
-                                        transform="translate(29.8019 29.8018) rotate(180)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </button>
-                    <button type="button" data-aos="fade-up" id="next-study-change-location">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect width="40" height="40" rx="20" fill="{{$themeColor}}" />
-                            <g clip-path="url(#clip0_98_519)">
-                                <path
-                                    d="M30.2684 19.6038L22.9026 12.2378C22.6923 12.0275 22.4121 11.9121 22.1132 11.9121C21.8141 11.9121 21.534 12.0277 21.3238 12.2378L20.655 12.9067C20.4449 13.1166 20.3292 13.397 20.3292 13.696C20.3292 13.9948 20.4449 14.2847 20.655 14.4946L24.9521 18.8012H11.3C10.6845 18.8012 10.1981 19.2831 10.1981 19.8987V20.8444C10.1981 21.4601 10.6845 21.9906 11.3 21.9906H25.0009L20.6552 26.3212C20.4451 26.5315 20.3293 26.8042 20.3293 27.1032C20.3293 27.4018 20.4451 27.6786 20.6552 27.8887L21.3239 28.5555C21.5342 28.7657 21.8143 28.8803 22.1134 28.8803C22.4122 28.8803 22.6925 28.7642 22.9027 28.554L30.2685 21.1882C30.4793 20.9773 30.5952 20.6957 30.5944 20.3964C30.595 20.0961 30.4793 19.8143 30.2684 19.6038Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_98_519">
-                                    <rect width="20.3962" height="20.3962" fill="white"
-                                        transform="translate(10.1981 10.1982)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </button>
-                </div> --}}
             </section>
 
             <section class="alumni p-6 lg:p-0 w-full lg:w-11/12 lg:mt-12" id="alumni">
@@ -1420,7 +1382,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C4D03AQHeB24ExRKugg/profile-displayphoto-shrink_400_400/0/1660618827710?e=1686787200&v=beta&t=YToE3E5bcjPZRk6bURCNITIsvyNt4EMu_gnSTkcf2FM"
+                                        <img src="{{Vite::asset('resources/image/avatar/hieronymus_kopong_bali.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Hieronymus Kopong Bali</p>
@@ -1441,7 +1403,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQFryXM8t0zqWQ/profile-displayphoto-shrink_400_400/0/1606718704142?e=1686787200&v=beta&t=SFyLMX9m1oZx6eAYE-irXPYSvvCgy9MbI2GFuBxrNTE"
+                                        <img src="{{Vite::asset('resources/image/avatar/tyas_fitri_anggarinii.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Tyas Fitri Anggarini</p>
@@ -1462,7 +1424,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D5635AQFrseaaiRITpg/profile-framedphoto-shrink_400_400/0/1680666708180?e=1682132400&v=beta&t=3QlK58CPrXZ-V50l2dYLngGUQG5jHZ4lrs4Ipe5W2Dw"
+                                        <img src="{{Vite::asset('resources/image/avatar/angeline_lie.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Angeline Lie </p>
@@ -1482,7 +1444,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5103AQGVjs1quxAH8A/profile-displayphoto-shrink_400_400/0/1542432196651?e=1686787200&v=beta&t=9asmkpZvcFBm64x2AFDWroqv3TTsUrNOCf4YCMaY0pM"
+                                        <img src="{{Vite::asset('resources/image/avatar/balad_al_barokah.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Balad Al Barokah</p>
@@ -1501,7 +1463,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/D4D03AQGAqHEnAW2AbQ/profile-displayphoto-shrink_400_400/0/1681721424844?e=1687392000&v=beta&t=p-c_cd4BzaoCaYNIlN6-LNSKADiyR36v_r4oos-6gkk"
+                                        <img src="{{Vite::asset('resources/image/avatar/andhimas_iben_d.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Andimas Iben D. </p>
@@ -1522,7 +1484,7 @@
                             <div class="w-96 p-3">
                                 <div class="bg-white rounded-lg p-8 shadow-sm h-96">
                                     <div class="flex ">
-                                        <img src="https://media.licdn.com/dms/image/C5603AQGOkusNhD4aVg/profile-displayphoto-shrink_400_400/0/1641726961273?e=1687392000&v=beta&t=B061T3avdR469Y6CByxzhUr9BWqNN_pRMy_N20FqJBQ"
+                                        <img src="{{Vite::asset('resources/image/avatar/agnes_friska_cyntia_puspitasari.jpeg')}}"
                                             alt="avatar 1" class="w-12 h-12 rounded-full">
                                         <div class="ml-5">
                                             <p class="font-medium text-base text-black">Agnes Friska Cyntia Puspitasari</p>
@@ -1615,7 +1577,7 @@
                             <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketin_1.png') }}"
-                                        alt="ilustration 4" class="rounded-lg">
+                                        alt="ilustration 4" class="rounded-lg h-56 w-auto object-contain">
                                     <div class="p-4">
                                         <div class="h-28">
                                             <p class="font-bold text-2xl text-[#262626] mb-4">Disney+ Hotstar Strategi
@@ -1639,7 +1601,7 @@
                             <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketing_2.png') }}"
-                                        alt="ilustration 4" class="rounded-lg">
+                                        alt="ilustration 4" class="rounded-lg h-56 w-auto object-contain">
                                     <div class="p-4">
                                         <div class="h-28">
                                             <p class="font-bold text-2xl text-[#262626] mb-4">Takoyaki Disini</p>
@@ -1662,13 +1624,13 @@
                             <div class="lg:p-3 p-0 mb-6">
                                 <div class="bg-white rounded-lg p-2 shadow-sm">
                                     <img src="{{ Vite::asset('resources/image/portofolio/digital_marketing_3.png') }}"
-                                        alt="ilustration 4" class="rounded-lg">
+                                        alt="ilustration 4" class="rounded-lg h-56 w-auto object-contain">
                                     <div class="p-4">
                                         <div class="h-28">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">Soffi Beauty</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">Tauto KedungRasa</p>
                                         </div>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
-                                        <p class="font-normal text-base text-[#262626]">Group 3</p>
+                                        <p class="font-normal text-base text-[#262626]">Group 1</p>
                                         <div class="mt-12 flex w-full text-center">
                                             <a href="https://drive.google.com/file/d/1SeIvJV8anWanmrVLc_XiEpSCUXkYg7bI/view?usp=sharing"
                                                 target="_blank"
