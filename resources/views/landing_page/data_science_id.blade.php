@@ -453,7 +453,7 @@
                                 <div class="w-12 h-12 ">
                                     {!! $item['image'] !!}
                                 </div>
-                                <p class="ml-6 font-medium text-base text-[#262626] opacity-80">{!! $item['content'] !!}
+                                <p class="ml-6 font-medium text-sm lg:text-base text-[#262626] opacity-80">{!! $item['content'] !!}
                                 </p>
                             </div>
                         </div>

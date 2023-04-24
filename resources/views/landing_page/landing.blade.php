@@ -252,7 +252,7 @@
                         </div>
                     </div>?</div>
             </div>
-            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center" data-aos="fade-up">{{ucwords('NeWork Has Been Proven o
+            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center" data-aos="fade-up">{{ucwords('NeWork Has Been Proven To
                 produce competent graduates in the industry through the bootcamp program.')}}</p>
             <div class="flex flex-wrap mt-24">
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
