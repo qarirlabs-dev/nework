@@ -18,8 +18,8 @@
         </div>
         <a aria-label="Chat on WhatsApp"
             href="https://wa.me/+6282135953485?text={{ urlencode("Hi, I'm interested to know about NeWork Bootcamp, My Name is.....") }}"
-            target="_blank" class="bg-white rounded-xl p-6 ml-2 shadow-2xl " id="content-chat">
-            <p>How may i assist you to find your best career future? 🙂</p>
+            target="_blank" class="bg-white rounded-xl lg:p-6 p-3 ml-2 shadow-2xl " id="content-chat">
+            <p class="lg:text-base text-xs">How may i assist you to find your best career future? 🙂</p>
         </a>
         <div class="relative">
             <a aria-label="Chat on WhatsApp"
