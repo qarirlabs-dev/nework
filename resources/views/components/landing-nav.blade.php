@@ -302,7 +302,7 @@
                                     Marketing Bootcamp</a></li>
                         </ul>
                     </li>
-                    <li class="font-bold text-base text-[#262626] py-2">Enterprise</li>
+                    <li class="font-bold text-base text-[#262626] py-2"><a href="{{route('enterprise')}}">Enterprise</a></li>
                 </ul>
                 <div class="my-5">
                     <p class="font-bold text-base text-[#B3BDB8]">LANGUAGE</p>
@@ -393,8 +393,13 @@
             $course = urldecode($course);
             $location = urldecode($location);
             $color = '#FFD770';
+            
             if ($location == 'indonesia' && $course == 'data science') {
                 $color = '#2622B9';
+            }
+
+            if ($location == 'localhost:8000' && $course == 'enterprise') {
+                $color = '#1AD079';
             }
             
             if ($location == 'indonesia' && $course == 'digital marketing') {
@@ -930,7 +935,7 @@
                             </div>
                             <div class="relative">
                                 <div class="flex flex-row items-center cursor-pointer dropdown-menu">
-                                    <button class="text-black  px-3 py-2 font-medium ml-4">Enterprise</button>
+                                    <a href="{{route('enterprise')}}" class="text-black  px-3 py-2 font-medium ml-4">Enterprise</a>
                                 </div>
                             </div>
                         </div>
@@ -942,6 +947,11 @@
                     @if ($location == '' || $location == 'Seoul' || $location == "Tokyo")
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
+                    @endif
+
+                    @if ($location == 'localhost:8000' && $course == 'enterprise')
+                    <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
+                            class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#1AD079] mx-2">Book A Call</a>
                     @endif
                     @if ($location == 'indonesia' && $course == 'data science')
                         <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"

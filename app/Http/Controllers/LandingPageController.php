@@ -675,4 +675,8 @@ class LandingPageController extends Controller
             return view('landing_page.web_development', compact('detail', 'heroImages','slug', 'course', 'destinations', 'whySouldStay', 'programFee', 'themeColor', 'themeColor2', 'themeColor3'));
         }
     }
+
+    public function enterprise() {
+        return view('landing_page.enterprise');
+    }
 }

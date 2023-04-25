@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing');
 Route::get('/detail/{slug}/{course}', [LandingPageController::class, 'detail'])->name('detail');
+Route::get('/enterprise', [LandingPageController::class, 'enterprise'])->name('enterprise');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
