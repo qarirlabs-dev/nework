@@ -398,7 +398,7 @@
                 $color = '#2622B9';
             }
 
-            if ($location == 'localhost:8000' && $course == 'enterprise') {
+            if (($location == 'localhost:8000' || $location == 'ql.oqurystudio.com') && $course == 'enterprise') {
                 $color = '#1AD079';
             }
             
@@ -949,7 +949,7 @@
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
                     @endif
 
-                    @if ($location == 'localhost:8000' && $course == 'enterprise')
+                    @if (($location == 'localhost:8000' || $location == 'ql.oqurystudio.com') && $course == 'enterprise')
                     <a href="https://bit.ly/MeetingScheduleQarirlabs" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#1AD079] mx-2">Book A Call</a>
                     @endif
