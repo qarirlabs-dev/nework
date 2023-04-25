@@ -154,11 +154,11 @@
                             </div>
                         </div>
                         <ul class="menu-mobile-detail hidden">
-                            <li class="font-normal text-xl py-2 cursor-pointer"
+                            <li class="font-normal lg:text-xl py-2 cursor-pointer"
                                 onclick="showModal('data science'); showMenu();">Data Science Bootcamp</li>
-                            <li class="font-normal text-xl py-2 cursor-pointer"
+                            <li class="font-normal lg:text-xl py-2 cursor-pointer"
                                 onclick="showModal('digital marketing'); showMenu();">Digital Marketing Bootcamp</li>
-                            <li class="font-normal text-xl py-2 cursor-pointer"
+                            <li class="font-normal lg:text-xl py-2 cursor-pointer"
                                 onclick="showModal('web development'); showMenu();">Web Development Bootcamp</li>
                         </ul>
                     </li> --}}
@@ -175,7 +175,7 @@
                             </div>
                         </div>
                         <ul class="menu-mobile-detail">
-                            <li class="font-normal text-xl py-2">
+                            <li class="font-normal lg:text-xl py-2">
                                 <div class="flex flex-row mt-4 mb-2">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -197,14 +197,14 @@
                                     <p class="ml-3 font-bold text-base">Indonesia</p>
                                 </div>
                             </li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'indonesia', 'course' => 'data science']) }}">Data
                                     Science Bootcamp</a></li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'indonesia', 'course' => 'digital marketing']) }}">Digital
                                     Marketing Bootcamp</a></li>
                                     <hr>
-                            <li class="font-normal text-xl py-2">
+                            <li class="font-normal lg:text-xl py-2">
                                 <div class="flex flex-row mt-4 mb-2">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -229,14 +229,14 @@
                                     <p class="ml-3 font-bold text-base">Istanbul</p>
                                 </div>
                             </li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'data science']) }}">Data
                                     Science Bootcamp</a></li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'digital marketing']) }}">Digital
                                     Marketing Bootcamp</a></li>
                                     <hr>
-                            <li class="font-normal text-xl py-2">
+                            <li class="font-normal lg:text-xl py-2">
                                 <div class="flex flex-row mt-4 mb-2">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -258,14 +258,14 @@
                                     <div class="ml-3 font-bold text-base">Tokyo <span class="mr-3 text-white bg-red-500 text-xs px-3 py-1 rounded-full">Soon</span></div>
                                 </div>
                             </li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'Tokyo', 'course' => 'data science']) }}">Data
                                     Science Bootcamp</a></li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'Tokyo', 'course' => 'digital marketing']) }}">Digital
                                     Marketing Bootcamp</a></li>
                                     <hr>
-                            <li class="font-normal text-xl py-2">
+                            <li class="font-normal lg:text-xl py-2">
                                 <div class="flex flex-row mt-4 mb-2">
                                     <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -294,10 +294,10 @@
                                     <div class="ml-3 font-bold text-base">Seoul <span class="mr-3 text-white bg-red-500 text-xs px-3 py-1 rounded-full">Soon</span></div>
                                 </div>
                             </li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'Seoul', 'course' => 'data science']) }}">Data
                                     Science Bootcamp</a></li>
-                            <li class="font-normal text-xl py-2"><a
+                            <li class="font-normal lg:text-xl text-sm py-2"><a
                                     href="{{ route('detail', ['slug' => 'Seoul', 'course' => 'digital marketing']) }}">Digital
                                     Marketing Bootcamp</a></li>
                         </ul>

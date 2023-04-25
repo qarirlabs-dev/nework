@@ -112,7 +112,7 @@
         </div>
         <div class="mt-12 flex lg:flex-nowrap flex-wrap lg:w-7/12 w-11/12 mx-auto">
             <div class="w-full my-4 lg:my-0 lg:w-1/2 lg:first:mr-3">
-                <div class="rounded-2xl outline outline-1 outline-[#E5E7EB] p-4 h-[37rem]">
+                <div class="rounded-2xl outline outline-1 outline-[#E5E7EB] p-4 lg:h-[37rem]">
                     <img src="{{ Vite::asset('resources/image/ilustration/enterprise_ilustration_card_1.png') }}"
                         alt="ilustration 1" class="rounded-t-2xl w-full object-contain">
                     <div class="mt-6">
@@ -125,7 +125,7 @@
                 </div>
             </div>
             <div class="w-full my-4 lg:my-0 lg:w-1/2 lg:last:ml-3">
-                <div class="rounded-2xl outline outline-1 outline-[#E5E7EB] p-4 h-[37rem]">
+                <div class="rounded-2xl outline outline-1 outline-[#E5E7EB] p-4 lg:h-[37rem]">
                     <img src="{{ Vite::asset('resources/image/ilustration/enterprise_ilustration_card_2.png') }}"
                         alt="ilustration 1" class="rounded-t-2xl w-full object-contain">
                     <div class="mt-6">
@@ -253,7 +253,7 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <p class="ml-2 font-medium text-base text-[#262626]">Personalized Curriculum</p>
+                            <p class="ml-2 font-medium text-sm lg:text-base text-[#262626]">Personalized Curriculum</p>
                         </li>
                         <li class="flex flex-row items-center my-2">
                             <div class="w-5 h-50">
@@ -264,7 +264,7 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <p class="ml-2 font-medium text-base text-[#262626]">Create personalized service you need :
+                            <p class="ml-2 font-medium text-sm lg:text-base text-[#262626]">Create personalized service you need :
                                 from digital marketing services, data consulting, advertising, or recruitment.</p>
                         </li>
                         <li class="flex flex-row items-center my-2">
@@ -276,7 +276,7 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <p class="ml-2 font-medium text-base text-[#262626]">Get support 24/7 consultation from our
+                            <p class="ml-2 font-medium text-sm lg:text-base text-[#262626]">Get support 24/7 consultation from our
                                 expert from New york city, Istanbul, London, and Jakarta</p>
                         </li>
                         <li class="flex flex-row items-center my-2">
@@ -288,7 +288,7 @@
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
                             </div>
-                            <p class="ml-2 font-medium text-base text-[#262626]">Reduce your cost and accelerate your
+                            <p class="ml-2 font-medium text-sm lg:text-base text-[#262626]">Reduce your cost and accelerate your
                                 level with us.</p>
                         </li>
                     </ul>

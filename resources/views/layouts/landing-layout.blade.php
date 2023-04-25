@@ -36,13 +36,14 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="min-h-screen bg-[#F9F9F9]">
+    <div class="min-h-screen bg-[#F9F9F9] static">
         <x-landing-nav />
         <!-- Page Content -->
         <main>
             {{ $slot }}
         </main>
         <x-footer />
+        <x-speed-dial />
     </div>
     @stack('scripts')
 </body>
