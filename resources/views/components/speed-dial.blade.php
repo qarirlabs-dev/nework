@@ -7,24 +7,25 @@
         })
     })
 </script>
-<div class="sticky bottom-10 right-10">
-    <div class="flex justify-end lg:mr-10 mr-2">
-        <div class="w-6 h-6 ml-2 lg:ml-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6 text-white fill-gray-500 cursor-pointer" id="close-chat">
+<div class="sticky bottom-10 right-10 -mt-20">
+    <div class="flex justify-end lg:mr-6 mr-4">
+        <div class="w-7 h-7 ml-1 mt-2 lg:ml-0">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="#f9fafb" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 text-white fill-gray-50 cursor-pointer bg-gray-50" id="close-chat">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
         </div>
         <a aria-label="Chat on WhatsApp"
             href="https://wa.me/+6282135953485?text={{ urlencode("Hi, I'm interested to know about NeWork Bootcamp, My Name is.....") }}"
-            target="_blank" class="bg-white rounded-xl lg:p-6 p-3 ml-2 shadow-2xl " id="content-chat">
+            target="_blank" class="bg-white rounded-xl lg:p-4 p-2 ml-2 shadow-2xl " id="content-chat">
             <p class="lg:text-base text-xs">How may i assist you to find your best career future? 🙂</p>
         </a>
         <div class="relative">
             <a aria-label="Chat on WhatsApp"
                 href="https://wa.me/+6282135953485?text={{ urlencode("Hi, I'm interested to know about NeWork Bootcamp, My Name is.....") }}"
-                target="_blank" class="flex justify-center items-center bg-white rounded-xl lg:p-6 p-4 ml-2 shadow-2xl lg:w-20 lg:h-20 w-16 h-16"
+                target="_blank"
+                class="flex justify-center items-center bg-white rounded-xl p-4 ml-4 shadow-2xl w-14 h-14"
                 id="icon-chat">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-7 h-7 stroke-2 text-[#FF9500]">

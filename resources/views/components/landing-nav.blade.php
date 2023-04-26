@@ -1,4 +1,4 @@
-<div class="static w-full">
+<header class="static w-full">
     @push('scripts')
         <script>
             var selectedProgram = null;
@@ -1108,7 +1108,7 @@
             </div>
         </div>
     </nav>
-</div>
+</header>
 
 <script>
     window.addEventListener('click', function(e) {

@@ -1,5 +1,5 @@
 <footer>
-    <div class="relative w-full h-[80rem] lg:h-[40rem] bg-[#00263D] flex justify-center items-start">
+    <div class="relative w-full h-[80rem] lg:h-[45rem] bg-[#00263D] flex justify-center items-start">
         <img src="{{Vite::asset('resources/image/ilustration/word_map.png')}}" alt="word" class="absolute top-0 h-[30rem] w-auto opacity-30 object-contain">
         <div class="flex flex-col lg:flex-row w-full lg:w-10/12">
             <div class="lg:mt-11 lg:mx-12 p-5 lg:p-0 w-full lg:w-1/2">

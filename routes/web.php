@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/fab', function() {
+    return view('fab');
+});
 
 Route::get('/', [LandingPageController::class, 'index'])->name('landing');
 Route::get('/detail/{slug}/{course}', [LandingPageController::class, 'detail'])->name('detail');
