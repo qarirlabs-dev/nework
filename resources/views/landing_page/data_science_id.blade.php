@@ -1818,7 +1818,7 @@
                                 <div class="flex flex-col ml-3 lg:w-8/12">
                                     <p class="font-medium text-base text-black">Naila Waliya</p>
                                     <p class="font-medium text-xs text-[#0E144A] opacity-60">Career Manager at
-                                        Qarirlabs | Copywriting & Digital Media Enthusiast</p>
+                                        {{config('app.name')}} | Copywriting & Digital Media Enthusiast</p>
                                 </div>
                             </div>
                         </a>
