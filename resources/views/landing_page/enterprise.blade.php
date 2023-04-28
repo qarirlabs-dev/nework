@@ -22,10 +22,10 @@
                 </div>
                 <div class="flex-auto w-11/12 lg:w-6/12" data-aos="fade-up">
                     <div class="hidden lg:block text-2xl lg:text-5xl font-black lg:leading-normal mb-4 lg:mt-16">
-                        NeWork for Business, <br><span class="bg-[#1AD079] px-2 text-white rounded-lg">Train Your
+                        {{config('app.name')}} for Business, <br><span class="bg-[#1AD079] px-2 text-white rounded-lg">Train Your
                             Team</span> or Let Us Handle Your Project.
                     </div>
-                    <div class="lg:hidden text-4xl lg:text-5xl font-black mb-4 lg:mt-16">NeWork for Business, <br><span
+                    <div class="lg:hidden text-4xl lg:text-5xl font-black mb-4 lg:mt-16">{{config('app.name')}} for Business, <br><span
                             class="bg-[#1AD079] px-2 text-white rounded-lg">Train Your Team</span> or Let Us Handle Your
                         Project.
                     </div>
@@ -119,7 +119,7 @@
                         <p class="font-bold text-2xl text-[#262626]">
                             Training for Agile & Scrum, Creative Design, Risk Management, or Hospitality.
                         </p>
-                        <p class="font-normal text-base text-[#6E6E6E] mt-3">NeWork is your #1 Ranked Career
+                        <p class="font-normal text-base text-[#6E6E6E] mt-3">{{config('app.name')}} is your #1 Ranked Career
                             Accelerator</p>
                     </div>
                 </div>

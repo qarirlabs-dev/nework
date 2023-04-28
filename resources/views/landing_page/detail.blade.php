@@ -395,7 +395,7 @@
                         </div>
                     @endforeach
                 </div>
-                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'Kenapa Bergabung NeWork' : 'WHY JOIN US?' }}</p>
+                <p class="font-black text-2xl lg:text-4xl mb-2 mt-6" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'Kenapa Bergabung {{config('app.name')}}' : 'WHY JOIN US?' }}</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">{{ strtolower($slug) == 'indonesia' ? 'Master '. ucwords($course) .' dan lihat manfaatnya setelah lulus' : 'Master '. ucwords($course) .'and see the benefits after graduation' }}</p>
                 <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between" data-aos="fade-up">
                     <div class="w-full lg:w-1/3 mb-8">
@@ -829,10 +829,10 @@
                             </div>
                             <div
                                 class="collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                                NeWork provides career preparation, Once you’ve been accepted, you'll get the fixed
+                                {{config('app.name')}} provides career preparation, Once you’ve been accepted, you'll get the fixed
                                 schedule of career mapping & soft skill class with our passionate trainers. You also
                                 will
-                                receive about 10-20 hours of online learning resources, carefully curated by NeWork
+                                receive about 10-20 hours of online learning resources, carefully curated by {{config('app.name')}}
                                 Expert to be intuitive and interactive. This preparation phase will ensure you have the
                                 necessary foundations in Python before the bootcamp starts.
                             </div>
@@ -1259,7 +1259,7 @@
             @endif
 
             <section class="w-full mt-12 mx-auto" id="studylocation">
-                <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Explore NeWork Global</p>
+                <p class="font-bold text-base text-[#262626] mb-6 uppercase" data-aos="fade-up">Explore {{config('app.name')}} Global</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Find The Best Destination</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Better to have new life, experiencing culture, and get hired by International Companies</p>
                 <div class="w-full lg:w-11/12 flex lg:flex-row flex-col mt-10" data-aos="fade-up" id="study-change-location">
@@ -1348,11 +1348,11 @@
 
             <section class="alumni w-11/12 mt-12" id="alumni">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">All Alumni Story</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What alumni say about NeWork
+                <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">What alumni say about {{config('app.name')}}
                 </p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
                     of the Data Science
-                    Bootcamp program at NeWork!</p>
+                    Bootcamp program at {{config('app.name')}}!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1429,7 +1429,7 @@
                                                 MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork opens up a new
+                                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} opens up a new
                                         opportunity to work in the digital field!"- Balad </p>
                                 </div>
                             </div>
@@ -1448,7 +1448,7 @@
                                                 Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork helped me to gain
+                                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} helped me to gain
                                         a deeper understanding of data science. After taking their course and staying
                                         connected with my mentor, I was able to start working at my dream company using
                                         the significantly improved skills." - Andimas Iben </p>
@@ -1547,10 +1547,10 @@
             <section class="portofolio w-full lg:w-11/12 mt-12" id="portofolio">
                 <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2" data-aos="fade-up">Portfolio Student at Bootcamp
-                    NeWork</p>
+                    {{config('app.name')}}</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Listen to the stories of alumni
                     of the Data Science
-                    Bootcamp program at NeWork!</p>
+                    Bootcamp program at {{config('app.name')}}!</p>
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1603,7 +1603,7 @@
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_3.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4">NeWork Data Science</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4">{{config('app.name')}} Data Science</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Created by</p>
                                         <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
                                         <div class="mt-12 flex w-full text-center">
@@ -1672,7 +1672,7 @@
                                 <div class="flex flex-col ml-3 lg:w-8/12">
                                     <p class="font-medium text-base text-black">Naila Waliya</p>
                                     <p class="font-medium text-xs text-[#0E144A] opacity-60">Career Manager at
-                                        NeWork | Copywriting & Digital Media Enthusiast</p>
+                                        {{config('app.name')}} | Copywriting & Digital Media Enthusiast</p>
                                 </div>
                             </div>
                         </div>

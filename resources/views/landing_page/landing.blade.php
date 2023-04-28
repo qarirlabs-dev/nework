@@ -199,7 +199,7 @@
                         src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="">
                 </div>
             </div>
-            <div class="w-full lg:w-1/3 px-5 my-3 cursor-pointer program" onclick="showModal('web development')"
+            <div class="w-full lg:w-1/3 px-5 my-3 cursor-pointer program"
                 data-aos="fade-up">
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
@@ -246,14 +246,14 @@
             <div class="static mb-5" data-aos="fade-up">
                 <div class="font-black text-2xl lg:text-4xl z-1 text-center">Why Choose <div
                         class="inline-block relative">
-                        <div class="relative z-10">NeWork</div>
+                        <div class="relative z-10">{{config('app.name')}}</div>
                         <div class="-z-10">
                             <div class="absolute bottom-0 right-0 w-24 lg:w-36 h-3 bg-[#FF9500]"></div>
                         </div>
                     </div>?</div>
             </div>
-            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center" data-aos="fade-up">{{ucwords('NeWork Has Been Proven To
-                produce competent graduates in the industry through the bootcamp program.')}}</p>
+            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center capitalize" data-aos="fade-up">{{config('app.name')}} Has Been Proven To
+                produce competent graduates in the industry through the bootcamp program.</p>
             <div class="flex flex-wrap mt-24">
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
                     <div class="flex flex-col justify-start items-center bg-white shadow-sm rounded-lg p-6 mx-2 lg:h-72 pb-8">
@@ -405,13 +405,13 @@
                         fill="#FF9500" />
                 </svg>
             </div>
-            <p class="font-black text-white text-center text-2xl lg:text-4xl pt-20 pb-6 w-9/12 lg:w-1/2 mx-auto"
-                data-aos="fade-up">{{ucwords('More
+            <p class="font-black text-white text-center text-2xl lg:text-4xl pt-20 pb-6 w-9/12 lg:w-1/2 mx-auto capitalize"
+                data-aos="fade-up">More
                 Than a Bootcamp.
-                Get Hired at top tech companies.')}}
+                Get Hired at top tech companies.
             </p>
             <p class="font-medium text-base text-white opacity-60 text-center lg:w-1/2 lg:mx-auto px-4 pb-10"
-                data-aos="fade-up">NeWork
+                data-aos="fade-up">{{config('app.name')}}
                 helps you land your
                 dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
                 Education Field)</p>
@@ -633,7 +633,7 @@
                                 Marketing Consultant</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork opens up a new opportunity to work
+                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} opens up a new opportunity to work
                         in the digital field!"- Balad </p>
                 </div>
             </div>
@@ -648,7 +648,7 @@
                                 Ex - Tokopedia | LPDP Awardee PK-194</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork helped me to gain a deeper
+                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} helped me to gain a deeper
                         understanding of data science. After taking their course and staying connected with my mentor, I
                         was able to start working at my dream company using the significantly improved skills." -
                         Andimas Iben </p>
@@ -713,7 +713,7 @@
                     Talent ?
                 </p>
                 <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with
-                    NeWork corporate
+                    {{config('app.name')}} corporate
                     training or hire our tech-alumni now.</p>
                 <div class=" mb-11 mt-6">
 
