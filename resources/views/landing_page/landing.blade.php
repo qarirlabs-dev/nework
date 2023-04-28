@@ -169,7 +169,7 @@
                     </div>
                     <p class="font-bold lg:text-4xl text-2xl mb-4">Digital Marketing Bootcamp</p>
                     <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Digital Marketing and build
-                        your on your company</p>
+                        yours on your company</p>
                     <div class="flex justify-start items-center mt-5">
                         <p class="font-bold lg:text-base text-sm text-[#FF9500] mr-6">See Detail</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -208,7 +208,7 @@
                     </div>
                     <p class="font-bold lg:text-4xl text-2xl mb-4">Web Development Bootcamp</p>
                     <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Software Engineering and
-                        build your product impactfull</p>
+                        make your product impactful</p>
                     <div class="flex justify-start items-center mt-5">
                         <p class="font-bold lg:text-base text-sm text-[#FF9500] mr-6">See Detail</p>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
@@ -252,7 +252,7 @@
                         </div>
                     </div>?</div>
             </div>
-            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center capitalize" data-aos="fade-up">{{config('app.name')}} Has Been Proven To
+            <p class="font-medium lg:text-lg text-base text-[#262626] opacity-50 lg:w-1/2 text-center capitalize" data-aos="fade-up">{{ucwords(strtolower(config('app.name')))}} Has Been Proven To
                 produce competent graduates in the industry through the bootcamp program.</p>
             <div class="flex flex-wrap mt-24">
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
@@ -294,7 +294,7 @@
                         <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Join our
                             enrichment
                             program in form of internship (part-time) for several projects at corporates/leading
-                            startups</p>
+                            startups.</p>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
@@ -330,9 +330,9 @@
                         </div>
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">Hiring Partners Mentorship</p>
                         <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">Get
-                            Mentoring
+                            mentoring
                             session with our hiring partners to learn more about company culture, industry update, and
-                            soft skill class</p>
+                            soft skill class.</p>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/3 mb-20" data-aos="fade-up">
@@ -351,7 +351,7 @@
                         <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">You only
                             need to
                             bring your laptop & bag from your home country to find new opportunity, get networking
-                            access, learn new culture, and go further with our international bootcamp across the world
+                            access, learn new culture, and go further with our international bootcamp across the world.
                         </p>
                     </div>
                 </div>
@@ -375,7 +375,7 @@
                         <p class="font-bold text-xl lg:text-2xl text-center mt-6">5 Star Services</p>
                         <p class="font-normal text-sm lg:text-base text-[#262626] opacity-75 mt-3 text-center">This is
                             where
-                            Education meets hospitality. 24/7 services from our global team representative will respond
+                            education meets hospitality. 24/7 services from our global team representative will respond
                             to your needs.</p>
                     </div>
                 </div>
@@ -413,7 +413,7 @@
             <p class="font-medium text-base text-white opacity-60 text-center lg:w-1/2 lg:mx-auto px-4 pb-10"
                 data-aos="fade-up">{{config('app.name')}}
                 helps you land your
-                dream job. Our career managers guide you at the end of your bootcamp, 7.1 NPS Score (Highest in
+                dream job. Our career managers guide you at the end of your bootcamp with 7.1 NPS Score (Highest in
                 Education Field)</p>
             <div class="flex flex-wrap lg:flex-nowrap justify-center items-start lg:w-1/2 mx-auto">
                 <div class="w-full lg:w-3/5 pb-7" data-aos="fade-up">
@@ -587,9 +587,7 @@
                                 Digital Marketing & Startup Practitioner | BNSP Certified</p>
                         </div>
                     </div>
-                    <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to attend fun classes,
-                        but also improve my networking and knowledge because of the highly experienced trainer."
-                        Hieronymus</p>
+                    <p class="font-medium text-base text-[#262626] mt-5">"Here, not only get to attend fun classes, but I also improve my networking and knowledge because of the highly experienced trainer." - Hieronymus</p>
                 </div>
             </div>
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
@@ -604,7 +602,7 @@
                         </div>
                     </div>
                     <p class="font-medium text-base text-[#262626] mt-5">"Turning my dream of working as a performance
-                        specialist into reality by starting to learn Digital Marketing Bootcamp!"-Tyas</p>
+                        specialist into reality by starting to learn Digital Marketing Bootcamp!" - Tyas</p>
                 </div>
             </div>
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
@@ -619,7 +617,7 @@
                     </div>
                     <p class="font-medium text-base text-[#262626] mt-5">"The learning materials are very
                         comprehensive, the classes are well-structured, and the consultation service is satisfying." -
-                        Angeline Lie</p>
+                         Angeline Lie</p>
                 </div>
             </div>
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
@@ -634,7 +632,7 @@
                         </div>
                     </div>
                     <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} opens up a new opportunity to work
-                        in the digital field!"- Balad </p>
+                        in the digital field!" -Balad </p>
                 </div>
             </div>
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
@@ -650,8 +648,7 @@
                     </div>
                     <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} helped me to gain a deeper
                         understanding of data science. After taking their course and staying connected with my mentor, I
-                        was able to start working at my dream company using the significantly improved skills." -
-                        Andimas Iben </p>
+                        was able to start working at my dream company using the significantly improved skills." - Andimas Iben </p>
                 </div>
             </div>
             <div class="lg:w-1/3 p-3" data-aos="fade-up">
@@ -709,7 +706,7 @@
                     class="object-contain rounded-xl">
             </div>
             <div class="mx-2 my-5 lg:my-0 lg:mx-10" data-aos="fade-up">
-                <p class="font-bold text-2xl lg:text-4xl text-black capitalize">Are you an Enterprise looking for Tech Training or
+                <p class="font-bold text-2xl lg:text-4xl text-black">Are You an Enterprise Looking for Tech Training or
                     Talent ?
                 </p>
                 <p class="font-medium text-base mt-4 lg:text-lg text-[#262626] opacity-60">Transform your teams with
