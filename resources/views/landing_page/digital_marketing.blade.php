@@ -1391,7 +1391,7 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"Here, I not only get to
+                                    <p class="font-medium text-base text-[#262626] mt-5">"Here, not only get to
                                         attend fun classes, but also improve my networking and knowledge because of the
                                         highly experienced trainer." Hieronymus </p>
                                 </div>
