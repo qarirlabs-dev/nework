@@ -1932,7 +1932,7 @@
                         </p>
                         <br>
                         <div class="flex w-full lg:w-auto">
-                            <a href="https://y-data.typeform.com/to/U4W5pFEE/?form_position=%2F&gaid=1160409597.1681175250&referrer=N%2FA&_ga=2.178558691.63757594.1681175250-1160409597.1681175250&typeform-source=practicum.com"
+                            <a href="https://62gsgs92c9y.typeform.com/CareerQuiz"
                                 target="_blank"
                                 class=" bg-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Ikuti
                                 Kuis Karir</a>

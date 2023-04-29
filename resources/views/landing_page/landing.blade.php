@@ -128,7 +128,7 @@
                             May 10, 2023</span>
                     </div>
                     <p class="font-bold lg:text-4xl text-2xl mb-4">Data Science Bootcamp</p>
-                    <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Data Scientist and build your
+                    <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Data Scientist and build yours
                         on AI products from scratch</p>
                     <div class="flex justify-start items-center mt-5">
                         <p class="font-bold lg:text-base text-sm text-[#FF9500] mr-6">See Detail</p>
