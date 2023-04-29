@@ -679,4 +679,8 @@ class LandingPageController extends Controller
     public function enterprise() {
         return view('landing_page.enterprise');
     }
+
+    public function privacyPolicy() {
+        return view('landing_page.privacy-policy');
+    }
 }

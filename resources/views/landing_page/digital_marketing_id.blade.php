@@ -449,7 +449,7 @@
                     @endforeach
                 </div>
                 <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 capitalize" data-aos="fade-up">Kenapa Bergabung
-                    NeWork?</p>
+                    {{config('app.name')}}?</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Kuasai Digital Marketing dan lihat
                     manfaatnya setelah lulus</p>
                 <div class="flex flex-row overflow-x-auto lg:flex-wrap mt-8 justify-between" data-aos="fade-up">
@@ -617,10 +617,10 @@
 
                         <div
                             class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
-                            NeWork menyediakan persiapan karir. Setelah Anda diterima, Anda akan mendapatkan jadwal
+                            {{config('app.name')}} menyediakan persiapan karir. Setelah Anda diterima, Anda akan mendapatkan jadwal
                             tetap kelas pemetaan karir & soft skill dengan pelatih kami yang bersemangat. Anda juga akan
                             menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar
-                            NeWork agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki
+                            {{config('app.name')}} agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki
                             dasar-dasar Digital Marketing yang diperlukan sebelum bootcamp dimulai.
                         </div>
                     </div>
@@ -893,10 +893,10 @@
 
                             <div
                                 class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
-                                NeWork menyediakan persiapan karir. Setelah Anda diterima, Anda akan mendapatkan
+                                {{config('app.name')}} menyediakan persiapan karir. Setelah Anda diterima, Anda akan mendapatkan
                                 jadwal tetap kelas pemetaan karir & soft skill dengan pelatih kami yang bersemangat.
                                 Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan
-                                cermat oleh Pakar NeWork agar intuitif dan interaktif. Fase persiapan ini akan
+                                cermat oleh Pakar {{config('app.name')}} agar intuitif dan interaktif. Fase persiapan ini akan
                                 memastikan Anda memiliki dasar-dasar Digital Marketing yang diperlukan sebelum bootcamp
                                 dimulai.
                             </div>
@@ -1303,7 +1303,7 @@
             @endif
 
             <section class="p-6 lg:p-0 w-full lg:w-11/12 lg:mt-12" id="studylocation">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI NEWORK GLOBAL</p>
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI {{config('app.name')}} GLOBAL</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Temukan Tujuan Terbaik
                 </p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Lebih baik memiliki kehidupan baru,
@@ -1395,10 +1395,10 @@
 
             <section class="alumni p-6 lg:p-0 w-full lg:w-11/12 lg:mt-12" id="alumni">
                 <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">Cerita beberapa alumni</p>
-                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Apa kata alumni tentang NeWork
+                <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Apa kata alumni tentang {{config('app.name')}}
                 </p>
                 <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Simak kisah para alumni program
-                    Digital Marketing Bootcamp di NeWork!</p>
+                    Digital Marketing Bootcamp di {{config('app.name')}}!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1475,7 +1475,7 @@
                                                 MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork membuka peluang
+                                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} membuka peluang
                                         baru untuk berkarya di bidang digital!"- Balad </p>
                                 </div>
                             </div>
@@ -1494,7 +1494,7 @@
                                                 Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork membantu saya untuk
+                                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} membantu saya untuk
                                         mendapatkan pemahaman yang lebih dalam tentang pemasaran digital. Setelah
                                         mengikuti kursus mereka dan tetap terhubung dengan mentor saya, saya dapat mulai
                                         bekerja di perusahaan impian saya menggunakan keterampilan yang meningkat secara
@@ -1594,8 +1594,8 @@
             <section class="portofolio p-6 lg:p-0 w-full lg:w-11/12 mt-20" id="portofolio">
                 <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">PORTOFOLIO ALUMNI</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Portfolio Peserta pada Bootcamp
-                    NeWork</p>
-                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Jelajahi portofolio alumni program Digital Marketing Bootcamp di NeWork!</p>
+                    {{config('app.name')}}</p>
+                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Jelajahi portofolio alumni program Digital Marketing Bootcamp di {{config('app.name')}}!</p>
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">

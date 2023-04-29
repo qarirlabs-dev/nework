@@ -1,4 +1,4 @@
-# NeWork App
+# Qarir Generator App
 
 ## Local Installation
 1. Run <code>composer install</code>

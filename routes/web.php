@@ -21,6 +21,7 @@ Route::get('/fab', function() {
 Route::get('/', [LandingPageController::class, 'index'])->name('landing');
 Route::get('/detail/{slug}/{course}', [LandingPageController::class, 'detail'])->name('detail');
 Route::get('/enterprise', [LandingPageController::class, 'enterprise'])->name('enterprise');
+Route::get('/privacy-policy', [LandingPageController::class, 'privacyPolicy'])->name('privacy-policy');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

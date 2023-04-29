@@ -460,7 +460,7 @@
                     @endforeach
                 </div>
                 <p class="font-black text-2xl lg:text-4xl mb-2 mt-6 capitalize" data-aos="fade-up">Kenapa Bergabung
-                    NeWork</p>
+                    {{config('app.name')}}</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Master Data Science dan lihat
                     manfaat setelah
                     kelulusan</p>
@@ -644,10 +644,10 @@
                         </div>
                         <div
                             class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                            NeWork menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan
+                            {{config('app.name')}} menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan
                             jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat. Anda
                             juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat
-                            oleh Pakar NeWork agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda
+                            oleh Pakar {{config('app.name')}} agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda
                             memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.
                         </div>
                     </div>
@@ -953,10 +953,10 @@
                             </div>
                             <div
                                 class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 text-justify font-normal text-base text-[#262626]">
-                                NeWork menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan
+                                {{config('app.name')}} menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan
                                 jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat.
                                 Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan
-                                cermat oleh Pakar NeWork agar intuitif dan interaktif. Fase persiapan ini akan
+                                cermat oleh Pakar {{config('app.name')}} agar intuitif dan interaktif. Fase persiapan ini akan
                                 memastikan Anda memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.
                             </div>
                         </div>
@@ -1398,7 +1398,7 @@
             @endif
 
             <section class="w-full mt-12 mx-auto" id="studylocation">
-                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI NEWORK GLOBAL</p>
+                <p class="font-bold text-base text-[#262626] mb-6" data-aos="fade-up">JELAJAHI {{config('app.name')}} GLOBAL</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Temukan Destinasi
                     Terbaik</p>
                 <p class="font-normal text-base text-[#262626]" data-aos="fade-up">Lebih baik memiliki kehidupan baru,
@@ -1492,9 +1492,9 @@
                 <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">Cerita beberapa
                     alumni</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Apa yang dikatakan
-                    alumni tentang NeWork</p>
+                    alumni tentang {{config('app.name')}}</p>
                 <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Simak kisah para alumni
-                    program Data Science Bootcamp di NeWork!</p>
+                    program Data Science Bootcamp di {{config('app.name')}}!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1571,7 +1571,7 @@
                                                 MGD Digital Marketing Consultant</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork membuka peluang baru
+                                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} membuka peluang baru
                                         untuk bekerja di bidang digital!"- Balad </p>
                                 </div>
                             </div>
@@ -1590,7 +1590,7 @@
                                                 Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194</p>
                                         </div>
                                     </div>
-                                    <p class="font-medium text-base text-[#262626] mt-5">"NeWork membantu saya untuk
+                                    <p class="font-medium text-base text-[#262626] mt-5">"{{config('app.name')}} membantu saya untuk
                                         mendapatkan pemahaman yang lebih dalam tentang ilmu data. Setelah mengikuti
                                         kursus mereka dan tetap terhubung dengan mentor saya, saya dapat mulai bekerja
                                         di perusahaan impian saya menggunakan keterampilan yang meningkat secara
@@ -1694,9 +1694,9 @@
                 </p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Portfolio Peserta pada
                     Bootcamp
-                    NeWork</p>
+                    {{config('app.name')}}</p>
                 <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Jelajahi portofolio
-                    alumni program Data Science Bootcamp di NeWork!</p>
+                    alumni program Data Science Bootcamp di {{config('app.name')}}!</p>
                 <div class="flex lg:flex-row flex-col" data-aos="fade-up" id="portofolio-slider">
                     <div class="w-full lg:w-1/3" data-aos="fade-up">
                         <div class="flex flex-col items-center justify-center gap-3">
@@ -1749,7 +1749,7 @@
                                     <img src="{{ Vite::asset('resources/image/portofolio/portofolio_3.png') }}"
                                         alt="ilustration 4" class="rounded-lg">
                                     <div class="p-4">
-                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">NeWork Data Science</p>
+                                        <p class="font-bold text-2xl text-[#262626] mb-4 h-20">{{config('app.name')}} Data Science</p>
                                         <p class="font-bold text-base text-[#262626] mb-2">Disusun oleh</p>
                                         <p class="font-normal text-base text-[#262626]">Aliyya Nur Rahma</p>
                                         <div class="mt-12 flex w-full text-center">
@@ -1818,7 +1818,7 @@
                                 <div class="flex flex-col ml-3 lg:w-8/12">
                                     <p class="font-medium text-base text-black">Naila Waliya</p>
                                     <p class="font-medium text-xs text-[#0E144A] opacity-60">Career Manager at
-                                        Qarirlabs | Copywriting & Digital Media Enthusiast</p>
+                                        {{config('app.name')}} | Copywriting & Digital Media Enthusiast</p>
                                 </div>
                             </div>
                         </a>
@@ -1932,7 +1932,7 @@
                         </p>
                         <br>
                         <div class="flex w-full lg:w-auto">
-                            <a href="https://y-data.typeform.com/to/U4W5pFEE/?form_position=%2F&gaid=1160409597.1681175250&referrer=N%2FA&_ga=2.178558691.63757594.1681175250-1160409597.1681175250&typeform-source=practicum.com"
+                            <a href="https://62gsgs92c9y.typeform.com/CareerQuiz"
                                 target="_blank"
                                 class=" bg-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Ikuti
                                 Kuis Karir</a>
