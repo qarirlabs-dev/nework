@@ -1788,9 +1788,9 @@
                             assessment and
                             uncover things you dont know about yourself.
                         </p>
-                        <button
+                        <a href="https://62gsgs92c9y.typeform.com/CareerQuiz" target="_blank"
                             class="bg-[{{$themeColor}}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Take
-                            Assessment Test</button>
+                            Assessment Test</a>
                     </div>
                     <div class="hidden lg:block w-full lg:w-1/2" data-aos="fade-up">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"

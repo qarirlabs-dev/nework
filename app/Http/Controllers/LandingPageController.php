@@ -178,7 +178,12 @@ class LandingPageController extends Controller
                 ]
             ];
             $detail = "Indonesia";
-            $heroImages = ['resources/image/ilustration/indonesia_hero.png'];
+            if ($course == 'digital marketing') {
+                $heroImages = ['resources/image/ilustration/digital_marketing_ilustration.png'];
+            } else {
+                $heroImages = ['resources/image/ilustration/indonesia_hero.png'];
+            }
+            
             $destinations = [];
             $whySouldStay = [
                 [

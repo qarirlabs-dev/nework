@@ -1813,9 +1813,9 @@
                         <p class="font-medium text-base lg:text-lg text-[#262626] opacity-60 mb-5">Ikuti penilaian
                             gratis dan temukan hal-hal yang tidak Anda ketahui tentang diri Anda.
                         </p>
-                        <button
+                        <a href="https://62gsgs92c9y.typeform.com/CareerQuiz" target="_blank"
                             class="bg-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold mb-11 mt-6 w-full lg:w-auto text-center">Ikuti
-                            Tes Penilaian</button>
+                            Tes Penilaian</a>
                     </div>
                     <div class="hidden lg:block w-full lg:w-1/2" data-aos="fade-up">
                         <img src="{{ Vite::asset('resources/image/ilustration/ilustration_10.png') }}"
