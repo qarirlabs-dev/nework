@@ -155,33 +155,55 @@ class LandingPageController extends Controller
                 ],
             ];
         } elseif ($slug == 'indonesia') {
-            $programFee = [
-                [
-                    "title" => "Digital Marketing Bootcamp",
-                    "type" => "Beginner Friendly",
-                    "price" => [
-                        "<p class='line-through text-sm font-base'>Rp10,500,000</p>",
-                        "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
-                    ],
-                    "duration" => "16 Weeks",
-                    "note" => "Include job connector + student club "
-                ],
-                [
-                    "title" => "Digital Marketing Bootcamp",
-                    "type" => "Beginner Friendly & Hybrid Offline",
-                    "price" => [
-                        "<p class='line-through text-sm font-base'>Rp14,000,000</p>",
-                        "Rp12,000,000"
-                    ],
-                    "duration" => "16 Weeks",
-                    "note" => "Include job connector + student club"
-                ]
-            ];
             $detail = "Indonesia";
             if ($course == 'digital marketing') {
                 $heroImages = ['resources/image/ilustration/digital_marketing_ilustration.png'];
+                // $programFee = [
+                //     [
+                //         "title" => "Digital Marketing Bootcamp",
+                //         "type" => "Beginner Friendly",
+                //         "price" => [
+                //             "<p class='line-through text-sm font-base'>Rp10,500,000</p>",
+                //             "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
+                //         ],
+                //         "duration" => "16 Weeks",
+                //         "note" => "Include job connector + student club "
+                //     ],
+                //     [
+                //         "title" => "Digital Marketing Bootcamp",
+                //         "type" => "Beginner Friendly & Hybrid Offline",
+                //         "price" => [
+                //             "<p class='line-through text-sm font-base'>Rp14,000,000</p>",
+                //             "Rp12,000,000"
+                //         ],
+                //         "duration" => "16 Weeks",
+                //         "note" => "Include job connector + student club"
+                //     ]
+                // ];
             } else {
                 $heroImages = ['resources/image/ilustration/indonesia_hero.png'];
+                $programFee = [
+                    [
+                        "title" => "Data Sciences Intensive Bootcamp",
+                        "type" => "Beginner Friendly",
+                        "price" => [
+                            "<p class='line-through text-sm font-base'>Rp10,500,000</p>",
+                            "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
+                        ],
+                        "duration" => "16 Weeks",
+                        "note" => "Include job connector + student club "
+                    ],
+                    [
+                        "title" => "Data Sciences Intensive Bootcamp",
+                        "type" => "Beginner Friendly & Hybrid Offline",
+                        "price" => [
+                            "<p class='line-through text-sm font-base'>Rp14,000,000</p>",
+                            "Rp12,000,000"
+                        ],
+                        "duration" => "16 Weeks",
+                        "note" => "Include job connector + student club"
+                    ]
+                ];
             }
             
             $destinations = [];
@@ -286,14 +308,14 @@ class LandingPageController extends Controller
         } elseif ($slug == 'istanbul') {
             $programFee = [
                 [
-                    "title" => "Data Sciences Intensive Bootcamp",
+                    "title" => ucwords($course). " Intensive Bootcamp",
                     "type" => "Study Only",
                     "price" => ["$1.100"],
                     "duration" => "12 Weeks",
                     "note" => "14 DAYS CLASS IN ISTANBUL + 2 month online"
                 ],
                 [
-                    "title" => "Data Sciences Intensive Bootcamp",
+                    "title" => ucwords($course). " Intensive Bootcamp",
                     "type" => "Study and Accomodation",
                     "price" => ["$1.500"],
                     "duration" => "12 Weeks",
