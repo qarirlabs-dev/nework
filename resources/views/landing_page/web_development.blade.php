@@ -90,13 +90,13 @@
                                 data-aos-duration="3000" data-aos-delay="1200">Beginner
                                 Friendly</button>
                         </div>
-                        <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="flip-left"
+                        {{-- <div class="w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="flip-left"
                             data-aos-duration="3000" data-aos-delay="300">
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
                                 style="width: 67%; background: linear-gradient(151.77deg, #FFB855 18.11%, #FFA220 39.42%, #FFB855 60.73%, #FFB855 82.05%, #FFA220 103.36%, #FFB855 124.67%, #FFA220 145.98%, #FFB855 167.29%);">
                                 <span class="ml-6 font-bold text-xs text-white">85% Class Slot Has Been Filled%</span>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="flex flex-row mt-8">
                             <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
                                 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Choose

@@ -327,13 +327,13 @@
                                     limited quota</button>
                             @endif --}}
                         </div>
-                        <div class="mt-4 lg:mt-0 w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200"
+                        {{-- <div class="mt-4 lg:mt-0 w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200"
                             data-aos="fade-up">
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center bg-[{{ $themeColor }}]"
                                 style="width: 87%;">
                                 <span class="ml-6 font-bold text-xs text-white">87% seat has been filled </span>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="flex flex-wrap lg:flex-nowrap lg:flex-row mt-8">
                             <button
                                 class="bg-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold mb-6 w-full lg:w-auto lg:mb-11"

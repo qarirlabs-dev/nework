@@ -314,12 +314,12 @@
                                 class="text-[{{ $themeColor }}] px-4 py-3 lg:mr-6 mr-2 rounded-full text-sm font-bold mb-4 lg:mb-11 bg-[{{ $themeColor3 }}]"data-aos="fade-up">Beginner
                                 Friendly</button>
                         </div>
-                        <div class="w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up">
+                        {{-- <div class="w-full lg:w-11/12 bg-gray-50 rounded-full h-6 dark:bg-gray-200" data-aos="fade-up">
                             <div class="text-xs font-medium text-start p-1 leading-none rounded-full h-6 flex items-center"
                                 style="width: 88%; background: linear-gradient(151.77deg, {{ $themeColor }} 18.11%, {{ $themeColor }} 39.42%, {{ $themeColor }} 60.73%, {{ $themeColor }} 82.05%, {{ $themeColor }} 103.36%, {{ $themeColor }} 124.67%, {{ $themeColor }} 145.98%, {{ $themeColor }} 167.29%);">
                                 <span class="ml-6 font-bold text-xs text-white">88% seat has been filled</span>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="flex flex-wrap lg:flex-nowrap lg:flex-row mt-8">
                             <button
                                 class="bg-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold lg:mb-11 mb-5 w-full lg:w-auto"
