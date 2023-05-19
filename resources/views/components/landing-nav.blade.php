@@ -8,6 +8,22 @@
                 document.getElementById('modal-program').classList.toggle("hidden");
             }
 
+            function toggleModalIndonesia() {
+                document.getElementById('modal-program-indonesia').classList.toggle("hidden");
+            }
+
+            function toggleModalIstanbul() {
+                document.getElementById('modal-program-istanbul').classList.toggle("hidden");
+            }
+
+            function showModalIndonesia() {
+                toggleModalIndonesia()
+            }
+
+            function showModalIstanbul() {
+                toggleModalIstanbul()
+            }
+
             function showModal(program) {
                 selectedProgram = program
                 document.getElementById('course_title').innerHTML = program
@@ -115,6 +131,114 @@
                                     Soon
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative z-50 hidden" id="modal-program-indonesia" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-50 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div class="flex flex-grow flex-row justify-between items-start">
+                            <p class="font-black text-xl">What would you like to learn  Bootcamp in Indonesia?</p>
+                            <button class="cursor-pointer m-3 mt-1.5" onclick="toggleModalIndonesia()">
+                                <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
+                                        fill="#838383" />
+                                    <path
+                                        d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
+                                        fill="#838383" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="font-medium text-sm text-[#646464] mt-2">You can choose to learn <span
+                                id="course_subtitle" class=""></span> in over
+                            3 country ready or online. Find now your learning course!</p>
+                        <hr class="my-5">
+                        <div class="flex flex-wrap">
+                            {{-- <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('online')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/online.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Online</p>
+                            </div> --}}
+                            <a href="{{ route('detail', ['slug' => 'indonesia', 'course' => 'data science']) }}" class="bg-white rounded-lg shadow-sm m-2 cursor-pointer">
+                                <div class="flex justify-center">
+                                    <img src="{{ Vite::asset('resources/image/ilustration/data_science.png') }}" alt="online"
+                                    class="w-32 h-24 rounded-lg">
+                                </div>
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3 text-center">Data Science</p>
+                            </a>
+                            <a href="{{ route('detail', ['slug' => 'indonesia', 'course' => 'digital marketing']) }}" class="bg-white rounded-lg shadow-sm m-2 cursor-pointer">
+                                <div class="flex justify-center">
+                                    <img src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="online"
+                                    class="w-32 h-24 rounded-lg">
+                                </div>
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3 text-center">Digital Marketing</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="relative z-50 hidden" id="modal-program-istanbul" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-500 bg-opacity-50 transition-opacity"></div>
+
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+                <div
+                    class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+                    <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
+                        <div class="flex flex-grow flex-row justify-between items-start">
+                            <p class="font-black text-xl">What would you like to learn Bootcamp in Istanbul?</p>
+                            <button class="cursor-pointer m-3 mt-1.5" onclick="showModalIstanbul()">
+                                <svg class="" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.12097 1.09305C1.51085 0.702389 2.14298 0.702389 2.53286 1.09305L14.9076 13.4924C15.2975 13.883 15.2975 14.5164 14.9076 14.9071C14.5177 15.2977 13.8856 15.2977 13.4957 14.9071L1.12097 2.50774C0.731092 2.11708 0.731092 1.4837 1.12097 1.09305Z"
+                                        fill="#838383" />
+                                    <path
+                                        d="M1.0924 14.9071C0.702518 14.5164 0.702517 13.883 1.0924 13.4924L13.4671 1.09304C13.857 0.702384 14.4891 0.702385 14.879 1.09304C15.2689 1.4837 15.2689 2.11708 14.879 2.50773L2.50428 14.9071C2.1144 15.2977 1.48228 15.2977 1.0924 14.9071Z"
+                                        fill="#838383" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="font-medium text-sm text-[#646464] mt-2">You can choose to learn <span
+                                id="course_subtitle" class=""></span> in over
+                            3 country ready or online. Find now your learning course!</p>
+                        <hr class="my-5">
+                        <div class="flex flex-wrap">
+                            {{-- <div class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('online')">
+                                <img src="{{ Vite::asset('resources/image/ilustration/online.png') }}" alt="online"
+                                    class="h-24 w-24 rounded-lg">
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3">Online</p>
+                            </div> --}}
+                            <a href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'digital marketing']) }}" class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('istanbul')">
+                                <div class="flex justify-center">
+                                    <img src="{{ Vite::asset('resources/image/ilustration/data_science.png') }}" alt="online"
+                                    class="w-32 h-24 rounded-lg">
+                                </div>
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3 text-center">Data Science</p>
+                            </a>
+                            <a href="{{ route('detail', ['slug' => 'istanbul', 'course' => 'digital marketing']) }}" class="bg-white rounded-lg shadow-sm m-2 cursor-pointer"
+                                onclick="redirectToPage('istanbul')">
+                                <div class="flex justify-center">
+                                    <img src="{{ Vite::asset('resources/image/ilustration/digital_marketing.png') }}" alt="online"
+                                    class="w-32 h-24 rounded-lg">
+                                </div>
+                                <p class="font-bold text-sm text-[#262626] px-2 py-3 text-center">Digital Marketing</p>
+                            </a>
                         </div>
                     </div>
                 </div>
