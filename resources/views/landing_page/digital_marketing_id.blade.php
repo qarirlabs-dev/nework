@@ -847,8 +847,7 @@
                         <div
                             class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Tingkatkan keterampilan pencarian kerja Anda dengan bertemu profesional pemasaran digital
-                            yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih wawancara
-                            palsu, dan sempurnakan CV Anda.
+                            yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka, berlatih simulasi wawancara, dan sempurnakan CV Anda.
                         </div>
                     </div>
                 </div>
@@ -1036,7 +1035,7 @@
                                 class="hidden collapse-menu-detail bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Tingkatkan keterampilan pencarian kerja Anda dengan bertemu profesional pemasaran
                                 digital yang bekerja di perusahaan rintisan atau perusahaan teknologi terkemuka,
-                                berlatih wawancara palsu, dan sempurnakan CV Anda.
+                                berlatih simulasi wawancara, dan sempurnakan CV Anda.
                             </div>
                         </div>
                     </div>
