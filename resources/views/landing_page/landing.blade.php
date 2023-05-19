@@ -690,7 +690,7 @@
                         the main obstacle to accessing our bootcamps. We're always finding new ways to facilitate
                         payments and fundings.</p>
                     <div data-aos="fade-up" class=" mb-11 mt-6">
-                        <a href="tel:+62821-3595-3485" target="_blank"
+                        <a href="tel:+6281399330042" target="_blank"
                             class="bg-[#FF9500] lg:px-10 lgpy-4 px-4 py-3 rounded-full text-white text-lg font-bold">Contact
                             Us</a>
                     </div>
@@ -714,7 +714,7 @@
                     training or hire our tech-alumni now.</p>
                 <div class=" mb-11 mt-6">
 
-                    <a href="tel:+62821-3595-3485" target="_blank"
+                    <a href="tel:+6281399330042" target="_blank"
                         class="bg-[#FF9500] lg:px-10 lgpy-4 px-4 py-3 rounded-full text-white text-lg font-bold w-full lg:w-auto">Contact
                         Our Partnership Team</a>
                 </div>
