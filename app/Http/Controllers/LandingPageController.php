@@ -184,21 +184,20 @@ class LandingPageController extends Controller
                 $heroImages = ['resources/image/ilustration/indonesia_hero.png'];
                 $programFee = [
                     [
-                        "title" => "Data Sciences Intensive Bootcamp",
+                        "title" => "Data Sciences Bootcamp",
                         "type" => "Beginner Friendly",
                         "price" => [
-                            "<p class='line-through text-sm font-base'>Rp10,500,000</p>",
-                            "Rp 5,999,999 <span class='font-base text-sm'>(for scholarship)</span>"
+                            "<p class='line-through text-sm font-base'>14,500,000</p>",
+                            "Rp 5,900,000 <span class='font-base text-sm'>(for scholarship)</span>"
                         ],
                         "duration" => "16 Weeks",
                         "note" => "Include job connector + student club "
                     ],
                     [
-                        "title" => "Data Sciences Intensive Bootcamp",
-                        "type" => "Beginner Friendly & Hybrid Offline",
+                        "title" => "Data Sciences Full Offline Class",
+                        "type" => "Executive Program & Machine Learning",
                         "price" => [
-                            "<p class='line-through text-sm font-base'>Rp14,000,000</p>",
-                            "Rp12,000,000"
+                            "<div class='mt-6'>14,500,000 <span class='font-base text-sm'>(not available scholarship)</span></div>"
                         ],
                         "duration" => "16 Weeks",
                         "note" => "Include job connector + student club"
