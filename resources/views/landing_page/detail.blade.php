@@ -1685,7 +1685,7 @@
                 <div class="flex flex-wrap mt-8 justify-between">
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-96 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1704,7 +1704,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-96 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -1723,7 +1723,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8">
                         <div
-                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-start mt-10 items-center lg:mr-6 h-96 shadow-sm rounded-xl p-6">
                             <div class="w-12 h-12">
                                 <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">

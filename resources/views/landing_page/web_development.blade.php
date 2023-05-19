@@ -1426,7 +1426,7 @@
                 <div class="flex flex-wrap mt-8 justify-between">
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1000">
                         <div
-                            class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-center items-center mr-6 h-96 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1443,7 +1443,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1300">
                         <div
-                            class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-center items-center mr-6 h-96 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1461,7 +1461,7 @@
                     </div>
                     <div class="w-full lg:w-1/3 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="1600">
                         <div
-                            class="bg-white flex flex-col justify-center items-center mr-6 h-80 shadow-sm rounded-xl p-6">
+                            class="bg-white flex flex-col justify-center items-center mr-6 h-96 shadow-sm rounded-xl p-6">
                             <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_226_1196)">
