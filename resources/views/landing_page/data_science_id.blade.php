@@ -686,7 +686,7 @@
                             memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani kumpulan
                             data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan pemahaman menyeluruh
                             tentang prinsip matematika dasar, seperti statistik dan aljabar linier, untuk memfasilitasi
-                            analisis data yang efisien. .* (Modul Terbaru 2023)
+                            analisis data yang efisien (modul terbaru 2023).
 
                         </div>
                     </div>
@@ -1138,7 +1138,7 @@
                                 memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani
                                 kumpulan data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan
                                 pemahaman menyeluruh tentang prinsip matematika dasar, seperti statistik dan aljabar
-                                linier, untuk memfasilitasi analisis data yang efisien. .* (Modul Terbaru 2023)
+                                linier, untuk memfasilitasi analisis data yang efisien (modul terbaru 2023).
 
                             </div>
                         </div>
