@@ -1396,8 +1396,7 @@
                 <p class="font-bold text-base text-[#262626] mb-6 capitalize" data-aos="fade-up">Cerita beberapa alumni</p>
                 <p class="font-black text-2xl lg:text-4xl mb-2 capitalize" data-aos="fade-up">Apa kata alumni tentang {{config('app.name')}}
                 </p>
-                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Simak kisah para alumni program
-                    Digital Marketing Bootcamp di {{config('app.name')}}!</p>
+                <p class="font-normal text-base text-[#262626] capitalize" data-aos="fade-up">Simak kisah para alumni program Bootcamp di {{config('app.name')}}!</p>
                 <div class="overflow-x-auto flex" data-aos="fade-up" id="alumni-slider">
                     <div class="flex-none py-0 px-3 first:pl-0 last:pr-6">
                         <div class="flex flex-col items-center justify-center gap-3">
