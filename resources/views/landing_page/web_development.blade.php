@@ -101,10 +101,10 @@
                             <button class="bg-[#FF9500] px-10 py-2 rounded-md text-white text-lg font-bold mb-11"
                                 data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300">Choose
                                 Destination</button>
-                            <button
+                            <a href="https://forms.gle/BMVkjWJ9kKePwoLK6" target="_blank"
                                 class="ml-4 text-[#FF9500] px-10 py-2 rounded-md  text-lg font-bold mb-11 outline outline-1 outline-[#FF9500]"
                                 data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300">Download
-                                Syllabus</button>
+                                Syllabus</a>
                         </div>
                     </div>
                     <div class="flex-auto w-4/12">

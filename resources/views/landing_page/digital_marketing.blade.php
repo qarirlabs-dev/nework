@@ -318,10 +318,10 @@
                             <button
                                 class="bg-[{{$themeColor}}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold lg:mb-11 mb-5 w-full lg:w-auto"
                                 data-aos="fade-up">Apply Now</button>
-                            <button
+                            <a href="https://forms.gle/BMVkjWJ9kKePwoLK6" target="_blank"
                                 class="lg:ml-4 text-[{{$themeColor}}] px-10 lg:py-4 py-2 rounded-full  text-lg font-bold mb-11 w-full lg:w-auto outline outline-1 outline-[{{$themeColor}}]"
                                 data-aos="fade-up">Download
-                                Syllabus</button>
+                                Syllabus</a>
                         </div>
                     </div>
                     <div class="hidden lg:block mx-auto w-4/12" data-aos="fade-up">
@@ -1199,8 +1199,8 @@
                     </div>
                 </div>
                 <div class="flex justify-center mt-4" data-aos="fade-up">
-                    <button class="bg-[{{$themeColor}}] px-6 py-3 font-bold text-lg rounded-full text-white">Download
-                        Syllabus</button>
+                    <a href="https://forms.gle/BMVkjWJ9kKePwoLK6" target="_blank" class="bg-[{{$themeColor}}] px-6 py-3 font-bold text-lg rounded-full text-white">Download
+                        Syllabus</a>
                 </div>
             </section>
 
