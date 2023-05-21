@@ -835,7 +835,7 @@
                             class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                             Convert your superior handmade models into a Python package for cloud-based replication and
                             training with virtual machines and online databases. Monitor and update performance with new
-                            data, and share predictions through APIs or websites.* (2023 Newest Module)
+                            data, and share predictions through APIs or websites (2023 newest module)
                             Ubah model karya Anda yang unggul menjadi paket Python untuk replikasi dan pelatihan
                             berbasis cloud dengan mesin virtual dan database online. Pantau dan perbarui kinerja dengan
                             data baru, dan bagikan prediksi melalui API atau situs web.* (Modul Terbaru 2023)
@@ -1224,7 +1224,7 @@
                                 class="collapse-menu-detail hidden bg-white rounded-lg shadow-sm px-5 pb-5 font-normal text-base text-[#262626]">
                                 Convert your superior handmade models into a Python package for cloud-based replication
                                 and training with virtual machines and online databases. Monitor and update performance
-                                with new data, and share predictions through APIs or websites.* (2023 Newest Module)
+                                with new data, and share predictions through APIs or websites (2023 newest module)
                                 Ubah model karya Anda yang unggul menjadi paket Python untuk replikasi dan pelatihan
                                 berbasis cloud dengan mesin virtual dan database online. Pantau dan perbarui kinerja
                                 dengan data baru, dan bagikan prediksi melalui API atau situs web.* (Modul Terbaru 2023)

@@ -1008,7 +1008,7 @@
                                 comprehension
                                 of fundamental mathematical principles, such as statistics and linear algebra, to
                                 facilitate
-                                efficient data analysis. .* (2023 Newest Module)
+                                efficient data analysis.  (2023 newest module)
                             </div>
                         </div>
                         <div class=" mb-4 collapse-menu w-full">
@@ -1092,7 +1092,7 @@
                                 and
                                 training with virtual machines and online databases. Monitor and update performance with
                                 new
-                                data, and share predictions through APIs or websites.* (2023 Newest Module)
+                                data, and share predictions through APIs or websites (2023 newest module)
                             </div>
                         </div>
                         <div class=" mb-4 collapse-menu w-full">
