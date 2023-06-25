@@ -1069,35 +1069,35 @@
                     {{-- <a href="#" class="hidden lg:block text-black  px-3 py-2 font-bold mx-2">Login</a> --}}
 
                     @if ($location == '' || $location == 'Seoul' || $location == "Tokyo")
-                        <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                        <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
                     @endif
 
                     @if (($location == 'localhost:8000' || $location == 'ql.oqurystudio.com') && $course == 'enterprise')
-                    <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                    <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#1AD079] mx-2">Book A Call</a>
                     @endif
                     @if (($location == 'localhost:8000' || $location == 'ql.oqurystudio.com') && $course == 'privacy-policy')
-                    <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                    <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
                     @endif
                     @if ($location == 'indonesia' && $course == 'data science')
-                        <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                        <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#2622B9] mx-2">Book A Call</a>
                     @endif
 
                     @if ($location == 'indonesia' && $course == 'digital marketing')
-                        <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                        <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#FF9500] mx-2">Book A Call</a>
                     @endif
 
                     @if ($location == 'istanbul' && $course == 'data science')
-                        <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                        <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#EE0A0A] mx-2">Book A Call</a>
                     @endif
 
                     @if ($location == 'istanbul' && $course == 'digital marketing')
-                        <a href="https://meetings.hubspot.com/admission-consultant" target="_blank"
+                        <a href="https://calendar.app.google/6xrDJSLWZhcYxYrs9" target="_blank"
                             class="text-white lg:px-5 px-4 lg:py-2 py-1 font-bold rounded-full bg-[#0F5B89] mx-2">Book A Call</a>
                     @endif
 
