@@ -43,7 +43,7 @@
                 <div class="p-5 lg:p-0 lg:ml-14 lg:mt-24">
                     <p class="font-bold text-base text-[#FF9E16] mb-4">REACH US</p>
                     <p class="font-bold text-base text-white mt-5">Jakarta</p>
-                    <p class="font-normal text-base text-white mt-2">{{config('app.name')}} Office 8, level 18-A, Sudirman Central Business District (SCBD) Jl. Jenderal Sudirman no.1, RT8/RW3, Senayan, Kebayoran Baru, Jakarta Selatan. <br>+62 821-3595-3485 ({{config('app.name')}})</p>
+                    <p class="font-normal text-base text-white mt-2">{{config('app.name')}} Office 8, level 18-A, Sudirman Central Business District (SCBD) Jl. Jenderal Sudirman no.1, RT8/RW3, Senayan, Kebayoran Baru, Jakarta Selatan. <br><a href="http://wa.me/6281110014450" target="_blank"></a>+62 811-1001-4450 ({{config('app.name')}})</p>
                     <p class="font-bold text-base text-white mt-5">Istanbul</p>
                     <p class="font-normal text-base text-white mt-2">Maslak, Büyükdere Cad. No:255 Nurol Plaza B.02, 34450 Sarıyer/İstanbul-<br>+90 551 402 62 05</p>
                 </div>
