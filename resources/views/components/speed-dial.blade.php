@@ -17,7 +17,7 @@
             </svg>
         </div>
         <a aria-label="Chat on WhatsApp"
-            href="http://wa.me/+6281110014420?text={{ urlencode("Hi, I'm interested to know about ".config('app.name')." Bootcamp, My Name is.....") }}"
+            href="http://wa.me/+6281110014450?text={{ urlencode("Hi, I'm interested to know about ".config('app.name')." Bootcamp, My Name is.....") }}"
             target="_blank" class="bg-white rounded-xl lg:p-4 p-2 ml-2 shadow-2xl " id="content-chat">
             <p class="lg:text-base text-xs">How may i assist you to find your best career future? 🙂</p>
         </a>
