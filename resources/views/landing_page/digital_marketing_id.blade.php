@@ -321,9 +321,10 @@
                             </div>
                         </div> --}}
                         <div class="flex flex-wrap lg:flex-nowrap lg:flex-row mt-8">
-                            <button
+<a href=" http://wa.me/+6281110014420?text={{ urlencode("Hi, I'm interested to know about ".config('app.name')." Bootcamp, My Name is.....") }}">                            
+<button
                                 class="bg-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full text-white text-lg font-bold lg:mb-11 mb-5 w-full lg:w-auto"
-                                data-aos="fade-up">Daftar Sekarang</button>
+                                data-aos="fade-up">Daftar Sekarang</button></a>
                             <a href="https://forms.gle/BMVkjWJ9kKePwoLK6" target="_blank"
                                 class="lg:ml-4 text-[{{ $themeColor }}] px-10 lg:py-4 py-2 rounded-full  text-lg font-bold mb-11 w-full lg:w-auto outline outline-1 outline-[{{ $themeColor }}]"
                                 data-aos="fade-up">Download
