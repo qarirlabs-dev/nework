@@ -125,7 +125,7 @@
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-lg py-2 px-5 bg-opacity-10">Enrolled
-                            June 30, 2023</span>
+                            Sept 1, 2023</span>
                     </div>
                     <p class="font-bold lg:text-4xl text-2xl mb-4">Data Science Bootcamp</p>
                     <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Data Scientist and build yours
@@ -165,7 +165,7 @@
                 <div class="relative bg-white p-6 rounded-lg shadow-sm h-[32rem]">
                     <div class="mb-5"><span
                             class="text-[#FF7A00] font-bold text-base bg-[#FF9500] rounded-lg py-2 px-5 bg-opacity-10">Enrolled
-                            June 30, 2023</span>
+                            Sept 1, 2023</span>
                     </div>
                     <p class="font-bold lg:text-4xl text-2xl mb-4">Digital Marketing Bootcamp</p>
                     <p class="font-normal lg:text-base text-sm text-[#6E6E6E]">Learn the skills of a Digital Marketing and build
