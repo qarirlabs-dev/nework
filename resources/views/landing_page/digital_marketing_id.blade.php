@@ -426,7 +426,7 @@
                     </a>
                     <button
                         class="ml-4 mt-8 bg-[{{ $themeColor }}] px-9 py-4 rounded-full text-white text-lg font-bold">Mari
-                        Kita Mulai</button>
+                        Kita Mulai </button>
                 </div>
             </div>
         </div>
